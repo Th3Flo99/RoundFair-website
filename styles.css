@@ -315,6 +315,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 
 /* ---------- How it works ---------- */
@@ -588,13 +589,57 @@ section {
 
 /* ---------- Responsive ---------- */
 
+/* Mid-page settlement shot (always available; emphasized on small screens) */
+.settle-shot {
+  margin: 56px auto 0;
+  max-width: 320px;
+  text-align: center;
+}
+
+.settle-shot .phone-inline {
+  width: 260px;
+  margin: 0 auto;
+  transform: none;
+}
+
+.settle-shot figcaption {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+/* On wide screens the hero already shows settlement behind — keep mid-page subtle */
+@media (min-width: 901px) {
+  .settle-shot {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .steps,
   .feature-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Stack phones instead of hiding settlement */
+  .hero-phone {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
   .phone-back {
-    display: none;
+    position: static;
+    width: 240px;
+    top: auto;
+    right: auto;
+    transform: rotate(-3deg);
+    opacity: 1;
+    order: 2;
+  }
+
+  .phone-front {
+    order: 1;
   }
 }
 
