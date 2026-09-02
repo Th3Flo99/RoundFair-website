@@ -167,6 +167,22 @@ section {
   text-decoration: none;
 }
 
+.nav-cta {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.nav-cta:hover {
+  background: var(--accent-strong);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+
 .theme-toggle {
   appearance: none;
   border: 1px solid var(--border);
@@ -187,7 +203,7 @@ section {
 }
 
 @media (max-width: 640px) {
-  .nav-links a:not(.theme-toggle) {
+  .nav-links a:not(.nav-cta) {
     display: none;
   }
 }
@@ -497,6 +513,11 @@ section {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
+
+.footer-badge {
+  margin: 0 auto 24px;
+}
+
 
 .footer-links {
   display: flex;
