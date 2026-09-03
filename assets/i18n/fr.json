@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "RoundFair — À qui le tour — et régler équitablement.",
-    "description": "Voyez qui est à son tour et qui prend du retard en soirée — puis réglez équitablement quand vous êtes prêts. Privé dès la conception, aucun compte requis.",
-    "ogTitle": "RoundFair — À qui le tour — et régler équitablement.",
-    "ogDescription": "À qui le tour — et qui est à la traîne. Réglez quand vous êtes prêts. RoundFair garde le groupe équitable.",
-    "twitterTitle": "RoundFair — À qui le tour — et régler équitablement.",
-    "twitterDescription": "À qui le tour — et qui est à la traîne. Réglez quand vous êtes prêts. RoundFair garde le groupe équitable."
+    "title": "RoundFair: À qui le tour, et régler équitablement.",
+    "description": "Voyez qui est à son tour et qui prend du retard en soirée, puis réglez équitablement quand vous êtes prêts. Privé dès la conception, aucun compte requis.",
+    "ogTitle": "RoundFair: À qui le tour, et régler équitablement.",
+    "ogDescription": "À qui le tour, et qui est à la traîne. Réglez quand vous êtes prêts. RoundFair garde le groupe équitable.",
+    "twitterTitle": "RoundFair: À qui le tour, et régler équitablement.",
+    "twitterDescription": "À qui le tour, et qui est à la traîne. Réglez quand vous êtes prêts. RoundFair garde le groupe équitable."
   },
   "nav": {
     "aria": "Navigation principale",
@@ -24,14 +24,14 @@
   },
   "hero": {
     "iconAlt": "Icône de l'app RoundFair",
-    "titleBefore": "À qui le tour — et ",
+    "titleBefore": "À qui le tour, et ",
     "titleAccent": "régler équitablement.",
-    "sub": "Voyez qui est à son tour et qui est à la traîne — puis réglez quand vous êtes prêts.",
+    "sub": "Voyez qui est à son tour et qui est à la traîne, puis réglez quand vous êtes prêts.",
     "badgeAria": "Télécharger RoundFair sur l'App Store",
     "badgeSmall": "Télécharger sur l'",
     "badgeBig": "App Store",
     "shotSettleAlt": "Règlement RoundFair : Jordan et Sam récupèrent, Alex et Taylor doivent payer",
-    "shotSessionAlt": "RoundFair — à qui le tour : Taylor est à son tour, puis Alex — parts en direct pour le groupe"
+    "shotSessionAlt": "RoundFair, à qui le tour : Taylor est à son tour, puis Alex (parts en direct pour le groupe)"
   },
   "how": {
     "title": "Comment ça marche",
@@ -39,15 +39,15 @@
     "step1Title": "Démarrez une session",
     "step1Body": "Ajoutez vos amis en quelques secondes. Aucun compte requis.",
     "step2Title": "Voyez qui est à son tour",
-    "step2Body": "Enregistrez chaque tournée — RoundFair montre qui est à son tour et qui est à la traîne.",
+    "step2Body": "Enregistrez chaque tournée, RoundFair montre qui est à son tour et qui est à la traîne.",
     "step3Title": "Réglez quand vous êtes prêts",
-    "step3Body": "Les soldes restent équitables toute la soirée — réglez clairement quand c'est fini.",
+    "step3Body": "Les soldes restent équitables toute la soirée, réglez clairement quand c'est fini.",
     "settleAlt": "Règlement RoundFair : qui récupère de l'argent et qui doit payer",
-    "settleCaption": "Réglez quand vous êtes prêts — clairement qui récupère et qui paie qui."
+    "settleCaption": "Réglez quand vous êtes prêts, clairement qui récupère et qui paie qui."
   },
   "features": {
     "title": "Conçu pour de vraies soirées",
-    "sub": "Tout ce qu'il faut pour rester équitable — et rien de superflu.",
+    "sub": "Tout ce qu'il faut pour rester équitable, et rien de superflu.",
     "turnTitle": "Ordre des tours",
     "turnBody": "RoundFair sait à qui le tour. Fini les discussions.",
     "spotsTitle": "Vos lieux, prêts à l'emploi",
@@ -59,7 +59,7 @@
     "shareTitle": "Partagez avec le groupe",
     "shareBody": "Partagez une session via iCloud pour que vos amis suivent sur leurs appareils.",
     "privateTitle": "Privé dès la conception",
-    "privateBody": "Pas de compte, pas de tracking — tout reste dans votre iCloud."
+    "privateBody": "Pas de compte, pas de tracking, tout reste dans votre iCloud."
   },
   "languages": {
     "title": "Disponible en 7 langues"
@@ -72,7 +72,7 @@
     "shareQ": "Comment fonctionne le partage de groupe ?",
     "shareA": "Les sessions peuvent être partagées via iCloud (CloudKit) ; chacun a besoin d'un compte iCloud sur son appareil.",
     "costQ": "RoundFair est-il payant ?",
-    "costA": "RoundFair est gratuit à télécharger sur l'App Store. Ouvrez-le et démarrez une session — aucun achat requis pour commencer."
+    "costA": "RoundFair est gratuit à télécharger sur l'App Store. Ouvrez-le et démarrez une session, aucun achat requis pour commencer."
   },
   "footer": {
     "questions": "Des questions ?",
@@ -82,9 +82,9 @@
     "copyright": "© 2026 Florian Ronsse"
   },
   "privacy": {
-    "title": "Politique de confidentialité — RoundFair",
-    "description": "RoundFair ne collecte aucune donnée. Aucune. Pas d'analytics, pas de trackers, pas de pubs, pas de serveurs — tout reste sur votre appareil et dans votre iCloud personnel.",
-    "ogTitle": "Politique de confidentialité — RoundFair",
+    "title": "Politique de confidentialité (RoundFair)",
+    "description": "RoundFair ne collecte aucune donnée. Aucune. Pas d'analytics, pas de trackers, pas de pubs, pas de serveurs, tout reste sur votre appareil et dans votre iCloud personnel.",
+    "ogTitle": "Politique de confidentialité (RoundFair)",
     "ogDescription": "RoundFair ne collecte aucune donnée. Aucune.",
     "back": "← Retour à RoundFair",
     "h1": "Politique de confidentialité",
@@ -92,11 +92,11 @@
     "hero": "RoundFair ne collecte aucune donnée. Aucune.",
     "intro": "RoundFair est conçu pour que vos données ne quittent jamais votre contrôle. Pas d'analytics, pas de trackers, pas de pubs, pas de SDK tiers, et aucun serveur exploité par RoundFair.",
     "whereTitle": "Où vivent vos données",
-    "whereBody": "Tout ce que vous saisissez dans RoundFair — sessions, amis, tournées, lieux et prix — est stocké sur votre appareil et dans votre iCloud personnel (CloudKit). RoundFair n'a pas de serveurs et n'y a aucun accès.",
+    "whereBody": "Tout ce que vous saisissez dans RoundFair, sessions, amis, tournées, lieux et prix, est stocké sur votre appareil et dans votre iCloud personnel (CloudKit). RoundFair n'a pas de serveurs et n'y a aucun accès.",
     "shareTitle": "Partage de groupe",
     "shareBody": "Lorsque vous partagez une session avec des amis, le partage se fait directement entre les comptes iCloud des participants via CloudKit d'Apple. Aucune donnée ne passe par quelqu'un d'autre.",
     "photosTitle": "Photos",
-    "photosBody": "Les photos des lieux sont ajoutées via le sélecteur photo du système. RoundFair ne reçoit que l'image unique que vous choisissez — jamais l'accès à votre photothèque.",
+    "photosBody": "Les photos des lieux sont ajoutées via le sélecteur photo du système. RoundFair ne reçoit que l'image unique que vous choisissez, jamais l'accès à votre photothèque.",
     "notifTitle": "Notifications",
     "notifBody": "Les notifications affichées par RoundFair sont planifiées localement sur votre appareil. Rien n'est envoyé depuis un serveur.",
     "deleteTitle": "Supprimer vos données",

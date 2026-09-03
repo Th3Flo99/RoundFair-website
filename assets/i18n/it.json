@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "RoundFair — Di chi è il turno — e saldare in modo equo.",
-    "description": "Vedi a chi tocca ora e chi è indietro durante una serata — poi saldo equo quando siete pronti. Privato per progettazione, nessun account.",
-    "ogTitle": "RoundFair — Di chi è il turno — e saldare in modo equo.",
-    "ogDescription": "Di chi è il turno — e chi è indietro. Saldate quando siete pronti. RoundFair tiene il gruppo equo.",
-    "twitterTitle": "RoundFair — Di chi è il turno — e saldare in modo equo.",
-    "twitterDescription": "Di chi è il turno — e chi è indietro. Saldate quando siete pronti. RoundFair tiene il gruppo equo."
+    "title": "RoundFair: Di chi è il turno, e saldare in modo equo.",
+    "description": "Vedi a chi tocca ora e chi è indietro durante una serata, poi saldo equo quando siete pronti. Privato per progettazione, nessun account.",
+    "ogTitle": "RoundFair: Di chi è il turno, e saldare in modo equo.",
+    "ogDescription": "Di chi è il turno, e chi è indietro. Saldate quando siete pronti. RoundFair tiene il gruppo equo.",
+    "twitterTitle": "RoundFair: Di chi è il turno, e saldare in modo equo.",
+    "twitterDescription": "Di chi è il turno, e chi è indietro. Saldate quando siete pronti. RoundFair tiene il gruppo equo."
   },
   "nav": {
     "aria": "Navigazione principale",
@@ -24,14 +24,14 @@
   },
   "hero": {
     "iconAlt": "Icona dell'app RoundFair",
-    "titleBefore": "Di chi è il turno — e ",
+    "titleBefore": "Di chi è il turno, e ",
     "titleAccent": "saldare in modo equo.",
-    "sub": "Vedi a chi tocca ora e chi è indietro — poi salda quando siete pronti.",
+    "sub": "Vedi a chi tocca ora e chi è indietro, poi salda quando siete pronti.",
     "badgeAria": "Scarica RoundFair sull'App Store",
     "badgeSmall": "Scarica su",
     "badgeBig": "App Store",
     "shotSettleAlt": "Saldo RoundFair: Jordan e Sam recuperano, Alex e Taylor devono pagare",
-    "shotSessionAlt": "RoundFair Tocca ora: Taylor è al turno, poi Alex — quote live per il gruppo"
+    "shotSessionAlt": "RoundFair Tocca ora: Taylor è al turno, poi Alex (quote live per il gruppo)"
   },
   "how": {
     "title": "Come funziona",
@@ -39,15 +39,15 @@
     "step1Title": "Avvia una sessione",
     "step1Body": "Aggiungi gli amici in pochi secondi. Nessun account.",
     "step2Title": "Vedi a chi tocca",
-    "step2Body": "Registra ogni giro — RoundFair mostra a chi tocca ora e chi è indietro.",
+    "step2Body": "Registra ogni giro, RoundFair mostra a chi tocca ora e chi è indietro.",
     "step3Title": "Salda quando siete pronti",
-    "step3Body": "I saldi live restano equi tutta la sera — saldo chiaro quando la notte è finita.",
+    "step3Body": "I saldi live restano equi tutta la sera, saldo chiaro quando la notte è finita.",
     "settleAlt": "Saldo RoundFair: chi riceve indietro e chi deve pagare",
-    "settleCaption": "Salda quando siete pronti — chiaro chi recupera e chi paga chi."
+    "settleCaption": "Salda quando siete pronti, chiaro chi recupera e chi paga chi."
   },
   "features": {
     "title": "Pensato per serate vere",
-    "sub": "Tutto il necessario per restare equi — e niente di superfluo.",
+    "sub": "Tutto il necessario per restare equi, e niente di superfluo.",
     "turnTitle": "Ordine dei turni",
     "turnBody": "RoundFair sa di chi è il giro. Basta discussioni.",
     "spotsTitle": "I tuoi posti, pronti",
@@ -72,7 +72,7 @@
     "shareQ": "Come funziona la condivisione di gruppo?",
     "shareA": "Le sessioni si possono condividere via iCloud (CloudKit); ognuno ha bisogno di un account iCloud sul dispositivo.",
     "costQ": "RoundFair costa qualcosa?",
-    "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione — nessun acquisto necessario per iniziare."
+    "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione, nessun acquisto necessario per iniziare."
   },
   "footer": {
     "questions": "Domande?",
@@ -82,9 +82,9 @@
     "copyright": "© 2026 Florian Ronsse"
   },
   "privacy": {
-    "title": "Informativa sulla privacy — RoundFair",
-    "description": "RoundFair non raccoglie alcun dato. Nessuno. Niente analytics, tracker, annunci o server — tutto resta sul tuo dispositivo e nel tuo iCloud personale.",
-    "ogTitle": "Informativa sulla privacy — RoundFair",
+    "title": "Informativa sulla privacy (RoundFair)",
+    "description": "RoundFair non raccoglie alcun dato. Nessuno. Niente analytics, tracker, annunci o server, tutto resta sul tuo dispositivo e nel tuo iCloud personale.",
+    "ogTitle": "Informativa sulla privacy (RoundFair)",
     "ogDescription": "RoundFair non raccoglie alcun dato. Nessuno.",
     "back": "← Torna a RoundFair",
     "h1": "Informativa sulla privacy",
@@ -92,11 +92,11 @@
     "hero": "RoundFair non raccoglie alcun dato. Nessuno.",
     "intro": "RoundFair è costruito perché i tuoi dati non lascino mai il tuo controllo. Niente analytics, tracker, annunci, SDK di terze parti né server gestiti da RoundFair.",
     "whereTitle": "Dove vivono i tuoi dati",
-    "whereBody": "Tutto ciò che inserisci in RoundFair — sessioni, amici, giri, luoghi e prezzi — è salvato sul tuo dispositivo e nel tuo iCloud personale (CloudKit). RoundFair non ha server e non ha accesso a nulla di tutto ciò.",
+    "whereBody": "Tutto ciò che inserisci in RoundFair, sessioni, amici, giri, luoghi e prezzi, è salvato sul tuo dispositivo e nel tuo iCloud personale (CloudKit). RoundFair non ha server e non ha accesso a nulla di tutto ciò.",
     "shareTitle": "Condivisione di gruppo",
     "shareBody": "Quando condividi una sessione con gli amici, la condivisione avviene direttamente tra gli account iCloud dei partecipanti tramite CloudKit di Apple. Nessun dato passa da altri.",
     "photosTitle": "Foto",
-    "photosBody": "Le foto dei luoghi si aggiungono con il selettore foto di sistema. RoundFair riceve solo l'immagine che scegli — mai accesso alla libreria foto.",
+    "photosBody": "Le foto dei luoghi si aggiungono con il selettore foto di sistema. RoundFair riceve solo l'immagine che scegli, mai accesso alla libreria foto.",
     "notifTitle": "Notifiche",
     "notifBody": "Le notifiche di RoundFair sono programmate in locale sul dispositivo. Nulla viene inviato da un server.",
     "deleteTitle": "Eliminare i tuoi dati",
