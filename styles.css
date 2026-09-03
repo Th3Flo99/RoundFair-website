@@ -262,9 +262,15 @@ section {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   align-items: center;
-  gap: 48px;
+  gap: 40px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
 }
 
 .hero-copy .app-icon {
@@ -276,11 +282,13 @@ section {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-size: clamp(2.15rem, 4.6vw, 3.4rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.08;
+  line-height: 1.1;
   margin-bottom: 18px;
+  overflow-wrap: anywhere;
+  hyphens: manual;
 }
 
 .hero h1 .accent {
@@ -342,10 +350,15 @@ section {
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 1;
+  min-width: 0;
+  /* Keep the angled back phone inside the phone column so long locale titles stay readable */
+  overflow: hidden;
+  padding: 12px 8px 24px;
 }
 
 .phone {
-  width: 290px;
+  width: min(290px, 100%);
   border-radius: 46px;
   background: var(--phone-frame);
   padding: 12px;
@@ -357,9 +370,10 @@ section {
 
 .phone-back {
   position: absolute;
-  width: 250px;
+  width: min(236px, 78%);
   top: 44px;
-  right: calc(50% + 60px);
+  /* Stay mostly behind the front phone; do not invade the copy column */
+  right: calc(50% + 28px);
   transform: rotate(-6deg);
   z-index: 0;
   opacity: 0.9;
@@ -678,6 +692,26 @@ section {
 @media (min-width: 901px) {
   .settle-shot {
     display: none;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+    gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 3.8vw, 2.75rem);
+  }
+
+  .phone {
+    width: min(250px, 100%);
+  }
+
+  .phone-back {
+    width: min(210px, 78%);
+    right: calc(50% + 18px);
   }
 }
 
