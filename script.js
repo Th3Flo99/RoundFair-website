@@ -3,15 +3,22 @@
   const stored = localStorage.getItem("roundfair-theme");
   const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
 
+  function themeLabel(theme) {
+    const i18n = window.RoundFairI18n;
+    if (i18n && typeof i18n.t === "function") {
+      const key = theme === "dark" ? "theme.toLight" : "theme.toDark";
+      const label = i18n.t(key);
+      if (label) return label;
+    }
+    return theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+  }
+
   function apply(theme) {
     document.documentElement.dataset.theme = theme;
     const btn = document.querySelector(".theme-toggle");
     if (btn) {
       btn.textContent = theme === "dark" ? "☀️" : "🌙";
-      btn.setAttribute(
-        "aria-label",
-        theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-      );
+      btn.setAttribute("aria-label", themeLabel(theme));
     }
   }
 
@@ -36,10 +43,10 @@
         const next = current() === "dark" ? "light" : "dark";
         localStorage.setItem("roundfair-theme", next);
         apply(next);
+        document.dispatchEvent(new CustomEvent("roundfair:themechange"));
       });
     }
 
-    // Scroll reveal
     const revealed = document.querySelectorAll(".reveal");
     if ("IntersectionObserver" in window) {
       const io = new IntersectionObserver(

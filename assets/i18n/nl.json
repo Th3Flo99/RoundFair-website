@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "RoundFair — Wie is aan de beurt — en eerlijk verrekenen.",
+    "description": "Zie wie Nu aan de beurt is en wie achterligt tijdens een avondje uit — en verreken eerlijk wanneer je klaar bent. Privé by design, geen account nodig.",
+    "ogTitle": "RoundFair — Wie is aan de beurt — en eerlijk verrekenen.",
+    "ogDescription": "Nu aan de beurt toont wiens beurt het is. Verreken wanneer je klaar bent — RoundFair houdt de groep eerlijk.",
+    "twitterTitle": "RoundFair — Wie is aan de beurt — en eerlijk verrekenen.",
+    "twitterDescription": "Nu aan de beurt toont wiens beurt het is. Verreken wanneer je klaar bent — RoundFair houdt de groep eerlijk."
+  },
+  "nav": {
+    "aria": "Hoofdnavigatie",
+    "how": "Hoe het werkt",
+    "features": "Functies",
+    "faq": "FAQ",
+    "download": "Download"
+  },
+  "theme": {
+    "toDark": "Schakel naar donkere modus",
+    "toLight": "Schakel naar lichte modus"
+  },
+  "lang": {
+    "label": "Taal",
+    "aria": "Kies taal"
+  },
+  "hero": {
+    "iconAlt": "RoundFair-appicoon",
+    "titleBefore": "Wie is aan de beurt — en ",
+    "titleAccent": "eerlijk verrekenen.",
+    "sub": "Zie wie Nu aan de beurt is en wie achterligt — en verreken wanneer je klaar bent.",
+    "badgeAria": "Download RoundFair in de App Store",
+    "badgeSmall": "Download in de",
+    "badgeBig": "App Store",
+    "shotSettleAlt": "RoundFair-verrekening: Florian krijgt terug, Megan en Elias moeten betalen",
+    "shotSessionAlt": "RoundFair Nu aan de beurt: Megan is aan de beurt, daarna Florian — live aandelen voor de groep"
+  },
+  "how": {
+    "title": "Hoe het werkt",
+    "sub": "Weet wie aan de beurt is tijdens de avond. Verreken wanneer je klaar bent.",
+    "step1Title": "Start een sessie",
+    "step1Body": "Voeg je vrienden in seconden toe. Geen accounts nodig.",
+    "step2Title": "Zie wie aan de beurt is",
+    "step2Body": "Log elke ronde — RoundFair toont wie Nu aan de beurt is en wie achterligt.",
+    "step3Title": "Verreken wanneer je klaar bent",
+    "step3Body": "Live saldi blijven de hele avond eerlijk — verreken duidelijk als de avond voorbij is.",
+    "settleAlt": "RoundFair-verrekening: wie krijgt geld terug en wie moet betalen",
+    "settleCaption": "Verreken wanneer je klaar bent — duidelijk wie terugkrijgt en wie aan wie betaalt."
+  },
+  "features": {
+    "title": "Gemaakt voor echte avondjes uit",
+    "sub": "Alles wat je nodig hebt om het eerlijk te houden — en niets wat je niet nodig hebt.",
+    "turnTitle": "Beurtvolgorde",
+    "turnBody": "RoundFair weet wiens ronde het is. Geen discussies meer.",
+    "spotsTitle": "Jouw plekken, klaar voor gebruik",
+    "spotsBody": "Bewaar plekken waar je vaak komt, zodat de volgende avond sneller start.",
+    "restaurantTitle": "Ook restaurantavonden",
+    "restaurantBody": "Gespecificeerde rondes met fooi en btw.",
+    "spinTitle": "Draai aan het rad",
+    "spinBody": "Laat het lot kiezen wie de volgende ronde betaalt.",
+    "shareTitle": "Deel met de groep",
+    "shareBody": "Deel een sessie via iCloud zodat vrienden mee kunnen volgen op hun eigen toestel.",
+    "privateTitle": "Privé by design",
+    "privateBody": "Geen account, geen tracking, alles blijft in je eigen iCloud."
+  },
+  "languages": {
+    "title": "Beschikbaar in 7 talen"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "sub": "Alles wat je wilt weten voor je eerste ronde.",
+    "dataQ": "Waar wordt mijn data bewaard?",
+    "dataA": "Op je toestel en in je persoonlijke iCloud. RoundFair heeft geen servers en geen toegang tot je data.",
+    "shareQ": "Hoe werkt groepsdeling?",
+    "shareA": "Sessies kunnen via iCloud (CloudKit) gedeeld worden; iedereen heeft een iCloud-account op het toestel nodig.",
+    "costQ": "Kost RoundFair iets?",
+    "costA": "RoundFair is gratis te downloaden in de App Store. Open de app en start een sessie — geen aankoop nodig om te beginnen."
+  },
+  "footer": {
+    "questions": "Vragen?",
+    "privacy": "Privacybeleid",
+    "support": "Support",
+    "appStore": "App Store",
+    "copyright": "© 2026 Florian Ronsse"
+  },
+  "privacy": {
+    "title": "Privacybeleid — RoundFair",
+    "description": "RoundFair verzamelt geen data. Geen. Geen analytics, geen trackers, geen ads, geen servers — alles blijft op je toestel en in je persoonlijke iCloud.",
+    "ogTitle": "Privacybeleid — RoundFair",
+    "ogDescription": "RoundFair verzamelt geen data. Geen.",
+    "back": "← Terug naar RoundFair",
+    "h1": "Privacybeleid",
+    "updated": "Laatst bijgewerkt: juli 2026",
+    "hero": "RoundFair verzamelt geen data. Geen.",
+    "intro": "RoundFair is zo gebouwd dat je data nooit je controle verlaat. Er zijn geen analytics, geen trackers, geen ads, geen third-party SDK's en geen servers van RoundFair.",
+    "whereTitle": "Waar je data leeft",
+    "whereBody": "Alles wat je in RoundFair invoert — sessies, vrienden, rondes, locaties en prijzen — wordt bewaard op je toestel en in je persoonlijke iCloud (CloudKit). RoundFair heeft geen servers en geen toegang ertoe.",
+    "shareTitle": "Groepsdeling",
+    "shareBody": "Als je een sessie met vrienden deelt, gebeurt dat rechtstreeks tussen de iCloud-accounts van de deelnemers via Apple's CloudKit. Geen data gaat via iemand anders.",
+    "photosTitle": "Foto's",
+    "photosBody": "Foto's voor locaties voeg je toe via de systeemfoto-kiezer. RoundFair ontvangt alleen de ene afbeelding die jij kiest — nooit toegang tot je fotobibliotheek.",
+    "notifTitle": "Meldingen",
+    "notifBody": "Meldingen die RoundFair toont, worden lokaal op je toestel gepland. Er wordt niets vanaf een server gestuurd.",
+    "deleteTitle": "Je data verwijderen",
+    "deleteIntro": "Je data is van jou om op elk moment te verwijderen:",
+    "deleteLi1": "Verwijder een sessie om die en de rondes te wissen.",
+    "deleteLi2": "Verwijder de app om alle data van je toestel en je iCloud te wissen.",
+    "contactTitle": "Contact",
+    "contactBefore": "Vragen over privacy? Mail ",
+    "contactAfter": ".",
+    "home": "Home"
+  }
+}

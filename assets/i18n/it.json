@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "RoundFair — Di chi è il turno — e saldare in modo equo.",
+    "description": "Vedi a chi tocca ora e chi è indietro durante una serata — poi saldo equo quando siete pronti. Privato by design, nessun account.",
+    "ogTitle": "RoundFair — Di chi è il turno — e saldare in modo equo.",
+    "ogDescription": "Tocca ora mostra di chi è il turno. Saldare quando siete pronti — RoundFair tiene il gruppo equo.",
+    "twitterTitle": "RoundFair — Di chi è il turno — e saldare in modo equo.",
+    "twitterDescription": "Tocca ora mostra di chi è il turno. Saldare quando siete pronti — RoundFair tiene il gruppo equo."
+  },
+  "nav": {
+    "aria": "Navigazione principale",
+    "how": "Come funziona",
+    "features": "Funzioni",
+    "faq": "FAQ",
+    "download": "Scarica"
+  },
+  "theme": {
+    "toDark": "Passa alla modalità scura",
+    "toLight": "Passa alla modalità chiara"
+  },
+  "lang": {
+    "label": "Lingua",
+    "aria": "Scegli la lingua"
+  },
+  "hero": {
+    "iconAlt": "Icona dell'app RoundFair",
+    "titleBefore": "Di chi è il turno — e ",
+    "titleAccent": "saldare in modo equo.",
+    "sub": "Vedi a chi tocca ora e chi è indietro — poi salda quando siete pronti.",
+    "badgeAria": "Scarica RoundFair sull'App Store",
+    "badgeSmall": "Scarica su",
+    "badgeBig": "App Store",
+    "shotSettleAlt": "Saldo RoundFair: Florian recupera, Megan ed Elias devono pagare",
+    "shotSessionAlt": "RoundFair Tocca ora: Megan è al turno, poi Florian — quote live per il gruppo"
+  },
+  "how": {
+    "title": "Come funziona",
+    "sub": "Sapete a chi tocca durante la serata. Saldare quando siete pronti.",
+    "step1Title": "Avvia una sessione",
+    "step1Body": "Aggiungi gli amici in pochi secondi. Nessun account.",
+    "step2Title": "Vedi a chi tocca",
+    "step2Body": "Registra ogni giro — RoundFair mostra a chi tocca ora e chi è indietro.",
+    "step3Title": "Salda quando siete pronti",
+    "step3Body": "I saldi live restano equi tutta la sera — saldo chiaro quando la notte è finita.",
+    "settleAlt": "Saldo RoundFair: chi riceve indietro e chi deve pagare",
+    "settleCaption": "Salda quando siete pronti — chiaro chi recupera e chi paga chi."
+  },
+  "features": {
+    "title": "Pensato per serate vere",
+    "sub": "Tutto il necessario per restare equi — e niente di superfluo.",
+    "turnTitle": "Ordine dei turni",
+    "turnBody": "RoundFair sa di chi è il giro. Basta discussioni.",
+    "spotsTitle": "I tuoi posti, pronti",
+    "spotsBody": "Salva i luoghi che frequenti spesso per iniziare più in fretta la prossima sera.",
+    "restaurantTitle": "Anche le serate al ristorante",
+    "restaurantBody": "Giri dettagliati con mancia e tasse.",
+    "spinTitle": "Gira la ruota",
+    "spinBody": "Lascia che il caso scelga chi paga il prossimo giro.",
+    "shareTitle": "Condividi con il gruppo",
+    "shareBody": "Condividi una sessione via iCloud così gli amici seguono sui propri dispositivi.",
+    "privateTitle": "Privato by design",
+    "privateBody": "Nessun account, nessun tracking, tutto resta nel tuo iCloud."
+  },
+  "languages": {
+    "title": "Disponibile in 7 lingue"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "sub": "Tutto ciò che vuoi sapere prima del primo giro.",
+    "dataQ": "Dove sono salvati i miei dati?",
+    "dataA": "Sul tuo dispositivo e nel tuo iCloud personale. RoundFair non ha server e non ha accesso ai tuoi dati.",
+    "shareQ": "Come funziona la condivisione di gruppo?",
+    "shareA": "Le sessioni si possono condividere via iCloud (CloudKit); ognuno ha bisogno di un account iCloud sul dispositivo.",
+    "costQ": "RoundFair costa qualcosa?",
+    "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione — nessun acquisto necessario per iniziare."
+  },
+  "footer": {
+    "questions": "Domande?",
+    "privacy": "Informativa sulla privacy",
+    "support": "Supporto",
+    "appStore": "App Store",
+    "copyright": "© 2026 Florian Ronsse"
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy — RoundFair",
+    "description": "RoundFair non raccoglie alcun dato. Nessuno. Niente analytics, tracker, annunci o server — tutto resta sul tuo dispositivo e nel tuo iCloud personale.",
+    "ogTitle": "Informativa sulla privacy — RoundFair",
+    "ogDescription": "RoundFair non raccoglie alcun dato. Nessuno.",
+    "back": "← Torna a RoundFair",
+    "h1": "Informativa sulla privacy",
+    "updated": "Ultimo aggiornamento: luglio 2026",
+    "hero": "RoundFair non raccoglie alcun dato. Nessuno.",
+    "intro": "RoundFair è costruito perché i tuoi dati non lascino mai il tuo controllo. Niente analytics, tracker, annunci, SDK di terze parti né server gestiti da RoundFair.",
+    "whereTitle": "Dove vivono i tuoi dati",
+    "whereBody": "Tutto ciò che inserisci in RoundFair — sessioni, amici, giri, luoghi e prezzi — è salvato sul tuo dispositivo e nel tuo iCloud personale (CloudKit). RoundFair non ha server e non ha accesso a nulla di tutto ciò.",
+    "shareTitle": "Condivisione di gruppo",
+    "shareBody": "Quando condividi una sessione con gli amici, la condivisione avviene direttamente tra gli account iCloud dei partecipanti tramite CloudKit di Apple. Nessun dato passa da altri.",
+    "photosTitle": "Foto",
+    "photosBody": "Le foto dei luoghi si aggiungono con il selettore foto di sistema. RoundFair riceve solo l'immagine che scegli — mai accesso alla libreria foto.",
+    "notifTitle": "Notifiche",
+    "notifBody": "Le notifiche di RoundFair sono programmate in locale sul dispositivo. Nulla viene inviato da un server.",
+    "deleteTitle": "Eliminare i tuoi dati",
+    "deleteIntro": "I tuoi dati sono tuoi da eliminare in qualsiasi momento:",
+    "deleteLi1": "Elimina una sessione per rimuoverla con i suoi giri.",
+    "deleteLi2": "Elimina l'app per rimuovere tutti i dati dal dispositivo e dall'iCloud.",
+    "contactTitle": "Contatti",
+    "contactBefore": "Domande sulla privacy? Scrivi a ",
+    "contactAfter": ".",
+    "home": "Home"
+  }
+}
