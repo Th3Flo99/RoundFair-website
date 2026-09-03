@@ -17,17 +17,41 @@
   <meta name="twitter:title" content="RoundFair: Whose turn, and settle fair." />
   <meta name="twitter:description" content="Up now shows whose turn it is. Settle when you're ready, RoundFair keeps the group fair." />
   <meta name="twitter:image" content="https://roundfair.support/assets/og-image.png" />
-  <link rel="alternate" hreflang="nl" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="en" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="fr" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="de" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="es" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="it" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="pt" href="https://roundfair.support/" />
-  <link rel="alternate" hreflang="x-default" href="https://roundfair.support/" />
+  <link rel="canonical" href="https://roundfair.support/" />
   <link rel="icon" type="image/png" href="assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="assets/app-icon.png" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("roundfair-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        d.dataset.theme = t;
+        var q = new URLSearchParams(location.search).get("lang");
+        var l = (q || localStorage.getItem("roundfair-lang") || navigator.language || "en").slice(0, 2).toLowerCase();
+        if (l !== "en") d.classList.add("i18n-loading");
+        setTimeout(function () { d.classList.remove("i18n-loading"); }, 1500);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RoundFair",
+    "operatingSystem": "iOS",
+    "applicationCategory": "FinanceApplication",
+    "description": "See who's up now and who's behind on a night out, then settle fairly when you're ready. Private by design, no account needed.",
+    "url": "https://roundfair.support/",
+    "image": "https://roundfair.support/assets/app-icon-512.png",
+    "installUrl": "https://apps.apple.com/app/id6763799194",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "author": { "@type": "Organization", "name": "FairLead" },
+    "inLanguage": ["nl", "en", "fr", "de", "es", "it", "pt"]
+  }
+  </script>
   <script src="assets/i18n.js" defer></script>
   <script src="script.js" defer></script>
 </head>
@@ -40,10 +64,12 @@
         RoundFair
       </a>
       <div class="nav-links">
-        <a href="#how" data-i18n="nav.how">How it works</a>
-        <a href="#features" data-i18n="nav.features">Features</a>
-        <a href="#faq" data-i18n="nav.faq">FAQ</a>
-        <a class="nav-cta" href="https://apps.apple.com/be/app/roundfair/id6763799194" data-i18n="nav.download">Download</a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#how" data-i18n="nav.how">How it works</a>
+          <a href="#features" data-i18n="nav.features">Features</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </div>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6763799194" data-i18n="nav.download">Download</a>
         <div class="lang-switcher">
           <label class="visually-hidden" for="lang-select" data-i18n="lang.label">Language</label>
           <select id="lang-select" class="lang-select" data-i18n-attr="aria-label:lang.aria">
@@ -57,6 +83,9 @@
           </select>
         </div>
         <button class="theme-toggle" type="button" data-i18n-attr="aria-label:theme.toDark">🌙</button>
+        <button class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-i18n-attr="aria-label:nav.menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -67,7 +96,7 @@
         <img class="app-icon" src="assets/app-icon.png" alt="RoundFair app icon" width="88" height="88" data-i18n-attr="alt:hero.iconAlt" />
         <h1><span data-i18n="hero.titleBefore">Whose turn, and </span><span class="accent" data-i18n="hero.titleAccent">settle fair.</span></h1>
         <p class="hero-sub" data-i18n="hero.sub">See who's Up now and who's behind, then settle when you're ready.</p>
-        <a class="appstore-badge" href="https://apps.apple.com/be/app/roundfair/id6763799194" data-i18n-attr="aria-label:hero.badgeAria">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6763799194" data-i18n-attr="aria-label:hero.badgeAria">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/>
           </svg>
@@ -245,7 +274,7 @@
 
   <footer class="footer">
     <div class="container">
-      <a class="appstore-badge footer-badge" href="https://apps.apple.com/be/app/roundfair/id6763799194" data-i18n-attr="aria-label:hero.badgeAria">
+      <a class="appstore-badge footer-badge" href="https://apps.apple.com/app/id6763799194" data-i18n-attr="aria-label:hero.badgeAria">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/>
         </svg>
@@ -254,11 +283,11 @@
           <span class="badge-big" data-i18n="hero.badgeBig">App Store</span>
         </span>
       </a>
-      <p><span data-i18n="footer.questions">Questions?</span> <a href="mailto:rountfair@fairlead.be">rountfair@fairlead.be</a></p>
+      <p><span data-i18n="footer.questions">Questions?</span> <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a></p>
       <div class="footer-links">
         <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-        <a href="mailto:rountfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
-        <a href="https://apps.apple.com/be/app/roundfair/id6763799194" data-i18n="footer.appStore">App Store</a>
+        <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
+        <a href="https://apps.apple.com/app/id6763799194" data-i18n="footer.appStore">App Store</a>
       </div>
       <p class="copyright" data-i18n="footer.copyright">© 2026 FairLead</p>
     </div>

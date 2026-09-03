@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "RoundFair: Whose turn + fair settle",
+    "title": "RoundFair: Whose turn, and settle fair.",
     "description": "See who’s up for the next round and settle who paid what. Private by design, no account needed.",
-    "ogTitle": "RoundFair: Whose turn + fair settle",
+    "ogTitle": "RoundFair: Whose turn, and settle fair.",
     "ogDescription": "See who’s up for the next round and settle who paid what. Private by design, no account needed.",
-    "twitterTitle": "RoundFair: Whose turn + fair settle",
+    "twitterTitle": "RoundFair: Whose turn, and settle fair.",
     "twitterDescription": "See who’s up for the next round and settle who paid what. Private by design, no account needed."
   },
   "nav": {
@@ -12,6 +12,7 @@
     "how": "How it works",
     "features": "Features",
     "faq": "FAQ",
+    "menu": "Menu",
     "download": "Download"
   },
   "theme": {
@@ -24,8 +25,8 @@
   },
   "hero": {
     "iconAlt": "RoundFair app icon",
-    "titleBefore": "Whose turn. ",
-    "titleAccent": "Fair settle.",
+    "titleBefore": "Whose turn, and ",
+    "titleAccent": "settle fair.",
     "sub": "See who’s buying next, and who’s behind, then settle who pays whom.",
     "badgeAria": "Download RoundFair on the App Store",
     "badgeSmall": "Download on the",
@@ -79,7 +80,7 @@
     "privacy": "Privacy Policy",
     "support": "Support",
     "appStore": "App Store",
-    "copyright": "© 2026 Florian Ronsse"
+    "copyright": "© 2026 FairLead"
   },
   "privacy": {
     "title": "Privacy Policy (RoundFair)",

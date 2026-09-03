@@ -12,6 +12,7 @@
     "how": "Hoe het werkt",
     "features": "Functies",
     "faq": "FAQ",
+    "menu": "Menu",
     "download": "Downloaden"
   },
   "theme": {
@@ -79,7 +80,7 @@
     "privacy": "Privacybeleid",
     "support": "Ondersteuning",
     "appStore": "App Store",
-    "copyright": "© 2026 Florian Ronsse"
+    "copyright": "© 2026 FairLead"
   },
   "privacy": {
     "title": "Privacybeleid (RoundFair)",

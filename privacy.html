@@ -9,16 +9,24 @@
   <meta property="og:title" content="Privacy Policy (RoundFair)" />
   <meta property="og:description" content="RoundFair collects no data. None." />
   <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="nl" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="en" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="fr" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="de" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="es" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="it" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="pt" href="https://roundfair.support/privacy.html" />
-  <link rel="alternate" hreflang="x-default" href="https://roundfair.support/privacy.html" />
+  <link rel="canonical" href="https://roundfair.support/privacy.html" />
   <link rel="icon" type="image/png" href="assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="assets/app-icon.png" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("roundfair-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        d.dataset.theme = t;
+        var q = new URLSearchParams(location.search).get("lang");
+        var l = (q || localStorage.getItem("roundfair-lang") || navigator.language || "en").slice(0, 2).toLowerCase();
+        if (l !== "en") d.classList.add("i18n-loading");
+        setTimeout(function () { d.classList.remove("i18n-loading"); }, 1500);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <script src="assets/i18n.js" defer></script>
   <script src="script.js" defer></script>
@@ -78,14 +86,14 @@
     </ul>
 
     <h2 data-i18n="privacy.contactTitle">Contact</h2>
-    <p><span data-i18n="privacy.contactBefore">Questions about privacy? Email </span><a href="mailto:rountfair@fairlead.be">rountfair@fairlead.be</a><span data-i18n="privacy.contactAfter">.</span></p>
+    <p><span data-i18n="privacy.contactBefore">Questions about privacy? Email </span><a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a><span data-i18n="privacy.contactAfter">.</span></p>
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
         <a href="index.html" data-i18n="privacy.home">Home</a>
-        <a href="mailto:rountfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
+        <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
       </div>
       <p class="copyright" data-i18n="footer.copyright">© 2026 FairLead</p>
     </div>

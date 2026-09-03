@@ -5,7 +5,10 @@
 
 :root {
   --accent: #2bb491;
-  --accent-strong: #1f9679;
+  --accent-strong: #1a8467;
+  --cta-bg: #1a8467;
+  --cta-bg-hover: #157158;
+  --cta-fg: #ffffff;
   --accent-soft: rgba(43, 180, 145, 0.12);
   --accent-softer: rgba(43, 180, 145, 0.07);
 
@@ -14,7 +17,7 @@
   --bg-strip: #0e2a3a;
   --text: #22303c;
   --text-muted: #5b6b78;
-  --text-faint: #8a97a3;
+  --text-faint: #62717c;
   --border: rgba(34, 48, 60, 0.08);
   --shadow: 0 2px 6px rgba(20, 40, 55, 0.04), 0 12px 32px rgba(20, 40, 55, 0.08);
   --shadow-lift: 0 4px 10px rgba(20, 40, 55, 0.06), 0 20px 44px rgba(20, 40, 55, 0.12);
@@ -31,6 +34,9 @@
 html[data-theme="dark"] {
   --accent: #34c9a3;
   --accent-strong: #2bb491;
+  --cta-bg: #34c9a3;
+  --cta-bg-hover: #4fd9b5;
+  --cta-fg: #06231a;
   --accent-soft: rgba(52, 201, 163, 0.16);
   --accent-softer: rgba(52, 201, 163, 0.08);
 
@@ -39,7 +45,7 @@ html[data-theme="dark"] {
   --bg-strip: #0a1c28;
   --text: #e9eff2;
   --text-muted: #9fb0bb;
-  --text-faint: #6d7d88;
+  --text-faint: #8898a4;
   --border: rgba(233, 239, 242, 0.09);
   --shadow: 0 2px 6px rgba(0, 0, 0, 0.25), 0 12px 32px rgba(0, 0, 0, 0.35);
   --shadow-lift: 0 4px 10px rgba(0, 0, 0, 0.3), 0 20px 44px rgba(0, 0, 0, 0.45);
@@ -168,8 +174,8 @@ section {
 }
 
 .nav-cta {
-  background: var(--accent);
-  color: #fff !important;
+  background: var(--cta-bg);
+  color: var(--cta-fg) !important;
   padding: 8px 14px;
   border-radius: 999px;
   font-weight: 600;
@@ -177,8 +183,8 @@ section {
 }
 
 .nav-cta:hover {
-  background: var(--accent-strong);
-  color: #fff !important;
+  background: var(--cta-bg-hover);
+  color: var(--cta-fg) !important;
   text-decoration: none;
 }
 
@@ -243,13 +249,93 @@ section {
 }
 
 
+.nav-menu {
+  display: contents;
+}
+
+.nav-menu-toggle {
+  display: none;
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+
+.nav-menu-toggle span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav.nav-open .nav-menu-toggle span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav.nav-open .nav-menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav.nav-open .nav-menu-toggle span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 @media (max-width: 640px) {
-  .nav-links a:not(.nav-cta) {
-    display: none;
+  .nav-links {
+    gap: 8px;
   }
 
-  .nav-links {
-    gap: 10px;
+  /* Logo only: keeps CTA, language, theme and menu controls on one row */
+  .nav-brand {
+    font-size: 0;
+    gap: 0;
+  }
+
+  .nav-cta {
+    padding: 8px 12px;
+  }
+
+  .nav-menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    padding: 8px 24px 12px;
+  }
+
+  .nav.nav-open .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 12px 0;
+    font-size: 1.05rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: 0;
   }
 }
 
@@ -292,7 +378,7 @@ section {
 }
 
 .hero h1 .accent {
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .hero-sub {
@@ -348,13 +434,11 @@ section {
 
 .hero-phone {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
   z-index: 1;
   min-width: 0;
-  /* Keep the angled back phone inside the phone column so long locale titles stay readable */
-  overflow: hidden;
-  padding: 12px 8px 24px;
+  padding: 12px 8px 24px 0;
 }
 
 .phone {
@@ -369,11 +453,12 @@ section {
 }
 
 .phone-back {
+  /* Anchored to the left edge of the phone column, so it peeks out behind the
+     front phone without spilling into the copy column or being clipped. */
   position: absolute;
-  width: min(236px, 78%);
+  width: min(220px, 60%);
   top: 44px;
-  /* Stay mostly behind the front phone; do not invade the copy column */
-  right: calc(50% + 28px);
+  left: 0;
   transform: rotate(-6deg);
   z-index: 0;
   opacity: 0.9;
@@ -645,15 +730,19 @@ section {
 
 /* ---------- Scroll reveal ---------- */
 
-.reveal {
+.js .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.reveal.in {
+.js .reveal.in {
   opacity: 1;
   transform: none;
+}
+
+html.i18n-loading [data-i18n] {
+  visibility: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -710,8 +799,7 @@ section {
   }
 
   .phone-back {
-    width: min(210px, 78%);
-    right: calc(50% + 18px);
+    width: min(195px, 60%);
   }
 }
 
@@ -721,25 +809,14 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Stack phones instead of hiding settlement */
+  /* The settlement screen is shown in "How it works" on narrow screens */
   .hero-phone {
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
+    justify-content: center;
+    padding: 12px 8px 24px;
   }
 
   .phone-back {
-    position: static;
-    width: 240px;
-    top: auto;
-    right: auto;
-    transform: rotate(-3deg);
-    opacity: 1;
-    order: 2;
-  }
-
-  .phone-front {
-    order: 1;
+    display: none;
   }
 }
 
@@ -794,4 +871,27 @@ section {
 
 .language-chips li:has(button.is-active) {
   background: rgba(255, 255, 255, 0.22);
+}
+
+
+/* ---------- 404 ---------- */
+
+.not-found {
+  text-align: center;
+}
+
+.not-found .updated {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.not-found p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.not-found .nav-cta {
+  display: inline-block;
+  padding: 12px 22px;
+  font-size: 1rem;
 }

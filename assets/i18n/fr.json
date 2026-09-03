@@ -12,6 +12,7 @@
     "how": "Comment ça marche",
     "features": "Fonctionnalités",
     "faq": "FAQ",
+    "menu": "Menu",
     "download": "Télécharger"
   },
   "theme": {
@@ -79,7 +80,7 @@
     "privacy": "Politique de confidentialité",
     "support": "Assistance",
     "appStore": "App Store",
-    "copyright": "© 2026 Florian Ronsse"
+    "copyright": "© 2026 FairLead"
   },
   "privacy": {
     "title": "Politique de confidentialité (RoundFair)",

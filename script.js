@@ -52,6 +52,18 @@
       });
     }
 
+    const nav = document.querySelector(".nav");
+    const menuBtn = document.querySelector(".nav-menu-toggle");
+    if (nav && menuBtn) {
+      const setOpen = (open) => {
+        nav.classList.toggle("nav-open", open);
+        menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      };
+      menuBtn.addEventListener("click", () => setOpen(!nav.classList.contains("nav-open")));
+      nav.querySelectorAll(".nav-menu a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
+    }
+
     const revealed = document.querySelectorAll(".reveal");
     if ("IntersectionObserver" in window) {
       const io = new IntersectionObserver(

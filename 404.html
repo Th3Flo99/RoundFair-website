@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found (RoundFair)</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#2bb491" />
+  <link rel="icon" type="image/png" href="/assets/roundfair-logo.png" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        d.dataset.theme = localStorage.getItem("roundfair-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="/">
+        <img src="/assets/roundfair-logo.png" alt="" width="30" height="30" />
+        RoundFair
+      </a>
+    </div>
+  </nav>
+  <main class="privacy-page not-found">
+    <p class="updated">404</p>
+    <h1>This page doesn't exist.</h1>
+    <p>The round you were looking for isn't here. Head back to the start.</p>
+    <p><a class="nav-cta" href="/">Back to RoundFair</a></p>
+  </main>
+</body>
+</html>

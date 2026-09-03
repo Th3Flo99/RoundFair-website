@@ -88,20 +88,23 @@
     });
 
     localStorage.setItem(STORAGE_KEY, current);
+    document.documentElement.classList.remove("i18n-loading");
     // refresh theme toggle label if present
     document.dispatchEvent(new CustomEvent("rf:lang", { detail: { lang: current } }));
     if (window.applyThemeLabel) window.applyThemeLabel();
   }
 
-  async function setLang(lang) {
+  async function setLang(lang, { updateUrl = false } = {}) {
     if (!LANGS.includes(lang)) lang = "en";
     if (!enPack) enPack = await load("en");
     await load(lang);
     current = lang;
     apply();
-    const url = new URL(location.href);
-    url.searchParams.set("lang", lang);
-    history.replaceState(null, "", url);
+    if (updateUrl) {
+      const url = new URL(location.href);
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url);
+    }
   }
 
   async function init() {
@@ -111,13 +114,14 @@
       await setLang(lang);
     } catch (err) {
       console.warn("i18n init failed", err);
+      document.documentElement.classList.remove("i18n-loading");
     }
 
     const select = document.getElementById("lang-select");
-    if (select) select.addEventListener("change", () => setLang(select.value));
+    if (select) select.addEventListener("change", () => setLang(select.value, { updateUrl: true }));
 
     document.querySelectorAll("[data-lang]").forEach((btn) => {
-      btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
+      btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang"), { updateUrl: true }));
     });
   }
 
