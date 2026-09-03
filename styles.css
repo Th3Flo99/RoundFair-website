@@ -109,6 +109,16 @@ section {
   margin-bottom: 12px;
 }
 
+.eyebrow {
+  text-align: center;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
 .section-sub {
   text-align: center;
   color: var(--text-muted);
@@ -168,9 +178,22 @@ section {
   color: var(--text-muted);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.is-active {
   color: var(--text);
   text-decoration: none;
+}
+
+.nav {
+  transition: box-shadow 0.25s ease;
+}
+
+.nav.is-scrolled {
+  box-shadow: 0 6px 24px rgba(20, 40, 55, 0.08);
+}
+
+html[data-theme="dark"] .nav.is-scrolled {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
 }
 
 .nav-cta {
@@ -186,6 +209,20 @@ section {
   background: var(--cta-bg-hover);
   color: var(--cta-fg) !important;
   text-decoration: none;
+}
+
+.nav-cta,
+.appstore-badge,
+.theme-toggle,
+.nav-menu-toggle {
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-cta:active,
+.appstore-badge:active,
+.theme-toggle:active,
+.nav-menu-toggle:active {
+  transform: scale(0.96);
 }
 
 
@@ -206,6 +243,28 @@ section {
 
 .theme-toggle:hover {
   transform: scale(1.08);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  grid-area: 1 / 1;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+}
+
+.theme-toggle .icon-sun {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+html[data-theme="dark"] .theme-toggle .icon-moon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+html[data-theme="dark"] .theme-toggle .icon-sun {
+  opacity: 1;
+  transform: none;
 }
 
 
@@ -344,6 +403,82 @@ section {
 .hero {
   padding: 88px 0 96px;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-glow::before,
+.hero-glow::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  /* Radial gradients that reach transparent before the hero edge, so nothing gets clipped */
+  background: radial-gradient(circle, var(--accent) 0%, transparent 62%);
+}
+
+.hero-glow::before {
+  width: 620px;
+  height: 620px;
+  left: -140px;
+  top: -180px;
+  opacity: 0.2;
+}
+
+.hero-glow::after {
+  width: 480px;
+  height: 480px;
+  right: 0;
+  bottom: 60px;
+  opacity: 0.14;
+}
+
+html[data-theme="dark"] .hero-glow::before {
+  opacity: 0.14;
+}
+
+html[data-theme="dark"] .hero-glow::after {
+  opacity: 0.1;
+}
+
+@keyframes hero-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-phones {
+  from {
+    opacity: 0;
+    transform: translateX(48px) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.js .hero-copy > * {
+  animation: hero-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.js .hero-copy > :nth-child(1) { animation-delay: 60ms; }
+.js .hero-copy > :nth-child(2) { animation-delay: 140ms; }
+.js .hero-copy > :nth-child(3) { animation-delay: 220ms; }
+.js .hero-copy > :nth-child(4) { animation-delay: 300ms; }
+
+.js .hero-phone {
+  animation: hero-phones 0.9s cubic-bezier(0.22, 1, 0.36, 1) 240ms both;
 }
 
 .hero-inner {
@@ -398,6 +533,27 @@ section {
   border-radius: 12px;
   padding: 10px 20px 10px 16px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.appstore-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.appstore-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60%;
+  width: 40%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.6s ease;
+}
+
+.appstore-badge:hover::after {
+  left: 120%;
 }
 
 .appstore-badge:hover {
@@ -469,6 +625,18 @@ section {
   background: var(--bg-elevated);
   overflow: hidden;
   aspect-ratio: 640 / 1390;
+}
+
+.phone-screen {
+  position: relative;
+}
+
+.phone-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.05) 28%, transparent 46%);
 }
 
 .phone-screen img {
@@ -556,9 +724,37 @@ section {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.feature-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
 .feature-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lift);
+  border-color: rgba(43, 180, 145, 0.45);
+}
+
+.feature-card:hover .icon-bubble {
+  transform: rotate(-6deg) scale(1.06);
+}
+
+.icon-bubble {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes icon-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.js .reveal .icon-bubble svg > * {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.js .reveal.in .icon-bubble svg > * {
+  animation: icon-draw 0.9s ease-out forwards 0.15s;
 }
 
 /* ---------- Languages strip ---------- */
@@ -648,6 +844,18 @@ section {
   color: var(--text-muted);
 }
 
+.faq-body {
+  overflow: hidden;
+}
+
+.faq-item summary {
+  transition: color 0.15s ease;
+}
+
+.faq-item summary:hover {
+  color: var(--accent-strong);
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
@@ -658,10 +866,58 @@ section {
   font-size: 0.95rem;
 }
 
-.footer-badge {
-  margin: 0 auto 24px;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 40px;
+  text-align: left;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
 }
 
+.footer-brand .nav-brand {
+  display: inline-flex;
+  margin-bottom: 12px;
+}
+
+.footer-tagline {
+  color: var(--text-muted);
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.footer-badge {
+  margin: 0;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.footer-col a {
+  color: var(--text-muted);
+}
+
+.footer-col a:hover {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  padding-top: 22px;
+  text-align: center;
+}
 
 .footer-links {
   display: flex;
@@ -673,6 +929,29 @@ section {
 .footer .copyright {
   color: var(--text-faint);
   font-size: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-brand .nav-brand {
+    justify-content: center;
+  }
+
+  .footer-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* ---------- Privacy page ---------- */
@@ -732,9 +1011,19 @@ section {
 
 .js .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+.steps > .reveal:nth-child(2),
+.feature-grid > .reveal:nth-child(2),
+.faq-list > .reveal:nth-child(2) { transition-delay: 70ms; }
+.steps > .reveal:nth-child(3),
+.feature-grid > .reveal:nth-child(3),
+.faq-list > .reveal:nth-child(3) { transition-delay: 140ms; }
+.feature-grid > .reveal:nth-child(4) { transition-delay: 210ms; }
+.feature-grid > .reveal:nth-child(5) { transition-delay: 280ms; }
+.feature-grid > .reveal:nth-child(6) { transition-delay: 350ms; }
 
 .js .reveal.in {
   opacity: 1;
@@ -749,9 +1038,27 @@ html.i18n-loading [data-i18n] {
   html {
     scroll-behavior: auto;
   }
+  .js .reveal,
   .reveal {
     opacity: 1;
     transform: none;
+    transition: none;
+  }
+  .js .hero-copy > *,
+  .js .hero-phone,
+  .js .reveal .icon-bubble svg > * {
+    animation: none;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+  }
+  .appstore-badge::after {
+    display: none;
+  }
+  .theme-toggle svg,
+  .icon-bubble,
+  .feature-card,
+  .nav-cta,
+  .appstore-badge {
     transition: none;
   }
 }

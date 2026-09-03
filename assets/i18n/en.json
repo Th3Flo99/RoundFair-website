@@ -44,7 +44,8 @@
     "step3Title": "Settle up",
     "step3Body": "Live balance shows exactly who gets money back and who pays whom.",
     "settleAlt": "RoundFair settlement: who receives money back and who must pay",
-    "settleCaption": "Settle when you're ready, clear who gets back and who pays whom."
+    "settleCaption": "Settle when you're ready, clear who gets back and who pays whom.",
+    "eyebrow": "Step by step"
   },
   "features": {
     "title": "Made for real nights out",
@@ -60,7 +61,8 @@
     "shareTitle": "Share live via iCloud",
     "shareBody": "The whole group sees rounds appear in real time.",
     "privateTitle": "Private by design",
-    "privateBody": "No account, no tracking, everything stays in your own iCloud."
+    "privateBody": "No account, no tracking, everything stays in your own iCloud.",
+    "eyebrow": "Features"
   },
   "languages": {
     "title": "Available in 7 languages"
@@ -73,14 +75,18 @@
     "shareQ": "How does group sharing work?",
     "shareA": "Sessions are shared through iCloud (CloudKit); everyone needs an iCloud account.",
     "costQ": "Does RoundFair cost anything?",
-    "costA": "Free to download. Track rounds and settle with friends, no subscription required."
+    "costA": "Free to download. Track rounds and settle with friends, no subscription required.",
+    "eyebrow": "FAQ"
   },
   "footer": {
     "questions": "Questions?",
     "privacy": "Privacy Policy",
     "support": "Support",
     "appStore": "App Store",
-    "copyright": "© 2026 FairLead"
+    "copyright": "© 2026 FairLead",
+    "product": "Product",
+    "help": "Help",
+    "tagline": "Whose turn, and settle fair."
   },
   "privacy": {
     "title": "Privacy Policy (RoundFair)",

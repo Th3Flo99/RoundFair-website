@@ -44,7 +44,8 @@
     "step3Title": "Acerta quando estiverem prontos",
     "step3Body": "Os saldos em direto mantêm-se justos a noite toda, acerto claro quando a noite acaba.",
     "settleAlt": "Acerto RoundFair: quem recebe dinheiro de volta e quem deve pagar",
-    "settleCaption": "Acertem quando estiverem prontos, claro quem recebe de volta e quem paga a quem."
+    "settleCaption": "Acertem quando estiverem prontos, claro quem recebe de volta e quem paga a quem.",
+    "eyebrow": "Passo a passo"
   },
   "features": {
     "title": "Feito para noites reais",
@@ -60,7 +61,8 @@
     "shareTitle": "Partilha com o grupo",
     "shareBody": "Partilha uma sessão via iCloud para os amigos acompanharem nos próprios dispositivos.",
     "privateTitle": "Privado de raiz",
-    "privateBody": "Sem conta, sem tracking, tudo fica no teu próprio iCloud."
+    "privateBody": "Sem conta, sem tracking, tudo fica no teu próprio iCloud.",
+    "eyebrow": "Funcionalidades"
   },
   "languages": {
     "title": "Disponível em 7 idiomas"
@@ -73,14 +75,18 @@
     "shareQ": "Como funciona a partilha em grupo?",
     "shareA": "As sessões podem ser partilhadas via iCloud (CloudKit); cada um precisa de uma conta iCloud no dispositivo.",
     "costQ": "O RoundFair custa alguma coisa?",
-    "costA": "RoundFair é gratuito para descarregar na App Store. Abre-a e começa uma sessão, sem compra necessária para começar."
+    "costA": "RoundFair é gratuito para descarregar na App Store. Abre-a e começa uma sessão, sem compra necessária para começar.",
+    "eyebrow": "FAQ"
   },
   "footer": {
     "questions": "Perguntas?",
     "privacy": "Política de privacidade",
     "support": "Suporte",
     "appStore": "App Store",
-    "copyright": "© 2026 FairLead"
+    "copyright": "© 2026 FairLead",
+    "product": "Produto",
+    "help": "Ajuda",
+    "tagline": "De quem é a vez, e acertar com justiça."
   },
   "privacy": {
     "title": "Política de privacidade (RoundFair)",

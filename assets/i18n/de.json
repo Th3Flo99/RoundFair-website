@@ -44,7 +44,8 @@
     "step3Title": "Abrechnen, wenn bereit",
     "step3Body": "Live-Salden bleiben den ganzen Abend fair, klar abrechnen, wenn der Abend vorbei ist.",
     "settleAlt": "RoundFair-Abrechnung: wer Geld zurückbekommt und wer zahlen muss",
-    "settleCaption": "Abrechnen, wenn ihr bereit seid, klar, wer zurückbekommt und wer wem zahlt."
+    "settleCaption": "Abrechnen, wenn ihr bereit seid, klar, wer zurückbekommt und wer wem zahlt.",
+    "eyebrow": "Schritt für Schritt"
   },
   "features": {
     "title": "Für echte Abende unterwegs",
@@ -60,7 +61,8 @@
     "shareTitle": "Mit der Gruppe teilen",
     "shareBody": "Teilt eine Session über iCloud, damit Freunde auf ihren eigenen Geräten mitverfolgen können.",
     "privateTitle": "Von Grund auf privat",
-    "privateBody": "Kein Konto, kein Tracking, alles bleibt in eurer eigenen iCloud."
+    "privateBody": "Kein Konto, kein Tracking, alles bleibt in eurer eigenen iCloud.",
+    "eyebrow": "Funktionen"
   },
   "languages": {
     "title": "Verfügbar in 7 Sprachen"
@@ -73,14 +75,18 @@
     "shareQ": "Wie funktioniert das Teilen in der Gruppe?",
     "shareA": "Sessions können über iCloud (CloudKit) geteilt werden; jeder braucht ein iCloud-Konto auf dem Gerät.",
     "costQ": "Kostet RoundFair etwas?",
-    "costA": "RoundFair ist im App Store kostenlos zum Download. Öffnet die App und startet eine Session, kein Kauf nötig, um loszulegen."
+    "costA": "RoundFair ist im App Store kostenlos zum Download. Öffnet die App und startet eine Session, kein Kauf nötig, um loszulegen.",
+    "eyebrow": "FAQ"
   },
   "footer": {
     "questions": "Fragen?",
     "privacy": "Datenschutz",
     "support": "Hilfe",
     "appStore": "App Store",
-    "copyright": "© 2026 FairLead"
+    "copyright": "© 2026 FairLead",
+    "product": "Produkt",
+    "help": "Hilfe",
+    "tagline": "Wer ist dran, und fair abrechnen."
   },
   "privacy": {
     "title": "Datenschutz (RoundFair)",

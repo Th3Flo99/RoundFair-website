@@ -44,7 +44,8 @@
     "step3Title": "Salda quando siete pronti",
     "step3Body": "I saldi live restano equi tutta la sera, saldo chiaro quando la notte è finita.",
     "settleAlt": "Saldo RoundFair: chi riceve indietro e chi deve pagare",
-    "settleCaption": "Salda quando siete pronti, chiaro chi recupera e chi paga chi."
+    "settleCaption": "Salda quando siete pronti, chiaro chi recupera e chi paga chi.",
+    "eyebrow": "Passo dopo passo"
   },
   "features": {
     "title": "Pensato per serate vere",
@@ -60,7 +61,8 @@
     "shareTitle": "Condividi con il gruppo",
     "shareBody": "Condividi una sessione via iCloud così gli amici seguono sui propri dispositivi.",
     "privateTitle": "Privato per progettazione",
-    "privateBody": "Nessun account, nessun tracking, tutto resta nel tuo iCloud."
+    "privateBody": "Nessun account, nessun tracking, tutto resta nel tuo iCloud.",
+    "eyebrow": "Funzioni"
   },
   "languages": {
     "title": "Disponibile in 7 lingue"
@@ -73,14 +75,18 @@
     "shareQ": "Come funziona la condivisione di gruppo?",
     "shareA": "Le sessioni si possono condividere via iCloud (CloudKit); ognuno ha bisogno di un account iCloud sul dispositivo.",
     "costQ": "RoundFair costa qualcosa?",
-    "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione, nessun acquisto necessario per iniziare."
+    "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione, nessun acquisto necessario per iniziare.",
+    "eyebrow": "FAQ"
   },
   "footer": {
     "questions": "Domande?",
     "privacy": "Informativa sulla privacy",
     "support": "Supporto",
     "appStore": "App Store",
-    "copyright": "© 2026 FairLead"
+    "copyright": "© 2026 FairLead",
+    "product": "Prodotto",
+    "help": "Aiuto",
+    "tagline": "Di chi è il turno, e saldare in modo equo."
   },
   "privacy": {
     "title": "Informativa sulla privacy (RoundFair)",

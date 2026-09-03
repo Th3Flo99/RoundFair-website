@@ -16,10 +16,7 @@
   function apply(theme) {
     document.documentElement.dataset.theme = theme;
     const btn = document.querySelector(".theme-toggle");
-    if (btn) {
-      btn.textContent = theme === "dark" ? "☀️" : "🌙";
-      btn.setAttribute("aria-label", themeLabel(theme));
-    }
+    if (btn) btn.setAttribute("aria-label", themeLabel(theme));
   }
 
   function current() {
@@ -63,6 +60,54 @@
       nav.querySelectorAll(".nav-menu a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
       document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
     }
+
+    // Nav: shadow once scrolled, highlight the section in view
+    const onScroll = () => nav && nav.classList.toggle("is-scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    const navLinks = [...document.querySelectorAll(".nav-menu a[href^='#']")];
+    const sections = navLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+    if (sections.length && "IntersectionObserver" in window) {
+      const visible = new Map();
+      const sectionIO = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => visible.set(e.target.id, e.isIntersecting ? e.intersectionRatio : 0));
+          let best = null;
+          visible.forEach((ratio, id) => { if (ratio > 0 && (!best || ratio > best.ratio)) best = { id, ratio }; });
+          navLinks.forEach((a) => a.classList.toggle("is-active", Boolean(best) && a.getAttribute("href") === "#" + best.id));
+        },
+        { rootMargin: "-30% 0px -50% 0px", threshold: [0, 0.25, 0.5, 1] }
+      );
+      sections.forEach((sec) => sectionIO.observe(sec));
+    }
+
+    // FAQ: animate open and close
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.querySelectorAll(".faq-item").forEach((item) => {
+      const summary = item.querySelector("summary");
+      const body = item.querySelector(".faq-body");
+      if (!summary || !body || reduceMotion || typeof body.animate !== "function") return;
+      let running = null;
+      summary.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (running) running.cancel();
+        const opening = !item.open;
+        if (opening) item.open = true;
+        const full = body.scrollHeight;
+        body.style.overflow = "hidden";
+        running = body.animate(
+          { height: opening ? ["0px", full + "px"] : [full + "px", "0px"], opacity: opening ? [0, 1] : [1, 0] },
+          { duration: 260, easing: "cubic-bezier(0.22, 1, 0.36, 1)" }
+        );
+        running.onfinish = () => {
+          if (!opening) item.open = false;
+          body.style.height = "";
+          body.style.overflow = "";
+          running = null;
+        };
+      });
+    });
 
     const revealed = document.querySelectorAll(".reveal");
     if ("IntersectionObserver" in window) {

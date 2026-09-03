@@ -44,7 +44,8 @@
     "step3Title": "Liquida cuando estéis listos",
     "step3Body": "Los saldos en vivo se mantienen justos toda la noche, liquidación clara cuando acaba.",
     "settleAlt": "Liquidación RoundFair: quién recibe dinero y quién debe pagar",
-    "settleCaption": "Liquidad cuando estéis listos, claro quién recupera y quién paga a quién."
+    "settleCaption": "Liquidad cuando estéis listos, claro quién recupera y quién paga a quién.",
+    "eyebrow": "Paso a paso"
   },
   "features": {
     "title": "Hecho para noches reales",
@@ -60,7 +61,8 @@
     "shareTitle": "Comparte con el grupo",
     "shareBody": "Comparte una sesión vía iCloud para que tus amigos sigan en sus propios dispositivos.",
     "privateTitle": "Privacidad de diseño",
-    "privateBody": "Sin cuenta, sin seguimiento, todo se queda en tu propio iCloud."
+    "privateBody": "Sin cuenta, sin seguimiento, todo se queda en tu propio iCloud.",
+    "eyebrow": "Funciones"
   },
   "languages": {
     "title": "Disponible en 7 idiomas"
@@ -73,14 +75,18 @@
     "shareQ": "¿Cómo funciona el compartir en grupo?",
     "shareA": "Las sesiones se pueden compartir por iCloud (CloudKit); cada uno necesita una cuenta iCloud en su dispositivo.",
     "costQ": "¿RoundFair cuesta algo?",
-    "costA": "RoundFair es gratis para descargar en el App Store. Ábrela y empieza una sesión, no hace falta comprar nada para empezar."
+    "costA": "RoundFair es gratis para descargar en el App Store. Ábrela y empieza una sesión, no hace falta comprar nada para empezar.",
+    "eyebrow": "FAQ"
   },
   "footer": {
     "questions": "¿Preguntas?",
     "privacy": "Política de privacidad",
     "support": "Soporte",
     "appStore": "App Store",
-    "copyright": "© 2026 FairLead"
+    "copyright": "© 2026 FairLead",
+    "product": "Producto",
+    "help": "Ayuda",
+    "tagline": "A quién le toca, y liquidar con justicia."
   },
   "privacy": {
     "title": "Política de privacidad (RoundFair)",
