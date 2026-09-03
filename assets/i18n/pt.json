@@ -32,17 +32,19 @@
     "badgeSmall": "Descarregar na",
     "badgeBig": "App Store",
     "shotSettleAlt": "Acerto RoundFair: Jordan e Sam recebem de volta, Alex e Taylor devem pagar",
-    "shotSessionAlt": "RoundFair É a vez agora: Taylor está na vez, depois Alex (quotas em direto para o grupo)"
+    "shotSessionAlt": "RoundFair É a vez agora: Taylor está na vez, depois Alex (quotas em direto para o grupo)",
+    "newLabel": "Novo na 2.0",
+    "newText": "Locais com fotos e preços memorizados, rodadas num toque e partilha ao vivo com o grupo via iCloud."
   },
   "how": {
     "title": "Como funciona",
     "sub": "Saibam de quem é a vez durante a noite. Acertem quando estiverem prontos.",
     "step1Title": "Começa uma sessão",
-    "step1Body": "Adiciona os amigos em segundos. Sem contas.",
-    "step2Title": "Vê de quem é a vez",
-    "step2Body": "Regista cada ronda, RoundFair mostra quem está na vez agora e quem está atrasado.",
-    "step3Title": "Acerta quando estiverem prontos",
-    "step3Body": "Os saldos em direto mantêm-se justos a noite toda, acerto claro quando a noite acaba.",
+    "step1Body": "Cria uma sessão e adiciona os teus amigos. Sem contas.",
+    "step2Title": "Regista cada rodada",
+    "step2Body": "Em cada rodada, marca quem paga e quem bebe. Repete a mesma rodada num toque.",
+    "step3Title": "Acerta as contas",
+    "step3Body": "O RoundFair atualiza o saldo ao vivo e calcula o acerto mais justo: quem recebe de volta, quem paga a quem.",
     "settleAlt": "Acerto RoundFair: quem recebe dinheiro de volta e quem deve pagar",
     "settleCaption": "Acertem quando estiverem prontos, claro quem recebe de volta e quem paga a quem.",
     "eyebrow": "Passo a passo"
@@ -51,7 +53,7 @@
     "title": "Feito para noites reais",
     "sub": "Tudo o que precisam para manter justo, e nada a mais.",
     "turnTitle": "Ordem das vezes",
-    "turnBody": "RoundFair sabe de quem é a ronda. Acabaram-se as discussões.",
+    "turnBody": "Repete a mesma rodada num toque. O RoundFair sabe de quem é a vez.",
     "spotsTitle": "Os teus sítios, prontos",
     "spotsBody": "Guarda os sítios onde vais muitas vezes para começar mais depressa na próxima noite.",
     "restaurantTitle": "Também noites de restaurante",
@@ -62,7 +64,13 @@
     "shareBody": "Partilha uma sessão via iCloud para os amigos acompanharem nos próprios dispositivos.",
     "privateTitle": "Privado de raiz",
     "privateBody": "Sem conta, sem tracking, tudo fica no teu próprio iCloud.",
-    "eyebrow": "Funcionalidades"
+    "eyebrow": "Funcionalidades",
+    "splitTitle": "Dividir a conta",
+    "splitBody": "Um valor total, dividido em partes iguais entre quem escolheres. Táxi, jantar, hotel.",
+    "drankTitle": "Quem bebeu o quê",
+    "drankBody": "Categorias e um resumo de consumo mostram quem bebeu o quê, e o custo por pessoa.",
+    "exportTitle": "Exporta o resumo",
+    "exportBody": "Partilha com o grupo um resumo claro das rodadas e dos saldos."
   },
   "languages": {
     "title": "Disponível em 7 idiomas"
@@ -76,7 +84,15 @@
     "shareA": "As sessões podem ser partilhadas via iCloud (CloudKit); cada um precisa de uma conta iCloud no dispositivo.",
     "costQ": "O RoundFair custa alguma coisa?",
     "costA": "RoundFair é gratuito para descarregar na App Store. Abre-a e começa uma sessão, sem compra necessária para começar.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "Funciona sem internet?",
+    "offlineA": "Sim. O RoundFair é offline-first e totalmente utilizável sem ligação. A partilha via iCloud é opcional e sincroniza assim que voltares a estar online.",
+    "currencyQ": "Que moedas são suportadas?",
+    "currencyA": "Cada sessão tem a sua própria moeda. Escolhe-la ao criar a sessão e todos os valores são mostrados nessa moeda.",
+    "exportQ": "Posso partilhar o resumo com o grupo?",
+    "exportA": "Sim. Exporta a sessão como texto com participantes, rodadas e saldos, e partilha-a com qualquer app.",
+    "tauntQ": "O que são notificações provocadoras?",
+    "tauntA": "Lembretes opcionais e divertidos durante a sessão para quem há muito não paga. São agendados no teu dispositivo e podem ser desativados nas definições."
   },
   "footer": {
     "questions": "Perguntas?",

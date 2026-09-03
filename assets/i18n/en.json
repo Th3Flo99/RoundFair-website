@@ -32,17 +32,19 @@
     "badgeSmall": "Download on the",
     "badgeBig": "App Store",
     "shotSettleAlt": "RoundFair settlement: Jordan and Sam get back, Alex and Taylor must pay",
-    "shotSessionAlt": "RoundFair Up now: Taylor is up, then Alex (live shares for the group)"
+    "shotSessionAlt": "RoundFair Up now: Taylor is up, then Alex (live shares for the group)",
+    "newLabel": "New in 2.0",
+    "newText": "Locations with photos and remembered prices, 1-tap repeat rounds, and live group sharing via iCloud."
   },
   "how": {
     "title": "How it works",
     "sub": "Three taps between “same again?” and everyone square.",
     "step1Title": "Start a session",
-    "step1Body": "Add your friends in seconds. No accounts needed.",
+    "step1Body": "Start a session and add your friends. No accounts needed.",
     "step2Title": "Log each round",
-    "step2Body": "Tap who pays and who’s in. See who’s Up, repeat a round in one tap.",
+    "step2Body": "For each round, tap who pays and who's drinking. Repeat the same round in one tap.",
     "step3Title": "Settle up",
-    "step3Body": "Live balance shows exactly who gets money back and who pays whom.",
+    "step3Body": "RoundFair keeps a live balance and calculates the fairest settlement: who gets back, who pays whom.",
     "settleAlt": "RoundFair settlement: who receives money back and who must pay",
     "settleCaption": "Settle when you're ready, clear who gets back and who pays whom.",
     "eyebrow": "Step by step"
@@ -51,7 +53,7 @@
     "title": "Made for real nights out",
     "sub": "Everything you need to keep it fair, and nothing you don’t.",
     "turnTitle": "Turn order",
-    "turnBody": "RoundFair knows whose round it is. Spot who’s behind before it gets weird.",
+    "turnBody": "Repeat the same round in one tap. RoundFair knows whose turn it is.",
     "spotsTitle": "Your regular bar, remembered",
     "spotsBody": "Locations with photos remember drink prices for lightning-fast entry.",
     "restaurantTitle": "Restaurant nights too",
@@ -62,7 +64,13 @@
     "shareBody": "The whole group sees rounds appear in real time.",
     "privateTitle": "Private by design",
     "privateBody": "No account, no tracking, everything stays in your own iCloud.",
-    "eyebrow": "Features"
+    "eyebrow": "Features",
+    "splitTitle": "Split the bill",
+    "splitBody": "One total, split evenly among the people you choose. Taxi, dinner, hotel.",
+    "drankTitle": "Who drank what",
+    "drankBody": "Categories and a consumption overview show who had what, and the cost per person.",
+    "exportTitle": "Export the summary",
+    "exportBody": "Share a clear overview of rounds and balances with the group."
   },
   "languages": {
     "title": "Available in 7 languages"
@@ -76,7 +84,15 @@
     "shareA": "Sessions are shared through iCloud (CloudKit); everyone needs an iCloud account.",
     "costQ": "Does RoundFair cost anything?",
     "costA": "Free to download. Track rounds and settle with friends, no subscription required.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "Does it work without internet?",
+    "offlineA": "Yes. RoundFair is offline-first and fully usable without a connection. iCloud sharing is optional and syncs when you're back online.",
+    "currencyQ": "Which currencies are supported?",
+    "currencyA": "Every session has its own currency. Pick it when you create the session, all amounts are shown in that currency.",
+    "exportQ": "Can I share the overview with the group?",
+    "exportA": "Yes. Export the session as plain text with participants, rounds and balances, and share it through any app.",
+    "tauntQ": "What are taunt notifications?",
+    "tauntA": "Optional, playful reminders during the session for whoever hasn't paid in a while. They are scheduled on your device and can be turned off in settings."
   },
   "footer": {
     "questions": "Questions?",

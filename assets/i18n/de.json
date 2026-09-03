@@ -32,17 +32,19 @@
     "badgeSmall": "Laden im",
     "badgeBig": "App Store",
     "shotSettleAlt": "RoundFair-Abrechnung: Jordan und Sam bekommen zurück, Alex und Taylor müssen zahlen",
-    "shotSessionAlt": "RoundFair Jetzt an der Reihe: Taylor ist dran, dann Alex (Live-Anteile für die Gruppe)"
+    "shotSessionAlt": "RoundFair Jetzt an der Reihe: Taylor ist dran, dann Alex (Live-Anteile für die Gruppe)",
+    "newLabel": "Neu in 2.0",
+    "newText": "Orte mit Fotos und gemerkten Preisen, Runden mit 1 Tipp wiederholen und Live-Teilen mit deiner Gruppe über iCloud."
   },
   "how": {
     "title": "So funktioniert's",
     "sub": "Wisse während des Abends, wer dran ist. Abrechnen, wenn ihr bereit seid.",
     "step1Title": "Session starten",
-    "step1Body": "Freunde in Sekunden hinzufügen. Keine Konten nötig.",
-    "step2Title": "Sehen, wer dran ist",
-    "step2Body": "Jede Runde erfassen, RoundFair zeigt, wer jetzt an der Reihe ist und wer hinterherhinkt.",
-    "step3Title": "Abrechnen, wenn bereit",
-    "step3Body": "Live-Salden bleiben den ganzen Abend fair, klar abrechnen, wenn der Abend vorbei ist.",
+    "step1Body": "Starte eine Session und füge deine Freunde hinzu. Kein Konto nötig.",
+    "step2Title": "Erfasse jede Runde",
+    "step2Body": "Tippe pro Runde an, wer zahlt und wer mittrinkt. Wiederhole dieselbe Runde mit einem Tipp.",
+    "step3Title": "Rechne ab",
+    "step3Body": "RoundFair zeigt live die Bilanz und berechnet die fairste Abrechnung: wer bekommt zurück, wer zahlt an wen.",
     "settleAlt": "RoundFair-Abrechnung: wer Geld zurückbekommt und wer zahlen muss",
     "settleCaption": "Abrechnen, wenn ihr bereit seid, klar, wer zurückbekommt und wer wem zahlt.",
     "eyebrow": "Schritt für Schritt"
@@ -51,7 +53,7 @@
     "title": "Für echte Abende unterwegs",
     "sub": "Alles, was ihr braucht, um fair zu bleiben, und nichts Überflüssiges.",
     "turnTitle": "Reihenfolge",
-    "turnBody": "RoundFair weiß, wessen Runde es ist. Keine Diskussionen mehr.",
+    "turnBody": "Dieselbe Runde mit einem Tipp wiederholen. RoundFair weiß, wer dran ist.",
     "spotsTitle": "Eure Orte, bereit zum Start",
     "spotsBody": "Speichert Orte, die ihr oft besucht, damit der nächste Abend schneller startet.",
     "restaurantTitle": "Auch Restaurantabende",
@@ -62,7 +64,13 @@
     "shareBody": "Teilt eine Session über iCloud, damit Freunde auf ihren eigenen Geräten mitverfolgen können.",
     "privateTitle": "Von Grund auf privat",
     "privateBody": "Kein Konto, kein Tracking, alles bleibt in eurer eigenen iCloud.",
-    "eyebrow": "Funktionen"
+    "eyebrow": "Funktionen",
+    "splitTitle": "Rechnung teilen",
+    "splitBody": "Ein Gesamtbetrag, gleichmäßig auf die Personen verteilt, die du auswählst. Taxi, Restaurant, Hotel.",
+    "drankTitle": "Wer trank was",
+    "drankBody": "Kategorien und eine Konsum-Übersicht zeigen, wer was getrunken hat, und die Kosten pro Person.",
+    "exportTitle": "Exportiere die Übersicht",
+    "exportBody": "Teile eine klare Übersicht der Runden und Salden mit der Gruppe."
   },
   "languages": {
     "title": "Verfügbar in 7 Sprachen"
@@ -76,7 +84,15 @@
     "shareA": "Sessions können über iCloud (CloudKit) geteilt werden; jeder braucht ein iCloud-Konto auf dem Gerät.",
     "costQ": "Kostet RoundFair etwas?",
     "costA": "RoundFair ist im App Store kostenlos zum Download. Öffnet die App und startet eine Session, kein Kauf nötig, um loszulegen.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "Funktioniert es ohne Internet?",
+    "offlineA": "Ja. RoundFair ist offline-first und ohne Verbindung voll nutzbar. Das Teilen über iCloud ist optional und synchronisiert, sobald du wieder online bist.",
+    "currencyQ": "Welche Währungen werden unterstützt?",
+    "currencyA": "Jede Session hat ihre eigene Währung. Du wählst sie beim Anlegen der Session, alle Beträge werden in dieser Währung angezeigt.",
+    "exportQ": "Kann ich die Übersicht mit der Gruppe teilen?",
+    "exportA": "Ja. Exportiere die Session als Klartext mit Teilnehmern, Runden und Salden und teile sie über jede beliebige App.",
+    "tauntQ": "Was sind Frotzel-Nachrichten?",
+    "tauntA": "Optionale, spielerische Erinnerungen während der Session für alle, die länger nicht gezahlt haben. Sie werden auf deinem Gerät geplant und lassen sich in den Einstellungen ausschalten."
   },
   "footer": {
     "questions": "Fragen?",

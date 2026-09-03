@@ -32,17 +32,19 @@
     "badgeSmall": "Télécharger sur l'",
     "badgeBig": "App Store",
     "shotSettleAlt": "Règlement RoundFair : Jordan et Sam récupèrent, Alex et Taylor doivent payer",
-    "shotSessionAlt": "RoundFair, à qui le tour : Taylor est à son tour, puis Alex (parts en direct pour le groupe)"
+    "shotSessionAlt": "RoundFair, à qui le tour : Taylor est à son tour, puis Alex (parts en direct pour le groupe)",
+    "newLabel": "Nouveau en 2.0",
+    "newText": "Lieux avec photos et prix mémorisés, tournées en 1 geste et partage en direct avec ton groupe via iCloud."
   },
   "how": {
     "title": "Comment ça marche",
     "sub": "Sachez qui est à son tour pendant la soirée. Réglez quand vous êtes prêts.",
     "step1Title": "Démarrez une session",
-    "step1Body": "Ajoutez vos amis en quelques secondes. Aucun compte requis.",
-    "step2Title": "Voyez qui est à son tour",
-    "step2Body": "Enregistrez chaque tournée, RoundFair montre qui est à son tour et qui est à la traîne.",
-    "step3Title": "Réglez quand vous êtes prêts",
-    "step3Body": "Les soldes restent équitables toute la soirée, réglez clairement quand c'est fini.",
+    "step1Body": "Lance une session et ajoute tes amis. Aucun compte nécessaire.",
+    "step2Title": "Enregistre chaque tournée",
+    "step2Body": "À chaque tournée, indique qui paie et qui boit. Répète la même tournée en un geste.",
+    "step3Title": "Réglez vos comptes",
+    "step3Body": "RoundFair met à jour le solde en direct et calcule le règlement le plus juste : qui récupère, qui paie à qui.",
     "settleAlt": "Règlement RoundFair : qui récupère de l'argent et qui doit payer",
     "settleCaption": "Réglez quand vous êtes prêts, clairement qui récupère et qui paie qui.",
     "eyebrow": "Étape par étape"
@@ -51,7 +53,7 @@
     "title": "Conçu pour de vraies soirées",
     "sub": "Tout ce qu'il faut pour rester équitable, et rien de superflu.",
     "turnTitle": "Ordre des tours",
-    "turnBody": "RoundFair sait à qui le tour. Fini les discussions.",
+    "turnBody": "Répète la même tournée en un geste. RoundFair sait à qui le tour.",
     "spotsTitle": "Vos lieux, prêts à l'emploi",
     "spotsBody": "Enregistrez les endroits où vous allez souvent pour démarrer plus vite la prochaine fois.",
     "restaurantTitle": "Aussi les soirs resto",
@@ -62,7 +64,13 @@
     "shareBody": "Partagez une session via iCloud pour que vos amis suivent sur leurs appareils.",
     "privateTitle": "Privé dès la conception",
     "privateBody": "Pas de compte, pas de tracking, tout reste dans votre iCloud.",
-    "eyebrow": "Fonctionnalités"
+    "eyebrow": "Fonctionnalités",
+    "splitTitle": "Partager l'addition",
+    "splitBody": "Un montant total, réparti à parts égales entre les personnes de ton choix. Taxi, restaurant, hôtel.",
+    "drankTitle": "Qui a bu quoi",
+    "drankBody": "Catégories et récapitulatif de consommation : vois qui a bu quoi, et le coût par personne.",
+    "exportTitle": "Exporte le récapitulatif",
+    "exportBody": "Partage un aperçu clair des tournées et des soldes avec le groupe."
   },
   "languages": {
     "title": "Disponible en 7 langues"
@@ -76,7 +84,15 @@
     "shareA": "Les sessions peuvent être partagées via iCloud (CloudKit) ; chacun a besoin d'un compte iCloud sur son appareil.",
     "costQ": "RoundFair est-il payant ?",
     "costA": "RoundFair est gratuit à télécharger sur l'App Store. Ouvrez-le et démarrez une session, aucun achat requis pour commencer.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "Ça marche sans Internet ?",
+    "offlineA": "Oui. RoundFair fonctionne d'abord hors ligne et reste entièrement utilisable sans connexion. Le partage iCloud est optionnel et se synchronise dès que tu es de nouveau en ligne.",
+    "currencyQ": "Quelles devises sont prises en charge ?",
+    "currencyA": "Chaque session a sa propre devise. Tu la choisis à la création de la session, tous les montants sont affichés dans cette devise.",
+    "exportQ": "Puis-je partager le récapitulatif avec le groupe ?",
+    "exportA": "Oui. Exporte la session en texte brut avec les participants, les tournées et les soldes, et partage-la via n'importe quelle app.",
+    "tauntQ": "C'est quoi, les notifications taquines ?",
+    "tauntA": "Des rappels optionnels et ludiques pendant la session pour ceux qui n'ont pas payé depuis un moment. Ils sont programmés sur ton appareil et se désactivent dans les réglages."
   },
   "footer": {
     "questions": "Des questions ?",

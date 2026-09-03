@@ -32,17 +32,19 @@
     "badgeSmall": "Consíguelo en el",
     "badgeBig": "App Store",
     "shotSettleAlt": "Liquidación RoundFair: Jordan y Sam recuperan, Alex y Taylor deben pagar",
-    "shotSessionAlt": "RoundFair Le toca ahora: Taylor está al turno, luego Alex (cuotas en vivo para el grupo)"
+    "shotSessionAlt": "RoundFair Le toca ahora: Taylor está al turno, luego Alex (cuotas en vivo para el grupo)",
+    "newLabel": "Nuevo en 2.0",
+    "newText": "Lugares con fotos y precios recordados, rondas en 1 toque y uso compartido en vivo con tu grupo vía iCloud."
   },
   "how": {
     "title": "Cómo funciona",
     "sub": "Sabed a quién le toca durante la noche. Liquidad cuando estéis listos.",
     "step1Title": "Empieza una sesión",
-    "step1Body": "Añade a tus amigos en segundos. Sin cuentas.",
-    "step2Title": "Mira a quién le toca",
-    "step2Body": "Registra cada ronda, RoundFair muestra a quién le toca ahora y quién va atrasado.",
-    "step3Title": "Liquida cuando estéis listos",
-    "step3Body": "Los saldos en vivo se mantienen justos toda la noche, liquidación clara cuando acaba.",
+    "step1Body": "Crea una sesión y añade a tus amigos. Sin cuentas.",
+    "step2Title": "Registra cada ronda",
+    "step2Body": "En cada ronda, marca quién paga y quién bebe. Repite la misma ronda con un toque.",
+    "step3Title": "Liquida",
+    "step3Body": "RoundFair actualiza el balance en vivo y calcula la liquidación más justa: quién recupera, quién paga a quién.",
     "settleAlt": "Liquidación RoundFair: quién recibe dinero y quién debe pagar",
     "settleCaption": "Liquidad cuando estéis listos, claro quién recupera y quién paga a quién.",
     "eyebrow": "Paso a paso"
@@ -51,7 +53,7 @@
     "title": "Hecho para noches reales",
     "sub": "Todo lo necesario para mantenerlo justo, y nada de más.",
     "turnTitle": "Orden de turnos",
-    "turnBody": "RoundFair sabe de quién es la ronda. Se acabaron las discusiones.",
+    "turnBody": "Repite la misma ronda con un toque. RoundFair sabe a quién le toca.",
     "spotsTitle": "Tus sitios, listos",
     "spotsBody": "Guarda los lugares a los que vas a menudo para empezar más rápido la próxima noche.",
     "restaurantTitle": "También noches de restaurante",
@@ -62,7 +64,13 @@
     "shareBody": "Comparte una sesión vía iCloud para que tus amigos sigan en sus propios dispositivos.",
     "privateTitle": "Privacidad de diseño",
     "privateBody": "Sin cuenta, sin seguimiento, todo se queda en tu propio iCloud.",
-    "eyebrow": "Funciones"
+    "eyebrow": "Funciones",
+    "splitTitle": "Dividir la cuenta",
+    "splitBody": "Un importe total, repartido a partes iguales entre quienes elijas. Taxi, cena, hotel.",
+    "drankTitle": "Quién bebió qué",
+    "drankBody": "Categorías y un resumen de consumo muestran quién tomó qué, y el coste por persona.",
+    "exportTitle": "Exporta el resumen",
+    "exportBody": "Comparte con el grupo un resumen claro de rondas y saldos."
   },
   "languages": {
     "title": "Disponible en 7 idiomas"
@@ -76,7 +84,15 @@
     "shareA": "Las sesiones se pueden compartir por iCloud (CloudKit); cada uno necesita una cuenta iCloud en su dispositivo.",
     "costQ": "¿RoundFair cuesta algo?",
     "costA": "RoundFair es gratis para descargar en el App Store. Ábrela y empieza una sesión, no hace falta comprar nada para empezar.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "¿Funciona sin internet?",
+    "offlineA": "Sí. RoundFair funciona primero sin conexión y es totalmente usable offline. Compartir por iCloud es opcional y se sincroniza cuando vuelves a estar en línea.",
+    "currencyQ": "¿Qué monedas admite?",
+    "currencyA": "Cada sesión tiene su propia moneda. La eliges al crear la sesión y todos los importes se muestran en esa moneda.",
+    "exportQ": "¿Puedo compartir el resumen con el grupo?",
+    "exportA": "Sí. Exporta la sesión como texto con participantes, rondas y saldos, y compártela con cualquier app.",
+    "tauntQ": "¿Qué son las notificaciones de pique?",
+    "tauntA": "Recordatorios opcionales y divertidos durante la sesión para quien lleva tiempo sin pagar. Se programan en tu dispositivo y se pueden desactivar en los ajustes."
   },
   "footer": {
     "questions": "¿Preguntas?",

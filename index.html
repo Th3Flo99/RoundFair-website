@@ -35,7 +35,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=demo2" />
+  <link rel="stylesheet" href="styles.css?v=meta1" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,9 +52,9 @@
     "inLanguage": ["nl", "en", "fr", "de", "es", "it", "pt"]
   }
   </script>
-  <script src="assets/i18n.js?v=demo2" defer></script>
-  <script src="script.js?v=demo2" defer></script>
-  <script src="demo.js?v=demo2" defer></script>
+  <script src="assets/i18n.js?v=meta1" defer></script>
+  <script src="script.js?v=meta1" defer></script>
+  <script src="demo.js?v=meta1" defer></script>
 </head>
 <body>
 
@@ -99,6 +99,7 @@
     <div class="container hero-inner">
       <div class="hero-copy">
         <img class="app-icon" src="assets/app-icon.png" alt="RoundFair app icon" width="88" height="88" data-i18n-attr="alt:hero.iconAlt" />
+        <p class="hero-new"><span class="hero-new-label" data-i18n="hero.newLabel">New in 2.0</span><span data-i18n="hero.newText">Locations with photos and remembered prices, 1-tap repeat rounds, and live group sharing via iCloud.</span></p>
         <h1><span data-i18n="hero.titleBefore">Whose turn, and </span><span class="accent" data-i18n="hero.titleAccent">settle fair.</span></h1>
         <p class="hero-sub" data-i18n="hero.sub">See who's Up now and who's behind, then settle when you're ready.</p>
         <a class="appstore-badge" href="https://apps.apple.com/app/id6763799194" data-i18n-attr="aria-label:hero.badgeAria">
@@ -153,7 +154,7 @@
                 <path pathLength="1" d="M8 12h8" />
               </svg>
             </div>
-            <h3 data-i18n="how.step2Title">See who's up</h3>
+            <h3 data-i18n="how.step2Title">Log each round</h3>
             <p data-i18n="how.step2Body">Log each round, RoundFair shows who's Up now and who's behind.</p>
           </article>
           <article class="step-card reveal">
@@ -163,7 +164,7 @@
                 <path pathLength="1" d="M20 6 9 17l-5-5" />
               </svg>
             </div>
-            <h3 data-i18n="how.step3Title">Settle when ready</h3>
+            <h3 data-i18n="how.step3Title">Settle up</h3>
             <p data-i18n="how.step3Body">Live balances stay fair all night, settle clearly when the night's done.</p>
           </article>
         </div>
@@ -220,6 +221,33 @@
             </div>
             <h3 data-i18n="features.restaurantTitle">Restaurant nights too</h3>
             <p data-i18n="features.restaurantBody">Itemized rounds with tip and tax.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z" /><path pathLength="1" d="M9 9h6M9 13h6" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.splitTitle">Split the bill</h3>
+            <p data-i18n="features.splitBody">One total, split evenly among the people you choose. Taxi, dinner, hotel.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M8 3h8l-1 8a3 3 0 0 1-6 0z" /><path pathLength="1" d="M12 14v6M9 20h6" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.drankTitle">Who drank what</h3>
+            <p data-i18n="features.drankBody">Categories and a consumption overview show who had what, and the cost per person.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" /><path pathLength="1" d="M12 3v13" /><path pathLength="1" d="m7 8 5-5 5 5" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.exportTitle">Export the summary</h3>
+            <p data-i18n="features.exportBody">Share a clear overview of rounds and balances with the group.</p>
           </article>
           <article class="feature-card reveal">
             <div class="icon-bubble" aria-hidden="true">
@@ -284,6 +312,22 @@
           <details class="faq-item reveal">
             <summary data-i18n="faq.costQ">Does RoundFair cost anything?</summary>
             <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.costA">RoundFair is free to download on the App Store. Open it and start a session, no purchase required to get going.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.offlineQ">Does it work without internet?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.offlineA">Yes. RoundFair is offline-first and fully usable without a connection. iCloud sharing is optional and syncs when you're back online.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.currencyQ">Which currencies are supported?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.currencyA">Every session has its own currency. Pick it when you create the session, all amounts are shown in that currency.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.exportQ">Can I share the overview with the group?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.exportA">Yes. Export the session as plain text with participants, rounds and balances, and share it through any app.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.tauntQ">What are taunt notifications?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.tauntA">Optional, playful reminders during the session for whoever hasn't paid in a while. They are scheduled on your device and can be turned off in settings.</p></div></div>
           </details>
         </div>
       </div>

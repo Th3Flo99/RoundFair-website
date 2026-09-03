@@ -32,17 +32,19 @@
     "badgeSmall": "Download in de",
     "badgeBig": "App Store",
     "shotSettleAlt": "RoundFair-verrekening: Jordan en Sam krijgen terug, Alex en Taylor moeten betalen",
-    "shotSessionAlt": "RoundFair Nu aan de beurt: Taylor is aan de beurt, daarna Alex (live aandelen voor de groep)"
+    "shotSessionAlt": "RoundFair Nu aan de beurt: Taylor is aan de beurt, daarna Alex (live aandelen voor de groep)",
+    "newLabel": "Nieuw in 2.0",
+    "newText": "Locaties met foto's en onthouden prijzen, 1-tik rondjes en live delen met je groep via iCloud."
   },
   "how": {
     "title": "Hoe het werkt",
     "sub": "Weet wie aan de beurt is tijdens de avond. Verreken wanneer je klaar bent.",
     "step1Title": "Start een sessie",
-    "step1Body": "Voeg je vrienden in seconden toe. Geen accounts nodig.",
-    "step2Title": "Zie wie aan de beurt is",
-    "step2Body": "Log elk rondje, RoundFair toont wie Nu aan de beurt is en wie achterloopt.",
-    "step3Title": "Verreken wanneer je klaar bent",
-    "step3Body": "Live saldi blijven de hele avond eerlijk, verreken duidelijk als de avond voorbij is.",
+    "step1Body": "Start een sessie en voeg je vrienden toe. Geen accounts nodig.",
+    "step2Title": "Log elk rondje",
+    "step2Body": "Tik per rondje aan wie betaalt en wie meedrinkt. Herhaal hetzelfde rondje in 1 tik.",
+    "step3Title": "Reken af",
+    "step3Body": "RoundFair berekent live de balans en de eerlijkste verrekening: wie krijgt terug, wie betaalt aan wie.",
     "settleAlt": "RoundFair-verrekening: wie krijgt geld terug en wie moet betalen",
     "settleCaption": "Verreken wanneer je klaar bent, duidelijk wie terugkrijgt en wie aan wie betaalt.",
     "eyebrow": "Stap voor stap"
@@ -51,7 +53,7 @@
     "title": "Gemaakt voor echte avondjes uit",
     "sub": "Alles wat je nodig hebt om het eerlijk te houden, en niets wat je niet nodig hebt.",
     "turnTitle": "Beurtvolgorde",
-    "turnBody": "RoundFair weet wiens ronde het is. Geen discussies meer.",
+    "turnBody": "Zelfde rondje in 1 tik herhalen. RoundFair weet wie aan de beurt is.",
     "spotsTitle": "Jouw plekken, klaar voor gebruik",
     "spotsBody": "Bewaar plekken waar je vaak komt, zodat de volgende avond sneller start.",
     "restaurantTitle": "Ook restaurantavonden",
@@ -62,7 +64,13 @@
     "shareBody": "Deel een sessie via iCloud zodat vrienden mee kunnen volgen op hun eigen toestel.",
     "privateTitle": "Privé ontworpen",
     "privateBody": "Geen account, geen tracking, alles blijft in je eigen iCloud.",
-    "eyebrow": "Functies"
+    "eyebrow": "Functies",
+    "splitTitle": "Rekening splitsen",
+    "splitBody": "Eén totaalbedrag, gelijk verdeeld over wie jij kiest. Taxi, restaurant, hotel.",
+    "drankTitle": "Wie dronk wat",
+    "drankBody": "Categorieën en een consumptie-overzicht tonen wie wat dronk, en de kosten per persoon.",
+    "exportTitle": "Exporteer het overzicht",
+    "exportBody": "Deel een helder overzicht van rondjes en saldi met de groep."
   },
   "languages": {
     "title": "Beschikbaar in 7 talen"
@@ -76,7 +84,15 @@
     "shareA": "Sessies kunnen via iCloud (CloudKit) gedeeld worden; iedereen heeft een iCloud-account op het toestel nodig.",
     "costQ": "Kost RoundFair iets?",
     "costA": "RoundFair is gratis te downloaden in de App Store. Open de app en start een sessie, geen aankoop nodig om te beginnen.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "Werkt het zonder internet?",
+    "offlineA": "Ja. RoundFair is offline-first en volledig bruikbaar zonder verbinding. Delen via iCloud is optioneel en synchroniseert zodra je weer online bent.",
+    "currencyQ": "Welke valuta's worden ondersteund?",
+    "currencyA": "Elke sessie heeft een eigen valuta. Je kiest die bij het aanmaken van de sessie, alle bedragen worden in die valuta getoond.",
+    "exportQ": "Kan ik het overzicht delen met de groep?",
+    "exportA": "Ja. Exporteer de sessie als platte tekst met deelnemers, rondes en saldi, en deel het via eender welke app.",
+    "tauntQ": "Wat zijn plaagberichten?",
+    "tauntA": "Optionele, speelse meldingen tijdens de sessie voor wie te lang niet betaald heeft. Ze worden op je toestel gepland en zijn uit te schakelen in de instellingen."
   },
   "footer": {
     "questions": "Vragen?",

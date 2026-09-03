@@ -32,17 +32,19 @@
     "badgeSmall": "Scarica su",
     "badgeBig": "App Store",
     "shotSettleAlt": "Saldo RoundFair: Jordan e Sam recuperano, Alex e Taylor devono pagare",
-    "shotSessionAlt": "RoundFair Tocca ora: Taylor è al turno, poi Alex (quote live per il gruppo)"
+    "shotSessionAlt": "RoundFair Tocca ora: Taylor è al turno, poi Alex (quote live per il gruppo)",
+    "newLabel": "Novità nella 2.0",
+    "newText": "Luoghi con foto e prezzi memorizzati, giri ripetuti in 1 tocco e condivisione live con il gruppo via iCloud."
   },
   "how": {
     "title": "Come funziona",
     "sub": "Sapete a chi tocca durante la serata. Saldate quando siete pronti.",
     "step1Title": "Avvia una sessione",
-    "step1Body": "Aggiungi gli amici in pochi secondi. Nessun account.",
-    "step2Title": "Vedi a chi tocca",
-    "step2Body": "Registra ogni giro, RoundFair mostra a chi tocca ora e chi è indietro.",
-    "step3Title": "Salda quando siete pronti",
-    "step3Body": "I saldi live restano equi tutta la sera, saldo chiaro quando la notte è finita.",
+    "step1Body": "Crea una sessione e aggiungi i tuoi amici. Nessun account necessario.",
+    "step2Title": "Registra ogni giro",
+    "step2Body": "A ogni giro, indica chi paga e chi beve. Ripeti lo stesso giro con un tocco.",
+    "step3Title": "Salda",
+    "step3Body": "RoundFair aggiorna il saldo in tempo reale e calcola il conguaglio più equo: chi riceve indietro, chi paga a chi.",
     "settleAlt": "Saldo RoundFair: chi riceve indietro e chi deve pagare",
     "settleCaption": "Salda quando siete pronti, chiaro chi recupera e chi paga chi.",
     "eyebrow": "Passo dopo passo"
@@ -51,7 +53,7 @@
     "title": "Pensato per serate vere",
     "sub": "Tutto il necessario per restare equi, e niente di superfluo.",
     "turnTitle": "Ordine dei turni",
-    "turnBody": "RoundFair sa di chi è il giro. Basta discussioni.",
+    "turnBody": "Ripeti lo stesso giro con un tocco. RoundFair sa a chi tocca.",
     "spotsTitle": "I tuoi posti, pronti",
     "spotsBody": "Salva i luoghi che frequenti spesso per iniziare più in fretta la prossima sera.",
     "restaurantTitle": "Anche le serate al ristorante",
@@ -62,7 +64,13 @@
     "shareBody": "Condividi una sessione via iCloud così gli amici seguono sui propri dispositivi.",
     "privateTitle": "Privato per progettazione",
     "privateBody": "Nessun account, nessun tracking, tutto resta nel tuo iCloud.",
-    "eyebrow": "Funzioni"
+    "eyebrow": "Funzioni",
+    "splitTitle": "Dividi il conto",
+    "splitBody": "Un importo totale, diviso in parti uguali tra le persone che scegli. Taxi, cena, hotel.",
+    "drankTitle": "Chi ha bevuto cosa",
+    "drankBody": "Categorie e riepilogo consumi mostrano chi ha preso cosa, e il costo a persona.",
+    "exportTitle": "Esporta il riepilogo",
+    "exportBody": "Condividi con il gruppo un riepilogo chiaro di giri e saldi."
   },
   "languages": {
     "title": "Disponibile in 7 lingue"
@@ -76,7 +84,15 @@
     "shareA": "Le sessioni si possono condividere via iCloud (CloudKit); ognuno ha bisogno di un account iCloud sul dispositivo.",
     "costQ": "RoundFair costa qualcosa?",
     "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione, nessun acquisto necessario per iniziare.",
-    "eyebrow": "FAQ"
+    "eyebrow": "FAQ",
+    "offlineQ": "Funziona senza internet?",
+    "offlineA": "Sì. RoundFair è offline-first e completamente utilizzabile senza connessione. La condivisione iCloud è opzionale e si sincronizza appena torni online.",
+    "currencyQ": "Quali valute sono supportate?",
+    "currencyA": "Ogni sessione ha la propria valuta. La scegli quando crei la sessione, tutti gli importi vengono mostrati in quella valuta.",
+    "exportQ": "Posso condividere il riepilogo con il gruppo?",
+    "exportA": "Sì. Esporta la sessione come testo con partecipanti, giri e saldi, e condividila con qualsiasi app.",
+    "tauntQ": "Cosa sono le notifiche di sfottò?",
+    "tauntA": "Promemoria opzionali e scherzosi durante la sessione per chi non paga da troppo tempo. Sono programmati sul tuo dispositivo e si disattivano nelle impostazioni."
   },
   "footer": {
     "questions": "Domande?",
