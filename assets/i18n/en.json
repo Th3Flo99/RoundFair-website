@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "RoundFair — Whose turn — and settle fair.",
-    "description": "See who's up now and who's behind on a night out — then settle fairly when you're ready. Private by design, no account needed.",
-    "ogTitle": "RoundFair — Whose turn — and settle fair.",
-    "ogDescription": "Up now shows whose turn it is. Settle when you're ready — RoundFair keeps the group fair.",
-    "twitterTitle": "RoundFair — Whose turn — and settle fair.",
-    "twitterDescription": "Up now shows whose turn it is. Settle when you're ready — RoundFair keeps the group fair."
+    "title": "RoundFair — Whose turn + fair settle",
+    "description": "See who’s up for the next round and settle who paid what. Private by design — no account needed.",
+    "ogTitle": "RoundFair — Whose turn + fair settle",
+    "ogDescription": "See who’s up for the next round and settle who paid what. Private by design — no account needed.",
+    "twitterTitle": "RoundFair — Whose turn + fair settle",
+    "twitterDescription": "See who’s up for the next round and settle who paid what. Private by design — no account needed."
   },
   "nav": {
     "aria": "Main",
@@ -24,9 +24,9 @@
   },
   "hero": {
     "iconAlt": "RoundFair app icon",
-    "titleBefore": "Whose turn — and ",
-    "titleAccent": "settle fair.",
-    "sub": "See who's Up now and who's behind — then settle when you're ready.",
+    "titleBefore": "Whose turn. ",
+    "titleAccent": "Fair settle.",
+    "sub": "See who’s buying next — and who’s behind — then settle who pays whom.",
     "badgeAria": "Download RoundFair on the App Store",
     "badgeSmall": "Download on the",
     "badgeBig": "App Store",
@@ -35,31 +35,31 @@
   },
   "how": {
     "title": "How it works",
-    "sub": "Know who's up during the night. Settle when you're ready.",
+    "sub": "Three taps between “same again?” and everyone square.",
     "step1Title": "Start a session",
     "step1Body": "Add your friends in seconds. No accounts needed.",
-    "step2Title": "See who's up",
-    "step2Body": "Log each round — RoundFair shows who's Up now and who's behind.",
-    "step3Title": "Settle when ready",
-    "step3Body": "Live balances stay fair all night — settle clearly when the night's done.",
+    "step2Title": "Log each round",
+    "step2Body": "Tap who pays and who’s in. See who’s Up — repeat a round in one tap.",
+    "step3Title": "Settle up",
+    "step3Body": "Live balance shows exactly who gets money back and who pays whom.",
     "settleAlt": "RoundFair settlement: who receives money back and who must pay",
     "settleCaption": "Settle when you're ready — clear who gets back and who pays whom."
   },
   "features": {
     "title": "Made for real nights out",
-    "sub": "Everything you need to keep it fair — and nothing you don't.",
+    "sub": "Everything you need to keep it fair — and nothing you don’t.",
     "turnTitle": "Turn order",
-    "turnBody": "RoundFair knows whose round it is. No more discussions.",
-    "spotsTitle": "Your spots, ready to go",
-    "spotsBody": "Save places you go often so starting the next night is quicker.",
+    "turnBody": "RoundFair knows whose round it is. Spot who’s behind before it gets weird.",
+    "spotsTitle": "Your regular bar, remembered",
+    "spotsBody": "Locations with photos remember drink prices for lightning-fast entry.",
     "restaurantTitle": "Restaurant nights too",
     "restaurantBody": "Itemized rounds with tip and tax.",
     "spinTitle": "Spin the wheel",
     "spinBody": "Let fate pick who buys the next round.",
-    "shareTitle": "Share with the group",
-    "shareBody": "Share a session via iCloud so friends can follow along on their own devices.",
+    "shareTitle": "Share live via iCloud",
+    "shareBody": "The whole group sees rounds appear in real time.",
     "privateTitle": "Private by design",
-    "privateBody": "No account, no tracking, everything stays in your own iCloud."
+    "privateBody": "No account, no tracking — everything stays in your own iCloud."
   },
   "languages": {
     "title": "Available in 7 languages"
@@ -70,9 +70,9 @@
     "dataQ": "Where is my data stored?",
     "dataA": "On your device and in your personal iCloud. RoundFair has no servers and no access to your data.",
     "shareQ": "How does group sharing work?",
-    "shareA": "Sessions can be shared through iCloud (CloudKit); everyone needs an iCloud account on their device.",
+    "shareA": "Sessions are shared through iCloud (CloudKit); everyone needs an iCloud account.",
     "costQ": "Does RoundFair cost anything?",
-    "costA": "RoundFair is free to download on the App Store. Open it and start a session — no purchase required to get going."
+    "costA": "Free to download. Track rounds and settle with friends — no subscription required."
   },
   "footer": {
     "questions": "Questions?",

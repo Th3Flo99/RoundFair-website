@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "RoundFair — Wie is aan de beurt — en eerlijk verrekenen.",
-    "description": "Zie wie Nu aan de beurt is en wie achterligt tijdens een avondje uit — en verreken eerlijk wanneer je klaar bent. Privé by design, geen account nodig.",
-    "ogTitle": "RoundFair — Wie is aan de beurt — en eerlijk verrekenen.",
-    "ogDescription": "Nu aan de beurt toont wiens beurt het is. Verreken wanneer je klaar bent — RoundFair houdt de groep eerlijk.",
-    "twitterTitle": "RoundFair — Wie is aan de beurt — en eerlijk verrekenen.",
-    "twitterDescription": "Nu aan de beurt toont wiens beurt het is. Verreken wanneer je klaar bent — RoundFair houdt de groep eerlijk."
+    "title": "RoundFair — Beurt én eerlijk verrekenen",
+    "description": "Zie wie aan de beurt is voor het volgende rondje en verreken wie wat betaalde. Privé by design — geen account nodig.",
+    "ogTitle": "RoundFair — Beurt én eerlijk verrekenen",
+    "ogDescription": "Zie wie aan de beurt is voor het volgende rondje en verreken wie wat betaalde. Privé by design — geen account nodig.",
+    "twitterTitle": "RoundFair — Beurt én eerlijk verrekenen",
+    "twitterDescription": "Zie wie aan de beurt is voor het volgende rondje en verreken wie wat betaalde. Privé by design — geen account nodig."
   },
   "nav": {
     "aria": "Hoofdnavigatie",
-    "how": "Hoe het werkt",
+    "how": "Zo werkt het",
     "features": "Functies",
     "faq": "FAQ",
     "download": "Download"
@@ -24,9 +24,9 @@
   },
   "hero": {
     "iconAlt": "RoundFair-appicoon",
-    "titleBefore": "Wie is aan de beurt — en ",
-    "titleAccent": "eerlijk verrekenen.",
-    "sub": "Zie wie Nu aan de beurt is en wie achterligt — en verreken wanneer je klaar bent.",
+    "titleBefore": "Wiens beurt. ",
+    "titleAccent": "Eerlijk verrekenen.",
+    "sub": "Zie wie het volgende rondje geeft — en wie achterloopt — en verreken wie aan wie betaalt.",
     "badgeAria": "Download RoundFair in de App Store",
     "badgeSmall": "Download in de",
     "badgeBig": "App Store",
@@ -34,45 +34,45 @@
     "shotSessionAlt": "RoundFair Nu aan de beurt: Megan is aan de beurt, daarna Florian — live aandelen voor de groep"
   },
   "how": {
-    "title": "Hoe het werkt",
-    "sub": "Weet wie aan de beurt is tijdens de avond. Verreken wanneer je klaar bent.",
+    "title": "Zo werkt het",
+    "sub": "Drie taps tussen “nog een rondje?” en iedereen square.",
     "step1Title": "Start een sessie",
-    "step1Body": "Voeg je vrienden in seconden toe. Geen accounts nodig.",
-    "step2Title": "Zie wie aan de beurt is",
-    "step2Body": "Log elke ronde — RoundFair toont wie Nu aan de beurt is en wie achterligt.",
-    "step3Title": "Verreken wanneer je klaar bent",
-    "step3Body": "Live saldi blijven de hele avond eerlijk — verreken duidelijk als de avond voorbij is.",
+    "step1Body": "Voeg je vrienden toe in seconden. Geen accounts nodig.",
+    "step2Title": "Log elk rondje",
+    "step2Body": "Tik wie betaalt en wie meedoet. Zie wie Up is — herhaal een rondje met één tik.",
+    "step3Title": "Verrekenen",
+    "step3Body": "Live saldo toont exact wie geld terugkrijgt en wie aan wie betaalt.",
     "settleAlt": "RoundFair-verrekening: wie krijgt geld terug en wie moet betalen",
     "settleCaption": "Verreken wanneer je klaar bent — duidelijk wie terugkrijgt en wie aan wie betaalt."
   },
   "features": {
-    "title": "Gemaakt voor echte avondjes uit",
-    "sub": "Alles wat je nodig hebt om het eerlijk te houden — en niets wat je niet nodig hebt.",
+    "title": "Voor echte avonden uit",
+    "sub": "Alles wat je nodig hebt om het fair te houden — en niets meer.",
     "turnTitle": "Beurtvolgorde",
-    "turnBody": "RoundFair weet wiens ronde het is. Geen discussies meer.",
-    "spotsTitle": "Jouw plekken, klaar voor gebruik",
-    "spotsBody": "Bewaar plekken waar je vaak komt, zodat de volgende avond sneller start.",
+    "turnBody": "RoundFair weet wiens rondje het is. Spot wie achterloopt vóór het ongemakkelijk wordt.",
+    "spotsTitle": "Je stamkroeg, onthouden",
+    "spotsBody": "Locaties met foto’s onthouden drankprijzen voor razendsnelle invoer.",
     "restaurantTitle": "Ook restaurantavonden",
-    "restaurantBody": "Gespecificeerde rondes met fooi en btw.",
+    "restaurantBody": "Rondjes met items, tip en btw.",
     "spinTitle": "Draai aan het rad",
-    "spinBody": "Laat het lot kiezen wie de volgende ronde betaalt.",
-    "shareTitle": "Deel met de groep",
-    "shareBody": "Deel een sessie via iCloud zodat vrienden mee kunnen volgen op hun eigen toestel.",
+    "spinBody": "Laat het lot kiezen wie het volgende rondje geeft.",
+    "shareTitle": "Live delen via iCloud",
+    "shareBody": "De hele groep ziet rondjes realtime verschijnen.",
     "privateTitle": "Privé by design",
-    "privateBody": "Geen account, geen tracking, alles blijft in je eigen iCloud."
+    "privateBody": "Geen account, geen tracking — alles blijft in je eigen iCloud."
   },
   "languages": {
     "title": "Beschikbaar in 7 talen"
   },
   "faq": {
     "title": "Veelgestelde vragen",
-    "sub": "Alles wat je wilt weten voor je eerste ronde.",
+    "sub": "Alles wat je wil weten voor je eerste rondje.",
     "dataQ": "Waar wordt mijn data bewaard?",
     "dataA": "Op je toestel en in je persoonlijke iCloud. RoundFair heeft geen servers en geen toegang tot je data.",
     "shareQ": "Hoe werkt groepsdeling?",
-    "shareA": "Sessies kunnen via iCloud (CloudKit) gedeeld worden; iedereen heeft een iCloud-account op het toestel nodig.",
+    "shareA": "Sessies worden gedeeld via iCloud (CloudKit); iedereen heeft een iCloud-account nodig.",
     "costQ": "Kost RoundFair iets?",
-    "costA": "RoundFair is gratis te downloaden in de App Store. Open de app en start een sessie — geen aankoop nodig om te beginnen."
+    "costA": "Gratis te downloaden. Rondjes bijhouden en verrekenen met vrienden — geen abonnement nodig."
   },
   "footer": {
     "questions": "Vragen?",

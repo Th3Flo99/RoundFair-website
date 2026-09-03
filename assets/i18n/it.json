@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "RoundFair — Di chi è il turno — e saldare in modo equo.",
-    "description": "Vedi a chi tocca ora e chi è indietro durante una serata — poi saldo equo quando siete pronti. Privato by design, nessun account.",
-    "ogTitle": "RoundFair — Di chi è il turno — e saldare in modo equo.",
-    "ogDescription": "Tocca ora mostra di chi è il turno. Saldare quando siete pronti — RoundFair tiene il gruppo equo.",
-    "twitterTitle": "RoundFair — Di chi è il turno — e saldare in modo equo.",
-    "twitterDescription": "Tocca ora mostra di chi è il turno. Saldare quando siete pronti — RoundFair tiene il gruppo equo."
+    "title": "RoundFair — Di chi è il turno + saldo equo",
+    "description": "Vedi di chi è il prossimo giro e salda chi ha pagato cosa. Privato by design — nessun account.",
+    "ogTitle": "RoundFair — Di chi è il turno + saldo equo",
+    "ogDescription": "Vedi di chi è il prossimo giro e salda chi ha pagato cosa. Privato by design — nessun account.",
+    "twitterTitle": "RoundFair — Di chi è il turno + saldo equo",
+    "twitterDescription": "Vedi di chi è il prossimo giro e salda chi ha pagato cosa. Privato by design — nessun account."
   },
   "nav": {
     "aria": "Navigazione principale",
@@ -24,9 +24,9 @@
   },
   "hero": {
     "iconAlt": "Icona dell'app RoundFair",
-    "titleBefore": "Di chi è il turno — e ",
-    "titleAccent": "saldare in modo equo.",
-    "sub": "Vedi a chi tocca ora e chi è indietro — poi salda quando siete pronti.",
+    "titleBefore": "Di chi è il turno. ",
+    "titleAccent": "Saldo equo.",
+    "sub": "Vedi chi offre il prossimo — e chi è indietro — poi chi paga chi.",
     "badgeAria": "Scarica RoundFair sull'App Store",
     "badgeSmall": "Scarica su",
     "badgeBig": "App Store",
@@ -35,31 +35,31 @@
   },
   "how": {
     "title": "Come funziona",
-    "sub": "Sapete a chi tocca durante la serata. Saldare quando siete pronti.",
+    "sub": "Tre tap tra «ancora uno?» e tutti in pari.",
     "step1Title": "Avvia una sessione",
-    "step1Body": "Aggiungi gli amici in pochi secondi. Nessun account.",
-    "step2Title": "Vedi a chi tocca",
-    "step2Body": "Registra ogni giro — RoundFair mostra a chi tocca ora e chi è indietro.",
-    "step3Title": "Salda quando siete pronti",
-    "step3Body": "I saldi live restano equi tutta la sera — saldo chiaro quando la notte è finita.",
+    "step1Body": "Aggiungi gli amici in pochi secondi. Nessun account necessario.",
+    "step2Title": "Registra ogni giro",
+    "step2Body": "Tocca chi paga e chi c’è. Vedi chi è Up — ripeti un giro con un tap.",
+    "step3Title": "Saldare",
+    "step3Body": "Il saldo live mostra esattamente chi riceve e chi paga chi.",
     "settleAlt": "Saldo RoundFair: chi riceve indietro e chi deve pagare",
     "settleCaption": "Salda quando siete pronti — chiaro chi recupera e chi paga chi."
   },
   "features": {
-    "title": "Pensato per serate vere",
-    "sub": "Tutto il necessario per restare equi — e niente di superfluo.",
+    "title": "Pensato per le uscite vere",
+    "sub": "Tutto per restare equi — e niente di superfluo.",
     "turnTitle": "Ordine dei turni",
-    "turnBody": "RoundFair sa di chi è il giro. Basta discussioni.",
-    "spotsTitle": "I tuoi posti, pronti",
-    "spotsBody": "Salva i luoghi che frequenti spesso per iniziare più in fretta la prossima sera.",
+    "turnBody": "RoundFair sa di chi è il giro. Scopri chi è indietro prima che diventi imbarazzante.",
+    "spotsTitle": "Il tuo locale abituale, memorizzato",
+    "spotsBody": "Luoghi con foto ricordano i prezzi per un inserimento rapidissimo.",
     "restaurantTitle": "Anche le serate al ristorante",
-    "restaurantBody": "Giri dettagliati con mancia e tasse.",
+    "restaurantBody": "Giri con voci, mancia e tasse.",
     "spinTitle": "Gira la ruota",
-    "spinBody": "Lascia che il caso scelga chi paga il prossimo giro.",
-    "shareTitle": "Condividi con il gruppo",
-    "shareBody": "Condividi una sessione via iCloud così gli amici seguono sui propri dispositivi.",
+    "spinBody": "Lascia che il caso scelga chi offre il prossimo giro.",
+    "shareTitle": "Condividi in live via iCloud",
+    "shareBody": "Tutto il gruppo vede i giri apparire in tempo reale.",
     "privateTitle": "Privato by design",
-    "privateBody": "Nessun account, nessun tracking, tutto resta nel tuo iCloud."
+    "privateBody": "Nessun account, nessun tracking — tutto resta nel tuo iCloud."
   },
   "languages": {
     "title": "Disponibile in 7 lingue"
@@ -70,9 +70,9 @@
     "dataQ": "Dove sono salvati i miei dati?",
     "dataA": "Sul tuo dispositivo e nel tuo iCloud personale. RoundFair non ha server e non ha accesso ai tuoi dati.",
     "shareQ": "Come funziona la condivisione di gruppo?",
-    "shareA": "Le sessioni si possono condividere via iCloud (CloudKit); ognuno ha bisogno di un account iCloud sul dispositivo.",
+    "shareA": "Le sessioni sono condivise tramite iCloud (CloudKit); tutti servono un account iCloud.",
     "costQ": "RoundFair costa qualcosa?",
-    "costA": "RoundFair è gratis da scaricare sull'App Store. Aprila e avvia una sessione — nessun acquisto necessario per iniziare."
+    "costA": "Gratis da scaricare. Tieni i giri e salda con gli amici — nessun abbonamento."
   },
   "footer": {
     "questions": "Domande?",
