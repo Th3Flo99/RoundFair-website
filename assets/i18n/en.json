@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "RoundFair — Whose turn + fair settle",
+    "description": "See who’s up for the next round and settle who paid what. Private by design — no account needed.",
+    "ogTitle": "RoundFair — Whose turn + fair settle",
+    "ogDescription": "See who’s up for the next round and settle who paid what. Private by design — no account needed.",
+    "twitterTitle": "RoundFair — Whose turn + fair settle",
+    "twitterDescription": "See who’s up for the next round and settle who paid what. Private by design — no account needed."
+  },
+  "nav": {
+    "aria": "Main",
+    "how": "How it works",
+    "features": "Features",
+    "faq": "FAQ",
+    "download": "Download"
+  },
+  "theme": {
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode"
+  },
+  "lang": {
+    "label": "Language",
+    "aria": "Choose language"
+  },
+  "hero": {
+    "iconAlt": "RoundFair app icon",
+    "titleBefore": "Whose turn. ",
+    "titleAccent": "Fair settle.",
+    "sub": "See who’s buying next — and who’s behind — then settle who pays whom.",
+    "badgeAria": "Download RoundFair on the App Store",
+    "badgeSmall": "Download on the",
+    "badgeBig": "App Store",
+    "shotSettleAlt": "RoundFair settlement: Florian gets back, Megan and Elias must pay",
+    "shotSessionAlt": "RoundFair Up now: Megan is up, then Florian — live shares for the group"
+  },
+  "how": {
+    "title": "How it works",
+    "sub": "Three taps between “same again?” and everyone square.",
+    "step1Title": "Start a session",
+    "step1Body": "Add your friends in seconds. No accounts needed.",
+    "step2Title": "Log each round",
+    "step2Body": "Tap who pays and who’s in. See who’s Up — repeat a round in one tap.",
+    "step3Title": "Settle up",
+    "step3Body": "Live balance shows exactly who gets money back and who pays whom.",
+    "settleAlt": "RoundFair settlement: who receives money back and who must pay",
+    "settleCaption": "Settle when you're ready — clear who gets back and who pays whom."
+  },
+  "features": {
+    "title": "Made for real nights out",
+    "sub": "Everything you need to keep it fair — and nothing you don’t.",
+    "turnTitle": "Turn order",
+    "turnBody": "RoundFair knows whose round it is. Spot who’s behind before it gets weird.",
+    "spotsTitle": "Your regular bar, remembered",
+    "spotsBody": "Locations with photos remember drink prices for lightning-fast entry.",
+    "restaurantTitle": "Restaurant nights too",
+    "restaurantBody": "Itemized rounds with tip and tax.",
+    "spinTitle": "Spin the wheel",
+    "spinBody": "Let fate pick who buys the next round.",
+    "shareTitle": "Share live via iCloud",
+    "shareBody": "The whole group sees rounds appear in real time.",
+    "privateTitle": "Private by design",
+    "privateBody": "No account, no tracking — everything stays in your own iCloud."
+  },
+  "languages": {
+    "title": "Available in 7 languages"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "sub": "Everything you might want to know before your first round.",
+    "dataQ": "Where is my data stored?",
+    "dataA": "On your device and in your personal iCloud. RoundFair has no servers and no access to your data.",
+    "shareQ": "How does group sharing work?",
+    "shareA": "Sessions are shared through iCloud (CloudKit); everyone needs an iCloud account.",
+    "costQ": "Does RoundFair cost anything?",
+    "costA": "Free to download. Track rounds and settle with friends — no subscription required."
+  },
+  "footer": {
+    "questions": "Questions?",
+    "privacy": "Privacy Policy",
+    "support": "Support",
+    "appStore": "App Store",
+    "copyright": "© 2026 Florian Ronsse"
+  },
+  "privacy": {
+    "title": "Privacy Policy — RoundFair",
+    "description": "RoundFair collects no data. None. No analytics, no trackers, no ads, no servers — everything stays on your device and in your personal iCloud.",
+    "ogTitle": "Privacy Policy — RoundFair",
+    "ogDescription": "RoundFair collects no data. None.",
+    "back": "← Back to RoundFair",
+    "h1": "Privacy Policy",
+    "updated": "Last updated: July 2026",
+    "hero": "RoundFair collects no data. None.",
+    "intro": "RoundFair is built so that your data never leaves your control. There are no analytics, no trackers, no ads, no third-party SDKs, and no servers operated by RoundFair.",
+    "whereTitle": "Where your data lives",
+    "whereBody": "Everything you enter in RoundFair — sessions, friends, rounds, locations, and prices — is stored on your device and in your personal iCloud (CloudKit). RoundFair has no servers and no access to any of it.",
+    "shareTitle": "Group sharing",
+    "shareBody": "When you share a session with friends, the sharing happens directly between participants' iCloud accounts through Apple's CloudKit. No data passes through anyone else.",
+    "photosTitle": "Photos",
+    "photosBody": "Photos for locations are added through the system photo picker. RoundFair only receives the single image you choose — never access to your photo library.",
+    "notifTitle": "Notifications",
+    "notifBody": "Any notifications RoundFair shows are scheduled locally on your device. Nothing is sent from a server.",
+    "deleteTitle": "Deleting your data",
+    "deleteIntro": "Your data is yours to remove at any time:",
+    "deleteLi1": "Delete a session to remove it and its rounds.",
+    "deleteLi2": "Delete the app to remove all data from your device and your iCloud.",
+    "contactTitle": "Contact",
+    "contactBefore": "Questions about privacy? Email ",
+    "contactAfter": ".",
+    "home": "Home"
+  }
+}

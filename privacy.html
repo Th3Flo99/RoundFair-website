@@ -9,64 +9,85 @@
   <meta property="og:title" content="Privacy Policy — RoundFair" />
   <meta property="og:description" content="RoundFair collects no data. None." />
   <meta property="og:type" content="website" />
+  <link rel="alternate" hreflang="nl" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="fr" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="de" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="es" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="it" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="pt" href="https://roundfair.support/privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://roundfair.support/privacy.html" />
   <link rel="icon" type="image/png" href="assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="assets/app-icon.png" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="assets/i18n.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <nav class="nav" aria-label="Main">
+  <nav class="nav" data-i18n-attr="aria-label:nav.aria">
     <div class="container nav-inner">
       <a class="nav-brand" href="index.html">
         <img src="assets/roundfair-logo.png" alt="" width="30" height="30" />
         RoundFair
       </a>
       <div class="nav-links">
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+        <div class="lang-switcher">
+          <label class="visually-hidden" for="lang-select" data-i18n="lang.label">Language</label>
+          <select id="lang-select" class="lang-select" data-i18n-attr="aria-label:lang.aria">
+            <option value="nl">NL</option>
+            <option value="en" selected>EN</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+            <option value="es">ES</option>
+            <option value="it">IT</option>
+            <option value="pt">PT</option>
+          </select>
+        </div>
+        <button class="theme-toggle" type="button" data-i18n-attr="aria-label:theme.toDark">🌙</button>
       </div>
     </div>
   </nav>
 
   <main class="privacy-page">
-    <a class="back-link" href="index.html">← Back to RoundFair</a>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 2026</p>
+    <a class="back-link" href="index.html" data-i18n="privacy.back">← Back to RoundFair</a>
+    <h1 data-i18n="privacy.h1">Privacy Policy</h1>
+    <p class="updated" data-i18n="privacy.updated">Last updated: July 2026</p>
 
-    <div class="privacy-hero">RoundFair collects no data. None.</div>
+    <div class="privacy-hero" data-i18n="privacy.hero">RoundFair collects no data. None.</div>
 
-    <p>RoundFair is built so that your data never leaves your control. There are no analytics, no trackers, no ads, no third-party SDKs, and no servers operated by RoundFair.</p>
+    <p data-i18n="privacy.intro">RoundFair is built so that your data never leaves your control. There are no analytics, no trackers, no ads, no third-party SDKs, and no servers operated by RoundFair.</p>
 
-    <h2>Where your data lives</h2>
-    <p>Everything you enter in RoundFair — sessions, friends, rounds, locations, and prices — is stored on your device and in your personal iCloud (CloudKit). RoundFair has no servers and no access to any of it.</p>
+    <h2 data-i18n="privacy.whereTitle">Where your data lives</h2>
+    <p data-i18n="privacy.whereBody">Everything you enter in RoundFair — sessions, friends, rounds, locations, and prices — is stored on your device and in your personal iCloud (CloudKit). RoundFair has no servers and no access to any of it.</p>
 
-    <h2>Group sharing</h2>
-    <p>When you share a session with friends, the sharing happens directly between participants' iCloud accounts through Apple's CloudKit. No data passes through anyone else.</p>
+    <h2 data-i18n="privacy.shareTitle">Group sharing</h2>
+    <p data-i18n="privacy.shareBody">When you share a session with friends, the sharing happens directly between participants' iCloud accounts through Apple's CloudKit. No data passes through anyone else.</p>
 
-    <h2>Photos</h2>
-    <p>Photos for locations are added through the system photo picker. RoundFair only receives the single image you choose — never access to your photo library.</p>
+    <h2 data-i18n="privacy.photosTitle">Photos</h2>
+    <p data-i18n="privacy.photosBody">Photos for locations are added through the system photo picker. RoundFair only receives the single image you choose — never access to your photo library.</p>
 
-    <h2>Notifications</h2>
-    <p>Any notifications RoundFair shows are scheduled locally on your device. Nothing is sent from a server.</p>
+    <h2 data-i18n="privacy.notifTitle">Notifications</h2>
+    <p data-i18n="privacy.notifBody">Any notifications RoundFair shows are scheduled locally on your device. Nothing is sent from a server.</p>
 
-    <h2>Deleting your data</h2>
-    <p>Your data is yours to remove at any time:</p>
+    <h2 data-i18n="privacy.deleteTitle">Deleting your data</h2>
+    <p data-i18n="privacy.deleteIntro">Your data is yours to remove at any time:</p>
     <ul>
-      <li>Delete a session to remove it and its rounds.</li>
-      <li>Delete the app to remove all data from your device and your iCloud.</li>
+      <li data-i18n="privacy.deleteLi1">Delete a session to remove it and its rounds.</li>
+      <li data-i18n="privacy.deleteLi2">Delete the app to remove all data from your device and your iCloud.</li>
     </ul>
 
-    <h2>Contact</h2>
-    <p>Questions about privacy? Email <a href="mailto:thefrontieradventuresco@gmail.com">thefrontieradventuresco@gmail.com</a>.</p>
+    <h2 data-i18n="privacy.contactTitle">Contact</h2>
+    <p><span data-i18n="privacy.contactBefore">Questions about privacy? Email </span><a href="mailto:thefrontieradventuresco@gmail.com">thefrontieradventuresco@gmail.com</a><span data-i18n="privacy.contactAfter">.</span></p>
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="mailto:thefrontieradventuresco@gmail.com?subject=RoundFair%20Support">Support</a>
+        <a href="index.html" data-i18n="privacy.home">Home</a>
+        <a href="mailto:thefrontieradventuresco@gmail.com?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
       </div>
-      <p class="copyright">© 2026 Florian Ronsse</p>
+      <p class="copyright" data-i18n="footer.copyright">© 2026 Florian Ronsse</p>
     </div>
   </footer>
 

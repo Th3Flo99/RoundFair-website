@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "RoundFair — Wer ist dran — und fair abrechnen.",
+    "description": "Sieh, wer jetzt an der Reihe ist und wer hinterherhinkt — und rechne fair ab, wenn ihr bereit seid. Von Grund auf privat, kein Konto nötig.",
+    "ogTitle": "RoundFair — Wer ist dran — und fair abrechnen.",
+    "ogDescription": "Wer ist dran — und wer hinterherhinkt. Abrechnen, wenn ihr bereit seid. RoundFair hält die Gruppe fair.",
+    "twitterTitle": "RoundFair — Wer ist dran — und fair abrechnen.",
+    "twitterDescription": "Wer ist dran — und wer hinterherhinkt. Abrechnen, wenn ihr bereit seid. RoundFair hält die Gruppe fair."
+  },
+  "nav": {
+    "aria": "Hauptnavigation",
+    "how": "So funktioniert's",
+    "features": "Funktionen",
+    "faq": "FAQ",
+    "download": "Laden"
+  },
+  "theme": {
+    "toDark": "Zum Dunkelmodus wechseln",
+    "toLight": "Zum Hellmodus wechseln"
+  },
+  "lang": {
+    "label": "Sprache",
+    "aria": "Sprache wählen"
+  },
+  "hero": {
+    "iconAlt": "RoundFair-App-Symbol",
+    "titleBefore": "Wer ist dran — und ",
+    "titleAccent": "fair abrechnen.",
+    "sub": "Sieh, wer jetzt an der Reihe ist und wer hinterherhinkt — und rechne ab, wenn ihr bereit seid.",
+    "badgeAria": "RoundFair im App Store laden",
+    "badgeSmall": "Laden im",
+    "badgeBig": "App Store",
+    "shotSettleAlt": "RoundFair-Abrechnung: Florian bekommt zurück, Megan und Elias müssen zahlen",
+    "shotSessionAlt": "RoundFair Jetzt an der Reihe: Megan ist dran, dann Florian — Live-Anteile für die Gruppe"
+  },
+  "how": {
+    "title": "So funktioniert's",
+    "sub": "Wisse während des Abends, wer dran ist. Abrechnen, wenn ihr bereit seid.",
+    "step1Title": "Session starten",
+    "step1Body": "Freunde in Sekunden hinzufügen. Keine Konten nötig.",
+    "step2Title": "Sehen, wer dran ist",
+    "step2Body": "Jede Runde erfassen — RoundFair zeigt, wer jetzt an der Reihe ist und wer hinterherhinkt.",
+    "step3Title": "Abrechnen, wenn bereit",
+    "step3Body": "Live-Salden bleiben den ganzen Abend fair — klar abrechnen, wenn der Abend vorbei ist.",
+    "settleAlt": "RoundFair-Abrechnung: wer Geld zurückbekommt und wer zahlen muss",
+    "settleCaption": "Abrechnen, wenn ihr bereit seid — klar, wer zurückbekommt und wer wem zahlt."
+  },
+  "features": {
+    "title": "Für echte Abende unterwegs",
+    "sub": "Alles, was ihr braucht, um fair zu bleiben — und nichts Überflüssiges.",
+    "turnTitle": "Reihenfolge",
+    "turnBody": "RoundFair weiß, wessen Runde es ist. Keine Diskussionen mehr.",
+    "spotsTitle": "Eure Orte, bereit zum Start",
+    "spotsBody": "Speichert Orte, die ihr oft besucht, damit der nächste Abend schneller startet.",
+    "restaurantTitle": "Auch Restaurantabende",
+    "restaurantBody": "Detaillierte Runden mit Trinkgeld und Steuer.",
+    "spinTitle": "Rad drehen",
+    "spinBody": "Lasst das Schicksal wählen, wer die nächste Runde zahlt.",
+    "shareTitle": "Mit der Gruppe teilen",
+    "shareBody": "Teilt eine Session über iCloud, damit Freunde auf ihren eigenen Geräten mitverfolgen können.",
+    "privateTitle": "Von Grund auf privat",
+    "privateBody": "Kein Konto, kein Tracking, alles bleibt in eurer eigenen iCloud."
+  },
+  "languages": {
+    "title": "Verfügbar in 7 Sprachen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "sub": "Alles, was ihr vor der ersten Runde wissen wollt.",
+    "dataQ": "Wo werden meine Daten gespeichert?",
+    "dataA": "Auf eurem Gerät und in eurer persönlichen iCloud. RoundFair hat keine Server und keinen Zugriff auf eure Daten.",
+    "shareQ": "Wie funktioniert das Teilen in der Gruppe?",
+    "shareA": "Sessions können über iCloud (CloudKit) geteilt werden; jeder braucht ein iCloud-Konto auf dem Gerät.",
+    "costQ": "Kostet RoundFair etwas?",
+    "costA": "RoundFair ist im App Store kostenlos zum Download. Öffnet die App und startet eine Session — kein Kauf nötig, um loszulegen."
+  },
+  "footer": {
+    "questions": "Fragen?",
+    "privacy": "Datenschutz",
+    "support": "Hilfe",
+    "appStore": "App Store",
+    "copyright": "© 2026 Florian Ronsse"
+  },
+  "privacy": {
+    "title": "Datenschutz — RoundFair",
+    "description": "RoundFair sammelt keine Daten. Keine. Keine Analytics, keine Tracker, keine Werbung, keine Server — alles bleibt auf eurem Gerät und in eurer persönlichen iCloud.",
+    "ogTitle": "Datenschutz — RoundFair",
+    "ogDescription": "RoundFair sammelt keine Daten. Keine.",
+    "back": "← Zurück zu RoundFair",
+    "h1": "Datenschutz",
+    "updated": "Zuletzt aktualisiert: Juli 2026",
+    "hero": "RoundFair sammelt keine Daten. Keine.",
+    "intro": "RoundFair ist so gebaut, dass eure Daten nie eure Kontrolle verlassen. Keine Analytics, keine Tracker, keine Werbung, keine Drittanbieter-SDKs und keine Server von RoundFair.",
+    "whereTitle": "Wo eure Daten leben",
+    "whereBody": "Alles, was ihr in RoundFair eingibt — Sessions, Freunde, Runden, Orte und Preise — wird auf eurem Gerät und in eurer persönlichen iCloud (CloudKit) gespeichert. RoundFair hat keine Server und keinen Zugriff darauf.",
+    "shareTitle": "Teilen in der Gruppe",
+    "shareBody": "Wenn ihr eine Session mit Freunden teilt, geschieht das direkt zwischen den iCloud-Konten der Teilnehmenden über Apples CloudKit. Keine Daten gehen über jemand anderen.",
+    "photosTitle": "Fotos",
+    "photosBody": "Fotos für Orte werden über den System-Fotowähler hinzugefügt. RoundFair erhält nur das eine Bild, das ihr auswählt — nie Zugriff auf eure Mediathek.",
+    "notifTitle": "Benachrichtigungen",
+    "notifBody": "Benachrichtigungen von RoundFair werden lokal auf eurem Gerät geplant. Nichts wird von einem Server gesendet.",
+    "deleteTitle": "Daten löschen",
+    "deleteIntro": "Eure Daten gehören euch — jederzeit löschbar:",
+    "deleteLi1": "Löscht eine Session, um sie und ihre Runden zu entfernen.",
+    "deleteLi2": "Löscht die App, um alle Daten von Gerät und iCloud zu entfernen.",
+    "contactTitle": "Kontakt",
+    "contactBefore": "Fragen zum Datenschutz? Mail an ",
+    "contactAfter": ".",
+    "home": "Start"
+  }
+}

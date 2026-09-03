@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "RoundFair — De quem é a vez — e acertar com justiça.",
+    "description": "Vê quem está na vez agora e quem está atrasado numa noite de saída — e acerta com justiça quando estiverem prontos. Privado de raiz, sem conta.",
+    "ogTitle": "RoundFair — De quem é a vez — e acertar com justiça.",
+    "ogDescription": "De quem é a vez — e quem está atrasado. Acertem quando estiverem prontos. RoundFair mantém o grupo justo.",
+    "twitterTitle": "RoundFair — De quem é a vez — e acertar com justiça.",
+    "twitterDescription": "De quem é a vez — e quem está atrasado. Acertem quando estiverem prontos. RoundFair mantém o grupo justo."
+  },
+  "nav": {
+    "aria": "Navegação principal",
+    "how": "Como funciona",
+    "features": "Funcionalidades",
+    "faq": "FAQ",
+    "download": "Descarregar"
+  },
+  "theme": {
+    "toDark": "Mudar para modo escuro",
+    "toLight": "Mudar para modo claro"
+  },
+  "lang": {
+    "label": "Idioma",
+    "aria": "Escolher idioma"
+  },
+  "hero": {
+    "iconAlt": "Ícone da app RoundFair",
+    "titleBefore": "De quem é a vez — e ",
+    "titleAccent": "acertar com justiça.",
+    "sub": "Vê quem está na vez agora e quem está atrasado — e acerta quando estiverem prontos.",
+    "badgeAria": "Descarregar RoundFair na App Store",
+    "badgeSmall": "Descarregar na",
+    "badgeBig": "App Store",
+    "shotSettleAlt": "Acerto RoundFair: Florian recebe de volta, Megan e Elias devem pagar",
+    "shotSessionAlt": "RoundFair É a vez agora: Megan está na vez, depois Florian — quotas em direto para o grupo"
+  },
+  "how": {
+    "title": "Como funciona",
+    "sub": "Saibam de quem é a vez durante a noite. Acertem quando estiverem prontos.",
+    "step1Title": "Começa uma sessão",
+    "step1Body": "Adiciona os amigos em segundos. Sem contas.",
+    "step2Title": "Vê de quem é a vez",
+    "step2Body": "Regista cada ronda — RoundFair mostra quem está na vez agora e quem está atrasado.",
+    "step3Title": "Acerta quando estiverem prontos",
+    "step3Body": "Os saldos em direto mantêm-se justos a noite toda — acerto claro quando a noite acaba.",
+    "settleAlt": "Acerto RoundFair: quem recebe dinheiro de volta e quem deve pagar",
+    "settleCaption": "Acertem quando estiverem prontos — claro quem recebe de volta e quem paga a quem."
+  },
+  "features": {
+    "title": "Feito para noites reais",
+    "sub": "Tudo o que precisam para manter justo — e nada a mais.",
+    "turnTitle": "Ordem das vezes",
+    "turnBody": "RoundFair sabe de quem é a ronda. Acabaram-se as discussões.",
+    "spotsTitle": "Os teus sítios, prontos",
+    "spotsBody": "Guarda os sítios onde vais muitas vezes para começar mais depressa na próxima noite.",
+    "restaurantTitle": "Também noites de restaurante",
+    "restaurantBody": "Rondas detalhadas com gorjeta e impostos.",
+    "spinTitle": "Gira a roleta",
+    "spinBody": "Deixa o acaso escolher quem paga a próxima ronda.",
+    "shareTitle": "Partilha com o grupo",
+    "shareBody": "Partilha uma sessão via iCloud para os amigos acompanharem nos próprios dispositivos.",
+    "privateTitle": "Privado de raiz",
+    "privateBody": "Sem conta, sem tracking, tudo fica no teu próprio iCloud."
+  },
+  "languages": {
+    "title": "Disponível em 7 idiomas"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "sub": "Tudo o que queres saber antes da primeira ronda.",
+    "dataQ": "Onde estão guardados os meus dados?",
+    "dataA": "No teu dispositivo e no teu iCloud pessoal. RoundFair não tem servidores nem acesso aos teus dados.",
+    "shareQ": "Como funciona a partilha em grupo?",
+    "shareA": "As sessões podem ser partilhadas via iCloud (CloudKit); cada um precisa de uma conta iCloud no dispositivo.",
+    "costQ": "O RoundFair custa alguma coisa?",
+    "costA": "RoundFair é gratuito para descarregar na App Store. Abre-a e começa uma sessão — sem compra necessária para começar."
+  },
+  "footer": {
+    "questions": "Perguntas?",
+    "privacy": "Política de privacidade",
+    "support": "Suporte",
+    "appStore": "App Store",
+    "copyright": "© 2026 Florian Ronsse"
+  },
+  "privacy": {
+    "title": "Política de privacidade — RoundFair",
+    "description": "RoundFair não recolhe quaisquer dados. Nenhum. Sem analytics, trackers, anúncios ou servidores — tudo fica no teu dispositivo e no teu iCloud pessoal.",
+    "ogTitle": "Política de privacidade — RoundFair",
+    "ogDescription": "RoundFair não recolhe quaisquer dados. Nenhum.",
+    "back": "← Voltar ao RoundFair",
+    "h1": "Política de privacidade",
+    "updated": "Última atualização: julho 2026",
+    "hero": "RoundFair não recolhe quaisquer dados. Nenhum.",
+    "intro": "RoundFair é feito para que os teus dados nunca saiam do teu controlo. Sem analytics, trackers, anúncios, SDKs de terceiros nem servidores operados pelo RoundFair.",
+    "whereTitle": "Onde vivem os teus dados",
+    "whereBody": "Tudo o que introduzes no RoundFair — sessões, amigos, rondas, locais e preços — é guardado no teu dispositivo e no teu iCloud pessoal (CloudKit). RoundFair não tem servidores nem acesso a nada disso.",
+    "shareTitle": "Partilha em grupo",
+    "shareBody": "Quando partilhas uma sessão com amigos, a partilha acontece diretamente entre as contas iCloud dos participantes através do CloudKit da Apple. Nenhum dado passa por mais ninguém.",
+    "photosTitle": "Fotos",
+    "photosBody": "As fotos dos locais são adicionadas através do seletor de fotos do sistema. RoundFair só recebe a imagem única que escolhes — nunca acesso à tua fototeca.",
+    "notifTitle": "Notificações",
+    "notifBody": "As notificações do RoundFair são agendadas localmente no dispositivo. Nada é enviado a partir de um servidor.",
+    "deleteTitle": "Eliminar os teus dados",
+    "deleteIntro": "Os teus dados são teus para eliminar a qualquer momento:",
+    "deleteLi1": "Elimina uma sessão para a remover com as suas rondas.",
+    "deleteLi2": "Elimina a app para remover todos os dados do dispositivo e do iCloud.",
+    "contactTitle": "Contacto",
+    "contactBefore": "Perguntas sobre privacidade? Escreve para ",
+    "contactAfter": ".",
+    "home": "Início"
+  }
+}
