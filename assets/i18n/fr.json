@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "RoundFair — À qui le tour + règlement équitable",
-    "description": "Voyez à qui la prochaine tournée et réglez qui a payé quoi. Privé by design — aucun compte requis.",
-    "ogTitle": "RoundFair — À qui le tour + règlement équitable",
-    "ogDescription": "Voyez à qui la prochaine tournée et réglez qui a payé quoi. Privé by design — aucun compte requis.",
-    "twitterTitle": "RoundFair — À qui le tour + règlement équitable",
-    "twitterDescription": "Voyez à qui la prochaine tournée et réglez qui a payé quoi. Privé by design — aucun compte requis."
+    "title": "RoundFair — À qui le tour — et régler équitablement.",
+    "description": "Voyez qui est à son tour et qui prend du retard en soirée — puis réglez équitablement quand vous êtes prêts. Privé dès la conception, aucun compte requis.",
+    "ogTitle": "RoundFair — À qui le tour — et régler équitablement.",
+    "ogDescription": "À qui le tour — et qui est à la traîne. Réglez quand vous êtes prêts. RoundFair garde le groupe équitable.",
+    "twitterTitle": "RoundFair — À qui le tour — et régler équitablement.",
+    "twitterDescription": "À qui le tour — et qui est à la traîne. Réglez quand vous êtes prêts. RoundFair garde le groupe équitable."
   },
   "nav": {
     "aria": "Navigation principale",
@@ -24,41 +24,41 @@
   },
   "hero": {
     "iconAlt": "Icône de l'app RoundFair",
-    "titleBefore": "À qui le tour. ",
-    "titleAccent": "Règlement équitable.",
-    "sub": "Voyez qui offre la prochaine — et qui est en retard — puis qui paie qui.",
+    "titleBefore": "À qui le tour — et ",
+    "titleAccent": "régler équitablement.",
+    "sub": "Voyez qui est à son tour et qui est à la traîne — puis réglez quand vous êtes prêts.",
     "badgeAria": "Télécharger RoundFair sur l'App Store",
     "badgeSmall": "Télécharger sur l'",
     "badgeBig": "App Store",
     "shotSettleAlt": "Règlement RoundFair : Florian récupère, Megan et Elias doivent payer",
-    "shotSessionAlt": "RoundFair C'est son tour : Megan est à son tour, puis Florian — parts en direct pour le groupe"
+    "shotSessionAlt": "RoundFair — à qui le tour : Megan est à son tour, puis Florian — parts en direct pour le groupe"
   },
   "how": {
     "title": "Comment ça marche",
-    "sub": "Trois taps entre « encore une ? » et tout le monde à égalité.",
-    "step1Title": "Lancer une session",
+    "sub": "Sachez qui est à son tour pendant la soirée. Réglez quand vous êtes prêts.",
+    "step1Title": "Démarrez une session",
     "step1Body": "Ajoutez vos amis en quelques secondes. Aucun compte requis.",
-    "step2Title": "Noter chaque tournée",
-    "step2Body": "Tapez qui paie et qui participe. Voyez qui est Up — répétez une tournée en un tap.",
-    "step3Title": "Régler les comptes",
-    "step3Body": "Le solde en direct montre exactement qui récupère et qui paie qui.",
+    "step2Title": "Voyez qui est à son tour",
+    "step2Body": "Enregistrez chaque tournée — RoundFair montre qui est à son tour et qui est à la traîne.",
+    "step3Title": "Réglez quand vous êtes prêts",
+    "step3Body": "Les soldes restent équitables toute la soirée — réglez clairement quand c'est fini.",
     "settleAlt": "Règlement RoundFair : qui récupère de l'argent et qui doit payer",
     "settleCaption": "Réglez quand vous êtes prêts — clairement qui récupère et qui paie qui."
   },
   "features": {
-    "title": "Pensé pour les vraies sorties",
-    "sub": "Tout pour rester équitable — et rien de superflu.",
+    "title": "Conçu pour de vraies soirées",
+    "sub": "Tout ce qu'il faut pour rester équitable — et rien de superflu.",
     "turnTitle": "Ordre des tours",
-    "turnBody": "RoundFair sait à qui la tournée. Repérez qui est en retard avant que ça coince.",
-    "spotsTitle": "Votre bar habituel, mémorisé",
-    "spotsBody": "Des lieux avec photos retiennent les prix pour une saisie ultra-rapide.",
-    "restaurantTitle": "Aussi les soirées resto",
+    "turnBody": "RoundFair sait à qui le tour. Fini les discussions.",
+    "spotsTitle": "Vos lieux, prêts à l'emploi",
+    "spotsBody": "Enregistrez les endroits où vous allez souvent pour démarrer plus vite la prochaine fois.",
+    "restaurantTitle": "Aussi les soirs resto",
     "restaurantBody": "Tournées détaillées avec pourboire et taxes.",
-    "spinTitle": "Tourner la roue",
-    "spinBody": "Laissez le hasard choisir qui offre la prochaine tournée.",
-    "shareTitle": "Partage live via iCloud",
-    "shareBody": "Tout le groupe voit les tournées apparaître en temps réel.",
-    "privateTitle": "Privé by design",
+    "spinTitle": "Tournez la roue",
+    "spinBody": "Laissez le hasard choisir qui paie la prochaine tournée.",
+    "shareTitle": "Partagez avec le groupe",
+    "shareBody": "Partagez une session via iCloud pour que vos amis suivent sur leurs appareils.",
+    "privateTitle": "Privé dès la conception",
     "privateBody": "Pas de compte, pas de tracking — tout reste dans votre iCloud."
   },
   "languages": {
@@ -68,16 +68,16 @@
     "title": "Questions fréquentes",
     "sub": "Tout ce que vous voulez savoir avant votre première tournée.",
     "dataQ": "Où sont stockées mes données ?",
-    "dataA": "Sur votre appareil et dans votre iCloud personnel. RoundFair n’a aucun serveur et aucun accès à vos données.",
+    "dataA": "Sur votre appareil et dans votre iCloud personnel. RoundFair n'a pas de serveurs et n'accède pas à vos données.",
     "shareQ": "Comment fonctionne le partage de groupe ?",
-    "shareA": "Les sessions sont partagées via iCloud (CloudKit) ; chacun a besoin d’un compte iCloud.",
+    "shareA": "Les sessions peuvent être partagées via iCloud (CloudKit) ; chacun a besoin d'un compte iCloud sur son appareil.",
     "costQ": "RoundFair est-il payant ?",
-    "costA": "Gratuit à télécharger. Suivez les tournées et réglez entre amis — aucun abonnement requis."
+    "costA": "RoundFair est gratuit à télécharger sur l'App Store. Ouvrez-le et démarrez une session — aucun achat requis pour commencer."
   },
   "footer": {
     "questions": "Des questions ?",
     "privacy": "Politique de confidentialité",
-    "support": "Support",
+    "support": "Assistance",
     "appStore": "App Store",
     "copyright": "© 2026 Florian Ronsse"
   },
