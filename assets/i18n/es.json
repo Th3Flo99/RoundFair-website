@@ -24,8 +24,8 @@
   },
   "hero": {
     "iconAlt": "Icono de la app RoundFair",
-    "titleBefore": "¿A quién le toca? Ajuste justo.",
-    "titleAccent": "",
+    "titleBefore": "¿A quién le toca? ",
+    "titleAccent": "Ajuste justo.",
     "sub": "Mira quién invita la siguiente — y quién va atrás — luego quién paga a quién.",
     "badgeAria": "Descargar RoundFair en el App Store",
     "badgeSmall": "Consíguelo en el",
