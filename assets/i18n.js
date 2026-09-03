@@ -1,6 +1,6 @@
 (function () {
   const LANGS = ["nl", "en", "fr", "de", "es", "it", "pt"];
-  const STORAGE_KEY = "rf-lang";
+  const STORAGE_KEY = "roundfair-lang";
   const cache = Object.create(null);
   let current = "en";
   let enPack = null;
@@ -8,7 +8,7 @@
   function detectLang() {
     const q = new URLSearchParams(location.search).get("lang");
     if (q && LANGS.includes(q.toLowerCase())) return q.toLowerCase();
-    const saved = localStorage.getItem(STORAGE_KEY);
+    const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem("rf-lang");
     if (saved && LANGS.includes(saved)) return saved;
     const nav = (navigator.language || "en").toLowerCase();
     const short = nav.slice(0, 2);
@@ -59,16 +59,25 @@
 
     document.querySelectorAll("[data-i18n-attr]").forEach(applyAttrs);
 
-    document.title = t("meta.title");
+    const isPrivacy = Boolean(document.querySelector(".privacy-page"));
+    document.title = isPrivacy ? t("privacy.title") : t("meta.title");
     const setMeta = (sel, key) => {
       const node = document.querySelector(sel);
       if (node) node.setAttribute("content", t(key));
     };
-    setMeta('meta[name="description"]', "meta.description");
-    setMeta('meta[property="og:title"]', "meta.ogTitle");
-    setMeta('meta[property="og:description"]', "meta.ogDescription");
-    setMeta('meta[name="twitter:title"]', "meta.twitterTitle");
-    setMeta('meta[name="twitter:description"]', "meta.twitterDescription");
+    if (isPrivacy) {
+      setMeta('meta[name="description"]', "privacy.description");
+      setMeta('meta[property="og:title"]', "privacy.ogTitle");
+      setMeta('meta[property="og:description"]', "privacy.ogDescription");
+      setMeta('meta[name="twitter:title"]', "privacy.ogTitle");
+      setMeta('meta[name="twitter:description"]', "privacy.ogDescription");
+    } else {
+      setMeta('meta[name="description"]', "meta.description");
+      setMeta('meta[property="og:title"]', "meta.ogTitle");
+      setMeta('meta[property="og:description"]', "meta.ogDescription");
+      setMeta('meta[name="twitter:title"]', "meta.twitterTitle");
+      setMeta('meta[name="twitter:description"]', "meta.twitterDescription");
+    }
 
     const select = document.getElementById("lang-select");
     if (select && select.value !== current) select.value = current;

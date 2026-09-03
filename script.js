@@ -35,6 +35,11 @@
     if (!localStorage.getItem("roundfair-theme")) apply(current());
   });
 
+  window.applyThemeLabel = function () {
+    apply(current());
+  };
+  document.addEventListener("rf:lang", () => apply(current()));
+
   document.addEventListener("DOMContentLoaded", () => {
     apply(current());
     const btn = document.querySelector(".theme-toggle");
