@@ -35,7 +35,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=4d003d6" />
+  <link rel="stylesheet" href="styles.css?v=demo2" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,9 +52,9 @@
     "inLanguage": ["nl", "en", "fr", "de", "es", "it", "pt"]
   }
   </script>
-  <script src="assets/i18n.js?v=4d003d6" defer></script>
-  <script src="script.js?v=4d003d6" defer></script>
-  <script src="demo.js?v=4d003d6" defer></script>
+  <script src="assets/i18n.js?v=demo2" defer></script>
+  <script src="script.js?v=demo2" defer></script>
+  <script src="demo.js?v=demo2" defer></script>
 </head>
 <body>
 
@@ -173,10 +173,16 @@
             <h3 data-i18n="demo.title">Tap a round. Watch the turn move.</h3>
             <p data-i18n="demo.body">Every tap logs a round paid by whoever is up. Balances update live, and the settlement shows who gets back and who pays.</p>
           </div>
-          <div class="phone phone-demo">
-            <div class="phone-screen demo-screen" id="demo-screen" data-i18n-attr="aria-label:demo.hint">
-              <img src="assets/screenshot-settlement.png" alt="RoundFair settlement: who receives money back and who must pay" loading="lazy" width="640" height="1390" data-i18n-attr="alt:how.settleAlt" />
+          <div class="demo-device">
+            <div class="phone phone-demo">
+              <div class="phone-screen demo-screen" id="demo-screen" data-i18n-attr="aria-label:demo.hint">
+                <img src="assets/screenshot-session.png" alt="RoundFair session: Taylor is up, then Alex" loading="lazy" width="640" height="1390" data-i18n-attr="alt:hero.shotSessionAlt" />
+              </div>
             </div>
+            <button type="button" class="demo-reset" id="demo-reset" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7" /><path d="M3 4v5h5" /></svg>
+              <span data-i18n="demo.reset">Reset demo</span>
+            </button>
           </div>
         </div>
       </div>
