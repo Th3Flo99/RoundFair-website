@@ -506,37 +506,49 @@ html[data-theme="dark"] .hero-glow::after {
 .hero-new {
   display: inline-flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 6px 10px;
-  margin-bottom: 18px;
-  padding: 6px 12px 6px 6px;
+  gap: 8px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 4px 12px 4px 4px;
   border-radius: 999px;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
   color: var(--text-muted);
-  font-size: 0.82rem;
-  line-height: 1.35;
-  max-width: 520px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .hero-new-label {
   background: var(--accent-soft);
   color: var(--accent-strong);
   font-weight: 700;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 4px 9px;
+  padding: 4px 8px;
   border-radius: 999px;
   white-space: nowrap;
 }
 
-@media (max-width: 820px) {
+.hero-new-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
   .hero-new {
-    border-radius: 18px;
-    justify-content: center;
-    text-align: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    padding: 6px 12px 6px 6px;
+    text-align: left;
+  }
+
+  .hero-new-text {
+    white-space: normal;
+    font-size: 0.78rem;
+    padding-top: 2px;
   }
 }
 
