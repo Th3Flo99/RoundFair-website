@@ -114,5 +114,29 @@
     "contactBefore": "Vragen over privacy? Mail ",
     "contactAfter": ".",
     "home": "Start"
+  },
+  "demo": {
+    "eyebrow": "Probeer het",
+    "title": "Tik een rondje. Zie de beurt verschuiven.",
+    "body": "Elke tik logt een rondje, betaald door wie aan de beurt is. Saldi worden live bijgewerkt, en de verrekening toont wie terugkrijgt en wie betaalt.",
+    "session": "Vrijdagavond",
+    "sessions": "Sessies",
+    "upNow": "Nu aan de beurt",
+    "then": "daarna {name}",
+    "participants": "Deelnemers",
+    "rounds": "{n} rondjes",
+    "sameRound": "Zelfde rondje",
+    "settle": "Verrekening",
+    "back": "Terug",
+    "reset": "Opnieuw",
+    "receives": "Krijgt terug",
+    "mustPay": "Moet betalen",
+    "getsBack": "krijgt terug",
+    "pays": "moet betalen",
+    "paid": "betaalde {amount}",
+    "stillToSettle": "Nog te verrekenen",
+    "allSquare": "Iedereen staat gelijk",
+    "toast": "Rondje {n}: {name} betaalde {amount}",
+    "hint": "Interactieve demo"
   }
 }

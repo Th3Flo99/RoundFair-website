@@ -114,5 +114,29 @@
     "contactBefore": "¿Preguntas sobre privacidad? Escribe a ",
     "contactAfter": ".",
     "home": "Inicio"
+  },
+  "demo": {
+    "eyebrow": "Pruébalo",
+    "title": "Toca una ronda. Mira cómo cambia el turno.",
+    "body": "Cada toque registra una ronda pagada por quien le toca. Los saldos se actualizan al instante, y la liquidación muestra quién recupera y quién paga.",
+    "session": "Viernes de copas",
+    "sessions": "Sesiones",
+    "upNow": "Le toca a",
+    "then": "luego {name}",
+    "participants": "Participantes",
+    "rounds": "{n} rondas",
+    "sameRound": "Misma ronda",
+    "settle": "Liquidación",
+    "back": "Volver",
+    "reset": "Reiniciar",
+    "receives": "Recibe",
+    "mustPay": "Debe pagar",
+    "getsBack": "recupera",
+    "pays": "debe pagar",
+    "paid": "pagó {amount}",
+    "stillToSettle": "Pendiente de liquidar",
+    "allSquare": "Todos en paz",
+    "toast": "Ronda {n}: {name} pagó {amount}",
+    "hint": "Demo interactiva"
   }
 }

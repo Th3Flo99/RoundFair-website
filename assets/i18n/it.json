@@ -114,5 +114,29 @@
     "contactBefore": "Domande sulla privacy? Scrivi a ",
     "contactAfter": ".",
     "home": "Inizio"
+  },
+  "demo": {
+    "eyebrow": "Provalo",
+    "title": "Tocca un giro. Guarda cambiare il turno.",
+    "body": "Ogni tocco registra un giro pagato da chi è di turno. I saldi si aggiornano in tempo reale, e il saldo finale mostra chi riceve e chi paga.",
+    "session": "Venerdì sera",
+    "sessions": "Sessioni",
+    "upNow": "Tocca a",
+    "then": "poi {name}",
+    "participants": "Partecipanti",
+    "rounds": "{n} giri",
+    "sameRound": "Stesso giro",
+    "settle": "Saldo finale",
+    "back": "Indietro",
+    "reset": "Ricomincia",
+    "receives": "Riceve",
+    "mustPay": "Deve pagare",
+    "getsBack": "riceve",
+    "pays": "deve pagare",
+    "paid": "ha pagato {amount}",
+    "stillToSettle": "Da saldare",
+    "allSquare": "Siete tutti pari",
+    "toast": "Giro {n}: {name} ha pagato {amount}",
+    "hint": "Demo interattiva"
   }
 }

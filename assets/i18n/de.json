@@ -114,5 +114,29 @@
     "contactBefore": "Fragen zum Datenschutz? Mail an ",
     "contactAfter": ".",
     "home": "Start"
+  },
+  "demo": {
+    "eyebrow": "Probier es aus",
+    "title": "Tippe eine Runde. Sieh, wie der Zug wechselt.",
+    "body": "Jeder Tipp erfasst eine Runde, bezahlt von dem, der dran ist. Salden werden live aktualisiert, und die Abrechnung zeigt, wer zurückbekommt und wer zahlt.",
+    "session": "Freitagabend",
+    "sessions": "Sessions",
+    "upNow": "Jetzt dran",
+    "then": "dann {name}",
+    "participants": "Teilnehmer",
+    "rounds": "{n} Runden",
+    "sameRound": "Gleiche Runde",
+    "settle": "Abrechnung",
+    "back": "Zurück",
+    "reset": "Zurücksetzen",
+    "receives": "Bekommt zurück",
+    "mustPay": "Muss zahlen",
+    "getsBack": "bekommt zurück",
+    "pays": "muss zahlen",
+    "paid": "hat {amount} bezahlt",
+    "stillToSettle": "Noch offen",
+    "allSquare": "Alle sind quitt",
+    "toast": "Runde {n}: {name} hat {amount} bezahlt",
+    "hint": "Interaktive Demo"
   }
 }

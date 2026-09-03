@@ -54,6 +54,7 @@
   </script>
   <script src="assets/i18n.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="demo.js" defer></script>
 </head>
 <body>
 
@@ -166,14 +167,18 @@
             <p data-i18n="how.step3Body">Live balances stay fair all night, settle clearly when the night's done.</p>
           </article>
         </div>
-        <figure class="settle-shot reveal">
-          <div class="phone phone-inline">
-            <div class="phone-screen">
+        <div class="demo reveal" id="demo">
+          <div class="demo-copy">
+            <p class="eyebrow" data-i18n="demo.eyebrow">Try it</p>
+            <h3 data-i18n="demo.title">Tap a round. Watch the turn move.</h3>
+            <p data-i18n="demo.body">Every tap logs a round paid by whoever is up. Balances update live, and the settlement shows who gets back and who pays.</p>
+          </div>
+          <div class="phone phone-demo">
+            <div class="phone-screen demo-screen" id="demo-screen" data-i18n-attr="aria-label:demo.hint">
               <img src="assets/screenshot-settlement.png" alt="RoundFair settlement: who receives money back and who must pay" loading="lazy" width="640" height="1390" data-i18n-attr="alt:how.settleAlt" />
             </div>
           </div>
-          <figcaption data-i18n="how.settleCaption">Settle when you're ready, clear who gets back and who pays whom.</figcaption>
-        </figure>
+        </div>
       </div>
     </section>
 

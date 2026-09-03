@@ -114,5 +114,29 @@
     "contactBefore": "Questions sur la confidentialité ? Écrivez à ",
     "contactAfter": ".",
     "home": "Accueil"
+  },
+  "demo": {
+    "eyebrow": "Essayez",
+    "title": "Ajoutez une tournée. Le tour change.",
+    "body": "Chaque appui enregistre une tournée payée par celui dont c'est le tour. Les soldes se mettent à jour en direct, et le règlement montre qui récupère et qui paie.",
+    "session": "Vendredi soir",
+    "sessions": "Sessions",
+    "upNow": "À qui le tour",
+    "then": "puis {name}",
+    "participants": "Participants",
+    "rounds": "{n} tournées",
+    "sameRound": "Même tournée",
+    "settle": "Règlement",
+    "back": "Retour",
+    "reset": "Réinitialiser",
+    "receives": "Récupère",
+    "mustPay": "Doit payer",
+    "getsBack": "récupère",
+    "pays": "doit payer",
+    "paid": "a payé {amount}",
+    "stillToSettle": "Reste à régler",
+    "allSquare": "Tout le monde est quitte",
+    "toast": "Tournée {n} : {name} a payé {amount}",
+    "hint": "Démo interactive"
   }
 }

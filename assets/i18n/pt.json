@@ -114,5 +114,29 @@
     "contactBefore": "Perguntas sobre privacidade? Escreve para ",
     "contactAfter": ".",
     "home": "Início"
+  },
+  "demo": {
+    "eyebrow": "Experimenta",
+    "title": "Toca numa rodada. Vê a vez mudar.",
+    "body": "Cada toque regista uma rodada paga por quem está na vez. Os saldos atualizam-se ao vivo, e o acerto mostra quem recebe e quem paga.",
+    "session": "Sexta à noite",
+    "sessions": "Sessões",
+    "upNow": "Na vez",
+    "then": "depois {name}",
+    "participants": "Participantes",
+    "rounds": "{n} rodadas",
+    "sameRound": "Mesma rodada",
+    "settle": "Acerto",
+    "back": "Voltar",
+    "reset": "Recomeçar",
+    "receives": "Recebe",
+    "mustPay": "Deve pagar",
+    "getsBack": "recebe",
+    "pays": "deve pagar",
+    "paid": "pagou {amount}",
+    "stillToSettle": "Por acertar",
+    "allSquare": "Estão todos quites",
+    "toast": "Rodada {n}: {name} pagou {amount}",
+    "hint": "Demo interativa"
   }
 }

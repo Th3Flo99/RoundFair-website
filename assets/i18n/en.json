@@ -114,5 +114,29 @@
     "contactBefore": "Questions about privacy? Email ",
     "contactAfter": ".",
     "home": "Home"
+  },
+  "demo": {
+    "eyebrow": "Try it",
+    "title": "Tap a round. Watch the turn move.",
+    "body": "Every tap logs a round paid by whoever is up. Balances update live, and the settlement shows who gets back and who pays.",
+    "session": "Friday drinks",
+    "sessions": "Sessions",
+    "upNow": "Up now",
+    "then": "then {name}",
+    "participants": "Participants",
+    "rounds": "{n} rounds",
+    "sameRound": "Same round",
+    "settle": "Settlement",
+    "back": "Back",
+    "reset": "Reset",
+    "receives": "Receives",
+    "mustPay": "Must pay",
+    "getsBack": "gets back",
+    "pays": "must pay",
+    "paid": "paid {amount}",
+    "stillToSettle": "Still to settle",
+    "allSquare": "Everyone is square",
+    "toast": "Round {n}: {name} paid {amount}",
+    "hint": "Interactive demo"
   }
 }
