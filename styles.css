@@ -484,15 +484,18 @@ html[data-theme="dark"] .hero-glow::after {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
   align-items: center;
-  gap: 40px;
+  gap: clamp(36px, 4.5vw, 64px);
 }
 
 .hero-copy {
   position: relative;
   z-index: 2;
   min-width: 0;
+  /* Geometric gutter: long NL/EN H1 must not reach phone-back art */
+  max-width: 32rem;
+  padding-right: clamp(20px, 3vw, 48px);
 }
 
 .hero-copy .app-icon {
@@ -644,11 +647,14 @@ html[data-theme="dark"] .hero-glow::after {
   position: relative;
   z-index: 1;
   min-width: 0;
-  padding: 12px 8px 24px 0;
+  /* Keep angled back phone inside this column; clip any leftover overhang */
+  overflow: hidden;
+  isolation: isolate;
+  padding: 12px 8px 28px 40px;
 }
 
 .phone {
-  width: min(290px, 100%);
+  width: min(280px, 100%);
   border-radius: 46px;
   background: var(--phone-frame);
   padding: 12px;
@@ -658,13 +664,19 @@ html[data-theme="dark"] .hero-glow::after {
   z-index: 1;
 }
 
+.phone-front {
+  position: relative;
+  z-index: 1;
+  margin-right: 2px;
+}
+
 .phone-back {
-  /* Anchored to the left edge of the phone column, so it peeks out behind the
-     front phone without spilling into the copy column or being clipped. */
+  /* Peek from behind front phone; stay inside phone column (no copy invasion) */
   position: absolute;
-  width: min(220px, 60%);
-  top: 44px;
-  left: 0;
+  width: min(200px, 58%);
+  top: 48px;
+  left: 12px;
+  right: auto;
   transform: rotate(-6deg);
   z-index: 0;
   opacity: 0.9;
@@ -1119,22 +1131,32 @@ html.i18n-loading [data-i18n] {
 
 /* ---------- Responsive ---------- */
 
-@media (min-width: 901px) and (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1180px) {
   .hero-inner {
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
-    gap: 28px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 32px;
+  }
+
+  .hero-copy {
+    max-width: 26rem;
+    padding-right: 28px;
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 3.8vw, 2.75rem);
+    font-size: clamp(1.9rem, 3.2vw, 2.55rem);
   }
 
   .phone {
-    width: min(250px, 100%);
+    width: min(240px, 100%);
   }
 
   .phone-back {
-    width: min(195px, 60%);
+    width: min(175px, 55%);
+    left: 8px;
+  }
+
+  .hero-phone {
+    padding-left: 32px;
   }
 }
 
