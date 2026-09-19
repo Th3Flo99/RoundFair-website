@@ -61,6 +61,18 @@
       document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
     }
 
+    // Nav dropdowns: click to open, one at a time; outside click or Escape closes
+    const dds = [...document.querySelectorAll(".nav-dd")];
+    const closeDds = (except) => dds.forEach((d) => { if (d !== except) { d.classList.remove("open"); d.querySelector(".nav-dd-btn").setAttribute("aria-expanded", "false"); } });
+    dds.forEach((d) => d.querySelector(".nav-dd-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      const open = d.classList.toggle("open");
+      d.querySelector(".nav-dd-btn").setAttribute("aria-expanded", open);
+      closeDds(d);
+    }));
+    document.addEventListener("click", () => closeDds());
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDds(); });
+
     // Nav: shadow once scrolled, highlight the section in view
     const onScroll = () => nav && nav.classList.toggle("is-scrolled", window.scrollY > 8);
     onScroll();
@@ -84,7 +96,25 @@
 
     // FAQ: animate open and close
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    document.querySelectorAll(".faq-item").forEach((item) => {
+    const faqItems = document.querySelectorAll(".faq-item");
+    // accordion: opening one closes the others
+    let expandingAll = false;
+    const faqToggle = document.getElementById("faq-toggle");
+    const syncToggle = () => faqToggle && faqToggle.setAttribute("aria-pressed", [...faqItems].every((o) => o.open));
+    faqItems.forEach((item) =>
+      item.addEventListener("toggle", () => {
+        syncToggle();
+        if (item.open && !expandingAll) faqItems.forEach((o) => o !== item && o.open && o.querySelector("summary").click());
+      })
+    );
+    if (faqToggle)
+      faqToggle.addEventListener("click", () => {
+        const open = faqToggle.getAttribute("aria-pressed") !== "true";
+        expandingAll = true;
+        faqItems.forEach((o) => o.open !== open && o.querySelector("summary").click());
+        setTimeout(() => (expandingAll = false), 400);
+      });
+    faqItems.forEach((item) => {
       const summary = item.querySelector("summary");
       const body = item.querySelector(".faq-body");
       if (!summary || !body || reduceMotion || typeof body.animate !== "function") return;

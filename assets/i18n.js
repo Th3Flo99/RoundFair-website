@@ -6,6 +6,8 @@
   let enPack = null;
 
   function detectLang() {
+    const fixed = document.documentElement.hasAttribute("data-fixed-lang") && document.documentElement.lang;
+    if (fixed && LANGS.includes(fixed)) return fixed;
     const q = new URLSearchParams(location.search).get("lang");
     if (q && LANGS.includes(q.toLowerCase())) return q.toLowerCase();
     const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem("rf-lang");
@@ -29,7 +31,7 @@
 
   async function load(lang) {
     if (cache[lang]) return cache[lang];
-    const res = await fetch(`assets/i18n/${lang}.json`, { cache: "no-cache" });
+    const res = await fetch(`/assets/i18n/${lang}.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`i18n ${lang}: ${res.status}`);
     cache[lang] = await res.json();
     return cache[lang];
@@ -118,7 +120,9 @@
     }
 
     const select = document.getElementById("lang-select");
-    if (select) select.addEventListener("change", () => setLang(select.value, { updateUrl: true }));
+    if (select) select.addEventListener("change", () => (document.documentElement.hasAttribute("data-fixed-lang")
+      ? (localStorage.setItem(STORAGE_KEY, select.value), location.href = select.value === "en" ? "/?lang=en" : `/${select.value}/`)
+      : setLang(select.value, { updateUrl: true })));
 
     document.querySelectorAll("[data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang"), { updateUrl: true }));

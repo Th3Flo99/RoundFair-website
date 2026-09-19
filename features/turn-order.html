@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Whose Round Is It? Turn Order Tracker – RoundFair</title>
+  <meta name="description" content="RoundFair tracks whose turn it is to buy the next round and who is behind, so the group never argues about it again. Free on iOS." />
+  <link rel="canonical" href="https://roundfair.support/features/turn-order.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://roundfair.support/features/turn-order.html" />
+  <meta property="og:title" content="Whose Round Is It? Turn Order Tracker – RoundFair" />
+  <meta property="og:description" content="RoundFair tracks whose turn it is to buy the next round and who is behind, so the group never argues about it again. Free on iOS." />
+  <meta property="og:image" content="https://roundfair.support/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Whose Round Is It? Turn Order Tracker – RoundFair" />
+  <meta name="twitter:description" content="RoundFair tracks whose turn it is to buy the next round and who is behind, so the group never argues about it again. Free on iOS." />
+  <meta name="twitter:image" content="https://roundfair.support/assets/og-image.png" />
+  <meta name="theme-color" content="#2bb491" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RoundFair","item":"https://roundfair.support/"},{"@type":"ListItem","position":2,"name":"Features","item":"https://roundfair.support/features.html"},{"@type":"ListItem","position":3,"name":"Turn order","item":"https://roundfair.support/features/turn-order.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Whose Round Is It? Turn Order Tracker – RoundFair","description":"RoundFair tracks whose turn it is to buy the next round and who is behind, so the group never argues about it again. Free on iOS.","url":"https://roundfair.support/features/turn-order.html","isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does RoundFair decide whose turn it is?","acceptedAnswer":{"@type":"Answer","text":"It counts the rounds each person has bought and puts the person who is most behind next. You can see the whole order at any time."}},{"@type":"Question","name":"Does it work for a group that changes during the night?","acceptedAnswer":{"@type":"Answer","text":"Yes. People can join or leave a session and the order adjusts."}},{"@type":"Question","name":"Does it track how much each round cost?","acceptedAnswer":{"@type":"Answer","text":"Turn order is based on rounds bought, so it answers who is next. If you also want to see what people drank and what it cost, the [consumption overview](features/who-drank-what.html) shows that."}},{"@type":"Question","name":"What happens if two people are equally behind?","acceptedAnswer":{"@type":"Answer","text":"They are tied, so either can go next. Groups usually let whoever is nearest the bar volunteer, or the person who bought least recently."}},{"@type":"Question","name":"What if I log a round against the wrong person?","acceptedAnswer":{"@type":"Answer","text":"Sort it out straight away, while everyone remembers what happened, and check the order afterwards to make sure it looks right to the whole group."}},{"@type":"Question","name":"Do all my friends need RoundFair installed?","acceptedAnswer":{"@type":"Answer","text":"No. One person can keep the record for the group. If you want everyone to see the same live order, [live sharing](features/live-sharing.html) does that through iCloud."}},{"@type":"Question","name":"Is turn order fair if people drink at different speeds?","acceptedAnswer":{"@type":"Answer","text":"Turn order tracks rounds, not drinks. If some people are slower, that is a social call for the group. Many groups simply buy a round when most glasses are nearly empty."}}]}</script>
+  <link rel="icon" type="image/png" href="../assets/roundfair-logo.png" />
+  <link rel="apple-touch-icon" href="../assets/app-icon.png" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        d.dataset.theme = localStorage.getItem("roundfair-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles.css?v=dd1" />
+  <script src="../post.js?v=2" defer></script>
+  <script src="../script.js?v=dd1" defer></script>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="../index.html">
+        <img src="../assets/roundfair-logo.png" alt="" width="30" height="30" />
+        RoundFair
+      </a>
+      <div class="nav-links">
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html#how">How it works</a>
+          <div class="nav-dd">
+            <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Features</button>
+            <div class="nav-dd-panel">
+              <a href="../features/turn-order.html">Turn order</a>
+              <a href="../features/saved-spots.html">Saved spots</a>
+              <a href="../features/restaurant-mode.html">Restaurant mode</a>
+              <a href="../features/split-the-bill.html">Split the bill</a>
+              <a href="../features/who-drank-what.html">Who drank what</a>
+              <a href="../features/export-summary.html">Export the summary</a>
+              <a href="../features/live-sharing.html">Live sharing and offline</a>
+              <a class="nav-dd-all" href="../features.html">All features →</a>
+            </div>
+          </div>
+          <div class="nav-dd">
+            <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Use cases</button>
+            <div class="nav-dd-panel">
+              <a href="../use-cases/pub-rounds.html">Pub rounds with friends</a>
+              <a href="../use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>
+              <a href="../use-cases/group-trips.html">Group trips</a>
+              <a href="../use-cases/restaurant-dinners.html">Restaurant dinners</a>
+              <a href="../use-cases/work-drinks.html">Work drinks and team nights</a>
+              <a class="nav-dd-all" href="../use-cases.html">All use cases →</a>
+            </div>
+          </div>
+          <a href="../index.html#faq">FAQ</a>
+          <a href="../blog.html">Blog</a>
+        </div>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6763799194">Download</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+        </button>
+        <button class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="privacy-page">
+    <a class="back-link" href="../features.html">← All features</a>
+    <h1>Whose Round Is It? Turn Order Tracker</h1>
+    <p class="updated">RoundFair feature · By FairLead</p>
+    <p>Every group has the same argument: whose round is it? RoundFair keeps the count so nobody has to remember.</p>
+    <nav class="toc" aria-label="In this guide"><strong>In this guide</strong>
+    <ul>
+      <li><a href="#what-is-a-round-turn-order-tracker">What is a round turn order tracker?</a></li>
+      <li><a href="#how-to-track-whose-round-it-is-step-by-step">How to track whose round it is, step by step</a></li>
+      <li><a href="#a-worked-example-with-real-numbers">A worked example with real numbers</a></li>
+      <li><a href="#common-problems-and-edge-cases">Common problems and edge cases</a></li>
+      <li><a href="#turn-order-tracker-vs-keeping-score-in-your-head-or-a-spreadsheet">Turn order tracker vs keeping score in your head or a spreadsheet</a></li>
+      <li><a href="#tips-for-keeping-the-round-order-fair">Tips for keeping the round order fair</a></li>
+      <li><a href="#who-a-turn-order-tracker-is-for">Who a turn order tracker is for</a></li>
+    </ul></nav>
+    <h2>How it works</h2>
+    <ol>
+      <li>Add everyone in the group to a session.</li>
+      <li>Log each round in one tap as it is bought.</li>
+      <li>RoundFair shows who is up now and who is furthest behind.</li>
+    </ol>
+    <h2 id="what-is-a-round-turn-order-tracker">What is a round turn order tracker?</h2>
+    <p>A turn order tracker answers one small question that causes surprisingly big arguments: whose round is it? RoundFair keeps a running count of the rounds each person has bought and uses it to show who is up now and who is furthest behind. Nobody has to hold the tally in their head, and nobody has to trust the person who is suspiciously sure it is not their turn.</p>
+    <p>The idea is simple, but the details are where groups fall out. Someone pops out for a cigarette, someone arrives an hour late, someone buys a round for two tables at once. A mental tally copes badly with all of that. A tracker that counts what was actually bought copes fine, because it only ever looks at the record.</p>
+    <p>If you want the etiquette behind the maths, our guide to <a href="../blog/whose-turn-to-buy-the-next-round.html">whose turn it is to buy the next round</a> covers the unwritten rules, and <a href="../blog/how-to-decide-who-buys-the-next-round.html">how to decide who buys the next round</a> covers the fair-minded ways of settling it when nobody remembers.</p>
+    <h2 id="how-to-track-whose-round-it-is-step-by-step">How to track whose round it is, step by step</h2>
+    <p>The routine takes about ten seconds per round, which is the whole point. Anything slower and people stop doing it by the second pint.</p>
+    <ul>
+      <li>Start a session when the group sits down and add everyone who is there. You can add latecomers when they arrive.</li>
+      <li>When someone buys a round, log it in one tap against their name. Do it at the bar or when the drinks land on the table, before the moment is forgotten.</li>
+      <li>Look at the turn order before anyone stands up. The person who is most behind is next, and everyone can see why.</li>
+      <li>Repeat until closing time. At the end, the history shows how many rounds each person bought.</li>
+    </ul>
+    <p>One habit makes the biggest difference: nominate whoever is nearest their phone as the logger, and swap the job now and then. The app is far more accurate when one person owns the tap than when everyone assumes someone else did it.</p>
+    <h2 id="a-worked-example-with-real-numbers">A worked example with real numbers</h2>
+    <p>Take five friends, Amira, Ben, Chloe, Dev and Ella, over an evening. Amira buys round one, Ben buys round two, Chloe round three. Dev arrives after round three and Ella has to leave after round six.</p>
+    <p>After three rounds the tally is Amira 1, Ben 1, Chloe 1, Dev 0. Dev walks in having bought nothing, so he is furthest behind and the app puts him next. That is fair: he has drunk in rounds he did not join, but he has also just arrived, and buying the next one is the friendly way to join in.</p>
+    <p>By round six, suppose Dev has bought round four, Amira round five and Ben round six. The tally is Amira 2, Ben 2, Chloe 1, Dev 1, Ella 0. Ella is leaving, so she stays at zero, and the group can decide whether she buys a farewell drink or whether her absence is simply written off. The tracker does not make that call for you, but it makes the choice visible, which is half the battle.</p>
+    <p>Counting rounds, not money, is a deliberate simplification. Round buying works on the assumption that it evens out over time, and a round of beer and a round of cocktails count as one turn each. If the price gap matters to your group, see <a href="../blog/round-buying-vs-splitting-the-bill.html">round buying vs splitting the bill</a> for when to switch approach.</p>
+    <h2 id="common-problems-and-edge-cases">Common problems and edge cases</h2>
+    <p>Most disputes come from a handful of situations, and each has a sensible answer.</p>
+    <ul>
+      <li>Someone joins late. Add them when they arrive. Because they have bought nothing, they will show as behind and come up soon, which most groups regard as a friendly welcome rather than a penalty.</li>
+      <li>Someone leaves early. Remove them from the order or leave them in with a lower count. What you agree matters less than agreeing it aloud, so the group is not surprised later.</li>
+      <li>Two people buy at once. Log both rounds. The count is what matters, not the order they were bought in.</li>
+      <li>Someone forgot to log a round. Log it as soon as you remember. Adding a missed round afterwards fixes the count.</li>
+      <li>A round is a single drink for one person. Decide as a group whether that counts. Most groups say no, only rounds for the whole table count.</li>
+    </ul>
+    <p>None of this needs a rule book. The value of a tracker is that it removes the need for one, because the record is there to consult and the argument shrinks to a glance.</p>
+    <h2 id="turn-order-tracker-vs-keeping-score-in-your-head-or-a-spreadsheet">Turn order tracker vs keeping score in your head or a spreadsheet</h2>
+    <p>Memory is the default method and it works surprisingly well for two people over two pints. It fails for larger groups because human recall is biased: everyone remembers their own rounds vividly and other people's vaguely. That is not dishonesty, just how memory works.</p>
+    <p>A spreadsheet or a notes app fixes accuracy but adds friction. Somebody has to open it, find the right row, and type the name correctly with a pint in one hand. Tabs get stale, the person who owns the sheet becomes the group's accountant, and the whole thing dies by the third outing.</p>
+    <p>A general expense splitter is a different tool for a different job. Apps built for shared costs track money owed, which is right for a holiday and heavy for a round of beers. If you are weighing them up, our comparison of the <a href="../blog/round-buying-app-track-whose-turn-it-is.html">best apps for tracking whose turn it is</a> sets out what each approach is good at, and <a href="../blog/best-bill-splitting-apps.html">best bill splitting apps</a> covers the money side.</p>
+    <p>RoundFair sits in the gap: it counts rounds rather than pounds, works in a couple of taps, needs no accounts, and stores data on your device and your personal iCloud.</p>
+    <h2 id="tips-for-keeping-the-round-order-fair">Tips for keeping the round order fair</h2>
+    <ul>
+      <li>Agree the rules before the first drink. Two minutes at the start prevents twenty minutes of debate later.</li>
+      <li>Log the round when it lands, not at the end of the night. Rounds logged from memory are the ones that get argued about.</li>
+      <li>Let the person furthest behind volunteer. It is nicer than being told, and most people do.</li>
+      <li>Treat the tally as a guide, not a court. A tracker is there to stop arguments, not to start them.</li>
+      <li>Look at the history occasionally. Seeing that the same person has bought most rounds for a month is useful and usually leads to a friendly correction.</li>
+    </ul>
+    <p>For the cultural side, <a href="../blog/pub-round-etiquette-uk.html">pub round etiquette in the UK</a> and <a href="../blog/round-buying-etiquette-around-the-world.html">round buying etiquette around the world</a> are worth a read if your group crosses borders.</p>
+    <h2 id="who-a-turn-order-tracker-is-for">Who a turn order tracker is for</h2>
+    <p>It suits any group of three or more who take turns paying: a regular Friday pub crowd, colleagues at <a href="../use-cases/work-drinks.html">work drinks</a>, a stag or hen party where the group is large and the rounds are frequent, or a group holiday. The bigger and looser the group, the more useful an objective record becomes.</p>
+    <p>It is less useful when the group already splits everything equally at the end, or when one person is happy to pay for everything. In that case the better tool is <a href="../features/split-the-bill.html">Split the bill</a>, which divides one total among chosen people.</p>
+    <p>For the full story of how groups use it night to night, see <a href="../use-cases/pub-rounds.html">pub rounds with friends</a>.</p>
+    <h2>Why it helps</h2>
+    <p>Turn order is calculated from the rounds actually bought, not from memory. Someone who skipped a round, joined late or left early is handled correctly, so the next round always goes to the person who owes one.</p>
+    <h2>Frequently asked questions</h2>
+    <h3>How does RoundFair decide whose turn it is?</h3><p>It counts the rounds each person has bought and puts the person who is most behind next. You can see the whole order at any time.</p>
+    <h3>Does it work for a group that changes during the night?</h3><p>Yes. People can join or leave a session and the order adjusts.</p>
+    <h3>Does it track how much each round cost?</h3><p>Turn order is based on rounds bought, so it answers who is next. If you also want to see what people drank and what it cost, the [consumption overview](features/who-drank-what.html) shows that.</p>
+    <h3>What happens if two people are equally behind?</h3><p>They are tied, so either can go next. Groups usually let whoever is nearest the bar volunteer, or the person who bought least recently.</p>
+    <h3>What if I log a round against the wrong person?</h3><p>Sort it out straight away, while everyone remembers what happened, and check the order afterwards to make sure it looks right to the whole group.</p>
+    <h3>Do all my friends need RoundFair installed?</h3><p>No. One person can keep the record for the group. If you want everyone to see the same live order, [live sharing](features/live-sharing.html) does that through iCloud.</p>
+    <h3>Is turn order fair if people drink at different speeds?</h3><p>Turn order tracks rounds, not drinks. If some people are slower, that is a social call for the group. Many groups simply buy a round when most glasses are nearly empty.</p>
+    <h2>More features</h2>
+    <ul>
+      <li><a href="../features/saved-spots.html">Saved spots</a></li>
+      <li><a href="../features/restaurant-mode.html">Restaurant mode</a></li>
+      <li><a href="../features/split-the-bill.html">Split the bill</a></li>
+      <li><a href="../use-cases.html">Browse all use cases</a></li>
+    </ul>
+    <!-- cta:start -->
+    <aside class="cta-box" aria-label="Download RoundFair">
+      <img class="cta-icon" src="../assets/app-icon.png" alt="" width="72" height="72" loading="lazy" />
+      <div class="cta-copy">
+        <p class="cta-title">Your next round is on the app.</p>
+        <p class="cta-sub">Free on the App Store. No account needed.</p>
+      </div>
+      <a class="appstore-badge" href="https://apps.apple.com/app/id6763799194" aria-label="Download RoundFair on the App Store">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/></svg>
+        <span class="badge-text"><span class="badge-small">Download on the</span><span class="badge-big">App Store</span></span>
+      </a>
+    </aside>
+    <!-- cta:end -->
+  </main>
+
+  <!-- footer:start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-brand" href="../index.html">
+            <img src="../assets/roundfair-logo.png" alt="" width="30" height="30" />
+            RoundFair
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">Whose turn, and settle fair.</p>
+          <a class="appstore-badge footer-badge" href="https://apps.apple.com/app/id6763799194" aria-label="Download RoundFair on the App Store" data-i18n-attr="aria-label:hero.badgeAria">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/></svg>
+            <span class="badge-text">
+              <span class="badge-small" data-i18n="hero.badgeSmall">Download on the</span>
+              <span class="badge-big" data-i18n="hero.badgeBig">App Store</span>
+            </span>
+          </a>
+        </div>
+        <nav class="footer-col" data-i18n-attr="aria-label:footer.product">
+          <h3 data-i18n="footer.product">Product</h3>
+          <a href="../index.html#how" data-i18n="nav.how">How it works</a>
+          <a href="../features.html" data-i18n="nav.features">Features</a>
+          <a href="../use-cases.html" data-i18n="nav.useCases">Use cases</a>
+          <a href="../calculators.html">Bill split calculator</a>
+          <a href="../index.html#faq" data-i18n="nav.faq">FAQ</a>
+        </nav>
+        <nav class="footer-col" data-i18n-attr="aria-label:footer.company">
+          <h3 data-i18n="footer.company">Company</h3>
+          <a href="../about.html">About</a>
+          <a href="../blog.html">Blog</a>
+          <a href="../press.html">Press</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+        <nav class="footer-col" data-i18n-attr="aria-label:footer.help">
+          <h3 data-i18n="footer.help">Help</h3>
+          <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
+          <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
+          <a href="../privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="../terms.html">Terms</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright"><span data-i18n="footer.copyright">© 2026 FairLead</span><span class="footer-dot" aria-hidden="true">·</span><span data-i18n="footer.updated">Last updated: September 2026</span></p>
+        <a class="footer-appstore" href="https://apps.apple.com/app/id6763799194" data-i18n="footer.appStore">App Store</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer:end -->
+
+</body>
+</html>

@@ -1,16 +1,17 @@
 {
   "meta": {
-    "title": "RoundFair: Whose turn, and settle fair.",
-    "description": "See who’s up for the next round and settle who paid what. Private by design, no account needed.",
-    "ogTitle": "RoundFair: Whose turn, and settle fair.",
+    "title": "RoundFair - Track Rounds & Split the Bill Fairly (iOS)",
+    "description": "Free iOS app that tracks whose turn it is to buy the next round and splits the bill fairly between friends. No account, no ads, private by design.",
+    "ogTitle": "RoundFair - Track Rounds & Split the Bill Fairly (iOS)",
     "ogDescription": "See who’s up for the next round and settle who paid what. Private by design, no account needed.",
-    "twitterTitle": "RoundFair: Whose turn, and settle fair.",
+    "twitterTitle": "RoundFair - Track Rounds & Split the Bill Fairly (iOS)",
     "twitterDescription": "See who’s up for the next round and settle who paid what. Private by design, no account needed."
   },
   "nav": {
     "aria": "Main",
     "how": "How it works",
     "features": "Features",
+    "useCases": "Use cases",
     "faq": "FAQ",
     "menu": "Menu",
     "download": "Download"
@@ -25,8 +26,8 @@
   },
   "hero": {
     "iconAlt": "RoundFair app icon",
-    "titleBefore": "Whose turn, and ",
-    "titleAccent": "settle fair.",
+    "titleBefore": "Know whose turn it is. ",
+    "titleAccent": "Settle fair.",
     "sub": "See who’s buying next, and who’s behind, then settle who pays whom.",
     "badgeAria": "Download RoundFair on the App Store",
     "badgeSmall": "Download on the",
@@ -34,7 +35,8 @@
     "shotSettleAlt": "RoundFair settlement: Jordan and Sam get back, Alex and Taylor must pay",
     "shotSessionAlt": "RoundFair Up now: Taylor is up, then Alex (live shares for the group)",
     "newLabel": "New in 2.0",
-    "newText": "Locations, 1-tap rounds, live iCloud sharing"
+    "newText": "Locations, 1-tap rounds, live iCloud sharing",
+    "def": "RoundFair is a free iOS app that tracks whose turn it is to buy the next round on a night out, and splits the bill fairly at the end."
   },
   "how": {
     "title": "How it works",
@@ -72,29 +74,40 @@
     "exportTitle": "Export the summary",
     "exportBody": "Share a clear overview of rounds and balances with the group."
   },
+  "cta": {
+    "title": "Your next round is on the app.",
+    "sub": "Free on the App Store. No account needed."
+  },
   "languages": {
     "title": "Available in 7 languages"
   },
   "faq": {
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all",
     "title": "Frequently asked questions",
     "sub": "Everything you might want to know before your first round.",
     "dataQ": "Where is my data stored?",
-    "dataA": "On your device and in your personal iCloud. RoundFair has no servers and no access to your data.",
+    "dataA": "RoundFair stores your data on your device and in your personal iCloud. RoundFair has no servers of its own and no access to your sessions, rounds or balances. Sharing a session with friends uses Apple's iCloud (CloudKit), so your group's data stays inside Apple's ecosystem and never passes through a RoundFair account.",
     "shareQ": "How does group sharing work?",
-    "shareA": "Sessions are shared through iCloud (CloudKit); everyone needs an iCloud account.",
+    "shareA": "RoundFair shares a session through iCloud (CloudKit), so everyone sees the same rounds and balances live on their own iPhone. Every participant needs an iCloud account on their device, but nobody has to create a separate RoundFair account. Sharing is optional, and you can also run a session on your own.",
     "costQ": "Does RoundFair cost anything?",
-    "costA": "Free to download. Track rounds and settle with friends, no subscription required.",
+    "costA": "RoundFair is free to download on the App Store. Open it, create a session and start tracking rounds straight away. No purchase is required to get going.",
     "eyebrow": "FAQ",
     "offlineQ": "Does it work without internet?",
-    "offlineA": "Yes. RoundFair is offline-first and fully usable without a connection. iCloud sharing is optional and syncs when you're back online.",
+    "offlineA": "Yes. RoundFair is offline-first, so you can add rounds, see whose turn it is and settle the bill without any connection. iCloud sharing is optional and syncs automatically when your device is back online, so a weak signal in a bar never blocks the session.",
     "currencyQ": "Which currencies are supported?",
-    "currencyA": "Every session has its own currency. Pick it when you create the session, all amounts are shown in that currency.",
+    "currencyA": "Every RoundFair session has its own currency. You pick it when you create the session, and all amounts, balances and the final settlement are shown in that currency. That lets you run one session for a night out at home and another for a trip abroad.",
     "exportQ": "Can I share the overview with the group?",
-    "exportA": "Yes. Export the session as plain text with participants, rounds and balances, and share it through any app.",
+    "exportA": "Yes. RoundFair can export the session as plain text with participants, rounds and balances. You can share that overview through any app, such as a group chat or email, so everyone can see who owes what.",
     "tauntQ": "What are taunt notifications?",
-    "tauntA": "Optional, playful reminders during the session for whoever hasn't paid in a while. They are scheduled on your device and can be turned off in settings."
+    "tauntA": "Taunt notifications are optional, playful reminders during a session for whoever hasn't paid in a while. They are scheduled on your device rather than sent from a server, and you can turn them off at any time in settings.",
+    "turnQ": "How do I know whose turn it is to buy a round?",
+    "turnA": "RoundFair's Up now view shows whose turn it is to buy the next round and who is behind. If nobody wants to decide, the spin wheel can pick someone at random.",
+    "splitQ": "How do I split a bar tab fairly?",
+    "splitA": "RoundFair tracks every round during the night, so you can see who paid and who is behind. When you're ready, use Split the bill to settle. A consumption overview shows who had what and the cost per person, so the split reflects what people actually drank."
   },
   "footer": {
+    "company": "Company",
     "questions": "Questions?",
     "privacy": "Privacy Policy",
     "support": "Support",
@@ -102,7 +115,8 @@
     "copyright": "© 2026 FairLead",
     "product": "Product",
     "help": "Help",
-    "tagline": "Whose turn, and settle fair."
+    "tagline": "Whose turn, and settle fair.",
+    "updated": "Last updated: September 2026"
   },
   "privacy": {
     "title": "Privacy Policy (RoundFair)",

@@ -11,6 +11,7 @@
     "aria": "Hauptnavigation",
     "how": "So funktioniert's",
     "features": "Funktionen",
+    "useCases": "Anwendungsfälle",
     "faq": "FAQ",
     "menu": "Menü",
     "download": "Laden"
@@ -25,8 +26,8 @@
   },
   "hero": {
     "iconAlt": "RoundFair-App-Symbol",
-    "titleBefore": "Wer ist dran, und ",
-    "titleAccent": "fair abrechnen.",
+    "titleBefore": "Wisse, wer dran ist. ",
+    "titleAccent": "Rechne fair ab.",
     "sub": "Sieh, wer jetzt an der Reihe ist und wer hinterherhinkt, und rechne ab, wenn ihr bereit seid.",
     "badgeAria": "RoundFair im App Store laden",
     "badgeSmall": "Laden im",
@@ -72,10 +73,16 @@
     "exportTitle": "Exportiere die Übersicht",
     "exportBody": "Teile eine klare Übersicht der Runden und Salden mit der Gruppe."
   },
+  "cta": {
+    "title": "Die nächste Runde steht in der App.",
+    "sub": "Kostenlos im App Store. Kein Konto nötig."
+  },
   "languages": {
     "title": "Verfügbar in 7 Sprachen"
   },
   "faq": {
+    "expandAll": "Alle öffnen",
+    "collapseAll": "Alle schließen",
     "title": "Häufig gestellte Fragen",
     "sub": "Alles, was ihr vor der ersten Runde wissen wollt.",
     "dataQ": "Wo werden meine Daten gespeichert?",
@@ -95,6 +102,7 @@
     "tauntA": "Optionale, spielerische Erinnerungen während der Session für alle, die länger nicht gezahlt haben. Sie werden auf deinem Gerät geplant und lassen sich in den Einstellungen ausschalten."
   },
   "footer": {
+    "company": "Unternehmen",
     "questions": "Fragen?",
     "privacy": "Datenschutz",
     "support": "Hilfe",

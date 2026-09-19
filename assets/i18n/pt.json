@@ -11,6 +11,7 @@
     "aria": "Navegação principal",
     "how": "Como funciona",
     "features": "Funcionalidades",
+    "useCases": "Casos de uso",
     "faq": "FAQ",
     "menu": "Menu",
     "download": "Descarregar"
@@ -25,8 +26,8 @@
   },
   "hero": {
     "iconAlt": "Ícone da app RoundFair",
-    "titleBefore": "De quem é a vez, e ",
-    "titleAccent": "acertar com justiça.",
+    "titleBefore": "Sabe de quem é a vez. ",
+    "titleAccent": "Acerta com justiça.",
     "sub": "Vê quem está na vez agora e quem está atrasado, e acerta quando estiverem prontos.",
     "badgeAria": "Descarregar RoundFair na App Store",
     "badgeSmall": "Descarregar na",
@@ -72,10 +73,16 @@
     "exportTitle": "Exporta o resumo",
     "exportBody": "Partilha com o grupo um resumo claro das rodadas e dos saldos."
   },
+  "cta": {
+    "title": "A próxima ronda está na app.",
+    "sub": "Grátis na App Store. Sem conta."
+  },
   "languages": {
     "title": "Disponível em 7 idiomas"
   },
   "faq": {
+    "expandAll": "Abrir tudo",
+    "collapseAll": "Fechar tudo",
     "title": "Perguntas frequentes",
     "sub": "Tudo o que queres saber antes da primeira ronda.",
     "dataQ": "Onde estão guardados os meus dados?",
@@ -95,6 +102,7 @@
     "tauntA": "Lembretes opcionais e divertidos durante a sessão para quem há muito não paga. São agendados no teu dispositivo e podem ser desativados nas definições."
   },
   "footer": {
+    "company": "Empresa",
     "questions": "Perguntas?",
     "privacy": "Política de privacidade",
     "support": "Suporte",

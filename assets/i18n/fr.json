@@ -11,6 +11,7 @@
     "aria": "Navigation principale",
     "how": "Comment ça marche",
     "features": "Fonctionnalités",
+    "useCases": "Cas d'usage",
     "faq": "FAQ",
     "menu": "Menu",
     "download": "Télécharger"
@@ -25,8 +26,8 @@
   },
   "hero": {
     "iconAlt": "Icône de l'app RoundFair",
-    "titleBefore": "À qui le tour, et ",
-    "titleAccent": "régler équitablement.",
+    "titleBefore": "Sachez à qui le tour. ",
+    "titleAccent": "Réglez équitablement.",
     "sub": "Voyez qui est à son tour et qui est à la traîne, puis réglez quand vous êtes prêts.",
     "badgeAria": "Télécharger RoundFair sur l'App Store",
     "badgeSmall": "Télécharger sur l'",
@@ -72,10 +73,16 @@
     "exportTitle": "Exporte le récapitulatif",
     "exportBody": "Partage un aperçu clair des tournées et des soldes avec le groupe."
   },
+  "cta": {
+    "title": "Votre prochaine tournée est dans l'app.",
+    "sub": "Gratuit sur l'App Store. Aucun compte requis."
+  },
   "languages": {
     "title": "Disponible en 7 langues"
   },
   "faq": {
+    "expandAll": "Tout ouvrir",
+    "collapseAll": "Tout fermer",
     "title": "Questions fréquentes",
     "sub": "Tout ce que vous voulez savoir avant votre première tournée.",
     "dataQ": "Où sont stockées mes données ?",
@@ -95,6 +102,7 @@
     "tauntA": "Des rappels optionnels et ludiques pendant la session pour ceux qui n'ont pas payé depuis un moment. Ils sont programmés sur ton appareil et se désactivent dans les réglages."
   },
   "footer": {
+    "company": "Entreprise",
     "questions": "Des questions ?",
     "privacy": "Politique de confidentialité",
     "support": "Assistance",

@@ -11,6 +11,7 @@
     "aria": "Hoofdnavigatie",
     "how": "Hoe het werkt",
     "features": "Functies",
+    "useCases": "Toepassingen",
     "faq": "FAQ",
     "menu": "Menu",
     "download": "Downloaden"
@@ -25,8 +26,8 @@
   },
   "hero": {
     "iconAlt": "RoundFair-appicoon",
-    "titleBefore": "Wie is aan de beurt, en ",
-    "titleAccent": "eerlijk verrekenen.",
+    "titleBefore": "Weet wie aan de beurt is. ",
+    "titleAccent": "Verreken eerlijk.",
     "sub": "Zie wie Nu aan de beurt is en wie achterloopt, en verreken wanneer je klaar bent.",
     "badgeAria": "Download RoundFair in de App Store",
     "badgeSmall": "Download in de",
@@ -72,10 +73,16 @@
     "exportTitle": "Exporteer het overzicht",
     "exportBody": "Deel een helder overzicht van rondjes en saldi met de groep."
   },
+  "cta": {
+    "title": "Je volgende ronde staat in de app.",
+    "sub": "Gratis in de App Store. Geen account nodig."
+  },
   "languages": {
     "title": "Beschikbaar in 7 talen"
   },
   "faq": {
+    "expandAll": "Alles openen",
+    "collapseAll": "Alles sluiten",
     "title": "Veelgestelde vragen",
     "sub": "Alles wat je wilt weten voor je eerste ronde.",
     "dataQ": "Waar wordt mijn data bewaard?",
@@ -95,6 +102,7 @@
     "tauntA": "Optionele, speelse meldingen tijdens de sessie voor wie te lang niet betaald heeft. Ze worden op je toestel gepland en zijn uit te schakelen in de instellingen."
   },
   "footer": {
+    "company": "Bedrijf",
     "questions": "Vragen?",
     "privacy": "Privacybeleid",
     "support": "Ondersteuning",

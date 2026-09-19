@@ -11,6 +11,7 @@
     "aria": "Navigazione principale",
     "how": "Come funziona",
     "features": "Funzioni",
+    "useCases": "Casi d'uso",
     "faq": "FAQ",
     "menu": "Menu",
     "download": "Scarica"
@@ -25,8 +26,8 @@
   },
   "hero": {
     "iconAlt": "Icona dell'app RoundFair",
-    "titleBefore": "Di chi è il turno, e ",
-    "titleAccent": "saldare in modo equo.",
+    "titleBefore": "Sappi a chi tocca. ",
+    "titleAccent": "Salda in modo equo.",
     "sub": "Vedi a chi tocca ora e chi è indietro, poi salda quando siete pronti.",
     "badgeAria": "Scarica RoundFair sull'App Store",
     "badgeSmall": "Scarica su",
@@ -72,10 +73,16 @@
     "exportTitle": "Esporta il riepilogo",
     "exportBody": "Condividi con il gruppo un riepilogo chiaro di giri e saldi."
   },
+  "cta": {
+    "title": "Il prossimo giro è nell'app.",
+    "sub": "Gratis su App Store. Nessun account."
+  },
   "languages": {
     "title": "Disponibile in 7 lingue"
   },
   "faq": {
+    "expandAll": "Apri tutto",
+    "collapseAll": "Chiudi tutto",
     "title": "Domande frequenti",
     "sub": "Tutto ciò che vuoi sapere prima del primo giro.",
     "dataQ": "Dove sono salvati i miei dati?",
@@ -95,6 +102,7 @@
     "tauntA": "Promemoria opzionali e scherzosi durante la sessione per chi non paga da troppo tempo. Sono programmati sul tuo dispositivo e si disattivano nelle impostazioni."
   },
   "footer": {
+    "company": "Azienda",
     "questions": "Domande?",
     "privacy": "Informativa sulla privacy",
     "support": "Supporto",

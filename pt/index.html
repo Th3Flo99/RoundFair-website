@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt" data-fixed-lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RoundFair: De quem é a vez, e acertar com justiça.</title>
+  <meta name="description" content="Vê quem está na vez agora e quem está atrasado numa noite de saída, e acerta com justiça quando estiverem prontos. Privado de raiz, sem conta." />
+  <meta name="theme-color" content="#2bb491" />
+  <meta property="og:title" content="RoundFair: De quem é a vez, e acertar com justiça." />
+  <meta property="og:description" content="De quem é a vez, e quem está atrasado. Acertem quando estiverem prontos. RoundFair mantém o grupo justo." />
+  <meta property="og:image" content="https://roundfair.support/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://roundfair.support/pt/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RoundFair: De quem é a vez, e acertar com justiça." />
+  <meta name="twitter:description" content="De quem é a vez, e quem está atrasado. Acertem quando estiverem prontos. RoundFair mantém o grupo justo." />
+  <meta name="twitter:image" content="https://roundfair.support/assets/og-image.png" />
+  <link rel="canonical" href="https://roundfair.support/pt/" />
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="en" href="https://roundfair.support/" />
+  <link rel="alternate" hreflang="nl" href="https://roundfair.support/nl/" />
+  <link rel="alternate" hreflang="fr" href="https://roundfair.support/fr/" />
+  <link rel="alternate" hreflang="de" href="https://roundfair.support/de/" />
+  <link rel="alternate" hreflang="es" href="https://roundfair.support/es/" />
+  <link rel="alternate" hreflang="it" href="https://roundfair.support/it/" />
+  <link rel="alternate" hreflang="pt" href="https://roundfair.support/pt/" />
+  <link rel="alternate" hreflang="x-default" href="https://roundfair.support/" />
+  <!-- hreflang:end -->
+  <link rel="icon" type="image/png" href="/assets/roundfair-logo.png" />
+  <link rel="apple-touch-icon" href="/assets/app-icon.png" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("roundfair-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        d.dataset.theme = t;
+        var q = new URLSearchParams(location.search).get("lang");
+        var l = (q || localStorage.getItem("roundfair-lang") || navigator.language || "en").slice(0, 2).toLowerCase();
+        setTimeout(function () { d.classList.remove("i18n-loading"); }, 1500);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preload" href="/assets/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/styles.css?v=footer1" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"FinanceApplication","description":"See who's up now and who's behind on a night out, then settle fairly when you're ready. Private by design, no account needed.","url":"https://roundfair.support/pt/","image":"https://roundfair.support/assets/app-icon-512.png","installUrl":"https://apps.apple.com/app/id6763799194","screenshot":["https://roundfair.support/assets/screenshot-session.png","https://roundfair.support/assets/screenshot-settlement.png"],"sameAs":["https://apps.apple.com/app/id6763799194"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"dateModified":"2026-09-19","author":{"@type":"Organization","name":"FairLead","email":"roundfair@fairlead.be"},"inLanguage":["nl","en","fr","de","es","it","pt"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know whose turn it is to buy a round?","acceptedAnswer":{"@type":"Answer","text":"RoundFair's Up now view shows whose turn it is to buy the next round and who is behind. If nobody wants to decide, the spin wheel can pick someone at random."}},{"@type":"Question","name":"How do I split a bar tab fairly?","acceptedAnswer":{"@type":"Answer","text":"RoundFair tracks every round during the night, so you can see who paid and who is behind. When you're ready, use Split the bill to settle. A consumption overview shows who had what and the cost per person, so the split reflects what people actually drank."}},{"@type":"Question","name":"Onde estão guardados os meus dados?","acceptedAnswer":{"@type":"Answer","text":"No teu dispositivo e no teu iCloud pessoal. RoundFair não tem servidores nem acesso aos teus dados."}},{"@type":"Question","name":"Como funciona a partilha em grupo?","acceptedAnswer":{"@type":"Answer","text":"As sessões podem ser partilhadas via iCloud (CloudKit); cada um precisa de uma conta iCloud no dispositivo."}},{"@type":"Question","name":"O RoundFair custa alguma coisa?","acceptedAnswer":{"@type":"Answer","text":"RoundFair é gratuito para descarregar na App Store. Abre-a e começa uma sessão, sem compra necessária para começar."}},{"@type":"Question","name":"Funciona sem internet?","acceptedAnswer":{"@type":"Answer","text":"Sim. O RoundFair é offline-first e totalmente utilizável sem ligação. A partilha via iCloud é opcional e sincroniza assim que voltares a estar online."}},{"@type":"Question","name":"Que moedas são suportadas?","acceptedAnswer":{"@type":"Answer","text":"Cada sessão tem a sua própria moeda. Escolhe-la ao criar a sessão e todos os valores são mostrados nessa moeda."}},{"@type":"Question","name":"Posso partilhar o resumo com o grupo?","acceptedAnswer":{"@type":"Answer","text":"Sim. Exporta a sessão como texto com participantes, rodadas e saldos, e partilha-a com qualquer app."}},{"@type":"Question","name":"O que são notificações provocadoras?","acceptedAnswer":{"@type":"Answer","text":"Lembretes opcionais e divertidos durante a sessão para quem há muito não paga. São agendados no teu dispositivo e podem ser desativados nas definições."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://roundfair.support/#org","name":"FairLead","url":"https://roundfair.support/pt/","logo":"https://roundfair.support/assets/app-icon-512.png","email":"roundfair@fairlead.be"},{"@type":"WebSite","@id":"https://roundfair.support/#website","name":"RoundFair","url":"https://roundfair.support/pt/","publisher":{"@id":"https://roundfair.support/#org"},"inLanguage":["en","nl","fr","de","es","it","pt"]}]}
+  </script>
+  <script src="/assets/i18n.js?v=dd1" defer></script>
+  <script src="/script.js?v=dd1" defer></script>
+  <script src="/demo.js?v=dd1" defer></script>
+</head>
+<body>
+
+  <nav class="nav" data-i18n-attr="aria-label:nav.aria" aria-label="Navegação principal">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="#">
+        <img src="/assets/roundfair-logo.png" alt="" width="30" height="30" />
+        RoundFair
+      </a>
+      <div class="nav-links">
+        <div class="nav-menu" id="nav-menu">
+          <a href="#how" data-i18n="nav.how">Como funciona</a>
+          <!-- dd:start -->
+          <div class="nav-dd">
+            <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true" data-i18n="nav.features">Funcionalidades</button>
+            <div class="nav-dd-panel">
+              <a href="/features/turn-order.html">Turn order</a>
+              <a href="/features/saved-spots.html">Saved spots</a>
+              <a href="/features/restaurant-mode.html">Restaurant mode</a>
+              <a href="/features/split-the-bill.html">Split the bill</a>
+              <a href="/features/who-drank-what.html">Who drank what</a>
+              <a href="/features/export-summary.html">Export the summary</a>
+              <a href="/features/live-sharing.html">Live sharing and offline</a>
+              <a class="nav-dd-all" href="/features.html">All features →</a>
+            </div>
+          </div>
+          <div class="nav-dd">
+            <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true" data-i18n="nav.useCases">Casos de uso</button>
+            <div class="nav-dd-panel">
+              <a href="/use-cases/pub-rounds.html">Pub rounds with friends</a>
+              <a href="/use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>
+              <a href="/use-cases/group-trips.html">Group trips</a>
+              <a href="/use-cases/restaurant-dinners.html">Restaurant dinners</a>
+              <a href="/use-cases/work-drinks.html">Work drinks and team nights</a>
+              <a class="nav-dd-all" href="/use-cases.html">All use cases →</a>
+            </div>
+          </div>
+          <!-- dd:end -->
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="/blog.html">Blog</a>
+        </div>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6763799194" data-i18n="nav.download">Descarregar</a>
+        <div class="lang-switcher">
+          <label class="visually-hidden" for="lang-select" data-i18n="lang.label">Idioma</label>
+          <select id="lang-select" class="lang-select" data-i18n-attr="aria-label:lang.aria" aria-label="Escolher idioma">
+            <option value="nl">NL</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+            <option value="es">ES</option>
+            <option value="it">IT</option>
+            <option value="pt" selected>PT</option>
+          </select>
+        </div>
+        <button class="theme-toggle" type="button" data-i18n-attr="aria-label:theme.toDark" aria-label="Mudar para modo escuro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+        </button>
+        <button class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-i18n-attr="aria-label:nav.menu" aria-label="Menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <img class="app-icon" src="/assets/app-icon.png" alt="Ícone da app RoundFair" width="88" height="88" data-i18n-attr="alt:hero.iconAlt" />
+        <p class="hero-new"><span class="hero-new-label" data-i18n="hero.newLabel">Novo na 2.0</span><span class="hero-new-text" data-i18n="hero.newText">Locais, rodadas num toque, partilha iCloud</span></p>
+        <h1><span data-i18n="hero.titleBefore">Sabe de quem é a vez. </span><span class="accent" data-i18n="hero.titleAccent">Acerta com justiça.</span></h1>
+        <p class="hero-sub" data-i18n="hero.sub">Vê quem está na vez agora e quem está atrasado, e acerta quando estiverem prontos.</p>
+        <p class="hero-sub hero-def" data-i18n="hero.def">RoundFair is a free iOS app that tracks whose turn it is to buy the next round on a night out, and splits the bill fairly at the end.</p>
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6763799194" data-i18n-attr="aria-label:hero.badgeAria" aria-label="Descarregar RoundFair na App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/>
+          </svg>
+          <span class="badge-text">
+            <span class="badge-small" data-i18n="hero.badgeSmall">Descarregar na</span>
+            <span class="badge-big" data-i18n="hero.badgeBig">App Store</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="hero-phone">
+        <div class="phone phone-back">
+          <div class="phone-screen">
+            <img src="/assets/screenshot-settlement.png" alt="Acerto RoundFair: Jordan e Sam recebem de volta, Alex e Taylor devem pagar" loading="lazy" width="640" height="1390" data-i18n-attr="alt:hero.shotSettleAlt" />
+          </div>
+        </div>
+        <div class="phone phone-front">
+          <div class="phone-screen">
+            <img src="/assets/screenshot-session.png" alt="RoundFair É a vez agora: Taylor está na vez, depois Alex (quotas em direto para o grupo)" width="640" height="1390" data-i18n-attr="alt:hero.shotSessionAlt" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="how">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="how.title">Como funciona</h2>
+        <p class="section-sub reveal" data-i18n="how.sub">Saibam de quem é a vez durante a noite. Acertem quando estiverem prontos.</p>
+        <div class="steps">
+          <article class="step-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle pathLength="1" cx="9" cy="7" r="4" />
+                <line pathLength="1" x1="19" y1="8" x2="19" y2="14" /><line pathLength="1" x1="22" y1="11" x2="16" y2="11" />
+              </svg>
+            </div>
+            <h3 data-i18n="how.step1Title">Começa uma sessão</h3>
+            <p data-i18n="how.step1Body">Cria uma sessão e adiciona os teus amigos. Sem contas.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M9 4h6l1 3h3a1 1 0 0 1 1 1l-2 12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L4 8a1 1 0 0 1 1-1h3z" />
+                <path pathLength="1" d="M8 12h8" />
+              </svg>
+            </div>
+            <h3 data-i18n="how.step2Title">Regista cada rodada</h3>
+            <p data-i18n="how.step2Body">Em cada rodada, marca quem paga e quem bebe. Repete a mesma rodada num toque.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M20 6 9 17l-5-5" />
+              </svg>
+            </div>
+            <h3 data-i18n="how.step3Title">Acerta as contas</h3>
+            <p data-i18n="how.step3Body">O RoundFair atualiza o saldo ao vivo e calcula o acerto mais justo: quem recebe de volta, quem paga a quem.</p>
+          </article>
+        </div>
+        <div class="demo reveal" id="demo">
+          <div class="demo-copy">
+            <h3 data-i18n="demo.title">Toca numa rodada. Vê a vez mudar.</h3>
+            <p data-i18n="demo.body">Este é o verdadeiro ecrã de sessão. Adiciona rodadas, divide uma conta, roda a roleta e abre o acerto.</p>
+          </div>
+          <div class="demo-device">
+            <div class="phone phone-demo">
+              <div class="phone-screen demo-screen" id="demo-screen" data-i18n-attr="aria-label:demo.hint" aria-label="Demo interativa do ecrã de sessão do RoundFair">
+                <img src="/assets/screenshot-session.png" alt="RoundFair É a vez agora: Taylor está na vez, depois Alex (quotas em direto para o grupo)" loading="lazy" width="640" height="1390" data-i18n-attr="alt:hero.shotSessionAlt" />
+              </div>
+            </div>
+            <button type="button" class="demo-reset" id="demo-reset" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7" /><path d="M3 4v5h5" /></svg>
+              <span data-i18n="demo.reset">Reiniciar demo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="features.title">Feito para noites reais</h2>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M21 12a9 9 0 1 1-9-9" /><path pathLength="1" d="M21 3v6h-6" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.turnTitle">Ordem das vezes</h3>
+            <p data-i18n="features.turnBody">Repete a mesma rodada num toque. O RoundFair sabe de quem é a vez.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z" /><circle pathLength="1" cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.spotsTitle">Os teus sítios, prontos</h3>
+            <p data-i18n="features.spotsBody">Guarda os sítios onde vais muitas vezes para começar mais depressa na próxima noite.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M3 11h18l-2 9H5z" /><path pathLength="1" d="M12 11V7a4 4 0 0 1 4-4" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.restaurantTitle">Também noites de restaurante</h3>
+            <p data-i18n="features.restaurantBody">Rondas detalhadas com gorjeta e impostos.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z" /><path pathLength="1" d="M9 9h6M9 13h6" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.splitTitle">Dividir a conta</h3>
+            <p data-i18n="features.splitBody">Um valor total, dividido em partes iguais entre quem escolheres. Táxi, jantar, hotel.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M8 3h8l-1 8a3 3 0 0 1-6 0z" /><path pathLength="1" d="M12 14v6M9 20h6" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.drankTitle">Quem bebeu o quê</h3>
+            <p data-i18n="features.drankBody">Categorias e um resumo de consumo mostram quem bebeu o quê, e o custo por pessoa.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" /><path pathLength="1" d="M12 3v13" /><path pathLength="1" d="m7 8 5-5 5 5" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.exportTitle">Exporta o resumo</h3>
+            <p data-i18n="features.exportBody">Partilha com o grupo um resumo claro das rodadas e dos saldos.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle pathLength="1" cx="12" cy="12" r="9" /><path pathLength="1" d="M12 3v9l6 3" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.spinTitle">Gira a roleta</h3>
+            <p data-i18n="features.spinBody">Deixa o acaso escolher quem paga a próxima ronda.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path pathLength="1" d="M17.5 19a4.5 4.5 0 1 0-.42-8.98 6 6 0 1 0-11.06 3.1A3.5 3.5 0 0 0 6.5 19z" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.shareTitle">Partilha com o grupo</h3>
+            <p data-i18n="features.shareBody">Partilha uma sessão via iCloud para os amigos acompanharem nos próprios dispositivos.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect pathLength="1" x="4" y="10" width="16" height="11" rx="2" /><path pathLength="1" d="M8 10V7a4 4 0 0 1 8 0v3" />
+              </svg>
+            </div>
+            <h3 data-i18n="features.privateTitle">Privado de raiz</h3>
+            <p data-i18n="features.privateBody">Sem conta, sem tracking, tudo fica no teu próprio iCloud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 data-i18n="cta.title">A próxima ronda está na app.</h2>
+        <p data-i18n="cta.sub">Grátis na App Store. Sem conta.</p>
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6763799194" data-i18n-attr="aria-label:hero.badgeAria" aria-label="Descarregar RoundFair na App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/></svg>
+          <span class="badge-text"><span class="badge-small" data-i18n="hero.badgeSmall">Descarregar na</span><span class="badge-big" data-i18n="hero.badgeBig">App Store</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="languages" data-i18n-attr="aria-label:languages.title" aria-label="Disponível em 7 idiomas">
+      <div class="container">
+        <h2 data-i18n="languages.title">Disponível em 7 idiomas</h2>
+        <ul class="language-chips">
+          <li><button type="button" data-lang="nl">Nederlands</button></li>
+          <li><button type="button" data-lang="en">English</button></li>
+          <li><button type="button" data-lang="fr">Français</button></li>
+          <li><button type="button" data-lang="de">Deutsch</button></li>
+          <li><button type="button" data-lang="es">Español</button></li>
+          <li><button type="button" data-lang="it">Italiano</button></li>
+          <li><button type="button" data-lang="pt">Português</button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="faq.eyebrow">FAQ</p>
+        <h2 class="section-title reveal" data-i18n="faq.title">Perguntas frequentes</h2>
+        <p class="section-sub reveal" data-i18n="faq.sub">Tudo o que queres saber antes da primeira ronda.</p>
+        <button type="button" class="faq-toggle reveal" id="faq-toggle" aria-pressed="false"><span class="on-open" data-i18n="faq.expandAll">Abrir tudo</span><span class="on-close" data-i18n="faq.collapseAll">Fechar tudo</span></button>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.turnQ">How do I know whose turn it is to buy a round?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.turnA">RoundFair's Up now view shows whose turn it is to buy the next round and who is behind. If nobody wants to decide, the spin wheel can pick someone at random.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.splitQ">How do I split a bar tab fairly?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.splitA">RoundFair tracks every round during the night, so you can see who paid and who is behind. When you're ready, use Split the bill to settle. A consumption overview shows who had what and the cost per person, so the split reflects what people actually drank.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.dataQ">Onde estão guardados os meus dados?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.dataA">No teu dispositivo e no teu iCloud pessoal. RoundFair não tem servidores nem acesso aos teus dados.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.shareQ">Como funciona a partilha em grupo?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.shareA">As sessões podem ser partilhadas via iCloud (CloudKit); cada um precisa de uma conta iCloud no dispositivo.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.costQ">O RoundFair custa alguma coisa?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.costA">RoundFair é gratuito para descarregar na App Store. Abre-a e começa uma sessão, sem compra necessária para começar.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.offlineQ">Funciona sem internet?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.offlineA">Sim. O RoundFair é offline-first e totalmente utilizável sem ligação. A partilha via iCloud é opcional e sincroniza assim que voltares a estar online.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.currencyQ">Que moedas são suportadas?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.currencyA">Cada sessão tem a sua própria moeda. Escolhe-la ao criar a sessão e todos os valores são mostrados nessa moeda.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.exportQ">Posso partilhar o resumo com o grupo?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.exportA">Sim. Exporta a sessão como texto com participantes, rodadas e saldos, e partilha-a com qualquer app.</p></div></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary data-i18n="faq.tauntQ">O que são notificações provocadoras?</summary>
+            <div class="faq-body"><div class="faq-body-inner"><p data-i18n="faq.tauntA">Lembretes opcionais e divertidos durante a sessão para quem há muito não paga. São agendados no teu dispositivo e podem ser desativados nas definições.</p></div></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer:start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-brand" href="#">
+            <img src="/assets/roundfair-logo.png" alt="" width="30" height="30" />
+            RoundFair
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">De quem é a vez, e acertar com justiça.</p>
+          <a class="appstore-badge footer-badge" href="https://apps.apple.com/app/id6763799194" aria-label="Descarregar RoundFair na App Store" data-i18n-attr="aria-label:hero.badgeAria">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/></svg>
+            <span class="badge-text">
+              <span class="badge-small" data-i18n="hero.badgeSmall">Descarregar na</span>
+              <span class="badge-big" data-i18n="hero.badgeBig">App Store</span>
+            </span>
+          </a>
+        </div>
+        <nav class="footer-col" data-i18n-attr="aria-label:footer.product" aria-label="Produto">
+          <h3 data-i18n="footer.product">Produto</h3>
+          <a href="#how" data-i18n="nav.how">Como funciona</a>
+          <a href="/features.html" data-i18n="nav.features">Funcionalidades</a>
+          <a href="/use-cases.html" data-i18n="nav.useCases">Casos de uso</a>
+          <a href="/calculators.html">Bill split calculator</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </nav>
+        <nav class="footer-col" data-i18n-attr="aria-label:footer.company" aria-label="Empresa">
+          <h3 data-i18n="footer.company">Empresa</h3>
+          <a href="/about.html">About</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/press.html">Press</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <nav class="footer-col" data-i18n-attr="aria-label:footer.help" aria-label="Ajuda">
+          <h3 data-i18n="footer.help">Ajuda</h3>
+          <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Suporte</a>
+          <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
+          <a href="/privacy.html" data-i18n="footer.privacy">Política de privacidade</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright"><span data-i18n="footer.copyright">© 2026 FairLead</span><span class="footer-dot" aria-hidden="true">·</span><span data-i18n="footer.updated">Last updated: September 2026</span></p>
+        <a class="footer-appstore" href="https://apps.apple.com/app/id6763799194" data-i18n="footer.appStore">App Store</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer:end -->
+
+</body>
+</html>
