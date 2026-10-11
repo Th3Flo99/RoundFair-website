@@ -30,8 +30,7 @@ const swap = (file, start, end, body, ind = "  ") => {
 swap("blog.html", "<!-- posts:start -->", "<!-- posts:end -->", list, "    ");
 const urls = posts.map((p) => `  <url>
     <loc>${SITE}blog/${p.f}</loc>
-    <lastmod>${p.date}</lastmod>
-  </url>`).join("\n");
+  </url>`).join("\n"); // lastmod: build-sitemap.js
 swap("sitemap.xml", "<!-- blog:start -->", "<!-- blog:end -->", urls);
 console.log(`${posts.length} posts synced`);
 

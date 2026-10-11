@@ -1,2 +1,2 @@
 #!/bin/sh
-node build-blog.js && node build-pages.js && node build-footer.js && node build-cta.js && node build-langs.js && node check-links.js && git add *.html blog.html sitemap.xml index.html features.html use-cases.html features use-cases blog ??/index.html
+node build-blog.js && node build-pages.js && node build-footer.js && node build-cta.js && node build-langs.js && node build-sitemap.js && node check-links.js && git add *.html blog.html sitemap.xml index.html features.html use-cases.html features use-cases blog ??/index.html

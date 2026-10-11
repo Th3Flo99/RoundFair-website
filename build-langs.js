@@ -2,7 +2,6 @@
 // plus the hreflang block in index.html and the /<lang>/ entries in sitemap.xml.
 // Run: node build-langs.js  (also runs on git commit via .githooks). English stays at the root.
 const fs = require("fs");
-const { execSync } = require("child_process");
 const SITE = "https://roundfair.support/";
 const LANGS = ["nl", "fr", "de", "es", "it", "pt"];
 const url = (l) => SITE + (l === "en" ? "" : l + "/");
@@ -74,11 +73,15 @@ function build(lang) {
        .replace(`<option value="${lang}">`, `<option value="${lang}" selected>`)
        .replace(/(href|src)="(?!https?:|mailto:|#|\/|data:)/g, '$1="/');
   h = h.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (_, a, json, b) => {
+    // entities with an @id (Organization, WebSite) are site-wide, so their url stays the root
     const walk = (v) => Array.isArray(v) ? v.map(walk) : v && typeof v === "object"
-      ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "url" ? url(lang) : walk(x)]))
+      ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "url" && !v["@id"] ? url(lang) : walk(x)]))
       : typeof v === "string" && enByText.has(v) ? t(enByText.get(v)) : v;
     const data = JSON.parse(json);
-    if (data.mainEntity) data.mainEntity = data.mainEntity.filter((q) => enByText.has(q.name)); // drop Q&As with no translation
+    if (data.mainEntity) {
+      data.mainEntity = data.mainEntity.filter((q) => enByText.has(q.name)); // drop Q&As with no translation
+      data.inLanguage = lang;
+    }
     return a + "\n  " + JSON.stringify(walk(data)) + "\n  " + b;
   });
   fs.mkdirSync(lang, { recursive: true });
@@ -86,9 +89,6 @@ function build(lang) {
 }
 LANGS.forEach(build);
 
-let lastmod;
-try { lastmod = execSync("git log -1 --format=%cs -- index.html assets/i18n build-langs.js", { encoding: "utf8" }).trim(); } catch (e) {}
-lastmod ||= new Date().toISOString().slice(0, 10);
-const sm = fs.readFileSync("sitemap.xml", "utf8");
-fs.writeFileSync("sitemap.xml", marker(sm, "lang", LANGS.map((l) => `  <url>\n    <loc>${url(l)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`).join("\n")));
+const sm = fs.readFileSync("sitemap.xml", "utf8"); // lastmod: build-sitemap.js
+fs.writeFileSync("sitemap.xml", marker(sm, "lang", LANGS.map((l) => `  <url>\n    <loc>${url(l)}</loc>\n  </url>`).join("\n")));
 console.log(`${LANGS.length} language pages built`);

@@ -124,6 +124,8 @@ ${PAGES[g].items.map((i) => `              <a href="${up}${key(g, i.slug)}">${i.
             </div>
           </div>`;
 
+// share image rendered by build-og.js (features/x.html → assets/og/features-x.png), else the app screenshot
+const ogImage = (url) => { const f = `assets/og/${url.replace(/\.html$/, "").replace("/", "-")}.png`; return SITE + (fs.existsSync(f) ? f : "assets/og-image.png"); };
 const layout = ({ up, url, title, desc, body, ld }) => `<!doctype html>
 <html lang="en">
 <head>
@@ -136,11 +138,11 @@ const layout = ({ up, url, title, desc, body, ld }) => `<!doctype html>
   <meta property="og:url" content="${SITE}${url}" />
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(desc)}" />
-  <meta property="og:image" content="${SITE}assets/og-image.png" />
+  <meta property="og:image" content="${ogImage(url)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(title)}" />
   <meta name="twitter:description" content="${esc(desc)}" />
-  <meta name="twitter:image" content="${SITE}assets/og-image.png" />
+  <meta name="twitter:image" content="${ogImage(url)}" />
   <meta name="theme-color" content="#2bb491" />
 ${ld.map((o) => `  <script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n")}
   <link rel="icon" type="image/png" href="${up}assets/roundfair-logo.png" />
@@ -271,8 +273,7 @@ fs.writeFileSync("index.html", home.replace(/(<!-- dd:start -->)[\s\S]*?(<!-- dd
           ${b}`));
 
 const sm = fs.readFileSync("sitemap.xml", "utf8");
-const today = new Date().toISOString().slice(0, 10);
-const entries = urls.map((u) => `  <url>\n    <loc>${SITE}${u}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`).join("\n");
+const entries = urls.map((u) => `  <url>\n    <loc>${SITE}${u}</loc>\n  </url>`).join("\n"); // lastmod: build-sitemap.js
 const block = `<!-- pages:start -->\n${entries}\n  <!-- pages:end -->`;
 fs.writeFileSync("sitemap.xml", sm.includes("<!-- pages:start -->")
   ? sm.replace(/<!-- pages:start -->[\s\S]*?<!-- pages:end -->/, () => block)
