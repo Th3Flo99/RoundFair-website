@@ -14,7 +14,26 @@
     "useCases": "Anwendungsfälle",
     "faq": "FAQ",
     "menu": "Menü",
-    "download": "Laden"
+    "download": "Laden",
+    "dd": {
+      "turn-order": "Reihenfolge",
+      "saved-spots": "Gespeicherte Orte",
+      "restaurant-mode": "Restaurantmodus",
+      "split-the-bill": "Rechnung teilen",
+      "who-drank-what": "Wer hat was getrunken",
+      "export-summary": "Übersicht exportieren",
+      "live-sharing": "Live teilen und offline",
+      "all-features": "Alle Funktionen →",
+      "pub-rounds": "Runden in der Kneipe",
+      "bachelor-hen-party": "Junggesellenabschiede",
+      "group-trips": "Gruppenreisen",
+      "restaurant-dinners": "Essen im Restaurant",
+      "work-drinks": "Feierabendbier und Teamabende",
+      "festivals": "Festivals",
+      "student-nights": "Studentenabende",
+      "coffee-and-lunch-rounds": "Kaffee- und Mittagsrunden",
+      "all-use-cases": "Alle Anwendungsfälle →"
+    }
   },
   "theme": {
     "toDark": "Zum Dunkelmodus wechseln",
@@ -123,7 +142,10 @@
     "contact": "Kontakt",
     "terms": "Nutzungsbedingungen",
     "calculator": "Rechner: Rechnung teilen",
-    "languages": "Sprachen"
+    "languages": "Sprachen",
+    "tools": "Kostenlose Tools",
+    "compare": "Apps vergleichen",
+    "helpCenter": "Hilfe-Center"
   },
   "privacy": {
     "title": "Datenschutz (RoundFair)",
@@ -222,7 +244,7 @@
     "indexH1": "Blog",
     "indexLead": "Tipps zum Rechnung teilen, Runden ausgeben und für faire Abende.",
     "back": "← Zurück zum Blog",
-    "by": "Von FairLead",
+    "by": "Von Florian Ronsse",
     "readEnglish": "Auf Englisch lesen",
     "ctaTitle": "Deine nächste Runde steht in der App.",
     "ctaSub": "Kostenlos im App Store. Kein Konto nötig.",

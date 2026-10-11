@@ -19,7 +19,7 @@
   <meta name="apple-itunes-app" content="app-id=6763799194" />
   <link rel="manifest" href="/site.webmanifest" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RoundFair","item":"https://roundfair.support/"},{"@type":"ListItem","position":2,"name":"Use cases","item":"https://roundfair.support/use-cases.html"},{"@type":"ListItem","position":3,"name":"Pub rounds with friends","item":"https://roundfair.support/use-cases/pub-rounds.html"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Track Pub Rounds with Friends – RoundFair","description":"Never argue over whose round it is again. RoundFair tracks pub rounds and shows who is next and who is behind. Free on iOS.","url":"https://roundfair.support/use-cases/pub-rounds.html","isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Track Pub Rounds with Friends – RoundFair","description":"Never argue over whose round it is again. RoundFair tracks pub rounds and shows who is next and who is behind. Free on iOS.","url":"https://roundfair.support/use-cases/pub-rounds.html","author":{"@type":"Person","@id":"https://roundfair.support/about.html#founder","name":"Florian Ronsse","jobTitle":"Founder","url":"https://roundfair.support/about.html#founder","worksFor":{"@id":"https://roundfair.support/#org"}},"isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"FinanceApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What if someone leaves early?","acceptedAnswer":{"@type":"Answer","text":"Remove them from the session. The remaining group keeps its turn order."}},{"@type":"Question","name":"Can we settle up in money instead of rounds?","acceptedAnswer":{"@type":"Answer","text":"Yes. Split the bill at the end to even out the difference."}},{"@type":"Question","name":"What if two people think it is their turn?","acceptedAnswer":{"@type":"Answer","text":"Check the record. If it is genuinely a tie, the person who has bought fewer rounds in total goes, and the other takes the next. A visible count settles most disputes in seconds."}},{"@type":"Question","name":"Does everyone need the app installed?","acceptedAnswer":{"@type":"Answer","text":"No. One person can keep the record and read out who is next. If you want everyone to see the count live, share the session through iCloud."}},{"@type":"Question","name":"What about rounds of different sizes?","acceptedAnswer":{"@type":"Answer","text":"A round of pints is not a round of cocktails. If one person always orders expensive drinks, use the bill split at the end to even out the difference in money."}},{"@type":"Question","name":"How do we handle a friend who never buys a round?","acceptedAnswer":{"@type":"Answer","text":"Gently, and with the record in hand. Showing a neutral count is much easier than making an accusation, and most people simply had not noticed."}},{"@type":"Question","name":"Can I use it for a one-off night?","acceptedAnswer":{"@type":"Answer","text":"Yes. Start a session, log the rounds, and finish it when you go home. There is nothing to set up beforehand."}}]}</script>
   <link rel="icon" type="image/png" href="../assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="../assets/app-icon.png" />
@@ -33,9 +33,9 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="../styles.css?v=seo2" />
+  <link rel="stylesheet" href="../styles.css?v=seo3" />
   <script src="../post.js?v=3" defer></script>
-  <script src="../script.js?v=dd1" defer></script>
+  <script src="../script.js?v=mail1" defer></script>
 </head>
 <body>
 
@@ -51,25 +51,28 @@
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Features</button>
             <div class="nav-dd-panel">
-              <a href="../features/turn-order.html">Turn order</a>
-              <a href="../features/saved-spots.html">Saved spots</a>
-              <a href="../features/restaurant-mode.html">Restaurant mode</a>
-              <a href="../features/split-the-bill.html">Split the bill</a>
-              <a href="../features/who-drank-what.html">Who drank what</a>
-              <a href="../features/export-summary.html">Export the summary</a>
-              <a href="../features/live-sharing.html">Live sharing and offline</a>
-              <a class="nav-dd-all" href="../features.html">All features →</a>
+              <a href="../features/turn-order.html" data-i18n="nav.dd.turn-order">Turn order</a>
+              <a href="../features/saved-spots.html" data-i18n="nav.dd.saved-spots">Saved spots</a>
+              <a href="../features/restaurant-mode.html" data-i18n="nav.dd.restaurant-mode">Restaurant mode</a>
+              <a href="../features/split-the-bill.html" data-i18n="nav.dd.split-the-bill">Split the bill</a>
+              <a href="../features/who-drank-what.html" data-i18n="nav.dd.who-drank-what">Who drank what</a>
+              <a href="../features/export-summary.html" data-i18n="nav.dd.export-summary">Export the summary</a>
+              <a href="../features/live-sharing.html" data-i18n="nav.dd.live-sharing">Live sharing and offline</a>
+              <a class="nav-dd-all" href="../features.html" data-i18n="nav.dd.all-features">All features →</a>
             </div>
           </div>
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Use cases</button>
             <div class="nav-dd-panel">
-              <a href="../use-cases/pub-rounds.html">Pub rounds with friends</a>
-              <a href="../use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>
-              <a href="../use-cases/group-trips.html">Group trips</a>
-              <a href="../use-cases/restaurant-dinners.html">Restaurant dinners</a>
-              <a href="../use-cases/work-drinks.html">Work drinks and team nights</a>
-              <a class="nav-dd-all" href="../use-cases.html">All use cases →</a>
+              <a href="../use-cases/pub-rounds.html" data-i18n="nav.dd.pub-rounds">Pub rounds with friends</a>
+              <a href="../use-cases/bachelor-hen-party.html" data-i18n="nav.dd.bachelor-hen-party">Bachelor and hen parties</a>
+              <a href="../use-cases/group-trips.html" data-i18n="nav.dd.group-trips">Group trips</a>
+              <a href="../use-cases/restaurant-dinners.html" data-i18n="nav.dd.restaurant-dinners">Restaurant dinners</a>
+              <a href="../use-cases/work-drinks.html" data-i18n="nav.dd.work-drinks">Work drinks and team nights</a>
+              <a href="../use-cases/festivals.html" data-i18n="nav.dd.festivals">Festivals</a>
+              <a href="../use-cases/student-nights.html" data-i18n="nav.dd.student-nights">Student nights out</a>
+              <a href="../use-cases/coffee-and-lunch-rounds.html" data-i18n="nav.dd.coffee-and-lunch-rounds">Coffee and lunch rounds</a>
+              <a class="nav-dd-all" href="../use-cases.html" data-i18n="nav.dd.all-use-cases">All use cases →</a>
             </div>
           </div>
           <a href="/#faq">FAQ</a>
@@ -90,7 +93,7 @@
   <main class="privacy-page">
     <a class="back-link" href="../use-cases.html">← All use cases</a>
     <h1>Track Pub Rounds with Friends</h1>
-    <p class="updated">RoundFair use case · By FairLead</p>
+    <p class="updated">RoundFair use case · By <a href="../about.html#founder">Florian Ronsse</a>, founder of FairLead</p>
     <p>The classic use: a group of friends, a pub, and a rotation of rounds that nobody can quite remember.</p>
     <nav class="toc" aria-label="In this guide"><strong>In this guide</strong>
     <ul>
@@ -104,7 +107,7 @@
       <li><a href="#big-groups-small-groups-and-the-two-person-round">Big groups, small groups and the two-person round</a></li>
       <li><a href="#handling-the-friend-who-is-always-at-the-bar-first">Handling the friend who is always at the bar first</a></li>
     </ul></nav>
-    <h2>How it works</h2>
+    <h2>Running a pub night in RoundFair</h2>
     <ol>
       <li>Start a session at the pub and add the group.</li>
       <li>Log each round when it is bought.</li>
@@ -153,7 +156,7 @@
     <h2 id="handling-the-friend-who-is-always-at-the-bar-first">Handling the friend who is always at the bar first</h2>
     <p>Every group has one. They mean well, they are quick on their feet, and they end up buying more than their share because nobody else moves. The kind thing to do is not to let it continue. When the count shows one person is several rounds ahead, others should pick up the next turns, or at least offer the difference back in cash at the end of the night.</p>
     <p>This is another reason a visible record helps. Generosity should be noticed, not taken for granted, and a number on a screen makes it easy to say thank you and take the next one.</p>
-    <h2>Why it works</h2>
+    <h2>Why a shared count keeps the tradition alive</h2>
     <p>Rounds only work if everyone trusts the count. A shared record takes the guesswork out, so the person who always seems to buy a round gets credit and the one who keeps missing theirs is easy to spot, kindly.</p>
     <h2>Frequently asked questions</h2>
     <h3>What if someone leaves early?</h3><p>Remove them from the session. The remaining group keeps its turn order.</p>
@@ -163,6 +166,13 @@
     <h3>What about rounds of different sizes?</h3><p>A round of pints is not a round of cocktails. If one person always orders expensive drinks, use the bill split at the end to even out the difference in money.</p>
     <h3>How do we handle a friend who never buys a round?</h3><p>Gently, and with the record in hand. Showing a neutral count is much easier than making an accusation, and most people simply had not noticed.</p>
     <h3>Can I use it for a one-off night?</h3><p>Yes. Start a session, log the rounds, and finish it when you go home. There is nothing to set up beforehand.</p>
+    <h2 id="related-guides">Related guides</h2>
+    <ul>
+      <li><a href="../blog/pub-round-etiquette-uk.html">Pub round etiquette: the unwritten UK rules</a></li>
+      <li><a href="../blog/whose-turn-to-buy-the-next-round.html">Whose turn is it to buy the next round?</a></li>
+      <li><a href="../tools/who-pays-wheel.html">Who pays? Free online spin wheel</a></li>
+      <li><a href="../compare/roundfair-vs-whoseround.html">RoundFair vs WhoseRound?</a></li>
+    </ul>
     <h2>Features that help</h2>
     <ul>
       <li><a href="../features/turn-order.html">Turn order</a></li>
@@ -207,7 +217,8 @@
           <a href="/#how" data-i18n="nav.how">How it works</a>
           <a href="../features.html" data-i18n="nav.features">Features</a>
           <a href="../use-cases.html" data-i18n="nav.useCases">Use cases</a>
-          <a href="../calculators.html" data-i18n="footer.calculator">Bill split calculator</a>
+          <a href="../tools.html" data-i18n="footer.tools">Free tools</a>
+          <a href="../compare.html" data-i18n="footer.compare">Compare apps</a>
           <a href="/#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.company">
@@ -219,8 +230,8 @@
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.help">
           <h3 data-i18n="footer.help">Help</h3>
-          <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
-          <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
+          <a href="../help.html" data-i18n="footer.helpCenter">Help center</a>
+          <a href="../contact.html" data-i18n="footer.support">Support</a>
           <a href="../privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="../terms.html" data-i18n="footer.terms">Terms</a>
         </nav>

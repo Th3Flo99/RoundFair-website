@@ -14,7 +14,26 @@
     "useCases": "Casi d'uso",
     "faq": "FAQ",
     "menu": "Menu",
-    "download": "Scarica"
+    "download": "Scarica",
+    "dd": {
+      "turn-order": "Ordine dei turni",
+      "saved-spots": "Luoghi salvati",
+      "restaurant-mode": "Modalità ristorante",
+      "split-the-bill": "Dividi il conto",
+      "who-drank-what": "Chi ha bevuto cosa",
+      "export-summary": "Esporta il riepilogo",
+      "live-sharing": "Condivisione dal vivo e offline",
+      "all-features": "Tutte le funzioni →",
+      "pub-rounds": "Giri al pub con gli amici",
+      "bachelor-hen-party": "Addii al celibato e al nubilato",
+      "group-trips": "Viaggi di gruppo",
+      "restaurant-dinners": "Cene al ristorante",
+      "work-drinks": "Aperitivi con i colleghi",
+      "festivals": "Festival",
+      "student-nights": "Serate universitarie",
+      "coffee-and-lunch-rounds": "Giri di caffè e pranzo",
+      "all-use-cases": "Tutti i casi d’uso →"
+    }
   },
   "theme": {
     "toDark": "Passa alla modalità scura",
@@ -123,7 +142,10 @@
     "contact": "Contatti",
     "terms": "Termini d'uso",
     "calculator": "Calcolatore per dividere il conto",
-    "languages": "Lingue"
+    "languages": "Lingue",
+    "tools": "Strumenti gratuiti",
+    "compare": "Confronta le app",
+    "helpCenter": "Centro assistenza"
   },
   "privacy": {
     "title": "Informativa sulla privacy (RoundFair)",
@@ -215,5 +237,8 @@
     "soda": "Bibita",
     "restaurant": "Ristorante",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "by": "Di Florian Ronsse"
   }
 }

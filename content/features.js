@@ -28,7 +28,7 @@ sections: [
 ["Turn order tracker vs keeping score in your head or a spreadsheet", [
 "Memory is the default method and it works surprisingly well for two people over two pints. It fails for larger groups because human recall is biased: everyone remembers their own rounds vividly and other people's vaguely. That is not dishonesty, just how memory works.",
 "A spreadsheet or a notes app fixes accuracy but adds friction. Somebody has to open it, find the right row, and type the name correctly with a pint in one hand. Tabs get stale, the person who owns the sheet becomes the group's accountant, and the whole thing dies by the third outing.",
-"A general expense splitter is a different tool for a different job. Apps built for shared costs track money owed, which is right for a holiday and heavy for a round of beers. If you are weighing them up, our comparison of the [best apps for tracking whose turn it is](blog/round-buying-app-track-whose-turn-it-is.html) sets out what each approach is good at, and [best bill splitting apps](blog/best-bill-splitting-apps.html) covers the money side.",
+"A general expense splitter is a different tool for a different job. Apps built for shared costs track money owed, which is right for a holiday and heavy for a round of beers. If you are weighing them up, our comparison of the [best apps for tracking whose turn it is](features/turn-order.html#what-to-look-for-in-a-round-tracker-app) sets out what each approach is good at, and [best bill splitting apps](blog/best-bill-splitting-apps.html) covers the money side.",
 "RoundFair sits in the gap: it counts rounds rather than pounds, works in a couple of taps, needs no accounts, and stores data on your device and your personal iCloud."]],
 ["Tips for keeping the round order fair", [
 "- Agree the rules before the first drink. Two minutes at the start prevents twenty minutes of debate later.",
@@ -167,7 +167,7 @@ sections: [
 "- Chasing payment. If you are the one owed money, [how to remind friends to pay you back](blog/how-to-remind-friends-to-pay-you-back.html) has polite ways to do it."]],
 ["Split the bill vs calculators, spreadsheets and other apps", [
 "For a single cost between two people, a mental sum is faster than any app. The tool earns its keep once several costs and several groups of people are involved, because that is when the mental sums fall apart.",
-"Spreadsheets are flexible but slow to set up on a phone at midnight. Payment apps are convenient for sending money but usually do not work out who owes what. Full expense trackers are excellent for long trips and ongoing households, and we cover several in [free bill splitting apps](blog/free-bill-splitting-apps.html) and [best Splitwise alternatives](blog/best-splitwise-alternatives.html).",
+"Spreadsheets are flexible but slow to set up on a phone at midnight. Payment apps are convenient for sending money but usually do not work out who owes what. Full expense trackers are excellent for long trips and ongoing households, and we cover several in [free bill splitting apps](blog/best-bill-splitting-apps.html#free-bill-splitting-apps-what-free-really-means) and [best Splitwise alternatives](blog/best-splitwise-alternatives.html).",
 "RoundFair's angle is to keep it light: no accounts, no servers, and a night's costs settled in one place. If you want to keep the debts running across months, a heavier tool suits better, and our guide to [settling up without tracking debts](blog/settle-up-without-tracking-debts.html) explains the lighter approach we prefer."]],
 ["Tips for splitting costs with friends", [
 "- Agree the split before you spend, not after. A quick who is in for the taxi takes five seconds.",
@@ -304,7 +304,7 @@ sections: [
 "- If the group is big, consider having sub-groups keep their own sessions, as suggested in [how to run a bar tab with friends](blog/how-to-run-a-bar-tab-with-friends.html)."]],
 ["Who live sharing is for", [
 "It is for groups where more than one person cares about the numbers: a regular pub crowd, a team at [work drinks](use-cases/work-drinks.html), or a [group trip](use-cases/group-trips.html) where different people pay at different times. When everyone can see the same record, the argument about whose turn it is disappears.",
-"It is less useful when a single person is happy to be the keeper. In that case, keep the record alone and share the export at the end. If you are curious how the tracking itself works, start with [turn order](features/turn-order.html), or read about [tracking whose turn it is](blog/round-buying-app-track-whose-turn-it-is.html)."]]
+"It is less useful when a single person is happy to be the keeper. In that case, keep the record alone and share the export at the end. If you are curious how the tracking itself works, start with [turn order](features/turn-order.html), or read about [tracking whose turn it is](features/turn-order.html#what-to-look-for-in-a-round-tracker-app)."]]
 ],
 faq: [
 ["Do I need an internet connection to log a round?", "No. RoundFair works offline and syncs when you are back online."],

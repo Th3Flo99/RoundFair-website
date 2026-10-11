@@ -14,7 +14,26 @@
     "useCases": "Toepassingen",
     "faq": "FAQ",
     "menu": "Menu",
-    "download": "Downloaden"
+    "download": "Downloaden",
+    "dd": {
+      "turn-order": "Beurtvolgorde",
+      "saved-spots": "Bewaarde plekken",
+      "restaurant-mode": "Restaurantmodus",
+      "split-the-bill": "Rekening splitsen",
+      "who-drank-what": "Wie dronk wat",
+      "export-summary": "Overzicht exporteren",
+      "live-sharing": "Live delen en offline",
+      "all-features": "Alle functies →",
+      "pub-rounds": "Rondjes in het café",
+      "bachelor-hen-party": "Vrijgezellenfeesten",
+      "group-trips": "Groepsreizen",
+      "restaurant-dinners": "Etentjes op restaurant",
+      "work-drinks": "Afterwork en teamavonden",
+      "festivals": "Festivals",
+      "student-nights": "Studentenavonden",
+      "coffee-and-lunch-rounds": "Koffie- en lunchrondjes",
+      "all-use-cases": "Alle toepassingen →"
+    }
   },
   "theme": {
     "toDark": "Schakel naar donkere modus",
@@ -123,7 +142,10 @@
     "contact": "Contact",
     "terms": "Voorwaarden",
     "calculator": "Rekening splitsen: calculator",
-    "languages": "Talen"
+    "languages": "Talen",
+    "tools": "Gratis tools",
+    "compare": "Apps vergelijken",
+    "helpCenter": "Helpcentrum"
   },
   "privacy": {
     "title": "Privacybeleid (RoundFair)",
@@ -222,7 +244,7 @@
     "indexH1": "Blog",
     "indexLead": "Tips over rekeningen splitsen, rondjes geven en eerlijke avonden uit.",
     "back": "← Terug naar de blog",
-    "by": "Door FairLead",
+    "by": "Door Florian Ronsse",
     "readEnglish": "Lees in het Engels",
     "ctaTitle": "Je volgende rondje staat in de app.",
     "ctaSub": "Gratis in de App Store. Geen account nodig.",
