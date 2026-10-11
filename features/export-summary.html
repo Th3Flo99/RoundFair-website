@@ -19,7 +19,7 @@
   <meta name="apple-itunes-app" content="app-id=6763799194" />
   <link rel="manifest" href="/site.webmanifest" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RoundFair","item":"https://roundfair.support/"},{"@type":"ListItem","position":2,"name":"Features","item":"https://roundfair.support/features.html"},{"@type":"ListItem","position":3,"name":"Export the summary","item":"https://roundfair.support/features/export-summary.html"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Export a Round and Balance Summary – RoundFair","description":"Share a clear plain text overview of rounds and balances with your group using RoundFair's export, ready to paste anywhere. Free iOS app.","url":"https://roundfair.support/features/export-summary.html","isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Export a Round and Balance Summary – RoundFair","description":"Share a clear plain text overview of rounds and balances with your group using RoundFair's export, ready to paste anywhere. Free iOS app.","url":"https://roundfair.support/features/export-summary.html","author":{"@type":"Person","@id":"https://roundfair.support/about.html#founder","name":"Florian Ronsse","jobTitle":"Founder","url":"https://roundfair.support/about.html#founder","worksFor":{"@id":"https://roundfair.support/#org"}},"isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"FinanceApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What format is the export?","acceptedAnswer":{"@type":"Answer","text":"Plain text, so it can be pasted into any chat or note."}},{"@type":"Question","name":"Does the export leave my device?","acceptedAnswer":{"@type":"Answer","text":"Only when you share it. RoundFair has no servers and no analytics."}},{"@type":"Question","name":"Can I export as a PDF or spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"The export is plain text, so it can be pasted anywhere. Other formats are not described on this site."}},{"@type":"Question","name":"Can I edit the text before sending?","acceptedAnswer":{"@type":"Answer","text":"Yes. Because it is plain text, you can add a greeting or a payment deadline before you send it."}},{"@type":"Question","name":"Does exporting share my data with RoundFair?","acceptedAnswer":{"@type":"Answer","text":"No. RoundFair has no servers and no analytics. The summary goes only where you send it."}},{"@type":"Question","name":"Do the people who receive it need RoundFair?","acceptedAnswer":{"@type":"Answer","text":"No. Anyone who can read a message can read the summary."}},{"@type":"Question","name":"When is the best time to export?","acceptedAnswer":{"@type":"Answer","text":"After the final round and the final shared cost, so the summary is complete. You can export again if something changes."}},{"@type":"Question","name":"Can I export more than once for the same night?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can share a summary whenever you like, for example at the end of each day of a trip, and share a fresh one if anything changes."}}]}</script>
   <link rel="icon" type="image/png" href="../assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="../assets/app-icon.png" />
@@ -33,9 +33,9 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="../styles.css?v=seo2" />
+  <link rel="stylesheet" href="../styles.css?v=seo3" />
   <script src="../post.js?v=3" defer></script>
-  <script src="../script.js?v=dd1" defer></script>
+  <script src="../script.js?v=mail1" defer></script>
 </head>
 <body>
 
@@ -51,25 +51,28 @@
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Features</button>
             <div class="nav-dd-panel">
-              <a href="../features/turn-order.html">Turn order</a>
-              <a href="../features/saved-spots.html">Saved spots</a>
-              <a href="../features/restaurant-mode.html">Restaurant mode</a>
-              <a href="../features/split-the-bill.html">Split the bill</a>
-              <a href="../features/who-drank-what.html">Who drank what</a>
-              <a href="../features/export-summary.html">Export the summary</a>
-              <a href="../features/live-sharing.html">Live sharing and offline</a>
-              <a class="nav-dd-all" href="../features.html">All features →</a>
+              <a href="../features/turn-order.html" data-i18n="nav.dd.turn-order">Turn order</a>
+              <a href="../features/saved-spots.html" data-i18n="nav.dd.saved-spots">Saved spots</a>
+              <a href="../features/restaurant-mode.html" data-i18n="nav.dd.restaurant-mode">Restaurant mode</a>
+              <a href="../features/split-the-bill.html" data-i18n="nav.dd.split-the-bill">Split the bill</a>
+              <a href="../features/who-drank-what.html" data-i18n="nav.dd.who-drank-what">Who drank what</a>
+              <a href="../features/export-summary.html" data-i18n="nav.dd.export-summary">Export the summary</a>
+              <a href="../features/live-sharing.html" data-i18n="nav.dd.live-sharing">Live sharing and offline</a>
+              <a class="nav-dd-all" href="../features.html" data-i18n="nav.dd.all-features">All features →</a>
             </div>
           </div>
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Use cases</button>
             <div class="nav-dd-panel">
-              <a href="../use-cases/pub-rounds.html">Pub rounds with friends</a>
-              <a href="../use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>
-              <a href="../use-cases/group-trips.html">Group trips</a>
-              <a href="../use-cases/restaurant-dinners.html">Restaurant dinners</a>
-              <a href="../use-cases/work-drinks.html">Work drinks and team nights</a>
-              <a class="nav-dd-all" href="../use-cases.html">All use cases →</a>
+              <a href="../use-cases/pub-rounds.html" data-i18n="nav.dd.pub-rounds">Pub rounds with friends</a>
+              <a href="../use-cases/bachelor-hen-party.html" data-i18n="nav.dd.bachelor-hen-party">Bachelor and hen parties</a>
+              <a href="../use-cases/group-trips.html" data-i18n="nav.dd.group-trips">Group trips</a>
+              <a href="../use-cases/restaurant-dinners.html" data-i18n="nav.dd.restaurant-dinners">Restaurant dinners</a>
+              <a href="../use-cases/work-drinks.html" data-i18n="nav.dd.work-drinks">Work drinks and team nights</a>
+              <a href="../use-cases/festivals.html" data-i18n="nav.dd.festivals">Festivals</a>
+              <a href="../use-cases/student-nights.html" data-i18n="nav.dd.student-nights">Student nights out</a>
+              <a href="../use-cases/coffee-and-lunch-rounds.html" data-i18n="nav.dd.coffee-and-lunch-rounds">Coffee and lunch rounds</a>
+              <a class="nav-dd-all" href="../use-cases.html" data-i18n="nav.dd.all-use-cases">All use cases →</a>
             </div>
           </div>
           <a href="/#faq">FAQ</a>
@@ -90,7 +93,7 @@
   <main class="privacy-page">
     <a class="back-link" href="../features.html">← All features</a>
     <h1>Export a Round and Balance Summary</h1>
-    <p class="updated">RoundFair feature · By FairLead</p>
+    <p class="updated">RoundFair feature · By <a href="../about.html#founder">Florian Ronsse</a>, founder of FairLead</p>
     <p>When the night is over, everyone wants to know where they stand. Export a clear summary and post it in the group chat.</p>
     <nav class="toc" aria-label="In this guide"><strong>In this guide</strong>
     <ul>
@@ -105,7 +108,7 @@
       <li><a href="#using-the-export-for-different-kinds-of-night">Using the export for different kinds of night</a></li>
       <li><a href="#keeping-records-without-keeping-accounts">Keeping records without keeping accounts</a></li>
     </ul></nav>
-    <h2>How it works</h2>
+    <h2>Export and share in three taps</h2>
     <ol>
       <li>Finish the session and settle the bill.</li>
       <li>Tap export to create an overview of rounds and balances.</li>
@@ -161,7 +164,7 @@
     <p>Because the export is text, you can keep it wherever you already keep notes. Some people paste each summary into a dated note, which gives a light history without any extra software. Others simply rely on the chat thread.</p>
     <p>This suits RoundFair's approach. There is no account, no server and no analytics, so nothing about your nights out is stored anywhere you did not put it. The trade-off is that the record is only as durable as the place you paste it, so if you want to keep it for months, copy it somewhere you will find it.</p>
     <p>If you would rather not carry debts at all, <a href="../blog/settle-up-without-tracking-debts.html">settling up without tracking debts</a> describes a gentler way to keep things even, and <a href="../blog/round-buying-vs-splitting-the-bill.html">round buying vs splitting the bill</a> explains when each approach fits.</p>
-    <h2>Why it helps</h2>
+    <h2>Why plain text works for every group</h2>
     <p>Plain text works everywhere. Nobody needs to install anything to read it, so the person who kept track can settle with everyone without a long conversation.</p>
     <h2>Frequently asked questions</h2>
     <h3>What format is the export?</h3><p>Plain text, so it can be pasted into any chat or note.</p>
@@ -172,6 +175,12 @@
     <h3>Do the people who receive it need RoundFair?</h3><p>No. Anyone who can read a message can read the summary.</p>
     <h3>When is the best time to export?</h3><p>After the final round and the final shared cost, so the summary is complete. You can export again if something changes.</p>
     <h3>Can I export more than once for the same night?</h3><p>Yes. You can share a summary whenever you like, for example at the end of each day of a trip, and share a fresh one if anything changes.</p>
+    <h2 id="related-guides">Related guides</h2>
+    <ul>
+      <li><a href="../blog/how-to-remind-friends-to-pay-you-back.html">How to remind friends to pay you back</a></li>
+      <li><a href="../blog/how-to-split-and-charge-friends-on-venmo.html">How to split a bill and charge friends on Venmo</a></li>
+      <li><a href="../blog/settle-up-without-tracking-debts.html">How to settle up without tracking debts</a></li>
+    </ul>
     <h2>More features</h2>
     <ul>
       <li><a href="../features/turn-order.html">Turn order</a></li>
@@ -217,7 +226,8 @@
           <a href="/#how" data-i18n="nav.how">How it works</a>
           <a href="../features.html" data-i18n="nav.features">Features</a>
           <a href="../use-cases.html" data-i18n="nav.useCases">Use cases</a>
-          <a href="../calculators.html" data-i18n="footer.calculator">Bill split calculator</a>
+          <a href="../tools.html" data-i18n="footer.tools">Free tools</a>
+          <a href="../compare.html" data-i18n="footer.compare">Compare apps</a>
           <a href="/#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.company">
@@ -229,8 +239,8 @@
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.help">
           <h3 data-i18n="footer.help">Help</h3>
-          <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
-          <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
+          <a href="../help.html" data-i18n="footer.helpCenter">Help center</a>
+          <a href="../contact.html" data-i18n="footer.support">Support</a>
           <a href="../privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="../terms.html" data-i18n="footer.terms">Terms</a>
         </nav>

@@ -4,7 +4,8 @@
 // Never edit the footer inside a page: it is overwritten.
 const fs = require("fs");
 const APP = "https://apps.apple.com/app/id6763799194";
-const MAIL = "roundfair@fairlead.be";
+// No raw email address in the footer: Cloudflare email obfuscation rewrites it into a broken /cdn-cgi/ link.
+// Support goes to contact.html, which reveals the address with script.js (a.js-mail).
 const APPLE = "M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z";
 
 // plain links to every homepage translation, labelled in their own language
@@ -39,7 +40,8 @@ const FOOTER = (up, home) => {
           a(`${h}#how`, "How it works", "nav.how"),
           a(`${up}features.html`, "Features", "nav.features"),
           a(`${up}use-cases.html`, "Use cases", "nav.useCases"),
-          a(`${up}calculators.html`, "Bill split calculator", "footer.calculator"),
+          a(`${up}tools.html`, "Free tools", "footer.tools"),
+          a(`${up}compare.html`, "Compare apps", "footer.compare"),
           a(`${h}#faq`, "FAQ", "nav.faq"),
         ])}
         ${col("company", "Company", [
@@ -49,8 +51,8 @@ const FOOTER = (up, home) => {
           a(`${up}contact.html`, "Contact", "footer.contact"),
         ])}
         ${col("help", "Help", [
-          a(`mailto:${MAIL}?subject=RoundFair%20Support`, "Support", "footer.support"),
-          a(`mailto:${MAIL}`, MAIL),
+          a(`${up}help.html`, "Help center", "footer.helpCenter"),
+          a(`${up}contact.html`, "Support", "footer.support"),
           a(`${up}privacy.html`, "Privacy Policy", "footer.privacy"),
           a(`${up}terms.html`, "Terms", "footer.terms"),
         ])}
@@ -66,13 +68,14 @@ const FOOTER = (up, home) => {
   </footer>`;
 };
 
-const dirs = ["blog", "features", "use-cases"];
+const dirs = ["blog", "features", "use-cases", "compare", "tools", "help"];
 const files = [...fs.readdirSync(".").filter((f) => f.endsWith(".html")),
   ...dirs.flatMap((d) => fs.readdirSync(d).filter((f) => f.endsWith(".html")).map((f) => `${d}/${f}`))];
 const M = (b) => `<!-- footer:start -->\n  ${b}\n  <!-- footer:end -->`;
 let n = 0;
 for (const f of files) {
   const s = fs.readFileSync(f, "utf8");
+  if (s.includes('http-equiv="refresh"')) continue; // redirect stubs for merged pages
   const up = f === "404.html" ? "/" : f.includes("/") ? "../" : "";
   const block = M(FOOTER(up, f === "index.html"));
   const re = /<!-- footer:start -->[\s\S]*?<!-- footer:end -->|<footer class="footer">[\s\S]*?<\/footer>/;

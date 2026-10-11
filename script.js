@@ -158,3 +158,16 @@
     }
   });
 })();
+
+// Email links are written without a raw address (so Cloudflare's email obfuscation has nothing to rewrite):
+// <a class="js-mail" href="/contact.html" data-u="user" data-d="domain" data-s="subject">user [at] domain</a>
+(function () {
+  function mail() {
+    document.querySelectorAll("a.js-mail[data-u][data-d]").forEach(function (a) {
+      var addr = a.dataset.u + "@" + a.dataset.d;
+      a.href = "mailto:" + addr + (a.dataset.s ? "?subject=" + encodeURIComponent(a.dataset.s) : "");
+      if (a.dataset.keep === undefined) a.textContent = addr;
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mail); else mail();
+})();
