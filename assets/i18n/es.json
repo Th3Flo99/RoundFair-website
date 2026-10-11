@@ -35,7 +35,8 @@
     "shotSettleAlt": "Liquidación RoundFair: Jordan y Sam recuperan, Alex y Taylor deben pagar",
     "shotSessionAlt": "RoundFair Le toca ahora: Taylor está al turno, luego Alex (cuotas en vivo para el grupo)",
     "newLabel": "Nuevo en 2.0",
-    "newText": "Lugares, rondas en 1 toque, iCloud en vivo"
+    "newText": "Lugares, rondas en 1 toque, iCloud en vivo",
+    "def": "RoundFair es una app gratuita para iOS que lleva la cuenta de a quién le toca pagar la siguiente ronda en una noche de fiesta, y divide la cuenta de forma justa al final."
   },
   "how": {
     "title": "Cómo funciona",
@@ -99,7 +100,11 @@
     "exportQ": "¿Puedo compartir el resumen con el grupo?",
     "exportA": "Sí. Exporta la sesión como texto con participantes, rondas y saldos, y compártela con cualquier app.",
     "tauntQ": "¿Qué son las notificaciones de pique?",
-    "tauntA": "Recordatorios opcionales y divertidos durante la sesión para quien lleva tiempo sin pagar. Se programan en tu dispositivo y se pueden desactivar en los ajustes."
+    "tauntA": "Recordatorios opcionales y divertidos durante la sesión para quien lleva tiempo sin pagar. Se programan en tu dispositivo y se pueden desactivar en los ajustes.",
+    "turnQ": "¿Cómo sé a quién le toca pagar la ronda?",
+    "turnA": "La vista «Le toca ahora» de RoundFair muestra a quién le toca pagar la siguiente ronda y quién va atrasado. Si nadie quiere decidir, la ruleta elige a alguien al azar.",
+    "splitQ": "¿Cómo divido la cuenta del bar de forma justa?",
+    "splitA": "RoundFair registra cada ronda de la noche, así veis quién ha pagado y quién va atrasado. Cuando estéis listos, usad «Dividir la cuenta» para liquidar. Un resumen de consumo muestra quién tomó qué y el coste por persona, para que el reparto refleje lo que cada uno bebió de verdad."
   },
   "footer": {
     "company": "Empresa",
@@ -110,7 +115,15 @@
     "copyright": "© 2026 FairLead",
     "product": "Producto",
     "help": "Ayuda",
-    "tagline": "A quién le toca, y liquidar con justicia."
+    "tagline": "A quién le toca, y liquidar con justicia.",
+    "updated": "Última actualización: septiembre de 2026",
+    "about": "Acerca de",
+    "blog": "Blog",
+    "press": "Prensa",
+    "contact": "Contacto",
+    "terms": "Términos de uso",
+    "calculator": "Calculadora para dividir la cuenta",
+    "languages": "Idiomas"
   },
   "privacy": {
     "title": "Política de privacidad (RoundFair)",

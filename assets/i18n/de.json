@@ -35,7 +35,8 @@
     "shotSettleAlt": "RoundFair-Abrechnung: Jordan und Sam bekommen zurück, Alex und Taylor müssen zahlen",
     "shotSessionAlt": "RoundFair Jetzt an der Reihe: Taylor ist dran, dann Alex (Live-Anteile für die Gruppe)",
     "newLabel": "Neu in 2.0",
-    "newText": "Orte, 1-Tipp-Runden, Live-Teilen über iCloud"
+    "newText": "Orte, 1-Tipp-Runden, Live-Teilen über iCloud",
+    "def": "RoundFair ist eine kostenlose iOS-App, die beim Ausgehen festhält, wer die nächste Runde zahlt, und am Ende die Rechnung fair aufteilt."
   },
   "how": {
     "title": "So funktioniert's",
@@ -99,7 +100,11 @@
     "exportQ": "Kann ich die Übersicht mit der Gruppe teilen?",
     "exportA": "Ja. Exportiere die Session als Klartext mit Teilnehmern, Runden und Salden und teile sie über jede beliebige App.",
     "tauntQ": "Was sind Frotzel-Nachrichten?",
-    "tauntA": "Optionale, spielerische Erinnerungen während der Session für alle, die länger nicht gezahlt haben. Sie werden auf deinem Gerät geplant und lassen sich in den Einstellungen ausschalten."
+    "tauntA": "Optionale, spielerische Erinnerungen während der Session für alle, die länger nicht gezahlt haben. Sie werden auf deinem Gerät geplant und lassen sich in den Einstellungen ausschalten.",
+    "turnQ": "Woher weiß ich, wer die nächste Runde zahlt?",
+    "turnA": "Die Ansicht „Jetzt an der Reihe“ in RoundFair zeigt, wer die nächste Runde zahlt und wer hinterherhinkt. Will niemand entscheiden, wählt das Glücksrad zufällig jemanden aus.",
+    "splitQ": "Wie teile ich eine Barrechnung fair auf?",
+    "splitA": "RoundFair erfasst jede Runde des Abends, sodass ihr seht, wer bezahlt hat und wer hinterherhinkt. Wenn ihr bereit seid, rechnet ihr mit „Rechnung teilen“ ab. Eine Konsum-Übersicht zeigt, wer was hatte und die Kosten pro Person, damit die Aufteilung dem entspricht, was wirklich getrunken wurde."
   },
   "footer": {
     "company": "Unternehmen",
@@ -110,7 +115,15 @@
     "copyright": "© 2026 FairLead",
     "product": "Produkt",
     "help": "Hilfe",
-    "tagline": "Wer ist dran, und fair abrechnen."
+    "tagline": "Wer ist dran, und fair abrechnen.",
+    "updated": "Zuletzt aktualisiert: September 2026",
+    "about": "Über uns",
+    "blog": "Blog",
+    "press": "Presse",
+    "contact": "Kontakt",
+    "terms": "Nutzungsbedingungen",
+    "calculator": "Rechner: Rechnung teilen",
+    "languages": "Sprachen"
   },
   "privacy": {
     "title": "Datenschutz (RoundFair)",
@@ -202,5 +215,17 @@
     "soda": "Limo",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "RoundFair Blog: Rechnung teilen und Runden ausgeben",
+    "indexDescription": "Tipps zum fairen Teilen der Rechnung, zum Ausgeben von Runden ohne Streit und zum Aufteilen der Kosten einer Gruppenreise, vom Team hinter RoundFair.",
+    "indexH1": "Blog",
+    "indexLead": "Tipps zum Rechnung teilen, Runden ausgeben und für faire Abende.",
+    "back": "← Zurück zum Blog",
+    "by": "Von FairLead",
+    "readEnglish": "Auf Englisch lesen",
+    "ctaTitle": "Deine nächste Runde steht in der App.",
+    "ctaSub": "Kostenlos im App Store. Kein Konto nötig.",
+    "ctaAria": "RoundFair laden"
   }
 }

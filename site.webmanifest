@@ -1,0 +1,14 @@
+{
+  "name": "RoundFair",
+  "short_name": "RoundFair",
+  "description": "Free iOS app that tracks whose turn it is to buy the next round and splits the bill fairly between friends.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0f2f28",
+  "theme_color": "#2bb491",
+  "icons": [
+    { "src": "/assets/app-icon.png", "sizes": "360x360", "type": "image/png" },
+    { "src": "/assets/app-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "related_applications": [{ "platform": "itunes", "url": "https://apps.apple.com/app/id6763799194", "id": "id6763799194" }]
+}

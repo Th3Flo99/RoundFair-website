@@ -35,7 +35,8 @@
     "shotSettleAlt": "Saldo RoundFair: Jordan e Sam recuperano, Alex e Taylor devono pagare",
     "shotSessionAlt": "RoundFair Tocca ora: Taylor è al turno, poi Alex (quote live per il gruppo)",
     "newLabel": "Novità nella 2.0",
-    "newText": "Luoghi, giri in 1 tocco, condivisione iCloud"
+    "newText": "Luoghi, giri in 1 tocco, condivisione iCloud",
+    "def": "RoundFair è un'app iOS gratuita che tiene traccia di chi deve offrire il prossimo giro durante una serata, e alla fine divide il conto in modo equo."
   },
   "how": {
     "title": "Come funziona",
@@ -99,7 +100,11 @@
     "exportQ": "Posso condividere il riepilogo con il gruppo?",
     "exportA": "Sì. Esporta la sessione come testo con partecipanti, giri e saldi, e condividila con qualsiasi app.",
     "tauntQ": "Cosa sono le notifiche di sfottò?",
-    "tauntA": "Promemoria opzionali e scherzosi durante la sessione per chi non paga da troppo tempo. Sono programmati sul tuo dispositivo e si disattivano nelle impostazioni."
+    "tauntA": "Promemoria opzionali e scherzosi durante la sessione per chi non paga da troppo tempo. Sono programmati sul tuo dispositivo e si disattivano nelle impostazioni.",
+    "turnQ": "Come faccio a sapere a chi tocca offrire il giro?",
+    "turnA": "La schermata «Tocca ora» di RoundFair mostra a chi tocca offrire il prossimo giro e chi è indietro. Se nessuno vuole decidere, la ruota sceglie qualcuno a caso.",
+    "splitQ": "Come divido il conto del bar in modo equo?",
+    "splitA": "RoundFair registra ogni giro della serata, così vedete chi ha pagato e chi è indietro. Quando siete pronti, usate «Dividi il conto» per saldare. Un riepilogo consumi mostra chi ha preso cosa e il costo a persona, così la divisione rispecchia quello che ognuno ha bevuto davvero."
   },
   "footer": {
     "company": "Azienda",
@@ -110,7 +115,15 @@
     "copyright": "© 2026 FairLead",
     "product": "Prodotto",
     "help": "Aiuto",
-    "tagline": "Di chi è il turno, e saldare in modo equo."
+    "tagline": "Di chi è il turno, e saldare in modo equo.",
+    "updated": "Ultimo aggiornamento: settembre 2026",
+    "about": "Chi siamo",
+    "blog": "Blog",
+    "press": "Stampa",
+    "contact": "Contatti",
+    "terms": "Termini d'uso",
+    "calculator": "Calcolatore per dividere il conto",
+    "languages": "Lingue"
   },
   "privacy": {
     "title": "Informativa sulla privacy (RoundFair)",

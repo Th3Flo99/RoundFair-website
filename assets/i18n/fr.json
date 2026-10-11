@@ -35,7 +35,8 @@
     "shotSettleAlt": "Règlement RoundFair : Jordan et Sam récupèrent, Alex et Taylor doivent payer",
     "shotSessionAlt": "RoundFair, à qui le tour : Taylor est à son tour, puis Alex (parts en direct pour le groupe)",
     "newLabel": "Nouveau en 2.0",
-    "newText": "Lieux, tournées en 1 geste, partage iCloud"
+    "newText": "Lieux, tournées en 1 geste, partage iCloud",
+    "def": "RoundFair est une app iOS gratuite qui indique à qui c'est le tour de payer la prochaine tournée lors d'une soirée, et partage l'addition équitablement à la fin."
   },
   "how": {
     "title": "Comment ça marche",
@@ -99,7 +100,11 @@
     "exportQ": "Puis-je partager le récapitulatif avec le groupe ?",
     "exportA": "Oui. Exporte la session en texte brut avec les participants, les tournées et les soldes, et partage-la via n'importe quelle app.",
     "tauntQ": "C'est quoi, les notifications taquines ?",
-    "tauntA": "Des rappels optionnels et ludiques pendant la session pour ceux qui n'ont pas payé depuis un moment. Ils sont programmés sur ton appareil et se désactivent dans les réglages."
+    "tauntA": "Des rappels optionnels et ludiques pendant la session pour ceux qui n'ont pas payé depuis un moment. Ils sont programmés sur ton appareil et se désactivent dans les réglages.",
+    "turnQ": "Comment savoir à qui c'est le tour de payer une tournée ?",
+    "turnA": "L'écran « C'est son tour » de RoundFair montre qui doit payer la prochaine tournée et qui est à la traîne. Si personne ne veut décider, la roue désigne quelqu'un au hasard.",
+    "splitQ": "Comment partager une note de bar équitablement ?",
+    "splitA": "RoundFair enregistre chaque tournée de la soirée, pour voir qui a payé et qui est à la traîne. Quand vous êtes prêts, utilisez « Partager l'addition » pour régler. Un récapitulatif de consommation montre qui a pris quoi et le coût par personne, pour que le partage reflète ce que chacun a vraiment bu."
   },
   "footer": {
     "company": "Entreprise",
@@ -110,7 +115,15 @@
     "copyright": "© 2026 FairLead",
     "product": "Produit",
     "help": "Aide",
-    "tagline": "À qui le tour, et régler équitablement."
+    "tagline": "À qui le tour, et régler équitablement.",
+    "updated": "Dernière mise à jour : septembre 2026",
+    "about": "À propos",
+    "blog": "Blog",
+    "press": "Presse",
+    "contact": "Contact",
+    "terms": "Conditions d'utilisation",
+    "calculator": "Calculateur d'addition",
+    "languages": "Langues"
   },
   "privacy": {
     "title": "Politique de confidentialité (RoundFair)",
@@ -202,5 +215,17 @@
     "soda": "Soda",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "Blog RoundFair : partager l'addition et les tournées",
+    "indexDescription": "Conseils pour partager l'addition entre amis, payer les tournées équitablement et répartir les frais d'un voyage en groupe, par l'équipe de l'app RoundFair.",
+    "indexH1": "Blog",
+    "indexLead": "Conseils pour partager l'addition, payer sa tournée et garder des soirées équitables.",
+    "back": "← Retour au blog",
+    "by": "Par FairLead",
+    "readEnglish": "Lire en anglais",
+    "ctaTitle": "Votre prochaine tournée est dans l'app.",
+    "ctaSub": "Gratuit sur l'App Store. Aucun compte requis.",
+    "ctaAria": "Télécharger RoundFair"
   }
 }

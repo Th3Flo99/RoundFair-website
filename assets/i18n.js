@@ -109,10 +109,24 @@
     }
   }
 
+  function alternate(lang) {
+    const link = document.querySelector(`link[rel="alternate"][hreflang="${lang}"]`);
+    return link && link.href;
+  }
+
+  function choose(lang) {
+    const href = alternate(lang);
+    if (!href) return setLang(lang, { updateUrl: true });
+    localStorage.setItem(STORAGE_KEY, lang);
+    if (lang !== document.documentElement.lang) location.href = lang === "en" ? href + "?lang=en" : href;
+  }
+
   async function init() {
     try {
-      enPack = await load("en");
       const lang = detectLang();
+      // pages with crawlable translations (hreflang alternates) go to that URL instead of translating in place
+      if (lang !== document.documentElement.lang && alternate(lang)) return location.replace(alternate(lang));
+      enPack = await load("en");
       await setLang(lang);
     } catch (err) {
       console.warn("i18n init failed", err);
@@ -120,12 +134,10 @@
     }
 
     const select = document.getElementById("lang-select");
-    if (select) select.addEventListener("change", () => (document.documentElement.hasAttribute("data-fixed-lang")
-      ? (localStorage.setItem(STORAGE_KEY, select.value), location.href = select.value === "en" ? "/?lang=en" : `/${select.value}/`)
-      : setLang(select.value, { updateUrl: true })));
+    if (select) select.addEventListener("change", () => choose(select.value));
 
     document.querySelectorAll("[data-lang]").forEach((btn) => {
-      btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang"), { updateUrl: true }));
+      btn.addEventListener("click", () => choose(btn.getAttribute("data-lang")));
     });
   }
 

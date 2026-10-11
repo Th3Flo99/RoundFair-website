@@ -2735,3 +2735,32 @@ html { scroll-behavior: smooth; }
 .privacy-page .toc ul { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
 .privacy-page .toc a { text-decoration: none; color: var(--text-muted); }
 .privacy-page .toc a:hover { color: var(--text); }
+
+.footer-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.footer-langs a {
+  color: var(--text-faint);
+}
+
+.footer-langs a:hover,
+.footer-langs a[aria-current="page"] {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+.calc-out { margin: 4px 0 0; padding: 16px 18px; border-radius: var(--radius-sm); background: var(--accent-soft, rgba(43, 180, 145, 0.12)); font-weight: 600; }
+.calc-out ul { margin: 0 0 8px; padding-left: 0; }
+.calc-out p { margin: 0; }
+.calc-people { display: grid; gap: 8px; }
+.calc-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 8rem) 2.75rem; gap: 8px; }
+.calc-add, .calc-remove { font: inherit; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-elevated); color: var(--text); cursor: pointer; }
+.calc-add { justify-self: start; padding: 8px 14px; font-weight: 600; }
+.calc-remove { font-size: 1.2rem; line-height: 1; }
+.calc-add:hover, .calc-remove:hover { border-color: var(--accent-strong); color: var(--accent-strong); }

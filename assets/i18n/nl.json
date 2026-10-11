@@ -35,7 +35,8 @@
     "shotSettleAlt": "RoundFair-verrekening: Jordan en Sam krijgen terug, Alex en Taylor moeten betalen",
     "shotSessionAlt": "RoundFair Nu aan de beurt: Taylor is aan de beurt, daarna Alex (live aandelen voor de groep)",
     "newLabel": "Nieuw in 2.0",
-    "newText": "Locaties, 1-tik rondjes, live delen via iCloud"
+    "newText": "Locaties, 1-tik rondjes, live delen via iCloud",
+    "def": "RoundFair is een gratis iOS-app die bijhoudt wie de volgende ronde moet geven op een avondje uit, en aan het einde de rekening eerlijk verdeelt."
   },
   "how": {
     "title": "Hoe het werkt",
@@ -99,7 +100,11 @@
     "exportQ": "Kan ik het overzicht delen met de groep?",
     "exportA": "Ja. Exporteer de sessie als platte tekst met deelnemers, rondes en saldi, en deel het via eender welke app.",
     "tauntQ": "Wat zijn plaagberichten?",
-    "tauntA": "Optionele, speelse meldingen tijdens de sessie voor wie te lang niet betaald heeft. Ze worden op je toestel gepland en zijn uit te schakelen in de instellingen."
+    "tauntA": "Optionele, speelse meldingen tijdens de sessie voor wie te lang niet betaald heeft. Ze worden op je toestel gepland en zijn uit te schakelen in de instellingen.",
+    "turnQ": "Hoe weet ik wie de volgende ronde moet geven?",
+    "turnA": "Het scherm Nu aan de beurt van RoundFair toont wie de volgende ronde moet geven en wie achterloopt. Wil niemand kiezen, dan wijst het rad willekeurig iemand aan.",
+    "splitQ": "Hoe verdeel ik een barrekening eerlijk?",
+    "splitA": "RoundFair houdt elke ronde van de avond bij, zodat je ziet wie betaald heeft en wie achterloopt. Ben je klaar, gebruik dan Rekening splitsen om te verrekenen. Een consumptie-overzicht toont wie wat had en de kosten per persoon, zodat de verdeling klopt met wat iedereen echt dronk."
   },
   "footer": {
     "company": "Bedrijf",
@@ -110,7 +115,15 @@
     "copyright": "© 2026 FairLead",
     "product": "Product",
     "help": "Hulp",
-    "tagline": "Wie is aan de beurt, en eerlijk verrekenen."
+    "tagline": "Wie is aan de beurt, en eerlijk verrekenen.",
+    "updated": "Laatst bijgewerkt: september 2026",
+    "about": "Over ons",
+    "blog": "Blog",
+    "press": "Pers",
+    "contact": "Contact",
+    "terms": "Voorwaarden",
+    "calculator": "Rekening splitsen: calculator",
+    "languages": "Talen"
   },
   "privacy": {
     "title": "Privacybeleid (RoundFair)",
@@ -202,5 +215,17 @@
     "soda": "Frisdrank",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "RoundFair blog: rekening splitsen en rondjes geven",
+    "indexDescription": "Tips om de rekening te splitsen met vrienden, rondjes te geven zonder discussie en de kosten van een groepsreis te delen, van het team achter RoundFair.",
+    "indexH1": "Blog",
+    "indexLead": "Tips over rekeningen splitsen, rondjes geven en eerlijke avonden uit.",
+    "back": "← Terug naar de blog",
+    "by": "Door FairLead",
+    "readEnglish": "Lees in het Engels",
+    "ctaTitle": "Je volgende rondje staat in de app.",
+    "ctaSub": "Gratis in de App Store. Geen account nodig.",
+    "ctaAria": "Download RoundFair"
   }
 }

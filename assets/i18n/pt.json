@@ -35,7 +35,8 @@
     "shotSettleAlt": "Acerto RoundFair: Jordan e Sam recebem de volta, Alex e Taylor devem pagar",
     "shotSessionAlt": "RoundFair É a vez agora: Taylor está na vez, depois Alex (quotas em direto para o grupo)",
     "newLabel": "Novo na 2.0",
-    "newText": "Locais, rodadas num toque, partilha iCloud"
+    "newText": "Locais, rodadas num toque, partilha iCloud",
+    "def": "RoundFair é uma app iOS gratuita que regista de quem é a vez de pagar a próxima ronda numa saída à noite, e divide a conta de forma justa no fim."
   },
   "how": {
     "title": "Como funciona",
@@ -99,7 +100,11 @@
     "exportQ": "Posso partilhar o resumo com o grupo?",
     "exportA": "Sim. Exporta a sessão como texto com participantes, rodadas e saldos, e partilha-a com qualquer app.",
     "tauntQ": "O que são notificações provocadoras?",
-    "tauntA": "Lembretes opcionais e divertidos durante a sessão para quem há muito não paga. São agendados no teu dispositivo e podem ser desativados nas definições."
+    "tauntA": "Lembretes opcionais e divertidos durante a sessão para quem há muito não paga. São agendados no teu dispositivo e podem ser desativados nas definições.",
+    "turnQ": "Como sei de quem é a vez de pagar a ronda?",
+    "turnA": "O ecrã «É a vez agora» do RoundFair mostra de quem é a vez de pagar a próxima ronda e quem está atrasado. Se ninguém quiser decidir, a roleta escolhe alguém ao acaso.",
+    "splitQ": "Como divido a conta do bar de forma justa?",
+    "splitA": "O RoundFair regista cada ronda da noite, para verem quem pagou e quem está atrasado. Quando estiverem prontos, usem «Dividir a conta» para acertar. Um resumo de consumo mostra quem bebeu o quê e o custo por pessoa, para que a divisão reflita o que cada um bebeu de facto."
   },
   "footer": {
     "company": "Empresa",
@@ -110,7 +115,15 @@
     "copyright": "© 2026 FairLead",
     "product": "Produto",
     "help": "Ajuda",
-    "tagline": "De quem é a vez, e acertar com justiça."
+    "tagline": "De quem é a vez, e acertar com justiça.",
+    "updated": "Última atualização: setembro de 2026",
+    "about": "Sobre",
+    "blog": "Blog",
+    "press": "Imprensa",
+    "contact": "Contacto",
+    "terms": "Termos de utilização",
+    "calculator": "Calculadora para dividir a conta",
+    "languages": "Idiomas"
   },
   "privacy": {
     "title": "Política de privacidade (RoundFair)",
