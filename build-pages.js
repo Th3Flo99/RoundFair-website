@@ -25,6 +25,8 @@ const PAGES = {
     hubTitle: "RoundFair Features – Round Tracker and Bill Splitter for iOS",
     hubDesc: "Every RoundFair feature explained: turn order, one-tap rounds, saved spots, restaurant mode, bill splitting, who drank what, export and live iCloud sharing.",
     hubLead: "RoundFair is a free iOS app that keeps a night out fair. Here is what each feature does and when you will use it.",
+    hubSections: [["How the features fit together", ["A night with RoundFair has three stages. At the start, you create a session, add the group and pick a [saved spot](features/saved-spots.html) if it is somewhere you go often. During the night, you log each round in one tap, and [turn order](features/turn-order.html) keeps track of who is up next and who is behind. At the end, you [split the bill](features/split-the-bill.html), check [who drank what](features/who-drank-what.html) if anyone asks, and [export the summary](features/export-summary.html) to the group chat.", "For a sit-down meal, [restaurant mode](features/restaurant-mode.html) works with items instead of rounds, so each person pays for what they ordered plus a fair share of tip and tax. [Live sharing](features/live-sharing.html) keeps everyone's iPhone in sync through iCloud, and the app keeps working when the bar has no signal."]], ["Built for nights out, not shared ledgers", ["Most bill splitting apps are ledgers: they record who paid for what over weeks or months and keep a running balance. That suits housemates and long trips. RoundFair is built for the night itself: whose round it is right now, who is behind, and a clean settlement before everyone goes home. To compare the two approaches, see our guide to the [best bill splitting apps](blog/best-bill-splitting-apps.html)."]], ["Private by design", ["RoundFair has no accounts, no analytics and no servers. Sessions are stored on your device and in your personal iCloud, and sharing uses Apple's CloudKit, so your group's data never passes through a RoundFair account. Read the [privacy policy](privacy.html)."]]],
+    hubFaq: [["Is RoundFair free?", "Yes. RoundFair is free to download on the App Store. Open it, create a session and start tracking rounds straight away."], ["Does everyone in the group need the app?", "No. One person can track the whole night and export the summary for the group. Friends who also have the app can follow the session live on their own iPhone."], ["Is RoundFair available on Android?", "No. RoundFair is available for iPhone only."], ["Does RoundFair work without internet?", "Yes. RoundFair works offline, so you can add rounds, see whose turn it is and settle up without a connection. iCloud sharing syncs when your phone is back online."]],
     items: [
       { slug: "turn-order", name: "Turn order", title: "Whose Round Is It? Turn Order Tracker",
         desc: "RoundFair tracks whose turn it is to buy the next round and who is behind, so the group never argues about it again. Free on iOS.",
@@ -75,6 +77,8 @@ const PAGES = {
     hubTitle: "RoundFair Use Cases – Nights Out, Trips, Dinners and More",
     hubDesc: "See how groups use RoundFair to keep rounds and bills fair: pub nights, bachelor and hen parties, group trips, restaurant dinners and work drinks.",
     hubLead: "Wherever a group shares costs, someone ends up keeping score. Here is how RoundFair helps in the situations that come up most.",
+    hubSections: [["Which use case fits your group?", ["- [Pub rounds](use-cases/pub-rounds.html): friends taking turns to buy drinks, where the question all night is whose round it is.", "- [Work drinks](use-cases/work-drinks.html): people arrive and leave at different times, and nobody wants to talk money with colleagues.", "- [Restaurant dinners](use-cases/restaurant-dinners.html): one bill, very different orders, and tip and tax on top.", "- [Group trips](use-cases/group-trips.html): taxis, dinners and hotel rooms shared between different people over several days.", "- [Bachelor and hen parties](use-cases/bachelor-hen-party.html): a big group, a full schedule and a guest of honour whose share the others cover."]], ["One app for the whole night", ["Real nights out mix these situations. Dinner turns into rounds at a bar, and a taxi home is shared by only half the group. RoundFair handles all of it in one session: rounds for the bar, [restaurant mode](features/restaurant-mode.html) for the meal and [split the bill](features/split-the-bill.html) for anything else, with a single settlement at the end.", "Not sure how to split fairly in the first place? Our guide to [bill split methods](blog/bill-split-methods-explained.html) explains when an even split works and when it does not, and the [bill split calculator](calculators.html) handles one-off bills in the browser."]]],
+    hubFaq: [["Can I use RoundFair for things other than drinks?", "Yes. Restaurant mode splits itemised meals with tip and tax, and split the bill divides any total, such as a taxi or hotel room, between the people who shared it."], ["Can the group change during the night?", "Yes. People can join or leave a session and the turn order adjusts."], ["What if only some people shared a cost?", "Choose who shared it when you add it. A taxi split by the four people who rode in it is not charged to the rest of the group."]],
     items: [
       { slug: "pub-rounds", name: "Pub rounds with friends", title: "Track Pub Rounds with Friends",
         desc: "Never argue over whose round it is again. RoundFair tracks pub rounds and shows who is next and who is behind. Free on iOS.",
@@ -144,6 +148,8 @@ const layout = ({ up, url, title, desc, body, ld }) => `<!doctype html>
   <meta name="twitter:description" content="${esc(desc)}" />
   <meta name="twitter:image" content="${ogImage(url)}" />
   <meta name="theme-color" content="#2bb491" />
+  <meta name="apple-itunes-app" content="app-id=6763799194" />
+  <link rel="manifest" href="/site.webmanifest" />
 ${ld.map((o) => `  <script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n")}
   <link rel="icon" type="image/png" href="${up}assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="${up}assets/app-icon.png" />
@@ -157,24 +163,24 @@ ${ld.map((o) => `  <script type="application/ld+json">${JSON.stringify(o)}</scri
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="${up}styles.css?v=dd1" />
-  <script src="${up}post.js?v=2" defer></script>
+  <link rel="stylesheet" href="${up}styles.css?v=seo2" />
+  <script src="${up}post.js?v=3" defer></script>
   <script src="${up}script.js?v=dd1" defer></script>
 </head>
 <body>
 
   <nav class="nav" aria-label="Main">
     <div class="container nav-inner">
-      <a class="nav-brand" href="${up}index.html">
+      <a class="nav-brand" href="/">
         <img src="${up}assets/roundfair-logo.png" alt="" width="30" height="30" />
         RoundFair
       </a>
       <div class="nav-links">
         <div class="nav-menu" id="nav-menu">
-          <a href="${up}index.html#how">How it works</a>
+          <a href="/#how">How it works</a>
           ${dd("features", up)}
           ${dd("use-cases", up)}
-          <a href="${up}index.html#faq">FAQ</a>
+          <a href="/#faq">FAQ</a>
           <a href="${up}blog.html">Blog</a>
         </div>
         <a class="nav-cta" href="${APP}">Download</a>
@@ -211,8 +217,10 @@ for (const [g, grp] of Object.entries(PAGES)) {
     up: "", url: `${g}.html`, title: grp.hubTitle, desc: grp.hubDesc,
     ld: [crumbs([["RoundFair", ""], [grp.label, `${g}.html`]]),
       { "@context": "https://schema.org", "@type": "CollectionPage", name: grp.hubTitle, description: grp.hubDesc, url: `${SITE}${g}.html`,
-        hasPart: grp.items.map((i) => ({ "@type": "WebPage", name: i.title, url: SITE + key(g, i.slug) })) }],
-    body: `    <a class="back-link" href="index.html">← Back to RoundFair</a>
+        hasPart: grp.items.map((i) => ({ "@type": "WebPage", name: i.title, url: SITE + key(g, i.slug) })) },
+      { "@context": "https://schema.org", "@type": "FAQPage",
+        mainEntity: grp.hubFaq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+    body: `    <a class="back-link" href="/">← Back to RoundFair</a>
     <h1>RoundFair ${grp.label.toLowerCase()}</h1>
     <p class="updated">Made by FairLead</p>
     <p>${esc(grp.hubLead)}</p>
@@ -220,6 +228,9 @@ ${grp.items.map((i) => `    <article class="blog-item">
       <h2><a href="${key(g, i.slug)}">${esc(i.name)}</a></h2>
       <p>${esc(i.desc)}</p>
     </article>`).join("\n")}
+${renderSections(grp.hubSections, "")}
+    <h2>Frequently asked questions</h2>
+${grp.hubFaq.map(([q, a]) => `    <h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("\n")}
     <!-- cta:start --><!-- cta:end -->`,
   }));
   urls.push(`${g}.html`);

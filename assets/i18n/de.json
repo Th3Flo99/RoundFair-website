@@ -116,7 +116,14 @@
     "product": "Produkt",
     "help": "Hilfe",
     "tagline": "Wer ist dran, und fair abrechnen.",
-    "updated": "Zuletzt aktualisiert: September 2026"
+    "updated": "Zuletzt aktualisiert: September 2026",
+    "about": "Über uns",
+    "blog": "Blog",
+    "press": "Presse",
+    "contact": "Kontakt",
+    "terms": "Nutzungsbedingungen",
+    "calculator": "Rechner: Rechnung teilen",
+    "languages": "Sprachen"
   },
   "privacy": {
     "title": "Datenschutz (RoundFair)",
@@ -208,5 +215,17 @@
     "soda": "Limo",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "RoundFair Blog: Rechnung teilen und Runden ausgeben",
+    "indexDescription": "Tipps zum fairen Teilen der Rechnung, zum Ausgeben von Runden ohne Streit und zum Aufteilen der Kosten einer Gruppenreise, vom Team hinter RoundFair.",
+    "indexH1": "Blog",
+    "indexLead": "Tipps zum Rechnung teilen, Runden ausgeben und für faire Abende.",
+    "back": "← Zurück zum Blog",
+    "by": "Von FairLead",
+    "readEnglish": "Auf Englisch lesen",
+    "ctaTitle": "Deine nächste Runde steht in der App.",
+    "ctaSub": "Kostenlos im App Store. Kein Konto nötig.",
+    "ctaAria": "RoundFair laden"
   }
 }

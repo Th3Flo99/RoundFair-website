@@ -3,6 +3,15 @@
   var m = document.querySelector("main.privacy-page");
   if (!m) return;
   var art = !!document.querySelector('meta[property="og:type"][content="article"]');
+  var L = {
+    en: { min: "min read", toc: "In this article", share: "Share this article", copy: "Copy link", copied: "Copied ✓", prompt: "Copy this link" },
+    nl: { min: "min lezen", toc: "In dit artikel", share: "Deel dit artikel", copy: "Link kopiëren", copied: "Gekopieerd ✓", prompt: "Kopieer deze link" },
+    fr: { min: "min de lecture", toc: "Dans cet article", share: "Partager cet article", copy: "Copier le lien", copied: "Copié ✓", prompt: "Copiez ce lien" },
+    de: { min: "Min. Lesezeit", toc: "In diesem Artikel", share: "Artikel teilen", copy: "Link kopieren", copied: "Kopiert ✓", prompt: "Diesen Link kopieren" }
+  };
+  L = L[document.documentElement.lang] || L.en;
+  var isMore = function (h) { return h.id === "keep-reading" || /keep reading/i.test(h.textContent); };
+  var isFaq = function (h) { return h.id === "faq" || /frequently asked/i.test(h.textContent); };
   m.classList.add("post");
   // blog index: just stagger the list in
   if (m.querySelector(".blog-item")) {
@@ -22,7 +31,7 @@
 
   var meta = m.querySelector(".updated");
   var mins = Math.max(1, Math.round(m.textContent.trim().split(/\s+/).length / 210));
-  if (art && meta) meta.insertAdjacentHTML("beforeend", ' · <span class="read-time">' + mins + " min read</span>");
+  if (art && meta) meta.insertAdjacentHTML("beforeend", ' · <span class="read-time">' + mins + " " + L.min + "</span>");
 
   // wrap each h2 block in a section so it fades up as it scrolls in
   var h2s = m.querySelectorAll("h2");
@@ -36,7 +45,7 @@
       s.appendChild(n);
       n = next;
     }
-    if (/keep reading/i.test(h.textContent)) {
+    if (isMore(h)) {
       s.classList.add("more");
       var ul = s.querySelector("ul");
       if (ul) {
@@ -47,7 +56,7 @@
   });
   // FAQ: turn each h3 + answer into an animated accordion item (styled in styles.css, driven by script.js)
   m.querySelectorAll("h2").forEach(function (h) {
-    if (!/frequently asked/i.test(h.textContent)) return;
+    if (!isFaq(h)) return;
     var list = document.createElement("div");
     list.className = "faq-list";
     var q;
@@ -76,12 +85,12 @@
   if (lead) lead.classList.add("lead");
 
   // table of contents with scroll-spy (skips the "keep reading" block)
-  var heads = [].filter.call(h2s, function (h) { return !/keep reading/i.test(h.textContent); });
+  var heads = [].filter.call(h2s, function (h) { return !isMore(h); });
   if (art && lead && heads.length > 2) {
     var toc = document.createElement("nav");
     toc.className = "toc reveal";
-    toc.setAttribute("aria-label", "In this article");
-    toc.innerHTML = "<strong>In this article</strong><ol>" + heads.map(function (h, i) {
+    toc.setAttribute("aria-label", L.toc);
+    toc.innerHTML = "<strong>" + L.toc + "</strong><ol>" + heads.map(function (h, i) {
       h.id = h.id || "s" + (i + 1);
       return '<li><a href="#' + h.id + '">' + h.textContent + "</a></li>";
     }).join("") + "</ol>";
@@ -101,17 +110,17 @@
   var url = location.href.split("#")[0], t = encodeURIComponent(document.title), u = encodeURIComponent(url);
   var share = document.createElement("div");
   share.className = "share reveal";
-  share.innerHTML = "<strong>Share this article</strong>" +
+  share.innerHTML = "<strong>" + L.share + "</strong>" +
     '<a target="_blank" rel="noopener" href="https://wa.me/?text=' + t + "%20" + u + '">WhatsApp</a>' +
     '<a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + t + "&url=" + u + '">X</a>' +
     '<a target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + u + '">LinkedIn</a>' +
-    '<button type="button">Copy link</button>';
+    '<button type="button">' + L.copy + "</button>";
   if (art) (cta || m).before(share);
   share.querySelector("button").onclick = function () {
     var b = this;
     (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
-      b.textContent = "Copied ✓";
-      setTimeout(function () { b.textContent = "Copy link"; }, 1800);
-    }, function () { prompt("Copy this link", url); });
+      b.textContent = L.copied;
+      setTimeout(function () { b.textContent = L.copy; }, 1800);
+    }, function () { prompt(L.prompt, url); });
   };
 })();

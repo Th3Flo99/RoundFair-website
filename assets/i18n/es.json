@@ -116,7 +116,14 @@
     "product": "Producto",
     "help": "Ayuda",
     "tagline": "A quién le toca, y liquidar con justicia.",
-    "updated": "Última actualización: septiembre de 2026"
+    "updated": "Última actualización: septiembre de 2026",
+    "about": "Acerca de",
+    "blog": "Blog",
+    "press": "Prensa",
+    "contact": "Contacto",
+    "terms": "Términos de uso",
+    "calculator": "Calculadora para dividir la cuenta",
+    "languages": "Idiomas"
   },
   "privacy": {
     "title": "Política de privacidad (RoundFair)",

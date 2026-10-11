@@ -116,7 +116,14 @@
     "product": "Prodotto",
     "help": "Aiuto",
     "tagline": "Di chi è il turno, e saldare in modo equo.",
-    "updated": "Ultimo aggiornamento: settembre 2026"
+    "updated": "Ultimo aggiornamento: settembre 2026",
+    "about": "Chi siamo",
+    "blog": "Blog",
+    "press": "Stampa",
+    "contact": "Contatti",
+    "terms": "Termini d'uso",
+    "calculator": "Calcolatore per dividere il conto",
+    "languages": "Lingue"
   },
   "privacy": {
     "title": "Informativa sulla privacy (RoundFair)",

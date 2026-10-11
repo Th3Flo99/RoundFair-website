@@ -116,7 +116,14 @@
     "product": "Produto",
     "help": "Ajuda",
     "tagline": "De quem é a vez, e acertar com justiça.",
-    "updated": "Última atualização: setembro de 2026"
+    "updated": "Última atualização: setembro de 2026",
+    "about": "Sobre",
+    "blog": "Blog",
+    "press": "Imprensa",
+    "contact": "Contacto",
+    "terms": "Termos de utilização",
+    "calculator": "Calculadora para dividir a conta",
+    "languages": "Idiomas"
   },
   "privacy": {
     "title": "Política de privacidade (RoundFair)",

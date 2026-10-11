@@ -116,7 +116,14 @@
     "product": "Product",
     "help": "Help",
     "tagline": "Whose turn, and settle fair.",
-    "updated": "Last updated: September 2026"
+    "updated": "Last updated: September 2026",
+    "about": "About",
+    "blog": "Blog",
+    "press": "Press",
+    "contact": "Contact",
+    "terms": "Terms",
+    "calculator": "Bill split calculator",
+    "languages": "Languages"
   },
   "privacy": {
     "title": "Privacy Policy (RoundFair)",
@@ -208,5 +215,17 @@
     "soda": "Soda",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "RoundFair Blog – Bill Splitting & Round Tips",
+    "indexDescription": "Guides on splitting bills between friends, buying rounds fairly and sharing group trip costs, from the team behind the free RoundFair iOS app for nights out.",
+    "indexH1": "Blog",
+    "indexLead": "Tips on splitting bills, buying rounds and keeping nights out fair.",
+    "back": "← Back to the blog",
+    "by": "By FairLead",
+    "readEnglish": "Read in English",
+    "ctaTitle": "Your next round is on the app.",
+    "ctaSub": "Free on the App Store. No account needed.",
+    "ctaAria": "Download RoundFair"
   }
 }

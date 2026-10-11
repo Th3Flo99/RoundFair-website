@@ -7,10 +7,13 @@ const APP = "https://apps.apple.com/app/id6763799194";
 const MAIL = "roundfair@fairlead.be";
 const APPLE = "M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z";
 
+// plain links to every homepage translation, labelled in their own language
+const LANGS = [["en", "English"], ["nl", "Nederlands"], ["fr", "Français"], ["de", "Deutsch"], ["es", "Español"], ["it", "Italiano"], ["pt", "Português"]];
+
 // up = path prefix to the site root; home = the page is the English home page (in-page anchors work there)
 const FOOTER = (up, home) => {
   const a = (href, label, key) => `<a href="${href}"${key ? ` data-i18n="${key}"` : ""}>${label}</a>`;
-  const h = home ? "" : `${up}index.html`;
+  const h = home ? "" : "/";
   const col = (key, title, links) => `<nav class="footer-col" data-i18n-attr="aria-label:footer.${key}">
           <h3 data-i18n="footer.${key}">${title}</h3>
           ${links.join("\n          ")}
@@ -19,7 +22,7 @@ const FOOTER = (up, home) => {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="nav-brand" href="${home ? "#" : up + "index.html"}">
+          <a class="nav-brand" href="${home ? "#" : "/"}">
             <img src="${up}assets/roundfair-logo.png" alt="" width="30" height="30" />
             RoundFair
           </a>
@@ -36,22 +39,25 @@ const FOOTER = (up, home) => {
           a(`${h}#how`, "How it works", "nav.how"),
           a(`${up}features.html`, "Features", "nav.features"),
           a(`${up}use-cases.html`, "Use cases", "nav.useCases"),
-          a(`${up}calculators.html`, "Bill split calculator"),
+          a(`${up}calculators.html`, "Bill split calculator", "footer.calculator"),
           a(`${h}#faq`, "FAQ", "nav.faq"),
         ])}
         ${col("company", "Company", [
-          a(`${up}about.html`, "About"),
-          a(`${up}blog.html`, "Blog"),
-          a(`${up}press.html`, "Press"),
-          a(`${up}contact.html`, "Contact"),
+          a(`${up}about.html`, "About", "footer.about"),
+          a(`${up}blog.html`, "Blog", "footer.blog"),
+          a(`${up}press.html`, "Press", "footer.press"),
+          a(`${up}contact.html`, "Contact", "footer.contact"),
         ])}
         ${col("help", "Help", [
           a(`mailto:${MAIL}?subject=RoundFair%20Support`, "Support", "footer.support"),
           a(`mailto:${MAIL}`, MAIL),
           a(`${up}privacy.html`, "Privacy Policy", "footer.privacy"),
-          a(`${up}terms.html`, "Terms"),
+          a(`${up}terms.html`, "Terms", "footer.terms"),
         ])}
       </div>
+      <nav class="footer-langs" aria-label="Languages" data-i18n-attr="aria-label:footer.languages">
+        ${LANGS.map(([l, name]) => `<a href="${l === "en" ? "/" : `/${l}/`}" hreflang="${l}" lang="${l}"${home && l === "en" ? ' aria-current="page"' : ""}>${name}</a>`).join("\n        ")}
+      </nav>
       <div class="footer-bottom">
         <p class="copyright"><span data-i18n="footer.copyright">© 2026 FairLead</span><span class="footer-dot" aria-hidden="true">·</span><span data-i18n="footer.updated">Last updated: September 2026</span></p>
         <a class="footer-appstore" href="${APP}" data-i18n="footer.appStore">App Store</a>

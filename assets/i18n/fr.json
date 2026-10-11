@@ -116,7 +116,14 @@
     "product": "Produit",
     "help": "Aide",
     "tagline": "À qui le tour, et régler équitablement.",
-    "updated": "Dernière mise à jour : septembre 2026"
+    "updated": "Dernière mise à jour : septembre 2026",
+    "about": "À propos",
+    "blog": "Blog",
+    "press": "Presse",
+    "contact": "Contact",
+    "terms": "Conditions d'utilisation",
+    "calculator": "Calculateur d'addition",
+    "languages": "Langues"
   },
   "privacy": {
     "title": "Politique de confidentialité (RoundFair)",
@@ -208,5 +215,17 @@
     "soda": "Soda",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "Blog RoundFair : partager l'addition et les tournées",
+    "indexDescription": "Conseils pour partager l'addition entre amis, payer les tournées équitablement et répartir les frais d'un voyage en groupe, par l'équipe de l'app RoundFair.",
+    "indexH1": "Blog",
+    "indexLead": "Conseils pour partager l'addition, payer sa tournée et garder des soirées équitables.",
+    "back": "← Retour au blog",
+    "by": "Par FairLead",
+    "readEnglish": "Lire en anglais",
+    "ctaTitle": "Votre prochaine tournée est dans l'app.",
+    "ctaSub": "Gratuit sur l'App Store. Aucun compte requis.",
+    "ctaAria": "Télécharger RoundFair"
   }
 }

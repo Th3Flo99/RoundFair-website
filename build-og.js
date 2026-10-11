@@ -14,10 +14,14 @@ const force = process.argv.includes("--force");
 const pages = [
   ...["blog", "features", "use-cases"].flatMap((d) => fs.readdirSync(d).filter((f) => f.endsWith(".html")).map((f) => `${d}/${f}`)),
   "blog.html", "features.html", "use-cases.html", "calculators.html",
+  // translated blog (built by build-blog-i18n.js, which picks the images up)
+  ...fs.readdirSync(".").filter((d) => /^[a-z]{2}$/.test(d) && fs.existsSync(`${d}/blog.html`))
+    .flatMap((d) => [`${d}/blog.html`, ...fs.readdirSync(`${d}/blog`).map((f) => `${d}/blog/${f}`)]),
 ];
-// blog/<slug>.html → <slug>.png (the original naming), features/<slug>.html → features-<slug>.png
-const imageName = (p) => (p.startsWith("blog/") ? path.basename(p, ".html") : p.replace(/\.html$/, "").replace("/", "-")) + ".png";
-const section = (p) => "roundfair.support/" + (p.includes("/") ? p.split("/")[0] : p.replace(/\.html$/, ""));
+// blog/<slug>.html → <slug>.png (the original naming), features/<slug>.html → features-<slug>.png,
+// nl/blog/<slug>.html → nl-blog-<slug>.png
+const imageName = (p) => (p.startsWith("blog/") ? path.basename(p, ".html") : p.replace(/\.html$/, "").replace(/\//g, "-")) + ".png";
+const section = (p) => "roundfair.support/" + p.replace(/\.html$/, "").split("/").slice(0, /^[a-z]{2}\//.test(p) ? 2 : 1).join("/");
 const decode = (s) => s.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<");
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const title = (h) => decode(h.match(/<title>([^<]+)<\/title>/)[1]).replace(/\s*[–|]\s*RoundFair$/, "");
@@ -52,7 +56,7 @@ const card = (t, label) => `<!doctype html><meta charset="utf-8"><style>
       rendered++;
     }
     // generated pages get their image from build-pages.js on the next build
-    if (/^(features|use-cases)\//.test(p) || p === "features.html" || p === "use-cases.html") continue;
+    if (/^(features|use-cases|[a-z]{2})\//.test(p) || p === "features.html" || p === "use-cases.html") continue;
     const img = SITE + out;
     let h = fs.readFileSync(p, "utf8");
     h = h.replace(/\n\s*<meta name="twitter:image" content="[^"]*" \/>/g, "") // drop duplicates, re-added once below

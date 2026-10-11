@@ -116,7 +116,14 @@
     "product": "Product",
     "help": "Hulp",
     "tagline": "Wie is aan de beurt, en eerlijk verrekenen.",
-    "updated": "Laatst bijgewerkt: september 2026"
+    "updated": "Laatst bijgewerkt: september 2026",
+    "about": "Over ons",
+    "blog": "Blog",
+    "press": "Pers",
+    "contact": "Contact",
+    "terms": "Voorwaarden",
+    "calculator": "Rekening splitsen: calculator",
+    "languages": "Talen"
   },
   "privacy": {
     "title": "Privacybeleid (RoundFair)",
@@ -208,5 +215,17 @@
     "soda": "Frisdrank",
     "restaurant": "Restaurant",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "indexTitle": "RoundFair blog: rekening splitsen en rondjes geven",
+    "indexDescription": "Tips om de rekening te splitsen met vrienden, rondjes te geven zonder discussie en de kosten van een groepsreis te delen, van het team achter RoundFair.",
+    "indexH1": "Blog",
+    "indexLead": "Tips over rekeningen splitsen, rondjes geven en eerlijke avonden uit.",
+    "back": "← Terug naar de blog",
+    "by": "Door FairLead",
+    "readEnglish": "Lees in het Engels",
+    "ctaTitle": "Je volgende rondje staat in de app.",
+    "ctaSub": "Gratis in de App Store. Geen account nodig.",
+    "ctaAria": "Download RoundFair"
   }
 }

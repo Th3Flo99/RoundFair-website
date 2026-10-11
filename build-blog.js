@@ -1,4 +1,4 @@
-// Regenerates the post list in blog.html and the blog/ entries in sitemap.xml
+// Regenerates the post list in blog.html and llms.txt, and the blog/ entries in sitemap.xml
 // from every blog/*.html. Run: node build-blog.js  (also runs on git commit via .githooks)
 // A post needs <title>, <meta name="description"> and <meta name="date" content="YYYY-MM-DD">.
 const fs = require("fs");
@@ -32,10 +32,11 @@ const urls = posts.map((p) => `  <url>
     <loc>${SITE}blog/${p.f}</loc>
   </url>`).join("\n"); // lastmod: build-sitemap.js
 swap("sitemap.xml", "<!-- blog:start -->", "<!-- blog:end -->", urls);
+swap("llms.txt", "<!-- posts:start -->", "<!-- posts:end -->", posts.map((p) => `- [${p.title}](${SITE}blog/${p.f}): ${p.desc}`).join("\n"), "");
 console.log(`${posts.length} posts synced`);
 
 // Every post gets the article layout script (post.js), even if the generator forgot it.
 for (const p of posts) {
   const file = "blog/" + p.f, h = fs.readFileSync(file, "utf8");
-  if (!h.includes("post.js")) fs.writeFileSync(file, h.replace(/(\s*)(<script src="\.\.\/script\.js[^>]*><\/script>)/, '$1<script src="../post.js?v=1" defer></script>$1$2'));
+  if (!h.includes("post.js")) fs.writeFileSync(file, h.replace(/(\s*)(<script src="\.\.\/script\.js[^>]*><\/script>)/, '$1<script src="../post.js?v=3" defer></script>$1$2'));
 }

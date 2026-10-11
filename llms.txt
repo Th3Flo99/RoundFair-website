@@ -1,0 +1,56 @@
+# RoundFair
+
+> RoundFair is a free iOS app that tracks whose turn it is to buy the next round on a night out, and splits the bill fairly at the end. Made by FairLead. No accounts, no analytics, no servers: data stays on the device and in the user's personal iCloud. Available in English, Dutch, French, German, Spanish, Italian and Portuguese.
+
+Key facts:
+- Platform: iPhone (iOS only). Price: free on the App Store: https://apps.apple.com/app/id6763799194
+- Turn order: the "Up now" view shows who buys the next round and who is behind, based on the rounds each person has actually bought. A spin wheel can pick someone at random.
+- Rounds are logged in one tap, with locations ("saved spots"). Restaurant mode splits itemised bills with tip and tax.
+- Split the bill: settle at the end of the night; a consumption overview shows who drank what and the cost per person.
+- Live sharing with the group through iCloud (CloudKit); works offline. The summary can be exported as plain text.
+- Contact: roundfair@fairlead.be
+
+## Product
+
+- [Home](https://roundfair.support/): what RoundFair does, how it works and FAQ
+- [Features](https://roundfair.support/features.html): every feature explained
+- [Use cases](https://roundfair.support/use-cases.html): pub rounds, group trips, restaurant dinners, work drinks, bachelor and hen parties
+- [Bill split calculator](https://roundfair.support/calculators.html): free online calculator for splitting a bill with tip
+- [Press kit](https://roundfair.support/press.html): facts, logos and screenshots
+- [Privacy policy](https://roundfair.support/privacy.html): RoundFair collects no data
+
+## Blog
+
+<!-- posts:start -->
+- [Best Bill Splitting Apps for Groups and Rounds](https://roundfair.support/blog/best-bill-splitting-apps.html): Compare the best bill splitting apps by what they do best: group ledgers, trips, one-off dinners and pub rounds. Find the right app for your group fast.
+- [Best Splitwise Alternatives (and When to Switch)](https://roundfair.support/blog/best-splitwise-alternatives.html): Splitwise isn't the only option. Compare Splitwise alternatives for trips, households and pub rounds, and learn when a simpler app is the better choice.
+- [Bill Split Methods: Equal, Itemised, Shares](https://roundfair.support/blog/bill-split-methods-explained.html): Equal, itemised, percentage, shares or round-robin? Every way to split a bill, with a worked example and when each method is the fairest.
+- [Free Bill Splitting Apps: What You Really Get](https://roundfair.support/blog/free-bill-splitting-apps.html): Looking for a free bill splitting app? See what free really means: limits, ads, accounts and privacy, plus free options for dinners, trips and pub rounds.
+- [Who Buys the Next Round? 6 Fair Ways](https://roundfair.support/blog/how-to-decide-who-buys-the-next-round.html): Can't agree who goes to the bar? Six fair ways to decide who buys the next round, from strict rotation to a spin wheel, with pros, cons and when to use each.
+- [How to Remind Friends to Pay You Back (Politely)](https://roundfair.support/blog/how-to-remind-friends-to-pay-you-back.html): Awkward but necessary: how to ask friends to pay you back without souring the friendship. Copy-ready message templates and timing tips that actually work.
+- [How to Run a Bar Tab With Friends Without Drama](https://roundfair.support/blog/how-to-run-a-bar-tab-with-friends.html): Running a bar tab for a group? How to open it, keep it fair during the night, and settle up quickly, plus what to do about late payers and uneven drinks.
+- [How to Split a Bar Bill Fairly Between Friends](https://roundfair.support/blog/how-to-split-a-bar-bill-fairly.html): Even split, itemised or round by round? How to split a bar bill fairly between friends, with worked examples, a comparison table and tips to avoid arguments.
+- [How to Split a Receipt Item by Item](https://roundfair.support/blog/how-to-split-a-receipt-item-by-item.html): A simple method to split a restaurant receipt item by item: assign dishes, share the starters, add tax and tip in proportion, and check the total adds up.
+- [How to Split a Bill and Charge Friends on Venmo](https://roundfair.support/blog/how-to-split-and-charge-friends-on-venmo.html): Step by step: split a bill and request money on Venmo, plus the equivalents on PayPal, Apple Cash, Revolut and Tikkie, with tips for getting paid faster.
+- [How to Split Expenses in a Foreign Currency](https://roundfair.support/blog/how-to-split-expenses-in-a-foreign-currency.html): Travelling with friends? Learn how to split expenses across currencies: pick a base currency, choose a fair rate, avoid card fees and settle up cleanly.
+- [How to Split Tax and Tip on a Bill Fairly](https://roundfair.support/blog/how-to-split-tax-and-tip-on-a-bill.html): Learn how to split tax and tip when everyone ordered differently. Includes a formula, a worked example and a typical tipping guide for the US, UK and Europe.
+- [Round Buying App: Track Whose Turn It Is](https://roundfair.support/blog/round-buying-app-track-whose-turn-it-is.html): Looking for an app to track whose turn it is to buy the next round? What a good round buying app should do, what to skip, and how RoundFair fits your night.
+- [Round Buying Etiquette Around the World](https://roundfair.support/blog/round-buying-etiquette-around-the-world.html): How buying rounds works in the UK, Ireland, Australia and elsewhere: the shout, the round, splitting the bill, and the universal rules every group shares.
+- [Round Buying vs Splitting the Bill](https://roundfair.support/blog/round-buying-vs-splitting-the-bill.html): Round buying or splitting the bill at the end: how each works, where each goes wrong, a worked example, and the fair middle ground for any night out.
+- [RoundFair vs Splitwise: Rounds or a Ledger?](https://roundfair.support/blog/roundfair-vs-splitwise.html): An honest RoundFair vs Splitwise comparison. Splitwise tracks who owes what; RoundFair tracks whose turn it is. See which fits your group, and when to use both.
+- [Settle Up Without Tracking Debts: Pay as You Go](https://roundfair.support/blog/settle-up-without-tracking-debts.html): Debts pile up and friendships suffer. Three ways to settle as you go: pay on the spot, take turns, or use a scheduled settle-up, so nobody owes anything.
+- [Splitting a Bill When Some Friends Don't Drink](https://roundfair.support/blog/split-a-bill-when-some-friends-dont-drink.html): How to split a bill when some friends don't drink: separate food from drinks, a worked example, handling tip and rounds, and keeping non-drinkers included.
+- [Whose Turn Is It to Buy the Next Round?](https://roundfair.support/blog/whose-turn-to-buy-the-next-round.html): Round etiquette explained: whose turn it is to buy, why rounds turn unfair, and simple rules and tools that keep every round fair for the whole group.
+- [Splitting Group Trip Costs Without Falling Out](https://roundfair.support/blog/splitting-costs-on-a-group-trip.html): How to split costs on a group trip fairly: shared vs personal spending, accommodation, tracking expenses, settling once, and keeping nights out separate.
+- [How Much to Tip When Splitting the Bill](https://roundfair.support/blog/how-much-to-tip-when-splitting-the-bill.html): How much should you tip when splitting the bill? Local norms, tipping on a round of drinks, tip before or after splitting, and how to share the tip fairly.
+- [How to Split a Bill by Percentage](https://roundfair.support/blog/split-a-bill-by-percentage.html): Learn how to split a bill by percentage: step-by-step formulas, a worked bar-tab example, handling shared items and tip, and the mistakes to avoid.
+- [Pub Round Etiquette: The Unwritten UK Rules](https://roundfair.support/blog/pub-round-etiquette-uk.html): How rounds work in a UK pub: who buys first, what to do in small and big groups, when you can skip, and how to keep rounds fair without ruining the night.
+- [How to Split a Dinner Bill With Friends](https://roundfair.support/blog/split-dinner-bill-with-friends.html): How to split a dinner bill with friends: even, itemised or hybrid, handling drinks, tax and tip, special cases like birthdays, and paying each other back fast.
+- [How to Split Costs on a Bachelor or Hen Party](https://roundfair.support/blog/bachelor-party-cost-splitting.html): How to split costs on a bachelor or hen party: set a budget, decide who covers the guest of honour, collect early, handle the drinking, and keep a clear record.
+<!-- posts:end -->
+
+## Optional
+
+- [About](https://roundfair.support/about.html)
+- [Contact](https://roundfair.support/contact.html)
+- [Terms of use](https://roundfair.support/terms.html)

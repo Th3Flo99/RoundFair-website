@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bill Split Calculator – Split a Bar Tab with Tip | RoundFair</title>
-  <meta name="description" content="Free bill split calculator: enter the total, tip and number of people to see what each person pays. For a whole night of rounds, use the RoundFair app." />
+  <title>Bill Split Calculator with Tip, Tax and Rounds | RoundFair</title>
+  <meta name="description" content="Free bill split calculator: split a bill evenly with tip, unevenly with tax and tip, or work out who owes whom after a night of rounds." />
   <meta property="og:url" content="https://roundfair.support/calculators.html" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://roundfair.support/assets/og/calculators.png" />
-  <meta name="twitter:title" content="Bill Split Calculator – Split a Bar Tab with Tip | RoundFair" />
-  <meta name="twitter:description" content="Free bill split calculator: enter the total, tip and number of people to see what each person pays. For a whole night of rounds, use the RoundFair app." />
+  <meta name="twitter:title" content="Bill Split Calculator with Tip, Tax and Rounds | RoundFair" />
+  <meta name="twitter:description" content="Free bill split calculator: split a bill evenly with tip, unevenly with tax and tip, or work out who owes whom after a night of rounds." />
   <meta name="theme-color" content="#2bb491" />
-  <meta property="og:title" content="Bill Split Calculator – Split a Bar Tab with Tip | RoundFair" />
-  <meta property="og:description" content="Free bill split calculator: enter the total, tip and number of people to see what each person pays. For a whole night of rounds, use the RoundFair app." />
+  <meta name="apple-itunes-app" content="app-id=6763799194" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta property="og:title" content="Bill Split Calculator with Tip, Tax and Rounds | RoundFair" />
+  <meta property="og:description" content="Free bill split calculator: split a bill evenly with tip, unevenly with tax and tip, or work out who owes whom after a night of rounds." />
   <meta property="og:image" content="https://roundfair.support/assets/og/calculators.png" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://roundfair.support/calculators.html" />
@@ -28,17 +30,18 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=footer1" />
-  <script src="post.js?v=1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=seo2" />
+  <script src="post.js?v=3" defer></script>
   <script src="script.js?v=demo4" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RoundFair","item":"https://roundfair.support/"},{"@type":"ListItem","position":2,"name":"Bill split calculator","item":"https://roundfair.support/calculators.html"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Bill Split Calculator","description":"Free bill split calculator: enter the total, tip and number of people to see what each person pays. For a whole night of rounds, use the RoundFair app.","url":"https://roundfair.support/calculators.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","@id":"https://roundfair.support/#org","name":"FairLead","url":"https://roundfair.support/","logo":"https://roundfair.support/assets/app-icon-512.png","email":"roundfair@fairlead.be"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Bill Split Calculator","description":"Free bill split calculator: split a bill evenly with tip, unevenly with tax and tip, or work out who owes whom after a night of rounds.","url":"https://roundfair.support/calculators.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","@id":"https://roundfair.support/#org","name":"FairLead","url":"https://roundfair.support/","logo":"https://roundfair.support/assets/app-icon-512.png","email":"roundfair@fairlead.be"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I split a bill with tip?","acceptedAnswer":{"@type":"Answer","text":"Add the tip to the total first, then divide by the number of people. For a €60 bill with a 15% tip split three ways, the total is €69 and each person pays €23."}},{"@type":"Question","name":"Should tip be calculated before or after tax?","acceptedAnswer":{"@type":"Answer","text":"Usually on the pre-tax amount, although tipping on the total is also common and slightly more generous. The uneven calculator above tips on the pre-tax amount."}},{"@type":"Question","name":"How do I split a bill when people ordered different amounts?","acceptedAnswer":{"@type":"Answer","text":"Give each person their own items, split shared dishes evenly between the people who shared them, and add tax and tip in proportion to each person's share. The uneven calculator does this for you."}},{"@type":"Question","name":"How do I work out who owes whom?","acceptedAnswer":{"@type":"Answer","text":"Add up what everyone paid, divide by the number of people to get the fair share, and compare each person's spend with it. People below the fair share pay the people above it until everyone is even."}},{"@type":"Question","name":"Is it fair to split the bill evenly?","acceptedAnswer":{"@type":"Answer","text":"It is fair when orders are similar. When they differ a lot, an even split makes light eaters and non-drinkers subsidise everyone else, so an itemised split is fairer."}},{"@type":"Question","name":"Does the calculator store my data?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is calculated in your browser and nothing is sent or saved."}}]}</script>
 </head>
 <body>
 
   <nav class="nav" aria-label="Main">
     <div class="container nav-inner">
-      <a class="nav-brand" href="index.html">
+      <a class="nav-brand" href="/">
         <img src="assets/roundfair-logo.png" alt="" width="30" height="30" />
         RoundFair
       </a>
@@ -52,28 +55,149 @@
   </nav>
 
   <main class="privacy-page">
-    <a class="back-link" href="index.html">← Back to RoundFair</a>
+    <a class="back-link" href="/">← Back to RoundFair</a>
     <h1>Bill Split Calculator</h1>
+    <p>Three free calculators for splitting a bill with friends: an even split with tip, an uneven split with tax and tip, and a settle-up that works out who owes whom after a night of rounds. Pick the one that matches your bill. Amounts are in any currency.</p>
+    <nav class="toc" aria-label="Calculators"><strong>Calculators</strong>
+    <ul>
+      <li><a href="#even">Split a bill evenly</a></li>
+      <li><a href="#uneven">Split a bill unevenly with tax and tip</a></li>
+      <li><a href="#rounds">Who owes whom after rounds</a></li>
+    </ul></nav>
+
+    <h2 id="even">Split a bill evenly</h2>
     <p>Enter the total, an optional tip and how many people are splitting it.</p>
-    <form class="calc" onsubmit="return false" oninput="calc()">
-      <label>Total bill <input id="c-total" type="number" min="0" step="0.01" inputmode="decimal" value="100" /></label>
-      <label>Tip (%) <input id="c-tip" type="number" min="0" step="1" inputmode="decimal" value="10" /></label>
-      <label>People <input id="c-people" type="number" min="1" step="1" inputmode="numeric" value="4" /></label>
-      <p class="privacy-hero" id="c-out" aria-live="polite"></p>
+    <form class="calc" id="calc-even" onsubmit="return false">
+      <label>Total bill <input name="total" type="number" min="0" step="0.01" inputmode="decimal" value="100" /></label>
+      <label>Tip (%) <input name="tip" type="number" min="0" step="1" inputmode="decimal" value="10" /></label>
+      <label>People <input name="people" type="number" min="1" step="1" inputmode="numeric" value="4" /></label>
+      <p class="calc-out" aria-live="polite"></p>
     </form>
-    <h2>Splitting a whole night?</h2>
-    <p>An even split is fine for one bill. Over a night of rounds, someone always ends up paying more. RoundFair tracks who bought what and who is behind, then settles it fairly.</p>
+    <p>An even split is the quickest method and the right one when everyone ordered roughly the same. Add the tip to the total first, then divide. Rounding up to the nearest whole amount per person and leaving the difference as extra tip saves everyone hunting for coins.</p>
+    <p><strong>Example:</strong> a bill of €86 with a 10% tip comes to €94.60. Split four ways, each person pays €23.65.</p>
+
+    <h2 id="uneven">Split a bill unevenly with tax and tip</h2>
+    <p>Enter what each person ordered, plus anything the table shared, such as bottles of wine or starters. Shared items are split evenly; tax and tip are added in proportion, so a bigger order pays a bigger share of both.</p>
+    <form class="calc" id="calc-uneven" onsubmit="return false">
+      <div class="calc-people" data-default="Alex:24,Jordan:31,Sam:18,Taylor:27"></div>
+      <button class="calc-add" type="button">+ Add person</button>
+      <label>Shared items <input name="shared" type="number" min="0" step="0.01" inputmode="decimal" value="20" /></label>
+      <label>Tax (%) <input name="tax" type="number" min="0" step="0.1" inputmode="decimal" value="0" /></label>
+      <label>Tip (%) <input name="tip" type="number" min="0" step="1" inputmode="decimal" value="10" /></label>
+      <div class="calc-out" aria-live="polite"></div>
+    </form>
+    <p>Use 0% tax where prices already include VAT, as they do in most of Europe. In the US and Canada, enter the sales tax from the receipt. The tip is calculated on the pre-tax amount, which is the usual convention.</p>
+    <p><strong>Example:</strong> Alex orders €24, Jordan €31, Sam €18 and Taylor €27, and the table shares €20 of starters. Each person's base is their own order plus €5 of starters. With a 10% tip, Alex pays €31.90, Jordan €39.60, Sam €25.30 and Taylor €35.20, which adds up to the €132 total. For the method in more detail, see <a href="blog/how-to-split-a-receipt-item-by-item.html">how to split a receipt item by item</a> and <a href="blog/how-to-split-tax-and-tip-on-a-bill.html">how to split tax and tip on a bill</a>.</p>
+
+    <h2 id="rounds">Who owes whom after rounds</h2>
+    <p>Bought rounds all night and lost track? Enter what each person spent at the bar. The calculator finds the fair share, then the fewest payments that square everyone up.</p>
+    <form class="calc" id="calc-rounds" onsubmit="return false">
+      <div class="calc-people" data-default="Alex:40,Jordan:25,Sam:15,Taylor:0"></div>
+      <button class="calc-add" type="button">+ Add person</button>
+      <div class="calc-out" aria-live="polite"></div>
+    </form>
+    <p>This assumes everyone drank about the same amount. If some people had far more or less, an even fair share is not fair, and it is better to split by what each person drank; see <a href="blog/split-a-bill-when-some-friends-dont-drink.html">how to split a bill when some friends don't drink</a>.</p>
+    <p><strong>Example:</strong> four friends spend €40, €25, €15 and €0 on rounds. The total is €80, so the fair share is €20 each. Alex is €20 up, Jordan €5 up, Sam €5 down and Taylor €20 down. Two payments settle it: Taylor pays Alex €20 and Sam pays Jordan €5.</p>
+
+    <h2 id="which-method-is-fairest">Which method is fairest?</h2>
+    <ul>
+      <li><strong>Even split:</strong> best when orders are similar, or when the group values speed over precision.</li>
+      <li><strong>Itemised split:</strong> best when orders differ a lot, for example drinkers and non-drinkers at one table.</li>
+      <li><strong>Settle-up after rounds:</strong> best for a night of rounds where not everyone bought the same number or size of round.</li>
+    </ul>
+    <p>Our guide to <a href="blog/bill-split-methods-explained.html">bill split methods</a> compares these with percentage and shares-based splits, and <a href="blog/how-much-to-tip-when-splitting-the-bill.html">how much to tip when splitting the bill</a> covers tipping customs.</p>
+
+    <h2 id="splitting-a-whole-night">Splitting a whole night?</h2>
+    <p>A calculator is fine for one bill. Over a night of rounds, someone always ends up paying more, and nobody remembers the numbers by the end. RoundFair tracks each round as it is bought, shows <a href="blog/whose-turn-to-buy-the-next-round.html">whose turn it is</a> and who is behind, then settles it fairly.</p>
     <p><a class="nav-cta" href="https://apps.apple.com/app/id6763799194">Get RoundFair free</a></p>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    <h3>How do I split a bill with tip?</h3><p>Add the tip to the total first, then divide by the number of people. For a €60 bill with a 15% tip split three ways, the total is €69 and each person pays €23.</p>
+    <h3>Should tip be calculated before or after tax?</h3><p>Usually on the pre-tax amount, although tipping on the total is also common and slightly more generous. The uneven calculator above tips on the pre-tax amount.</p>
+    <h3>How do I split a bill when people ordered different amounts?</h3><p>Give each person their own items, split shared dishes evenly between the people who shared them, and add tax and tip in proportion to each person's share. The uneven calculator does this for you.</p>
+    <h3>How do I work out who owes whom?</h3><p>Add up what everyone paid, divide by the number of people to get the fair share, and compare each person's spend with it. People below the fair share pay the people above it until everyone is even.</p>
+    <h3>Is it fair to split the bill evenly?</h3><p>It is fair when orders are similar. When they differ a lot, an even split makes light eaters and non-drinkers subsidise everyone else, so an itemised split is fairer.</p>
+    <h3>Does the calculator store my data?</h3><p>No. Everything is calculated in your browser and nothing is sent or saved.</p>
+    <!-- cta:start -->
+    <aside class="cta-box" aria-label="Download RoundFair">
+      <img class="cta-icon" src="assets/app-icon.png" alt="" width="72" height="72" loading="lazy" />
+      <div class="cta-copy">
+        <p class="cta-title">Your next round is on the app.</p>
+        <p class="cta-sub">Free on the App Store. No account needed.</p>
+      </div>
+      <a class="appstore-badge" href="https://apps.apple.com/app/id6763799194" aria-label="Download RoundFair on the App Store">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.89 2.36-4.28 2.47-4.35-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-.99-1.94.03-3.73 1.13-4.73 2.86-2.02 3.5-.52 8.68 1.45 11.52.96 1.39 2.1 2.95 3.6 2.9 1.45-.06 1.99-.94 3.74-.94 1.75 0 2.24.94 3.77.91 1.56-.03 2.54-1.41 3.49-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.02-1.16-3.05-4.63zM14.17 4.04c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.73-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.62z"/></svg>
+        <span class="badge-text"><span class="badge-small">Download on the</span><span class="badge-big">App Store</span></span>
+      </a>
+    </aside>
+    <!-- cta:end -->
     <script>
-      function calc() {
-        var t = +document.getElementById("c-total").value || 0,
-            p = +document.getElementById("c-tip").value || 0,
-            n = Math.max(1, Math.floor(+document.getElementById("c-people").value) || 1),
-            all = t * (1 + p / 100);
-        document.getElementById("c-out").textContent =
-          "Each person pays " + (all / n).toFixed(2) + " (total " + all.toFixed(2) + ")";
-      }
-      calc();
+      (function () {
+        var money = function (n) { return (Math.round(n * 100) / 100).toFixed(2); };
+        var num = function (el) { return Math.max(0, +el.value || 0); };
+        var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+
+        // editable list of people, each with a name and an amount
+        function people(form, onChange) {
+          var box = form.querySelector(".calc-people");
+          var add = function (name, amount) {
+            var row = document.createElement("div");
+            row.className = "calc-row";
+            row.innerHTML = '<input type="text" aria-label="Name" maxlength="30" />' +
+              '<input type="number" min="0" step="0.01" inputmode="decimal" aria-label="Amount" />' +
+              '<button type="button" class="calc-remove" aria-label="Remove person">×</button>';
+            row.children[0].value = name;
+            row.children[1].value = amount;
+            row.children[2].onclick = function () { if (box.children.length > 2) { row.remove(); onChange(); } };
+            box.appendChild(row);
+          };
+          box.dataset.default.split(",").forEach(function (p) { var kv = p.split(":"); add(kv[0], kv[1]); });
+          form.querySelector(".calc-add").onclick = function () { add("Person " + (box.children.length + 1), 0); onChange(); };
+          return function () {
+            return [].map.call(box.children, function (r, i) {
+              return { name: r.children[0].value.trim() || "Person " + (i + 1), amount: num(r.children[1]) };
+            });
+          };
+        }
+
+        var even = document.getElementById("calc-even");
+        function calcEven() {
+          var f = even.elements, all = num(f.total) * (1 + num(f.tip) / 100), n = Math.max(1, Math.floor(+f.people.value) || 1);
+          even.querySelector(".calc-out").textContent = "Each person pays " + money(all / n) + " (total " + money(all) + ")";
+        }
+        even.oninput = calcEven;
+        calcEven();
+
+        var uneven = document.getElementById("calc-uneven"), unevenPeople = people(uneven, calcUneven);
+        function calcUneven() {
+          var f = uneven.elements, list = unevenPeople(), share = num(f.shared) / list.length;
+          var k = 1 + num(f.tax) / 100 + num(f.tip) / 100, total = 0;
+          var rows = list.map(function (p) { var pay = (p.amount + share) * k; total += pay; return "<li>" + esc(p.name) + " pays <strong>" + money(pay) + "</strong></li>"; });
+          uneven.querySelector(".calc-out").innerHTML = "<ul>" + rows.join("") + "</ul><p>Total " + money(total) + "</p>";
+        }
+        uneven.oninput = calcUneven;
+        calcUneven();
+
+        var rounds = document.getElementById("calc-rounds"), roundsPeople = people(rounds, calcRounds);
+        function calcRounds() {
+          var list = roundsPeople(), total = list.reduce(function (s, p) { return s + p.amount; }, 0), fair = total / list.length;
+          var bal = list.map(function (p) { return { name: p.name, v: Math.round((p.amount - fair) * 100) }; });
+          var pay = bal.filter(function (b) { return b.v < 0; }).sort(function (a, b) { return a.v - b.v; });
+          var get = bal.filter(function (b) { return b.v > 0; }).sort(function (a, b) { return b.v - a.v; });
+          var out = [], i = 0, j = 0;
+          while (i < pay.length && j < get.length) {
+            var x = Math.min(-pay[i].v, get[j].v);
+            out.push("<li>" + esc(pay[i].name) + " pays " + esc(get[j].name) + " <strong>" + money(x / 100) + "</strong></li>");
+            pay[i].v += x; get[j].v -= x;
+            if (!pay[i].v) i++;
+            if (!get[j].v) j++;
+          }
+          rounds.querySelector(".calc-out").innerHTML = "<p>Total " + money(total) + ", fair share " + money(fair) + " each.</p>" +
+            (out.length ? "<ul>" + out.join("") + "</ul>" : "<p>Everyone is even.</p>");
+        }
+        rounds.oninput = calcRounds;
+        calcRounds();
+      })();
     </script>
   </main>
 
@@ -82,7 +206,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="nav-brand" href="index.html">
+          <a class="nav-brand" href="/">
             <img src="assets/roundfair-logo.png" alt="" width="30" height="30" />
             RoundFair
           </a>
@@ -97,27 +221,36 @@
         </div>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.product">
           <h3 data-i18n="footer.product">Product</h3>
-          <a href="index.html#how" data-i18n="nav.how">How it works</a>
+          <a href="/#how" data-i18n="nav.how">How it works</a>
           <a href="features.html" data-i18n="nav.features">Features</a>
           <a href="use-cases.html" data-i18n="nav.useCases">Use cases</a>
-          <a href="calculators.html">Bill split calculator</a>
-          <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="calculators.html" data-i18n="footer.calculator">Bill split calculator</a>
+          <a href="/#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.company">
           <h3 data-i18n="footer.company">Company</h3>
-          <a href="about.html">About</a>
-          <a href="blog.html">Blog</a>
-          <a href="press.html">Press</a>
-          <a href="contact.html">Contact</a>
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="blog.html" data-i18n="footer.blog">Blog</a>
+          <a href="press.html" data-i18n="footer.press">Press</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.help">
           <h3 data-i18n="footer.help">Help</h3>
           <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
           <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
           <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms</a>
         </nav>
       </div>
+      <nav class="footer-langs" aria-label="Languages" data-i18n-attr="aria-label:footer.languages">
+        <a href="/" hreflang="en" lang="en">English</a>
+        <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+        <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+        <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/es/" hreflang="es" lang="es">Español</a>
+        <a href="/it/" hreflang="it" lang="it">Italiano</a>
+        <a href="/pt/" hreflang="pt" lang="pt">Português</a>
+      </nav>
       <div class="footer-bottom">
         <p class="copyright"><span data-i18n="footer.copyright">© 2026 FairLead</span><span class="footer-dot" aria-hidden="true">·</span><span data-i18n="footer.updated">Last updated: September 2026</span></p>
         <a class="footer-appstore" href="https://apps.apple.com/app/id6763799194" data-i18n="footer.appStore">App Store</a>

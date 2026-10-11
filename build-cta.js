@@ -18,7 +18,7 @@ const cta = (up) => `<aside class="cta-box" aria-label="Download RoundFair">
     </aside>`;
 
 const dirs = ["blog", "features", "use-cases"];
-const files = ["features.html", "use-cases.html", ...dirs.flatMap((d) => fs.readdirSync(d).filter((f) => f.endsWith(".html")).map((f) => `${d}/${f}`))];
+const files = ["features.html", "use-cases.html", "calculators.html", ...dirs.flatMap((d) => fs.readdirSync(d).filter((f) => f.endsWith(".html")).map((f) => `${d}/${f}`))];
 const M = (b) => `<!-- cta:start -->\n    ${b}\n    <!-- cta:end -->`;
 let n = 0;
 for (const f of files) {
