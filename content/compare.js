@@ -17,7 +17,7 @@ const SRC = {
 const RF = {
   job: "Track rounds on a night out: who paid, who joined, whose turn it is, then settle",
   price: "Free",
-  platforms: "iPhone and iPad (iOS 17 or later)",
+  platforms: "iPhone only (Designed for iPhone, iOS 17 or later)",
   account: "No account; sharing uses your own iCloud",
   offline: "Yes, offline-first; shared sessions sync through iCloud",
 };
@@ -41,11 +41,11 @@ module.exports = { CHECKED, SRC, pages: [
         ["Currencies", "Amounts in any currency, no conversion", "Multiple currencies, according to its listing"],
         ["Payments", "No payments; settle with your usual payment app", "Payment requests in the app; a bunq card connection is offered on tricount.com"],
       ])]],
-      ["When Tricount is the better choice", ["- A trip or holiday with many expenses paid by different people over several days.", "- Shared costs at home: rent, utilities and groceries with flatmates or a partner.", "- Groups that want payment requests and multi-currency support built in.", "- Friends on Android: RoundFair is only available on iPhone and iPad."]],
+      ["When Tricount is the better choice", ["- A trip or holiday with many expenses paid by different people over several days.", "- Shared costs at home: rent, utilities and groceries with flatmates or a partner.", "- Groups that want payment requests and multi-currency support built in.", "- Friends on Android: RoundFair is only available for iPhone."]],
       ["When RoundFair is the better choice", ["- A night out where friends take turns buying rounds and nobody remembers whose turn it is.", "- Rounds that differ in size, where you want to see who is genuinely behind, not just who bought last.", "- Groups that want to log a round in one tap at the bar, with a spin wheel when nobody wants to decide.", "- People who prefer no account at all: RoundFair keeps data on your device and in your personal iCloud, with no analytics."]],
       ["Using both", ["Many groups use a ledger for the trip and RoundFair for the evenings out. Track the drinks in RoundFair, settle the night, and if needed add the result to your ledger as one expense. For more options, see our list of [Tricount alternatives](compare/tricount-alternatives.html)."]],
     ],
-    faq: [["Is RoundFair a replacement for Tricount?", "Not for everything. Tricount is a ledger for shared expenses over time. RoundFair is built for rounds and bills on a night out. Many groups use both."], ["Is RoundFair available on Android like Tricount?", "No. RoundFair is available on iPhone and iPad only."], ["Do I need an account for RoundFair?", "No. RoundFair has no accounts. Sharing a session uses your own iCloud."]] },
+    faq: [["Is RoundFair a replacement for Tricount?", "Not for everything. Tricount is a ledger for shared expenses over time. RoundFair is built for rounds and bills on a night out. Many groups use both."], ["Is RoundFair available on Android like Tricount?", "No. RoundFair is designed for iPhone and is iPhone only."], ["Do I need an account for RoundFair?", "No. RoundFair has no accounts. Sharing a session uses your own iCloud."]] },
 
   { slug: "roundfair-vs-splid", name: "RoundFair vs Splid", competitor: "splid",
     title: "RoundFair vs Splid: Night-Out Rounds or Group Expenses?",
@@ -85,10 +85,10 @@ module.exports = { CHECKED, SRC, pages: [
         ["Turn order for rounds", "Yes", "Not described in its listing"],
         ["Currencies", "Amounts in any currency, no conversion", "All currencies with exchange rates, according to its listing"],
       ])]],
-      ["When Settle Up is the better choice", ["- Groups with Android users: RoundFair is iPhone and iPad only.", "- Long-running groups such as flatmates, with recurring expenses.", "- Groups that want reminders and nudges to settle debts."]],
+      ["When Settle Up is the better choice", ["- Groups with Android users: RoundFair is iPhone only.", "- Long-running groups such as flatmates, with recurring expenses.", "- Groups that want reminders and nudges to settle debts."]],
       ["When RoundFair is the better choice", ["- A night out where rounds rotate and the question is who buys next.", "- People who want no accounts, no ads and no analytics: RoundFair keeps data on your device and in your personal iCloud.", "- A quick, one-evening session rather than an ongoing group."]],
     ],
-    faq: [["Is Settle Up free?", "Its App Store listing describes a free app with an optional Premium upgrade that removes ads and adds features."], ["Can Android users join RoundFair?", "No. RoundFair is only available on iPhone and iPad. One person can still track the night and share the plain text summary with everyone."]] },
+    faq: [["Is Settle Up free?", "Its App Store listing describes a free app with an optional Premium upgrade that removes ads and adds features."], ["Can Android users join RoundFair?", "No. RoundFair is only available for iPhone. One person can still track the night and share the plain text summary with everyone."]] },
 
   { slug: "roundfair-vs-whoseround", name: "RoundFair vs WhoseRound?", competitor: "whoseround",
     title: "RoundFair vs WhoseRound?: Two Round Trackers Compared",
@@ -110,7 +110,7 @@ module.exports = { CHECKED, SRC, pages: [
       ["When WhoseRound? may suit you better", ["- You want to glance at the rotation on an Apple Watch, a widget or the Lock Screen.", "- Your group only cares about the order of rounds, not the amounts."]],
       ["When RoundFair may suit you better", ["- Rounds vary in price and you want to see who is genuinely behind in money, not just in turns.", "- The night includes a restaurant bill, a taxi or other shared costs to split.", "- You want a free app with no subscription, or an app in Dutch, French, German, Spanish, Italian or Portuguese."]],
     ],
-    faq: [["Is WhoseRound? free?", "It is free to download, but its App Store listing says full access for new customers needs an annual subscription, with a free trial for eligible customers."], ["Does RoundFair have an Apple Watch app?", "No Apple Watch app is listed for RoundFair. It runs on iPhone and iPad."]] },
+    faq: [["Is WhoseRound? free?", "It is free to download, but its App Store listing says full access for new customers needs an annual subscription, with a free trial for eligible customers."], ["Does RoundFair have an Apple Watch app?", "No Apple Watch app is listed for RoundFair. It is designed for iPhone."]] },
 
   { slug: "roundfair-vs-next-ones-on-me", name: "RoundFair vs Next One's On Me", competitor: "nextone",
     title: "RoundFair vs Next One's On Me: Rotations Compared",
@@ -122,7 +122,7 @@ module.exports = { CHECKED, SRC, pages: [
       ["Side by side", [table("Next One's On Me", [
         ["Main job", RF.job, "A simple paying rotation inside an iMessage conversation"],
         ["Price", RF.price, "Free, according to its listing"],
-        ["Where it runs", "A standalone app on iPhone and iPad", "An iMessage app, according to its listing"],
+        ["Where it runs", "A standalone app designed for iPhone", "An iMessage app, according to its listing"],
         ["Account", "No account", "No accounts and no syncing, according to its listing"],
         ["Amounts and balances", "Yes", "Counts how many rounds each person covered, according to its version notes"],
         ["Bill splitting", "Even and itemised splits with tip and tax", "Not described in its listing"],
@@ -138,7 +138,7 @@ module.exports = { CHECKED, SRC, pages: [
     sources: ["tricount", "splitwise", "splid", "settleup", "roundfair"],
     sections: [
       ["First: do you need an alternative?", ["Tricount's App Store listing describes a free, unlimited app with multiple currencies, offline use and payment requests, and tricount.com says it runs on iOS and Android. For trips and shared homes that covers most needs. The alternatives below make sense when your group needs something specific."]],
-      ["The alternatives at a glance", [`<div class="tbl"><table><thead><tr><th>App</th><th>Built for</th><th>Platforms</th><th>Price model</th></tr></thead><tbody><tr><td>Splitwise</td><td>Shared expenses and IOUs over time</td><td>Smartphones and web, according to its listing</td><td>Free to download</td></tr><tr><td>Splid</td><td>Holidays, housemates and couples; no sign-up</td><td>iOS (App Store listing checked)</td><td>Free; Excel export as an in-app purchase</td></tr><tr><td>Settle Up</td><td>Group expenses with the fewest transfers</td><td>iOS, Android and web</td><td>Free, with a Premium upgrade</td></tr><tr><td>RoundFair</td><td>Rounds and bills on a night out</td><td>iPhone and iPad</td><td>Free</td></tr></tbody></table></div><p><em>Based on each app's official App Store listing and website, checked on 11 October 2026.</em></p>`]],
+      ["The alternatives at a glance", [`<div class="tbl"><table><thead><tr><th>App</th><th>Built for</th><th>Platforms</th><th>Price model</th></tr></thead><tbody><tr><td>Splitwise</td><td>Shared expenses and IOUs over time</td><td>Smartphones and web, according to its listing</td><td>Free to download</td></tr><tr><td>Splid</td><td>Holidays, housemates and couples; no sign-up</td><td>iOS (App Store listing checked)</td><td>Free; Excel export as an in-app purchase</td></tr><tr><td>Settle Up</td><td>Group expenses with the fewest transfers</td><td>iOS, Android and web</td><td>Free, with a Premium upgrade</td></tr><tr><td>RoundFair</td><td>Rounds and bills on a night out</td><td>iPhone only</td><td>Free</td></tr></tbody></table></div><p><em>Based on each app's official App Store listing and website, checked on 11 October 2026.</em></p>`]],
       ["Splitwise", ["Its App Store listing describes groups and friendships, unequal splits by percentage, shares or exact amounts, recurring bills, 100+ currencies and a web version. It suits long-running groups. See our [RoundFair vs Splitwise](blog/roundfair-vs-splitwise.html) comparison."]],
       ["Splid", ["Splid's listing highlights working offline, sharing groups with no sign-up, more than 150 currencies with automatic conversion, and PDF or Excel summaries. See [RoundFair vs Splid](compare/roundfair-vs-splid.html)."]],
       ["Settle Up", ["Settle Up runs on iOS, Android and the web, works offline, and lets friends view a group through a link. Premium removes ads and adds receipt photos, recurring expenses and statistics. See [RoundFair vs Settle Up](compare/roundfair-vs-settle-up.html)."]],

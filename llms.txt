@@ -62,7 +62,7 @@ Key facts:
 - [Tip Calculator by Country: Split the Bill and the Tip](https://roundfair.support/tools/tip-calculator-by-country.html): Free tip calculator with typical tipping customs by country, from Belgium to the US. Pick a country, adjust the tip and split the total between friends.
 - [Who Pays? Spin the Wheel to Pick Who Buys the Round](https://roundfair.support/tools/who-pays-wheel.html): Free online spin wheel to decide who pays or who buys the next round. Enter your friends' names, spin, and let chance decide. Works on any phone.
 - [Help center](https://roundfair.support/help.html): Help for RoundFair: sharing sessions through iCloud, supported devices and Android, privacy and data, and how to contact support.
-- [Is RoundFair Available on Android?](https://roundfair.support/help/android.html): RoundFair is available on the App Store for iPhone and iPad. There is no Android or web version. Here is how mixed iPhone and Android groups can still use it.
+- [Is RoundFair Available on Android?](https://roundfair.support/help/android.html): RoundFair is available on the App Store for iPhone only. There is no Android or web version. Here is how mixed iPhone and Android groups can still use it.
 - [Sharing a RoundFair Session Through iCloud](https://roundfair.support/help/icloud-sharing.html): How live sharing works in RoundFair: sessions are shared through Apple's iCloud (CloudKit), work offline and sync later. What you need and what to check.
 
 ## Optional

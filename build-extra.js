@@ -20,7 +20,16 @@ const sections = (secs, up) => secs.map(([h, ps]) => {
 }).join("\n");
 const list = (items, dir, up) => `    <ul>\n${items.map((i) => `      <li><a href="${up}${dir}/${i.slug}.html">${esc(i.name)}</a>: ${esc(i.desc)}</li>`).join("\n")}\n    </ul>`;
 const urls = [];
-const page = (url, args) => { write(url, layout({ up: url.includes("/") ? "../" : "", url, ...args })); urls.push(url); };
+// keep the previous dateModified when nothing else on the page changed, so unchanged pages keep their date
+const DM = /"dateModified":"\d{4}-\d{2}-\d{2}"/g;
+const page = (url, args) => {
+  let html = layout({ up: url.includes("/") ? "../" : "", url, ...args });
+  const prev = fs.existsSync(url) ? fs.readFileSync(url, "utf8") : null;
+  const prevDate = prev && (prev.match(/"dateModified":"(\d{4}-\d{2}-\d{2})"/) || [])[1];
+  const norm = (h) => h.replace(DM, "").replace(/<!-- cta:start -->[\s\S]*?<!-- cta:end -->/g, "").replace(/<!-- footer:start -->[\s\S]*?<!-- footer:end -->/g, "").replace(/<footer[\s\S]*?<\/footer>/g, "").replace(/\s+/g, "");
+  if (prevDate && norm(prev) === norm(html)) html = html.replace(DM, `"dateModified":"${prevDate}"`);
+  write(url, html); urls.push(url);
+};
 const byline = (up, extra = "") => `    <p class="updated">${extra}By <a href="${up}about.html#founder">Florian Ronsse</a>, founder of FairLead</p>`;
 
 // --- comparisons

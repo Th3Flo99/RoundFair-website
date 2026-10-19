@@ -120,15 +120,15 @@ const help = [
     faq: [["Does everyone need the app to see a shared session?", "To follow live, yes. Friends without the app can read the plain text summary you export."], ["Do I need a RoundFair account to share?", "No. Sharing uses each person's own iCloud account."], ["Does sharing work without internet?", "You can keep adding rounds offline. Changes sync when the device is back online."]] },
   { slug: "android", name: "Is RoundFair on Android?",
     title: "Is RoundFair Available on Android? Help",
-    desc: "RoundFair is available on the App Store for iPhone and iPad. There is no Android or web version. Here is how mixed iPhone and Android groups can still use it.",
+    desc: "RoundFair is available on the App Store for iPhone only. There is no Android or web version. Here is how mixed iPhone and Android groups can still use it.",
     lead: "RoundFair is available on the App Store only. There is no Android app and no web version of the app.",
     sections: [
-      ["Which devices are supported?", ["RoundFair runs on iPhone and needs iOS 17 or later. The App Store also lists iPad models as compatible. Live sharing uses Apple's iCloud, which is one reason the app is built for Apple devices."]],
+      ["Which devices are supported?", ["RoundFair is designed for iPhone and needs iOS 17 or later. It is an iPhone-only app. Live sharing uses Apple's iCloud, which is one reason the app is built for Apple devices."]],
       ["Using RoundFair in a group with Android phones", ["You do not need everyone to have the app. One person with an iPhone can log the rounds for the whole group, read out whose turn it is, and [export a plain text summary](features/export-summary.html) to any group chat at the end. Friends on Android see exactly who owes what."]],
       ["Free tools that work on any phone", ["The browser tools on this site work on Android too: the [who pays wheel](tools/who-pays-wheel.html), the [round cost calculator](tools/round-cost-calculator.html), the [receipt splitter](tools/receipt-splitter.html) and the [bill split calculator](calculators.html)."]],
       ["Cross-platform alternatives", ["If your group needs an app on both iPhone and Android, a shared expense ledger may suit you better. Our [Tricount alternatives](compare/tricount-alternatives.html) page lists options, including apps available on Android."]],
     ],
-    faq: [["Is there an Android version of RoundFair?", "No. RoundFair is available for iPhone and iPad on the App Store."], ["Can friends with Android phones still see the results?", "Yes. Export the plain text summary and share it in your group chat."]] },
+    faq: [["Is there an Android version of RoundFair?", "No. RoundFair is available for iPhone only, on the App Store."], ["Can friends with Android phones still see the results?", "Yes. Export the plain text summary and share it in your group chat."]] },
 ];
 
 module.exports = { tools, help };
