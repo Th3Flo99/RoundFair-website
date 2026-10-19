@@ -14,7 +14,26 @@
     "useCases": "Use cases",
     "faq": "FAQ",
     "menu": "Menu",
-    "download": "Download"
+    "download": "Download",
+    "dd": {
+      "turn-order": "Turn order",
+      "saved-spots": "Saved spots",
+      "restaurant-mode": "Restaurant mode",
+      "split-the-bill": "Split the bill",
+      "who-drank-what": "Who drank what",
+      "export-summary": "Export the summary",
+      "live-sharing": "Live sharing and offline",
+      "all-features": "All features →",
+      "pub-rounds": "Pub rounds with friends",
+      "bachelor-hen-party": "Bachelor and hen parties",
+      "group-trips": "Group trips",
+      "restaurant-dinners": "Restaurant dinners",
+      "work-drinks": "Work drinks and team nights",
+      "festivals": "Festivals",
+      "student-nights": "Student nights out",
+      "coffee-and-lunch-rounds": "Coffee and lunch rounds",
+      "all-use-cases": "All use cases →"
+    }
   },
   "theme": {
     "toDark": "Switch to dark mode",
@@ -123,7 +142,10 @@
     "contact": "Contact",
     "terms": "Terms",
     "calculator": "Bill split calculator",
-    "languages": "Languages"
+    "languages": "Languages",
+    "tools": "Free tools",
+    "compare": "Compare apps",
+    "helpCenter": "Help center"
   },
   "privacy": {
     "title": "Privacy Policy (RoundFair)",
@@ -222,7 +244,7 @@
     "indexH1": "Blog",
     "indexLead": "Tips on splitting bills, buying rounds and keeping nights out fair.",
     "back": "← Back to the blog",
-    "by": "By FairLead",
+    "by": "By Florian Ronsse",
     "readEnglish": "Read in English",
     "ctaTitle": "Your next round is on the app.",
     "ctaSub": "Free on the App Store. No account needed.",

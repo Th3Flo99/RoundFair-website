@@ -213,7 +213,7 @@ module.exports = {
         "For dinners after work, our guide to [splitting a dinner bill with friends](blog/split-dinner-bill-with-friends.html) and the [bill split](features/split-the-bill.html) help you divide the meal item by item."
       ]],
       ["Why not just use a group chat?", [
-        "A work group chat is full of people you may not want to discuss money with. A separate shared record keeps drinks tallies out of the channel and avoids awkward public reminders. It also does not require anyone to hand over a personal account. See our take on [round buying apps](blog/round-buying-app-track-whose-turn-it-is.html) for more."
+        "A work group chat is full of people you may not want to discuss money with. A separate shared record keeps drinks tallies out of the channel and avoids awkward public reminders. It also does not require anyone to hand over a personal account. See our take on [round buying apps](features/turn-order.html#what-to-look-for-in-a-round-tracker-app) for more."
       ]]
     ],
     faq: [

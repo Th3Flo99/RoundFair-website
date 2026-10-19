@@ -19,7 +19,7 @@
   <meta name="apple-itunes-app" content="app-id=6763799194" />
   <link rel="manifest" href="/site.webmanifest" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RoundFair","item":"https://roundfair.support/"},{"@type":"ListItem","position":2,"name":"Use cases","item":"https://roundfair.support/use-cases.html"},{"@type":"ListItem","position":3,"name":"Work drinks and team nights","item":"https://roundfair.support/use-cases/work-drinks.html"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Team Nights Out and Work Drinks – RoundFair","description":"Keep team drinks and work nights out fair with RoundFair. Track rounds and split the bill without awkward conversations.","url":"https://roundfair.support/use-cases/work-drinks.html","isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Team Nights Out and Work Drinks – RoundFair","description":"Keep team drinks and work nights out fair with RoundFair. Track rounds and split the bill without awkward conversations.","url":"https://roundfair.support/use-cases/work-drinks.html","author":{"@type":"Person","@id":"https://roundfair.support/about.html#founder","name":"Florian Ronsse","jobTitle":"Founder","url":"https://roundfair.support/about.html#founder","worksFor":{"@id":"https://roundfair.support/#org"}},"isPartOf":{"@type":"WebSite","name":"RoundFair","url":"https://roundfair.support/"},"about":{"@type":"SoftwareApplication","name":"RoundFair","operatingSystem":"iOS","applicationCategory":"FinanceApplication","url":"https://apps.apple.com/app/id6763799194"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I export it for expenses?","acceptedAnswer":{"@type":"Answer","text":"Yes. Export a plain text overview of rounds and balances."}},{"@type":"Question","name":"Does everyone need to install the app?","acceptedAnswer":{"@type":"Answer","text":"No. One person can keep the record and share the summary."}},{"@type":"Question","name":"Do managers have to join the rounds?","acceptedAnswer":{"@type":"Answer","text":"That is a team decision. Many teams include them, because it treats everyone equally. Others agree that the company covers the first round."}},{"@type":"Question","name":"Can I use it for a leaving do?","acceptedAnswer":{"@type":"Answer","text":"Yes. Add the group, cover the guest of honour by leaving them out of the shared costs, and share the summary afterwards."}},{"@type":"Question","name":"What if someone wants to pay by card only?","acceptedAnswer":{"@type":"Answer","text":"Log the round and split the bill at the end. They can settle up in whichever way they prefer."}},{"@type":"Question","name":"Will my colleagues see anything private?","acceptedAnswer":{"@type":"Answer","text":"Only what you share. RoundFair has no accounts or servers, and data stays on your device and in your personal iCloud."}},{"@type":"Question","name":"Is it appropriate to track rounds at work at all?","acceptedAnswer":{"@type":"Answer","text":"A light touch works best. Keeping a quiet, neutral tally is kinder than letting resentment build, and it does not need to be announced."}}]}</script>
   <link rel="icon" type="image/png" href="../assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="../assets/app-icon.png" />
@@ -33,9 +33,9 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="../styles.css?v=seo2" />
+  <link rel="stylesheet" href="../styles.css?v=seo3" />
   <script src="../post.js?v=3" defer></script>
-  <script src="../script.js?v=dd1" defer></script>
+  <script src="../script.js?v=mail1" defer></script>
 </head>
 <body>
 
@@ -51,25 +51,28 @@
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Features</button>
             <div class="nav-dd-panel">
-              <a href="../features/turn-order.html">Turn order</a>
-              <a href="../features/saved-spots.html">Saved spots</a>
-              <a href="../features/restaurant-mode.html">Restaurant mode</a>
-              <a href="../features/split-the-bill.html">Split the bill</a>
-              <a href="../features/who-drank-what.html">Who drank what</a>
-              <a href="../features/export-summary.html">Export the summary</a>
-              <a href="../features/live-sharing.html">Live sharing and offline</a>
-              <a class="nav-dd-all" href="../features.html">All features →</a>
+              <a href="../features/turn-order.html" data-i18n="nav.dd.turn-order">Turn order</a>
+              <a href="../features/saved-spots.html" data-i18n="nav.dd.saved-spots">Saved spots</a>
+              <a href="../features/restaurant-mode.html" data-i18n="nav.dd.restaurant-mode">Restaurant mode</a>
+              <a href="../features/split-the-bill.html" data-i18n="nav.dd.split-the-bill">Split the bill</a>
+              <a href="../features/who-drank-what.html" data-i18n="nav.dd.who-drank-what">Who drank what</a>
+              <a href="../features/export-summary.html" data-i18n="nav.dd.export-summary">Export the summary</a>
+              <a href="../features/live-sharing.html" data-i18n="nav.dd.live-sharing">Live sharing and offline</a>
+              <a class="nav-dd-all" href="../features.html" data-i18n="nav.dd.all-features">All features →</a>
             </div>
           </div>
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Use cases</button>
             <div class="nav-dd-panel">
-              <a href="../use-cases/pub-rounds.html">Pub rounds with friends</a>
-              <a href="../use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>
-              <a href="../use-cases/group-trips.html">Group trips</a>
-              <a href="../use-cases/restaurant-dinners.html">Restaurant dinners</a>
-              <a href="../use-cases/work-drinks.html">Work drinks and team nights</a>
-              <a class="nav-dd-all" href="../use-cases.html">All use cases →</a>
+              <a href="../use-cases/pub-rounds.html" data-i18n="nav.dd.pub-rounds">Pub rounds with friends</a>
+              <a href="../use-cases/bachelor-hen-party.html" data-i18n="nav.dd.bachelor-hen-party">Bachelor and hen parties</a>
+              <a href="../use-cases/group-trips.html" data-i18n="nav.dd.group-trips">Group trips</a>
+              <a href="../use-cases/restaurant-dinners.html" data-i18n="nav.dd.restaurant-dinners">Restaurant dinners</a>
+              <a href="../use-cases/work-drinks.html" data-i18n="nav.dd.work-drinks">Work drinks and team nights</a>
+              <a href="../use-cases/festivals.html" data-i18n="nav.dd.festivals">Festivals</a>
+              <a href="../use-cases/student-nights.html" data-i18n="nav.dd.student-nights">Student nights out</a>
+              <a href="../use-cases/coffee-and-lunch-rounds.html" data-i18n="nav.dd.coffee-and-lunch-rounds">Coffee and lunch rounds</a>
+              <a class="nav-dd-all" href="../use-cases.html" data-i18n="nav.dd.all-use-cases">All use cases →</a>
             </div>
           </div>
           <a href="/#faq">FAQ</a>
@@ -90,7 +93,7 @@
   <main class="privacy-page">
     <a class="back-link" href="../use-cases.html">← All use cases</a>
     <h1>Team Nights Out and Work Drinks</h1>
-    <p class="updated">RoundFair use case · By FairLead</p>
+    <p class="updated">RoundFair use case · By <a href="../about.html#founder">Florian Ronsse</a>, founder of FairLead</p>
     <p>With colleagues, money conversations are extra awkward. A neutral record keeps team nights easy and fair.</p>
     <nav class="toc" aria-label="In this guide"><strong>In this guide</strong>
     <ul>
@@ -107,7 +110,7 @@
       <li><a href="#leaving-dos-promotions-and-celebrations">Leaving dos, promotions and celebrations</a></li>
       <li><a href="#quick-answers-for-the-awkward-moments">Quick answers for the awkward moments</a></li>
     </ul></nav>
-    <h2>How it works</h2>
+    <h2>Running a team night in RoundFair</h2>
     <ol>
       <li>Add the team to a session.</li>
       <li>Log rounds as they happen.</li>
@@ -137,7 +140,7 @@
     <p>If your company reimburses part of a night out, you will normally need a receipt and sometimes a list of attendees. A plain text overview of rounds and balances is a useful supporting note, but check your company's policy since some require the original itemised receipt.</p>
     <p>For dinners after work, our guide to <a href="../blog/split-dinner-bill-with-friends.html">splitting a dinner bill with friends</a> and the <a href="../features/split-the-bill.html">bill split</a> help you divide the meal item by item.</p>
     <h2 id="why-not-just-use-a-group-chat">Why not just use a group chat?</h2>
-    <p>A work group chat is full of people you may not want to discuss money with. A separate shared record keeps drinks tallies out of the channel and avoids awkward public reminders. It also does not require anyone to hand over a personal account. See our take on <a href="../blog/round-buying-app-track-whose-turn-it-is.html">round buying apps</a> for more.</p>
+    <p>A work group chat is full of people you may not want to discuss money with. A separate shared record keeps drinks tallies out of the channel and avoids awkward public reminders. It also does not require anyone to hand over a personal account. See our take on <a href="../features/turn-order.html#what-to-look-for-in-a-round-tracker-app">round buying apps</a> for more.</p>
     <h2 id="remote-and-hybrid-teams-meeting-in-person">Remote and hybrid teams meeting in person</h2>
     <p>Team nights out have changed. Many teams now meet in person only a few times a year, so a night out carries more weight and the group is often made up of people who barely know each other. That makes clear, low-drama money handling even more valuable, because you cannot rely on years of familiarity to smooth things over.</p>
     <p>Agree the plan by message beforehand: where you are going, whether the company is covering anything, and how long people are staying. Then keep a light record on the night. Because RoundFair works offline and needs no accounts, it is easy to use in a venue with poor reception and with colleagues who do not share a phone platform.</p>
@@ -155,7 +158,7 @@
     <h2 id="quick-answers-for-the-awkward-moments">Quick answers for the awkward moments</h2>
     <p>If someone asks whose round it is and nobody knows, check the record rather than guessing. If someone objects to the count, show it without comment. If a colleague is leaving early, tell the group before they go so their share is settled and nobody is left to chase them on Monday morning.</p>
     <p>Most of all, keep it light. A shared tally exists to prevent awkwardness, not to create it, and the best team nights are the ones where nobody notices the money at all.</p>
-    <h2>Why it works</h2>
+    <h2>Why a neutral record helps with colleagues</h2>
     <p>A shared, neutral record means nobody has to be the person who asks for money. It is private by design: no account, no analytics, no servers, so your team's data stays with you.</p>
     <h2>Frequently asked questions</h2>
     <h3>Can I export it for expenses?</h3><p>Yes. Export a plain text overview of rounds and balances.</p>
@@ -165,6 +168,12 @@
     <h3>What if someone wants to pay by card only?</h3><p>Log the round and split the bill at the end. They can settle up in whichever way they prefer.</p>
     <h3>Will my colleagues see anything private?</h3><p>Only what you share. RoundFair has no accounts or servers, and data stays on your device and in your personal iCloud.</p>
     <h3>Is it appropriate to track rounds at work at all?</h3><p>A light touch works best. Keeping a quiet, neutral tally is kinder than letting resentment build, and it does not need to be announced.</p>
+    <h2 id="related-guides">Related guides</h2>
+    <ul>
+      <li><a href="../blog/split-a-bill-when-some-friends-dont-drink.html">Splitting a bill when some people don't drink</a></li>
+      <li><a href="../blog/how-to-run-a-bar-tab-with-friends.html">How to run a bar tab without drama</a></li>
+      <li><a href="../use-cases/coffee-and-lunch-rounds.html">Coffee and lunch rotations at work</a></li>
+    </ul>
     <h2>Features that help</h2>
     <ul>
       <li><a href="../features/turn-order.html">Turn order</a></li>
@@ -209,7 +218,8 @@
           <a href="/#how" data-i18n="nav.how">How it works</a>
           <a href="../features.html" data-i18n="nav.features">Features</a>
           <a href="../use-cases.html" data-i18n="nav.useCases">Use cases</a>
-          <a href="../calculators.html" data-i18n="footer.calculator">Bill split calculator</a>
+          <a href="../tools.html" data-i18n="footer.tools">Free tools</a>
+          <a href="../compare.html" data-i18n="footer.compare">Compare apps</a>
           <a href="/#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.company">
@@ -221,8 +231,8 @@
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.help">
           <h3 data-i18n="footer.help">Help</h3>
-          <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
-          <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
+          <a href="../help.html" data-i18n="footer.helpCenter">Help center</a>
+          <a href="../contact.html" data-i18n="footer.support">Support</a>
           <a href="../privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="../terms.html" data-i18n="footer.terms">Terms</a>
         </nav>
