@@ -5,7 +5,8 @@ const fs = require("fs");
 const SITE = "https://roundfair.support/";
 const meta = (h, re) => (h.match(re) || [])[1];
 
-const posts = fs.readdirSync("blog").filter((f) => f.endsWith(".html")).map((f) => {
+// redirect stubs (merged posts, <meta http-equiv="refresh">) are skipped: not listed, not in the sitemap
+const posts = fs.readdirSync("blog").filter((f) => f.endsWith(".html") && !fs.readFileSync("blog/" + f, "utf8").includes('http-equiv="refresh"')).map((f) => {
   const h = fs.readFileSync("blog/" + f, "utf8");
   const date = meta(h, /<meta name="date" content="([^"]+)"/);
   const title = meta(h, /<title>([^<]+?)(?: – RoundFair)?<\/title>/);

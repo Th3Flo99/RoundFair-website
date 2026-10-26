@@ -19,7 +19,7 @@
   <meta name="apple-itunes-app" content="app-id=6763799194" />
   <link rel="manifest" href="/site.webmanifest" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"RoundFair","item":"https://roundfair.support/"},{"@type":"ListItem","position":2,"name":"Use cases","item":"https://roundfair.support/use-cases.html"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"RoundFair Use Cases – Nights Out, Trips, Dinners and More","description":"See how groups use RoundFair to keep rounds and bills fair: pub nights, bachelor and hen parties, group trips, restaurant dinners and work drinks.","url":"https://roundfair.support/use-cases.html","hasPart":[{"@type":"WebPage","name":"Track Pub Rounds with Friends","url":"https://roundfair.support/use-cases/pub-rounds.html"},{"@type":"WebPage","name":"Bachelor and Hen Party Cost Splitting","url":"https://roundfair.support/use-cases/bachelor-hen-party.html"},{"@type":"WebPage","name":"Split Costs on a Group Trip","url":"https://roundfair.support/use-cases/group-trips.html"},{"@type":"WebPage","name":"Split a Restaurant Dinner Bill","url":"https://roundfair.support/use-cases/restaurant-dinners.html"},{"@type":"WebPage","name":"Team Nights Out and Work Drinks","url":"https://roundfair.support/use-cases/work-drinks.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"RoundFair Use Cases – Nights Out, Trips, Dinners and More","description":"See how groups use RoundFair to keep rounds and bills fair: pub nights, bachelor and hen parties, group trips, restaurant dinners and work drinks.","url":"https://roundfair.support/use-cases.html","hasPart":[{"@type":"WebPage","name":"Track Pub Rounds with Friends","url":"https://roundfair.support/use-cases/pub-rounds.html"},{"@type":"WebPage","name":"Bachelor and Hen Party App for Rounds and Shared Costs","url":"https://roundfair.support/use-cases/bachelor-hen-party.html"},{"@type":"WebPage","name":"Group Trip App for Shared Costs and Nights Out","url":"https://roundfair.support/use-cases/group-trips.html"},{"@type":"WebPage","name":"Group Dinners Out: Split the Meal, Then the Rounds","url":"https://roundfair.support/use-cases/restaurant-dinners.html"},{"@type":"WebPage","name":"Team Nights Out and Work Drinks","url":"https://roundfair.support/use-cases/work-drinks.html"},{"@type":"WebPage","name":"Festival Drinks with Friends: Track Rounds Offline","url":"https://roundfair.support/use-cases/festivals.html"},{"@type":"WebPage","name":"Student Nights Out: Fair Rounds on a Budget","url":"https://roundfair.support/use-cases/student-nights.html"},{"@type":"WebPage","name":"Coffee and Lunch Rounds at Work: Whose Turn to Pay?","url":"https://roundfair.support/use-cases/coffee-and-lunch-rounds.html"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I use RoundFair for things other than drinks?","acceptedAnswer":{"@type":"Answer","text":"Yes. Restaurant mode splits itemised meals with tip and tax, and split the bill divides any total, such as a taxi or hotel room, between the people who shared it."}},{"@type":"Question","name":"Can the group change during the night?","acceptedAnswer":{"@type":"Answer","text":"Yes. People can join or leave a session and the turn order adjusts."}},{"@type":"Question","name":"What if only some people shared a cost?","acceptedAnswer":{"@type":"Answer","text":"Choose who shared it when you add it. A taxi split by the four people who rode in it is not charged to the rest of the group."}}]}</script>
   <link rel="icon" type="image/png" href="assets/roundfair-logo.png" />
   <link rel="apple-touch-icon" href="assets/app-icon.png" />
@@ -33,9 +33,9 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="styles.css?v=seo2" />
+  <link rel="stylesheet" href="styles.css?v=seo3" />
   <script src="post.js?v=3" defer></script>
-  <script src="script.js?v=dd1" defer></script>
+  <script src="script.js?v=mail1" defer></script>
 </head>
 <body>
 
@@ -51,25 +51,28 @@
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Features</button>
             <div class="nav-dd-panel">
-              <a href="features/turn-order.html">Turn order</a>
-              <a href="features/saved-spots.html">Saved spots</a>
-              <a href="features/restaurant-mode.html">Restaurant mode</a>
-              <a href="features/split-the-bill.html">Split the bill</a>
-              <a href="features/who-drank-what.html">Who drank what</a>
-              <a href="features/export-summary.html">Export the summary</a>
-              <a href="features/live-sharing.html">Live sharing and offline</a>
-              <a class="nav-dd-all" href="features.html">All features →</a>
+              <a href="features/turn-order.html" data-i18n="nav.dd.turn-order">Turn order</a>
+              <a href="features/saved-spots.html" data-i18n="nav.dd.saved-spots">Saved spots</a>
+              <a href="features/restaurant-mode.html" data-i18n="nav.dd.restaurant-mode">Restaurant mode</a>
+              <a href="features/split-the-bill.html" data-i18n="nav.dd.split-the-bill">Split the bill</a>
+              <a href="features/who-drank-what.html" data-i18n="nav.dd.who-drank-what">Who drank what</a>
+              <a href="features/export-summary.html" data-i18n="nav.dd.export-summary">Export the summary</a>
+              <a href="features/live-sharing.html" data-i18n="nav.dd.live-sharing">Live sharing and offline</a>
+              <a class="nav-dd-all" href="features.html" data-i18n="nav.dd.all-features">All features →</a>
             </div>
           </div>
           <div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true">Use cases</button>
             <div class="nav-dd-panel">
-              <a href="use-cases/pub-rounds.html">Pub rounds with friends</a>
-              <a href="use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>
-              <a href="use-cases/group-trips.html">Group trips</a>
-              <a href="use-cases/restaurant-dinners.html">Restaurant dinners</a>
-              <a href="use-cases/work-drinks.html">Work drinks and team nights</a>
-              <a class="nav-dd-all" href="use-cases.html">All use cases →</a>
+              <a href="use-cases/pub-rounds.html" data-i18n="nav.dd.pub-rounds">Pub rounds with friends</a>
+              <a href="use-cases/bachelor-hen-party.html" data-i18n="nav.dd.bachelor-hen-party">Bachelor and hen parties</a>
+              <a href="use-cases/group-trips.html" data-i18n="nav.dd.group-trips">Group trips</a>
+              <a href="use-cases/restaurant-dinners.html" data-i18n="nav.dd.restaurant-dinners">Restaurant dinners</a>
+              <a href="use-cases/work-drinks.html" data-i18n="nav.dd.work-drinks">Work drinks and team nights</a>
+              <a href="use-cases/festivals.html" data-i18n="nav.dd.festivals">Festivals</a>
+              <a href="use-cases/student-nights.html" data-i18n="nav.dd.student-nights">Student nights out</a>
+              <a href="use-cases/coffee-and-lunch-rounds.html" data-i18n="nav.dd.coffee-and-lunch-rounds">Coffee and lunch rounds</a>
+              <a class="nav-dd-all" href="use-cases.html" data-i18n="nav.dd.all-use-cases">All use cases →</a>
             </div>
           </div>
           <a href="/#faq">FAQ</a>
@@ -98,19 +101,31 @@
     </article>
     <article class="blog-item">
       <h2><a href="use-cases/bachelor-hen-party.html">Bachelor and hen parties</a></h2>
-      <p>Keep the weekend fair on a bachelor or hen party. Track rounds, share costs and cover the guest of honour with RoundFair.</p>
+      <p>Run the bachelor or hen party in RoundFair: track rounds, split taxis and dinners between the right people and cover the guest of honour. Free iOS app.</p>
     </article>
     <article class="blog-item">
       <h2><a href="use-cases/group-trips.html">Group trips</a></h2>
-      <p>Track shared costs on a group trip with RoundFair: hotel, taxis, dinners and rounds, with a clear summary at the end. Free iOS app.</p>
+      <p>Use RoundFair on a group trip: split taxis, dinners and hotel nights between the people who shared them, keep the evening rounds fair, export one summary.</p>
     </article>
     <article class="blog-item">
       <h2><a href="use-cases/restaurant-dinners.html">Restaurant dinners</a></h2>
-      <p>Split a dinner bill by item with tip and tax so everyone pays for what they ordered. Try RoundFair, free on iOS, at your next dinner.</p>
+      <p>For group dinners that carry on at the bar: split the meal by item with tip and tax, then keep the rounds fair afterwards, all in one RoundFair session.</p>
     </article>
     <article class="blog-item">
       <h2><a href="use-cases/work-drinks.html">Work drinks and team nights</a></h2>
       <p>Keep team drinks and work nights out fair with RoundFair. Track rounds and split the bill without awkward conversations.</p>
+    </article>
+    <article class="blog-item">
+      <h2><a href="use-cases/festivals.html">Festivals</a></h2>
+      <p>Keep festival rounds fair with RoundFair: log who bought each round, see who is up next and settle up after the weekend, even with no signal on site.</p>
+    </article>
+    <article class="blog-item">
+      <h2><a href="use-cases/student-nights.html">Student nights out</a></h2>
+      <p>Student nights out on a budget: RoundFair tracks whose round it is, who is behind and what everyone had, so nobody pays for someone else's night. Free on iOS.</p>
+    </article>
+    <article class="blog-item">
+      <h2><a href="use-cases/coffee-and-lunch-rounds.html">Coffee and lunch rounds</a></h2>
+      <p>Take turns paying for coffee or lunch with colleagues? RoundFair tracks whose turn it is and who is behind, so the rotation stays fair week after week.</p>
     </article>
     <h2 id="which-use-case-fits-your-group">Which use case fits your group?</h2>
     <ul>
@@ -119,6 +134,9 @@
       <li><a href="use-cases/restaurant-dinners.html">Restaurant dinners</a>: one bill, very different orders, and tip and tax on top.</li>
       <li><a href="use-cases/group-trips.html">Group trips</a>: taxis, dinners and hotel rooms shared between different people over several days.</li>
       <li><a href="use-cases/bachelor-hen-party.html">Bachelor and hen parties</a>: a big group, a full schedule and a guest of honour whose share the others cover.</li>
+      <li><a href="use-cases/festivals.html">Festivals</a>: rounds spread over a whole weekend, often with no phone signal.</li>
+      <li><a href="use-cases/student-nights.html">Student nights out</a>: big, changing groups on a tight budget.</li>
+      <li><a href="use-cases/coffee-and-lunch-rounds.html">Coffee and lunch rounds</a>: colleagues taking turns to pay, day after day.</li>
     </ul>
     <h2 id="one-app-for-the-whole-night">One app for the whole night</h2>
     <p>Real nights out mix these situations. Dinner turns into rounds at a bar, and a taxi home is shared by only half the group. RoundFair handles all of it in one session: rounds for the bar, <a href="features/restaurant-mode.html">restaurant mode</a> for the meal and <a href="features/split-the-bill.html">split the bill</a> for anything else, with a single settlement at the end.</p>
@@ -165,7 +183,8 @@
           <a href="/#how" data-i18n="nav.how">How it works</a>
           <a href="features.html" data-i18n="nav.features">Features</a>
           <a href="use-cases.html" data-i18n="nav.useCases">Use cases</a>
-          <a href="calculators.html" data-i18n="footer.calculator">Bill split calculator</a>
+          <a href="tools.html" data-i18n="footer.tools">Free tools</a>
+          <a href="compare.html" data-i18n="footer.compare">Compare apps</a>
           <a href="/#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.company">
@@ -177,8 +196,8 @@
         </nav>
         <nav class="footer-col" data-i18n-attr="aria-label:footer.help">
           <h3 data-i18n="footer.help">Help</h3>
-          <a href="mailto:roundfair@fairlead.be?subject=RoundFair%20Support" data-i18n="footer.support">Support</a>
-          <a href="mailto:roundfair@fairlead.be">roundfair@fairlead.be</a>
+          <a href="help.html" data-i18n="footer.helpCenter">Help center</a>
+          <a href="contact.html" data-i18n="footer.support">Support</a>
           <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="terms.html" data-i18n="footer.terms">Terms</a>
         </nav>

@@ -14,7 +14,26 @@
     "useCases": "Casos de uso",
     "faq": "FAQ",
     "menu": "Menú",
-    "download": "Descargar"
+    "download": "Descargar",
+    "dd": {
+      "turn-order": "Orden de turnos",
+      "saved-spots": "Lugares guardados",
+      "restaurant-mode": "Modo restaurante",
+      "split-the-bill": "Dividir la cuenta",
+      "who-drank-what": "Quién bebió qué",
+      "export-summary": "Exportar el resumen",
+      "live-sharing": "Compartir en directo y sin conexión",
+      "all-features": "Todas las funciones →",
+      "pub-rounds": "Rondas en el bar con amigos",
+      "bachelor-hen-party": "Despedidas de soltero y soltera",
+      "group-trips": "Viajes en grupo",
+      "restaurant-dinners": "Cenas en restaurantes",
+      "work-drinks": "Copas con compañeros",
+      "festivals": "Festivales",
+      "student-nights": "Noches de estudiantes",
+      "coffee-and-lunch-rounds": "Rondas de café y almuerzo",
+      "all-use-cases": "Todos los casos de uso →"
+    }
   },
   "theme": {
     "toDark": "Cambiar a modo oscuro",
@@ -123,7 +142,10 @@
     "contact": "Contacto",
     "terms": "Términos de uso",
     "calculator": "Calculadora para dividir la cuenta",
-    "languages": "Idiomas"
+    "languages": "Idiomas",
+    "tools": "Herramientas gratis",
+    "compare": "Comparar apps",
+    "helpCenter": "Centro de ayuda"
   },
   "privacy": {
     "title": "Política de privacidad (RoundFair)",
@@ -215,5 +237,8 @@
     "soda": "Refresco",
     "restaurant": "Restaurante",
     "taxi": "Taxi"
+  },
+  "blog": {
+    "by": "Por Florian Ronsse"
   }
 }

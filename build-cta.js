@@ -17,11 +17,12 @@ const cta = (up) => `<aside class="cta-box" aria-label="Download RoundFair">
       </a>
     </aside>`;
 
-const dirs = ["blog", "features", "use-cases"];
-const files = ["features.html", "use-cases.html", "calculators.html", ...dirs.flatMap((d) => fs.readdirSync(d).filter((f) => f.endsWith(".html")).map((f) => `${d}/${f}`))];
+const dirs = ["blog", "features", "use-cases", "compare", "tools"];
+const files = ["features.html", "use-cases.html", "calculators.html", "compare.html", "tools.html", ...dirs.flatMap((d) => fs.readdirSync(d).filter((f) => f.endsWith(".html")).map((f) => `${d}/${f}`))];
 const M = (b) => `<!-- cta:start -->\n    ${b}\n    <!-- cta:end -->`;
 let n = 0;
 for (const f of files) {
+  if (fs.readFileSync(f, "utf8").includes('http-equiv="refresh"')) continue; // redirect stubs for merged pages
   const s = fs.readFileSync(f, "utf8"), block = M(cta(f.includes("/") ? "../" : ""));
   const re = /<!-- cta:start -->[\s\S]*?<!-- cta:end -->|<p class="cta-box">[\s\S]*?<\/p>/;
   if (!re.test(s)) throw new Error(`${f}: no CTA found`);

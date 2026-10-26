@@ -14,7 +14,26 @@
     "useCases": "Cas d'usage",
     "faq": "FAQ",
     "menu": "Menu",
-    "download": "Télécharger"
+    "download": "Télécharger",
+    "dd": {
+      "turn-order": "Ordre de passage",
+      "saved-spots": "Lieux enregistrés",
+      "restaurant-mode": "Mode restaurant",
+      "split-the-bill": "Partager l'addition",
+      "who-drank-what": "Qui a bu quoi",
+      "export-summary": "Exporter le résumé",
+      "live-sharing": "Partage en direct et hors ligne",
+      "all-features": "Toutes les fonctionnalités →",
+      "pub-rounds": "Tournées au bar entre amis",
+      "bachelor-hen-party": "Enterrements de vie de garçon et de jeune fille",
+      "group-trips": "Voyages en groupe",
+      "restaurant-dinners": "Dîners au restaurant",
+      "work-drinks": "Afterworks et soirées d’équipe",
+      "festivals": "Festivals",
+      "student-nights": "Soirées étudiantes",
+      "coffee-and-lunch-rounds": "Tournées de café et de lunch",
+      "all-use-cases": "Tous les cas d'usage →"
+    }
   },
   "theme": {
     "toDark": "Passer en mode sombre",
@@ -123,7 +142,10 @@
     "contact": "Contact",
     "terms": "Conditions d'utilisation",
     "calculator": "Calculateur d'addition",
-    "languages": "Langues"
+    "languages": "Langues",
+    "tools": "Outils gratuits",
+    "compare": "Comparer les apps",
+    "helpCenter": "Centre d'aide"
   },
   "privacy": {
     "title": "Politique de confidentialité (RoundFair)",
@@ -222,7 +244,7 @@
     "indexH1": "Blog",
     "indexLead": "Conseils pour partager l'addition, payer sa tournée et garder des soirées équitables.",
     "back": "← Retour au blog",
-    "by": "Par FairLead",
+    "by": "Par Florian Ronsse",
     "readEnglish": "Lire en anglais",
     "ctaTitle": "Votre prochaine tournée est dans l'app.",
     "ctaSub": "Gratuit sur l'App Store. Aucun compte requis.",

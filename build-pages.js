@@ -19,6 +19,8 @@ const renderSections = (secs, up) => secs.map(([h, ps]) => {
   return `    <h2 id="${slugify(h)}">${esc(h)}</h2>\n${out.join("\n")}`;
 }).join("\n");
 
+// The founder, used as the named author of guides and feature pages (see about.html#founder)
+const FOUNDER = { "@type": "Person", "@id": SITE + "about.html#founder", name: "Florian Ronsse", jobTitle: "Founder", url: SITE + "about.html#founder", worksFor: { "@id": SITE + "#org" } };
 const PAGES = {
   features: {
     label: "Features",
@@ -77,7 +79,7 @@ const PAGES = {
     hubTitle: "RoundFair Use Cases – Nights Out, Trips, Dinners and More",
     hubDesc: "See how groups use RoundFair to keep rounds and bills fair: pub nights, bachelor and hen parties, group trips, restaurant dinners and work drinks.",
     hubLead: "Wherever a group shares costs, someone ends up keeping score. Here is how RoundFair helps in the situations that come up most.",
-    hubSections: [["Which use case fits your group?", ["- [Pub rounds](use-cases/pub-rounds.html): friends taking turns to buy drinks, where the question all night is whose round it is.", "- [Work drinks](use-cases/work-drinks.html): people arrive and leave at different times, and nobody wants to talk money with colleagues.", "- [Restaurant dinners](use-cases/restaurant-dinners.html): one bill, very different orders, and tip and tax on top.", "- [Group trips](use-cases/group-trips.html): taxis, dinners and hotel rooms shared between different people over several days.", "- [Bachelor and hen parties](use-cases/bachelor-hen-party.html): a big group, a full schedule and a guest of honour whose share the others cover."]], ["One app for the whole night", ["Real nights out mix these situations. Dinner turns into rounds at a bar, and a taxi home is shared by only half the group. RoundFair handles all of it in one session: rounds for the bar, [restaurant mode](features/restaurant-mode.html) for the meal and [split the bill](features/split-the-bill.html) for anything else, with a single settlement at the end.", "Not sure how to split fairly in the first place? Our guide to [bill split methods](blog/bill-split-methods-explained.html) explains when an even split works and when it does not, and the [bill split calculator](calculators.html) handles one-off bills in the browser."]]],
+    hubSections: [["Which use case fits your group?", ["- [Pub rounds](use-cases/pub-rounds.html): friends taking turns to buy drinks, where the question all night is whose round it is.", "- [Work drinks](use-cases/work-drinks.html): people arrive and leave at different times, and nobody wants to talk money with colleagues.", "- [Restaurant dinners](use-cases/restaurant-dinners.html): one bill, very different orders, and tip and tax on top.", "- [Group trips](use-cases/group-trips.html): taxis, dinners and hotel rooms shared between different people over several days.", "- [Bachelor and hen parties](use-cases/bachelor-hen-party.html): a big group, a full schedule and a guest of honour whose share the others cover.", "- [Festivals](use-cases/festivals.html): rounds spread over a whole weekend, often with no phone signal.", "- [Student nights out](use-cases/student-nights.html): big, changing groups on a tight budget.", "- [Coffee and lunch rounds](use-cases/coffee-and-lunch-rounds.html): colleagues taking turns to pay, day after day."]], ["One app for the whole night", ["Real nights out mix these situations. Dinner turns into rounds at a bar, and a taxi home is shared by only half the group. RoundFair handles all of it in one session: rounds for the bar, [restaurant mode](features/restaurant-mode.html) for the meal and [split the bill](features/split-the-bill.html) for anything else, with a single settlement at the end.", "Not sure how to split fairly in the first place? Our guide to [bill split methods](blog/bill-split-methods-explained.html) explains when an even split works and when it does not, and the [bill split calculator](calculators.html) handles one-off bills in the browser."]]],
     hubFaq: [["Can I use RoundFair for things other than drinks?", "Yes. Restaurant mode splits itemised meals with tip and tax, and split the bill divides any total, such as a taxi or hotel room, between the people who shared it."], ["Can the group change during the night?", "Yes. People can join or leave a session and the turn order adjusts."], ["What if only some people shared a cost?", "Choose who shared it when you add it. A taxi split by the four people who rode in it is not charged to the rest of the group."]],
     items: [
       { slug: "pub-rounds", name: "Pub rounds with friends", title: "Track Pub Rounds with Friends",
@@ -119,18 +121,25 @@ const PAGES = {
   },
 };
 
+// page-tweaks.js: titles, varied headings, related guides and the occasion pages (see that file)
+const TWEAKS = require("./content/page-tweaks.js");
+PAGES["use-cases"].items.push(...TWEAKS.newUseCases);
+for (const grp of Object.values(PAGES)) for (const i of grp.items) Object.assign(i, TWEAKS.items[i.slug] || {});
+Object.assign(EXTRA, TWEAKS.content);
+for (const [slug, secs] of Object.entries(TWEAKS.append)) EXTRA[slug].sections.push(...secs);
+
 const key = (g, s) => `${g}/${s}.html`;
 const dd = (g, up, i18n = "") => `<div class="nav-dd">
             <button class="nav-dd-btn" type="button" aria-expanded="false" aria-haspopup="true"${i18n}>${PAGES[g].label}</button>
             <div class="nav-dd-panel">
-${PAGES[g].items.map((i) => `              <a href="${up}${key(g, i.slug)}">${i.name}</a>`).join("\n")}
-              <a class="nav-dd-all" href="${up}${g}.html">All ${PAGES[g].label.toLowerCase()} →</a>
+${PAGES[g].items.map((i) => `              <a href="${up}${key(g, i.slug)}" data-i18n="nav.dd.${i.slug}">${i.name}</a>`).join("\n")}
+              <a class="nav-dd-all" href="${up}${g}.html" data-i18n="nav.dd.all-${g}">All ${PAGES[g].label.toLowerCase()} →</a>
             </div>
           </div>`;
 
 // share image rendered by build-og.js (features/x.html → assets/og/features-x.png), else the app screenshot
 const ogImage = (url) => { const f = `assets/og/${url.replace(/\.html$/, "").replace("/", "-")}.png`; return SITE + (fs.existsSync(f) ? f : "assets/og-image.png"); };
-const layout = ({ up, url, title, desc, body, ld }) => `<!doctype html>
+const layout = ({ up, url, title, desc, body, ld, scripts = "", ogType = "website" }) => `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -138,7 +147,7 @@ const layout = ({ up, url, title, desc, body, ld }) => `<!doctype html>
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(desc)}" />
   <link rel="canonical" href="${SITE}${url}" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="${ogType}" />
   <meta property="og:url" content="${SITE}${url}" />
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(desc)}" />
@@ -163,10 +172,10 @@ ${ld.map((o) => `  <script type="application/ld+json">${JSON.stringify(o)}</scri
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="${up}styles.css?v=seo2" />
+  <link rel="stylesheet" href="${up}styles.css?v=seo3" />
   <script src="${up}post.js?v=3" defer></script>
-  <script src="${up}script.js?v=dd1" defer></script>
-</head>
+  <script src="${up}script.js?v=mail1" defer></script>
+${scripts}</head>
 <body>
 
   <nav class="nav" aria-label="Main">
@@ -208,6 +217,9 @@ ${body}
 const crumbs = (list) => ({ "@context": "https://schema.org", "@type": "BreadcrumbList",
   itemListElement: list.map(([name, p], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + p })) });
 const write = (file, html) => { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, html); };
+module.exports = { SITE, APP, esc, rich, slugify, renderSections, PAGES, key, layout, crumbs, write, ogImage, FOUNDER };
+if (require.main === module) main();
+function main() {
 const featureName = Object.fromEntries(PAGES.features.items.map((i) => [i.slug, i.name]));
 const urls = [];
 
@@ -238,7 +250,9 @@ ${grp.hubFaq.map(([q, a]) => `    <h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("\n"
   for (const i of grp.items) {
     const url = key(g, i.slug), title = `${i.title} – RoundFair`;
     const x = EXTRA[i.slug] || { sections: [], faq: [] };
-    const faq = [...i.faq, ...x.faq];
+    const qk = (q) => q.toLowerCase().replace(/ with this feature|[?]/g, "").trim();
+    const faq = [...i.faq, ...x.faq].filter(([q], n, all) => all.findIndex(([o]) => qk(o) === qk(q)) === n);
+    const plain = (a) => a.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
     const toc = x.sections.length ? `    <nav class="toc" aria-label="In this guide"><strong>In this guide</strong>\n    <ul>\n${x.sections.map(([h]) => `      <li><a href="#${slugify(h)}">${esc(h)}</a></li>`).join("\n")}\n    </ul></nav>\n` : "";
     const related = g === "features"
       ? grp.items.filter((x) => x !== i).slice(0, 3).map((x) => [key(g, x.slug), x.name])
@@ -246,25 +260,29 @@ ${grp.hubFaq.map(([q, a]) => `    <h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("\n"
     write(url, layout({
       up: "../", url, title, desc: i.desc,
       ld: [crumbs([["RoundFair", ""], [grp.label, `${g}.html`], [i.name, url]]),
-        { "@context": "https://schema.org", "@type": "WebPage", name: title, description: i.desc, url: SITE + url,
+        { "@context": "https://schema.org", "@type": "WebPage", name: title, description: i.desc, url: SITE + url, author: FOUNDER,
           isPartOf: { "@type": "WebSite", name: "RoundFair", url: SITE },
-          about: { "@type": "SoftwareApplication", name: "RoundFair", operatingSystem: "iOS", applicationCategory: "LifestyleApplication", url: APP } },
+          about: { "@type": "SoftwareApplication", name: "RoundFair", operatingSystem: "iOS", applicationCategory: "FinanceApplication", url: APP } },
         { "@context": "https://schema.org", "@type": "FAQPage",
-          mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }],
+          mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: plain(a) } })) }],
       body: `    <a class="back-link" href="../${g}.html">← All ${grp.label.toLowerCase()}</a>
     <h1>${esc(i.title)}</h1>
-    <p class="updated">${g === "features" ? "RoundFair feature" : "RoundFair use case"} · By FairLead</p>
+    <p class="updated">${g === "features" ? "RoundFair feature" : "RoundFair use case"} · By <a href="../about.html#founder">Florian Ronsse</a>, founder of FairLead</p>
     <p>${esc(i.lead)}</p>
-${toc}    <h2>How it works</h2>
+${toc}    <h2>${esc(i.stepsTitle || "How it works")}</h2>
     <ol>
 ${i.steps.map((s) => `      <li>${esc(s)}</li>`).join("\n")}
     </ol>
 ${renderSections(x.sections, "../")}
-    <h2>${g === "features" ? "Why it helps" : "Why it works"}</h2>
+    <h2>${esc(i.whyTitle || (g === "features" ? "Why it helps" : "Why it works"))}</h2>
     <p>${esc(i.why)}</p>
     <h2>Frequently asked questions</h2>
-${faq.map(([q, a]) => `    <h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("\n")}
-    <h2>${g === "features" ? "More features" : "Features that help"}</h2>
+${faq.map(([q, a]) => `    <h3>${esc(q)}</h3><p>${rich(a, "../")}</p>`).join("\n")}
+${i.guides ? `    <h2 id="related-guides">Related guides</h2>
+    <ul>
+${i.guides.map(([p, n]) => `      <li><a href="../${p}">${esc(n)}</a></li>`).join("\n")}
+    </ul>
+` : ""}    <h2>${g === "features" ? "More features" : "Features that help"}</h2>
     <ul>
 ${related.map(([p, n]) => `      <li><a href="../${p}">${esc(n)}</a></li>`).join("\n")}
       <li><a href="../${other}.html">Browse all ${PAGES[other].label.toLowerCase()}</a></li>
@@ -290,3 +308,4 @@ fs.writeFileSync("sitemap.xml", sm.includes("<!-- pages:start -->")
   ? sm.replace(/<!-- pages:start -->[\s\S]*?<!-- pages:end -->/, () => block)
   : sm.replace("<!-- blog:start -->", () => block + "\n  <!-- blog:start -->"));
 console.log(`${urls.length} feature and use-case pages built`);
+}
